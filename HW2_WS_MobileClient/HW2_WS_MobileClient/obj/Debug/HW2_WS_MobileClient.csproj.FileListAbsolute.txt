@@ -1,0 +1,12 @@
+C:\Users\bunny\documents\visual studio 2010\Projects\HW2_WS_MobileClient\HW2_WS_MobileClient\obj\Debug\App.g.i.cs
+C:\Users\bunny\documents\visual studio 2010\Projects\HW2_WS_MobileClient\HW2_WS_MobileClient\obj\Debug\MainPage.g.i.cs
+C:\Users\bunny\documents\visual studio 2010\Projects\HW2_WS_MobileClient\HW2_WS_MobileClient\obj\Debug\HW2_WS_MobileClient.g.resources
+C:\Users\bunny\documents\visual studio 2010\Projects\HW2_WS_MobileClient\HW2_WS_MobileClient\Bin\Debug\ApplicationIcon.png
+C:\Users\bunny\documents\visual studio 2010\Projects\HW2_WS_MobileClient\HW2_WS_MobileClient\Bin\Debug\Background.png
+C:\Users\bunny\documents\visual studio 2010\Projects\HW2_WS_MobileClient\HW2_WS_MobileClient\Bin\Debug\HW2_WS_MobileClient.dll
+C:\Users\bunny\documents\visual studio 2010\Projects\HW2_WS_MobileClient\HW2_WS_MobileClient\Bin\Debug\HW2_WS_MobileClient.pdb
+C:\Users\bunny\documents\visual studio 2010\Projects\HW2_WS_MobileClient\HW2_WS_MobileClient\Bin\Debug\AppManifest.xaml
+C:\Users\bunny\documents\visual studio 2010\Projects\HW2_WS_MobileClient\HW2_WS_MobileClient\Bin\Debug\HW2_WS_MobileClient.xap
+C:\Users\bunny\documents\visual studio 2010\Projects\HW2_WS_MobileClient\HW2_WS_MobileClient\obj\Debug\HW2_WS_MobileClient.dll
+C:\Users\bunny\documents\visual studio 2010\Projects\HW2_WS_MobileClient\HW2_WS_MobileClient\obj\Debug\HW2_WS_MobileClient.pdb
+C:\Users\bunny\documents\visual studio 2010\Projects\HW2_WS_MobileClient\HW2_WS_MobileClient\obj\Debug\XapCacheFile.xml

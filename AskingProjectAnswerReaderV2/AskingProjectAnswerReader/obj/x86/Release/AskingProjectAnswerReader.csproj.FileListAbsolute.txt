@@ -1,0 +1,13 @@
+D:\Bunny\Documents\Visual Studio 2010\Projects\AskingProjectAnswerReaderV2\AskingProjectAnswerReader\bin\Release\AskingProjectAnswerReader.exe
+D:\Bunny\Documents\Visual Studio 2010\Projects\AskingProjectAnswerReaderV2\AskingProjectAnswerReader\bin\Release\AskingProjectAnswerReader.pdb
+D:\Bunny\Documents\Visual Studio 2010\Projects\AskingProjectAnswerReaderV2\AskingProjectAnswerReader\obj\x86\Release\ResolveAssemblyReference.cache
+D:\Bunny\Documents\Visual Studio 2010\Projects\AskingProjectAnswerReaderV2\AskingProjectAnswerReader\obj\x86\Release\MainWindow.baml
+D:\Bunny\Documents\Visual Studio 2010\Projects\AskingProjectAnswerReaderV2\AskingProjectAnswerReader\obj\x86\Release\MainWindow.g.cs
+D:\Bunny\Documents\Visual Studio 2010\Projects\AskingProjectAnswerReaderV2\AskingProjectAnswerReader\obj\x86\Release\App.g.cs
+D:\Bunny\Documents\Visual Studio 2010\Projects\AskingProjectAnswerReaderV2\AskingProjectAnswerReader\obj\x86\Release\AskingProjectAnswerReader_MarkupCompile.cache
+D:\Bunny\Documents\Visual Studio 2010\Projects\AskingProjectAnswerReaderV2\AskingProjectAnswerReader\obj\x86\Release\AskingProjectAnswerReader.g.resources
+D:\Bunny\Documents\Visual Studio 2010\Projects\AskingProjectAnswerReaderV2\AskingProjectAnswerReader\obj\x86\Release\AskingProjectAnswerReader.Properties.Resources.resources
+D:\Bunny\Documents\Visual Studio 2010\Projects\AskingProjectAnswerReaderV2\AskingProjectAnswerReader\obj\x86\Release\ResGen.read.1.tlog
+D:\Bunny\Documents\Visual Studio 2010\Projects\AskingProjectAnswerReaderV2\AskingProjectAnswerReader\obj\x86\Release\ResGen.write.1.tlog
+D:\Bunny\Documents\Visual Studio 2010\Projects\AskingProjectAnswerReaderV2\AskingProjectAnswerReader\obj\x86\Release\AskingProjectAnswerReader.exe
+D:\Bunny\Documents\Visual Studio 2010\Projects\AskingProjectAnswerReaderV2\AskingProjectAnswerReader\obj\x86\Release\AskingProjectAnswerReader.pdb

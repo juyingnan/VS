@@ -1,0 +1,18 @@
+C:\Users\Administrator\AppData\Local\Temporary Projects\SubReplace\bin\Debug\SubReplace.exe
+C:\Users\Administrator\AppData\Local\Temporary Projects\SubReplace\bin\Debug\SubReplace.pdb
+C:\Users\Administrator\AppData\Local\Temporary Projects\SubReplace\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\AppData\Local\Temporary Projects\SubReplace\obj\x86\Debug\SubReplace.Form1.resources
+C:\Users\Administrator\AppData\Local\Temporary Projects\SubReplace\obj\x86\Debug\SubReplace.Properties.Resources.resources
+C:\Users\Administrator\AppData\Local\Temporary Projects\SubReplace\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Administrator\AppData\Local\Temporary Projects\SubReplace\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Administrator\AppData\Local\Temporary Projects\SubReplace\obj\x86\Debug\SubReplace.exe
+C:\Users\Administrator\AppData\Local\Temporary Projects\SubReplace\obj\x86\Debug\SubReplace.pdb
+D:\Bunny\Documents\Visual Studio 2010\Projects\SubReplace\SubReplace\obj\x86\Debug\SubReplace.exe
+D:\Bunny\Documents\Visual Studio 2010\Projects\SubReplace\SubReplace\obj\x86\Debug\SubReplace.pdb
+D:\Bunny\Documents\Visual Studio 2010\Projects\SubReplace\SubReplace\bin\Debug\SubReplace.exe
+D:\Bunny\Documents\Visual Studio 2010\Projects\SubReplace\SubReplace\bin\Debug\SubReplace.pdb
+D:\Bunny\Documents\Visual Studio 2010\Projects\SubReplace\SubReplace\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Bunny\Documents\Visual Studio 2010\Projects\SubReplace\SubReplace\obj\x86\Debug\SubReplace.Form1.resources
+D:\Bunny\Documents\Visual Studio 2010\Projects\SubReplace\SubReplace\obj\x86\Debug\SubReplace.Properties.Resources.resources
+D:\Bunny\Documents\Visual Studio 2010\Projects\SubReplace\SubReplace\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Bunny\Documents\Visual Studio 2010\Projects\SubReplace\SubReplace\obj\x86\Debug\GenerateResource.write.1.tlog

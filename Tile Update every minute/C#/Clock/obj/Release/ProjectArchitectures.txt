@@ -1,0 +1,2 @@
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\Tile Update every minute\C#\Clock.WinRT\Clock.WinRT.csproj;neutral
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\Tile Update every minute\C#\Clock\Clock.csproj;neutral

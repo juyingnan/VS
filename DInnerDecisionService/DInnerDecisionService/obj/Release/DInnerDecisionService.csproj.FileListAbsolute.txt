@@ -1,0 +1,5 @@
+c:\users\bunny_000\documents\visual studio 2012\Projects\DInnerDecisionService\DInnerDecisionService\bin\DInnerDecisionService.dll
+c:\users\bunny_000\documents\visual studio 2012\Projects\DInnerDecisionService\DInnerDecisionService\bin\DInnerDecisionService.pdb
+c:\users\bunny_000\documents\visual studio 2012\Projects\DInnerDecisionService\DInnerDecisionService\obj\Release\DInnerDecisionService.csprojResolveAssemblyReference.cache
+c:\users\bunny_000\documents\visual studio 2012\Projects\DInnerDecisionService\DInnerDecisionService\obj\Release\DInnerDecisionService.dll
+c:\users\bunny_000\documents\visual studio 2012\Projects\DInnerDecisionService\DInnerDecisionService\obj\Release\DInnerDecisionService.pdb

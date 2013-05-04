@@ -1,0 +1,5 @@
+C:\Users\Bunny\Documents\Visual Studio 2012\Projects\HW1_Q1_DOM\HW1_Q1_DOM\bin\Debug\HW1_Q1_DOM.exe
+C:\Users\Bunny\Documents\Visual Studio 2012\Projects\HW1_Q1_DOM\HW1_Q1_DOM\bin\Debug\HW1_Q1_DOM.pdb
+C:\Users\Bunny\Documents\Visual Studio 2012\Projects\HW1_Q1_DOM\HW1_Q1_DOM\obj\Debug\HW1_Q1_DOM.csprojResolveAssemblyReference.cache
+C:\Users\Bunny\Documents\Visual Studio 2012\Projects\HW1_Q1_DOM\HW1_Q1_DOM\obj\Debug\HW1_Q1_DOM.exe
+C:\Users\Bunny\Documents\Visual Studio 2012\Projects\HW1_Q1_DOM\HW1_Q1_DOM\obj\Debug\HW1_Q1_DOM.pdb

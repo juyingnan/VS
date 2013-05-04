@@ -1,0 +1,5 @@
+c:\users\bunny\documents\visual studio 2012\Projects\OutputService\OutputService\bin\OutputService.dll
+c:\users\bunny\documents\visual studio 2012\Projects\OutputService\OutputService\bin\OutputService.pdb
+c:\users\bunny\documents\visual studio 2012\Projects\OutputService\OutputService\obj\Debug\OutputService.csprojResolveAssemblyReference.cache
+c:\users\bunny\documents\visual studio 2012\Projects\OutputService\OutputService\obj\Debug\OutputService.dll
+c:\users\bunny\documents\visual studio 2012\Projects\OutputService\OutputService\obj\Debug\OutputService.pdb

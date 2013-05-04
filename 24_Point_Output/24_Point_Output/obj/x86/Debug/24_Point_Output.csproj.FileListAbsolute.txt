@@ -1,0 +1,9 @@
+d:\bunny\documents\visual studio 2010\Projects\24_Point_Output\24_Point_Output\bin\Debug\24_Point_Output.exe
+d:\bunny\documents\visual studio 2010\Projects\24_Point_Output\24_Point_Output\bin\Debug\24_Point_Output.pdb
+d:\bunny\documents\visual studio 2010\Projects\24_Point_Output\24_Point_Output\obj\x86\Debug\ResolveAssemblyReference.cache
+d:\bunny\documents\visual studio 2010\Projects\24_Point_Output\24_Point_Output\obj\x86\Debug\24_Point_Output.exe
+d:\bunny\documents\visual studio 2010\Projects\24_Point_Output\24_Point_Output\obj\x86\Debug\24_Point_Output.pdb
+C:\Users\Bunny\Documents\Visual Studio 2012\Projects\24_Point_Output\24_Point_Output\obj\x86\Debug\24_Point_Output.exe
+C:\Users\Bunny\Documents\Visual Studio 2012\Projects\24_Point_Output\24_Point_Output\obj\x86\Debug\24_Point_Output.pdb
+C:\Users\Bunny\Documents\Visual Studio 2012\Projects\24_Point_Output\24_Point_Output\bin\Debug\24_Point_Output.exe
+C:\Users\Bunny\Documents\Visual Studio 2012\Projects\24_Point_Output\24_Point_Output\bin\Debug\24_Point_Output.pdb

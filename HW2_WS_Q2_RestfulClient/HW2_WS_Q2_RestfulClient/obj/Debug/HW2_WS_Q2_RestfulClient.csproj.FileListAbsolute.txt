@@ -1,0 +1,10 @@
+C:\Users\bunny\AppData\Local\Temporary Projects\HW2_WS_Q2_RestfulClient\bin\Debug\HW2_WS_Q2_RestfulClient.exe
+C:\Users\bunny\AppData\Local\Temporary Projects\HW2_WS_Q2_RestfulClient\bin\Debug\HW2_WS_Q2_RestfulClient.pdb
+C:\Users\bunny\AppData\Local\Temporary Projects\HW2_WS_Q2_RestfulClient\obj\Debug\HW2_WS_Q2_RestfulClient.csprojResolveAssemblyReference.cache
+C:\Users\bunny\AppData\Local\Temporary Projects\HW2_WS_Q2_RestfulClient\obj\Debug\HW2_WS_Q2_RestfulClient.exe
+C:\Users\bunny\AppData\Local\Temporary Projects\HW2_WS_Q2_RestfulClient\obj\Debug\HW2_WS_Q2_RestfulClient.pdb
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\HW2_WS_Q2_RestfulClient\HW2_WS_Q2_RestfulClient\obj\Debug\HW2_WS_Q2_RestfulClient.exe
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\HW2_WS_Q2_RestfulClient\HW2_WS_Q2_RestfulClient\obj\Debug\HW2_WS_Q2_RestfulClient.pdb
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\HW2_WS_Q2_RestfulClient\HW2_WS_Q2_RestfulClient\bin\Debug\HW2_WS_Q2_RestfulClient.exe
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\HW2_WS_Q2_RestfulClient\HW2_WS_Q2_RestfulClient\bin\Debug\HW2_WS_Q2_RestfulClient.pdb
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\HW2_WS_Q2_RestfulClient\HW2_WS_Q2_RestfulClient\obj\Debug\HW2_WS_Q2_RestfulClient.csprojResolveAssemblyReference.cache

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:intf="http://cn.edu.pku.ss.bank" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:impl="http://cn.edu.pku.ss.bank" targetNamespace="http://cn.edu.pku.ss.bank" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema xmlns="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://cn.edu.pku.ss.bank">
+      <xsd:element name="creditCardAuthorization">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="creditCardNo" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="creditCardAuthorizationResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="creditCardAuthorizationReturn" type="xsd:boolean" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="creditCardAuthorizationResponse">
+    <wsdl:part name="parameters" element="impl:creditCardAuthorizationResponse" />
+  </wsdl:message>
+  <wsdl:message name="creditCardAuthorizationRequest">
+    <wsdl:part name="parameters" element="impl:creditCardAuthorization" />
+  </wsdl:message>
+  <wsdl:portType name="BankService">
+    <wsdl:operation name="creditCardAuthorization">
+      <wsdl:input name="creditCardAuthorizationRequest" message="impl:creditCardAuthorizationRequest" />
+      <wsdl:output name="creditCardAuthorizationResponse" message="impl:creditCardAuthorizationResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BankServiceSoapBinding" type="impl:BankService">
+    <wsdlsoap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="creditCardAuthorization">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="creditCardAuthorizationRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="creditCardAuthorizationResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="BankServiceService">
+    <wsdl:port name="BankService" binding="impl:BankServiceSoapBinding">
+      <wsdlsoap:address location="http://localhost:8080/OnlineShop_Services/services/BankService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

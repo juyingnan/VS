@@ -1,0 +1,13 @@
+D:\Bunny\Documents\Visual Studio 2010\Projects\RssReader\RssReader\bin\Debug\RssReader.exe
+D:\Bunny\Documents\Visual Studio 2010\Projects\RssReader\RssReader\bin\Debug\RssReader.pdb
+D:\Bunny\Documents\Visual Studio 2010\Projects\RssReader\RssReader\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Bunny\Documents\Visual Studio 2010\Projects\RssReader\RssReader\obj\x86\Debug\MainWindow.baml
+D:\Bunny\Documents\Visual Studio 2010\Projects\RssReader\RssReader\obj\x86\Debug\MainWindow.g.cs
+D:\Bunny\Documents\Visual Studio 2010\Projects\RssReader\RssReader\obj\x86\Debug\App.g.cs
+D:\Bunny\Documents\Visual Studio 2010\Projects\RssReader\RssReader\obj\x86\Debug\RssReader_MarkupCompile.cache
+D:\Bunny\Documents\Visual Studio 2010\Projects\RssReader\RssReader\obj\x86\Debug\RssReader.g.resources
+D:\Bunny\Documents\Visual Studio 2010\Projects\RssReader\RssReader\obj\x86\Debug\RssReader.Properties.Resources.resources
+D:\Bunny\Documents\Visual Studio 2010\Projects\RssReader\RssReader\obj\x86\Debug\ResGen.read.1.tlog
+D:\Bunny\Documents\Visual Studio 2010\Projects\RssReader\RssReader\obj\x86\Debug\ResGen.write.1.tlog
+D:\Bunny\Documents\Visual Studio 2010\Projects\RssReader\RssReader\obj\x86\Debug\RssReader.exe
+D:\Bunny\Documents\Visual Studio 2010\Projects\RssReader\RssReader\obj\x86\Debug\RssReader.pdb

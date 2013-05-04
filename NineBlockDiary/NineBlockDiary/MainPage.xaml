@@ -1,0 +1,190 @@
+﻿<Page
+    x:Class="NineBlockDiary.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:NineBlockDiary"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <Style x:Key="titleStyle" TargetType="TextBox">
+            <Setter Property="TextBox.Background">
+                <Setter.Value>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black"/>
+                        <GradientStop Color="#FFA2A2A2" Offset="1"/>
+                    </LinearGradientBrush>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="TextBox.FontWeight" Value="Bold"/>
+            <Setter Property="TextBox.VerticalAlignment" Value="Top"/>
+            <Setter Property="TextBox.FontFamily" Value="Microsoft Jhenghei"/>
+            <Setter Property="TextBox.BorderThickness" Value="2"/>
+            <Setter Property="TextBox.Foreground" Value="White"/>
+            <Setter Property="TextBox.FontWeight" Value="ExtraBold"/>
+        </Style>
+        <Style x:Key="diaryStyle"  TargetType="TextBox">
+            <Setter Property="TextBox.Background">
+                <Setter.Value>
+                    <LinearGradientBrush EndPoint="0.2,0" StartPoint="0.2,1">
+                        <GradientStop Color="#EECDCDCD"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="TextBox.FontWeight" Value="Normal"/>
+            <Setter Property="TextBox.FontFamily" Value="Microsoft Jhenghei"/>
+            <Setter Property="TextBox.TextWrapping" Value="Wrap"/>
+            <Setter Property="TextBox.BorderThickness" Value="2"/>
+        </Style>
+        <Style x:Key="rectangleStyle" TargetType="Rectangle">
+            <Setter Property="Rectangle.HorizontalAlignment" Value="Center"/>
+            <Setter Property="Rectangle.VerticalAlignment" Value="Center"/>
+            <Setter Property="Rectangle.Width" Value="Auto"/>
+            <Setter Property="Rectangle.Height" Value="Auto"/>
+            <Setter Property="Rectangle.Fill" Value="LightGreen"/>
+            <Setter Property="Rectangle.RadiusX" Value="10"/>
+            <Setter Property="Rectangle.RadiusY" Value="10"/>
+            <Setter Property="Rectangle.Opacity" Value="0.5"/>
+            <Setter Property="Rectangle.Stroke" Value="Black"/>
+        </Style>
+        <Style x:Key="buttonStyle" TargetType="Button">
+            <Setter Property="Background" Value="Black"/>
+        </Style>        
+    </Page.Resources>
+
+
+    <Grid Style="{StaticResource LayoutRootStyle}">
+        <Grid.Background>
+            <ImageBrush Stretch="UniformToFill" ImageSource="pictures/tempBack2.jpg"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="140"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <!-- Back button and page title -->
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock x:Name="pageTitle" Text="Nine-Block Diary  九宫格日记" Grid.Column="1" IsHitTestVisible="false" Style="{StaticResource PageHeaderTextStyle}" Margin="120,0,30,40">
+                <TextBlock.Foreground>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="White"/>
+                        <GradientStop Color="Black" Offset="1"/>
+                    </LinearGradientBrush>
+                </TextBlock.Foreground>
+            </TextBlock>           
+        </Grid>
+
+        <!-- Back button and page title -->
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="120"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="40"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+
+
+            <!--DATE & Buttons-->
+            <Grid Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="120"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="120"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <ComboBox Grid.Column="1"  HorizontalAlignment="Center" VerticalAlignment="Center" Name="DateBar" Foreground="Black" FontSize="36" FontWeight="Bold" SelectionChanged="DateBar_SelectionChanged" BorderBrush="{x:Null}" Background="{x:Null}"/>
+                <CheckBox Visibility="Collapsed" Name="hiddenBOSS"/>
+            </Grid>
+
+            <!--NINE BLOCK-->
+            <Grid Grid.Row="1" Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.75*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="20"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="20"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="0.75*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <!--TITLES-->
+                <TextBox Grid.Row="0" Grid.Column="1" Name="TitleTextBox1" Style="{StaticResource titleStyle}" Text="TEST TITLE 1" KeyUp="ENTER_KeyUp" TabIndex="9" TextChanged="TitleTextBox_TextChanged" LostFocus="TextBox_LostFocus" />
+                <TextBox Grid.Row="0" Grid.Column="3" Name="TitleTextBox2" Style="{StaticResource titleStyle}" Text="TEST TITLE 2" KeyUp="ENTER_KeyUp" TabIndex="10" TextChanged="TitleTextBox_TextChanged" LostFocus="TextBox_LostFocus"/>
+                <TextBox Grid.Row="0" Grid.Column="5" Name="TitleTextBox3" Style="{StaticResource titleStyle}" Text="TEST TITLE 3" KeyUp="ENTER_KeyUp" TabIndex="11" TextChanged="TitleTextBox_TextChanged" LostFocus="TextBox_LostFocus"/>
+                <TextBox Grid.Row="3" Grid.Column="1" Name="TitleTextBox4" Style="{StaticResource titleStyle}" Text="TEST TITLE 4" KeyUp="ENTER_KeyUp" TabIndex="12" TextChanged="TitleTextBox_TextChanged" LostFocus="TextBox_LostFocus"/>
+                <TextBox Grid.Row="3" Grid.Column="5" Name="TitleTextBox5" Style="{StaticResource titleStyle}" Text="TEST TITLE 5" KeyUp="ENTER_KeyUp" TabIndex="13" TextChanged="TitleTextBox_TextChanged" LostFocus="TextBox_LostFocus"/>
+                <TextBox Grid.Row="6" Grid.Column="1" Name="TitleTextBox6" Style="{StaticResource titleStyle}" Text="TEST TITLE 6" KeyUp="ENTER_KeyUp" TabIndex="14" TextChanged="TitleTextBox_TextChanged" LostFocus="TextBox_LostFocus"/>
+                <TextBox Grid.Row="6" Grid.Column="3" Name="TitleTextBox7" Style="{StaticResource titleStyle}" Text="TEST TITLE 7" KeyUp="ENTER_KeyUp" TabIndex="15" TextChanged="TitleTextBox_TextChanged" LostFocus="TextBox_LostFocus"/>
+                <TextBox Grid.Row="6" Grid.Column="5" Name="TitleTextBox8" Style="{StaticResource titleStyle}" Text="TEST TITLE 8" KeyUp="ENTER_KeyUp" TabIndex="16" TextChanged="TitleTextBox_TextChanged" LostFocus="TextBox_LostFocus"/>
+
+                <!--CONTENT-->
+                <TextBox Grid.Row="1" Grid.Column="1" Name="ContentTextBox1" Style="{StaticResource diaryStyle}" Text="TEST CONTENT 1" KeyUp="ENTER_KeyUp" TabIndex="1" TextChanged="ContentTextBox_TextChanged" LostFocus="TextBox_LostFocus"></TextBox>
+                <TextBox Grid.Row="1" Grid.Column="3" Name="ContentTextBox2" Style="{StaticResource diaryStyle}" Text="TEST CONTENT 1" KeyUp="ENTER_KeyUp" TabIndex="2" TextChanged="ContentTextBox_TextChanged" LostFocus="TextBox_LostFocus"></TextBox>
+                <TextBox Grid.Row="1" Grid.Column="5" Name="ContentTextBox3" Style="{StaticResource diaryStyle}" Text="TEST CONTENT 1" KeyUp="ENTER_KeyUp" TabIndex="3" TextChanged="ContentTextBox_TextChanged" LostFocus="TextBox_LostFocus"></TextBox>
+                <TextBox Grid.Row="4" Grid.Column="1" Name="ContentTextBox4" Style="{StaticResource diaryStyle}" Text="TEST CONTENT 1" KeyUp="ENTER_KeyUp" TabIndex="4" TextChanged="ContentTextBox_TextChanged" LostFocus="TextBox_LostFocus"></TextBox>
+                <TextBox Grid.Row="4" Grid.Column="5" Name="ContentTextBox5" Style="{StaticResource diaryStyle}" Text="TEST CONTENT 1" KeyUp="ENTER_KeyUp" TabIndex="5" TextChanged="ContentTextBox_TextChanged" LostFocus="TextBox_LostFocus"></TextBox>
+                <TextBox Grid.Row="7" Grid.Column="1" Name="ContentTextBox6" Style="{StaticResource diaryStyle}" Text="TEST CONTENT 1" KeyUp="ENTER_KeyUp" TabIndex="6" TextChanged="ContentTextBox_TextChanged" LostFocus="TextBox_LostFocus"></TextBox>
+                <TextBox Grid.Row="7" Grid.Column="3" Name="ContentTextBox7" Style="{StaticResource diaryStyle}" Text="TEST CONTENT 1" KeyUp="ENTER_KeyUp" TabIndex="7" TextChanged="ContentTextBox_TextChanged" LostFocus="TextBox_LostFocus"></TextBox>
+                <TextBox Grid.Row="7" Grid.Column="5" Name="ContentTextBox8" Style="{StaticResource diaryStyle}" Text="TEST CONTENT 1" KeyUp="ENTER_KeyUp" TabIndex="8" TextChanged="ContentTextBox_TextChanged" LostFocus="TextBox_LostFocus"></TextBox>
+
+                <!--MOOD-->
+                <Image Grid.Column="3" Grid.Row="3" Grid.RowSpan="2" Name="Mood_Image" Source="pictures/Mood_1.png" PointerReleased="Mood_Image_PointerReleased"></Image>
+
+                <!--BACK RECTANGLE-->
+                <Rectangle Grid.Row="0" Grid.Column="1" Grid.RowSpan="2" Style="{StaticResource rectangleStyle}"></Rectangle>
+                
+                <!--button-->
+                <Button Grid.Column="0" Grid.Row="4" Name="PreviousDiaryButton" Click="PreviousDiaryButton_Click" HorizontalAlignment="Center">
+                    <Button.Template>
+                        <ControlTemplate>
+                            <Polygon FillRule="Nonzero" StrokeThickness="5" Points="0,40 80,0 80,20 100,20 100,60 80,60 80,80" Margin="15" Stroke="Black" StrokeLineJoin="Round"  Name="backArrow">
+                                <Polygon.Fill>
+                                    <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+                                        <GradientStop Color="#FF6C6C6C" Offset="0" />
+                                        <GradientStop Color="White" Offset="1" />
+                                    </LinearGradientBrush>
+                                </Polygon.Fill>
+                            </Polygon>                            
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+
+                <Button Grid.Column="6" Grid.Row="4" Name="NextDiaryButton" Click="NextDiaryButton_Click" HorizontalAlignment="Center">
+                    <Button.Template>
+                        <ControlTemplate>
+                            <Polygon FillRule="Nonzero" StrokeThickness="5" Points="100,40 20,0 20,20 0,20 0,60 20,60 20,80" Margin="15" Stroke="Black" StrokeLineJoin="Round"  Name="backArrow">
+                                <Polygon.Fill>
+                                    <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+                                        <GradientStop Color="#FF6C6C6C" Offset="0" />
+                                        <GradientStop Color="White" Offset="1" />
+                                    </LinearGradientBrush>
+                                </Polygon.Fill>
+                            </Polygon>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+
+            </Grid>
+        </Grid>
+
+    </Grid>
+</Page>

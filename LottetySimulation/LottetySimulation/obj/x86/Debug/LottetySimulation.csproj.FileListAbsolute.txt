@@ -1,0 +1,15 @@
+d:\bunny\documents\visual studio 2010\Projects\LottetySimulation\LottetySimulation\bin\Debug\LottetySimulation.exe
+d:\bunny\documents\visual studio 2010\Projects\LottetySimulation\LottetySimulation\bin\Debug\LottetySimulation.pdb
+d:\bunny\documents\visual studio 2010\Projects\LottetySimulation\LottetySimulation\obj\x86\Debug\ResolveAssemblyReference.cache
+d:\bunny\documents\visual studio 2010\Projects\LottetySimulation\LottetySimulation\obj\x86\Debug\MainWindow.baml
+d:\bunny\documents\visual studio 2010\Projects\LottetySimulation\LottetySimulation\obj\x86\Debug\MainWindow.g.cs
+d:\bunny\documents\visual studio 2010\Projects\LottetySimulation\LottetySimulation\obj\x86\Debug\App.g.cs
+d:\bunny\documents\visual studio 2010\Projects\LottetySimulation\LottetySimulation\obj\x86\Debug\LottetySimulation_MarkupCompile.cache
+d:\bunny\documents\visual studio 2010\Projects\LottetySimulation\LottetySimulation\obj\x86\Debug\LottetySimulation.g.resources
+d:\bunny\documents\visual studio 2010\Projects\LottetySimulation\LottetySimulation\obj\x86\Debug\LottetySimulation.Properties.Resources.resources
+d:\bunny\documents\visual studio 2010\Projects\LottetySimulation\LottetySimulation\obj\x86\Debug\ResGen.read.1.tlog
+d:\bunny\documents\visual studio 2010\Projects\LottetySimulation\LottetySimulation\obj\x86\Debug\ResGen.write.1.tlog
+d:\bunny\documents\visual studio 2010\Projects\LottetySimulation\LottetySimulation\obj\x86\Debug\LottetySimulation.exe
+d:\bunny\documents\visual studio 2010\Projects\LottetySimulation\LottetySimulation\obj\x86\Debug\LottetySimulation.pdb
+C:\Users\Bunny\Documents\Visual Studio 2012\Projects\LottetySimulation\LottetySimulation\obj\x86\Debug\LottetySimulation.exe
+C:\Users\Bunny\Documents\Visual Studio 2012\Projects\LottetySimulation\LottetySimulation\obj\x86\Debug\LottetySimulation.pdb

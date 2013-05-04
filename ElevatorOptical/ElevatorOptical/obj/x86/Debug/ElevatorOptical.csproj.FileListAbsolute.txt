@@ -1,0 +1,9 @@
+d:\bunny\documents\visual studio 2010\Projects\ElevatorOptical\ElevatorOptical\bin\Debug\ElevatorOptical.exe
+d:\bunny\documents\visual studio 2010\Projects\ElevatorOptical\ElevatorOptical\bin\Debug\ElevatorOptical.pdb
+d:\bunny\documents\visual studio 2010\Projects\ElevatorOptical\ElevatorOptical\obj\x86\Debug\ResolveAssemblyReference.cache
+d:\bunny\documents\visual studio 2010\Projects\ElevatorOptical\ElevatorOptical\obj\x86\Debug\ElevatorOptical.exe
+d:\bunny\documents\visual studio 2010\Projects\ElevatorOptical\ElevatorOptical\obj\x86\Debug\ElevatorOptical.pdb
+C:\Users\Bunny\Documents\Visual Studio 2012\Projects\ElevatorOptical\ElevatorOptical\obj\x86\Debug\ElevatorOptical.exe
+C:\Users\Bunny\Documents\Visual Studio 2012\Projects\ElevatorOptical\ElevatorOptical\obj\x86\Debug\ElevatorOptical.pdb
+C:\Users\Bunny\Documents\Visual Studio 2012\Projects\ElevatorOptical\ElevatorOptical\bin\Debug\ElevatorOptical.exe
+C:\Users\Bunny\Documents\Visual Studio 2012\Projects\ElevatorOptical\ElevatorOptical\bin\Debug\ElevatorOptical.pdb

@@ -1,0 +1,12 @@
+﻿<Window x:Class="ADB_Airport_Info.AirportNameInputWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="AirportNameInputWindow" Height="130" Width="300" ResizeMode="NoResize">
+    <StackPanel>
+        <TextBlock>Please Input the name of new airport</TextBlock>
+        <TextBlock>请输入新机场名称</TextBlock>
+        <TextBox Name="inputBox"></TextBox>
+        <Separator Visibility="Hidden"></Separator>
+        <Button Click="Button_Click">Create</Button>
+    </StackPanel>
+</Window>

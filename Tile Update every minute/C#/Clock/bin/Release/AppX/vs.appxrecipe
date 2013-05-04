@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>BUNNY-PC</Machine>
+    <WindowsUser>bunny_000</WindowsUser>
+    <SolutionConfiguration>Release|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <RegisteredManifestChecksum>8E5209C094AF764D264BFF8EA8E030325ED24BC14340C927C9953DDDA1511FE2</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>12680davesmits.ClockTile_1.0.0.2_neutral__xtsywsd52n89y</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>12680davesmits.ClockTile_xtsywsd52n89y!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>12680davesmits.ClockTile</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=8E0BD33D-EFAB-4DBE-A5C6-9E59F0D283C2</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.2</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\Tile Update every minute\C#\Clock\bin\Release\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-01-25T09:55:14.284</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\Tile Update every minute\C#\Clock\bin\Release\Clock.exe">
+      <PackagePath>Clock.exe</PackagePath>
+      <Modified>2013-01-25T09:55:13.897</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\Tile Update every minute\C#\Clock\bin\Release\Clock.pdb">
+      <PackagePath>Clock.pdb</PackagePath>
+      <Modified>2013-01-25T09:55:13.834</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\Tile Update every minute\C#\Clock.WinRT\bin\Release\Clock.WinRT.pdb">
+      <PackagePath>Clock.WinRT.pdb</PackagePath>
+      <Modified>2013-01-23T17:32:02.069</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\Tile Update every minute\C#\Clock.WinRT\bin\Release\Clock.WinRT.winmd">
+      <PackagePath>Clock.WinRT.winmd</PackagePath>
+      <Modified>2013-01-23T17:32:02.085</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\Tile Update every minute\C#\Clock\Assets\clock 150x150.png">
+      <PackagePath>Assets\clock 150x150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-12-03T17:35:43.497</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\Tile Update every minute\C#\Clock\Assets\clock 24x24.png">
+      <PackagePath>Assets\clock 24x24.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-12-03T17:35:43.497</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\Tile Update every minute\C#\Clock\Assets\clock 30x30.png">
+      <PackagePath>Assets\clock 30x30.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-12-03T17:35:43.497</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\Tile Update every minute\C#\Clock\Assets\clock 310x150.png">
+      <PackagePath>Assets\clock 310x150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-12-03T17:35:43.497</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\Tile Update every minute\C#\Clock\Assets\clock 50x50.png">
+      <PackagePath>Assets\clock 50x50.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-12-03T17:35:43.497</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\Tile Update every minute\C#\Clock\Assets\SplashScreen.png">
+      <PackagePath>Assets\SplashScreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-12-03T17:35:43.497</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\Tile Update every minute\C#\Clock\bin\Release\App.xaml">
+      <PackagePath>App.xaml</PackagePath>
+      <Modified>2012-12-03T17:35:43.497</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\Tile Update every minute\C#\Clock\bin\Release\Common\StandardStyles.xaml">
+      <PackagePath>Common\StandardStyles.xaml</PackagePath>
+      <Modified>2012-12-03T17:35:43.544</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\Tile Update every minute\C#\Clock\bin\Release\UIParts\HomeScreen\HomePageView.xaml">
+      <PackagePath>UIParts\HomeScreen\HomePageView.xaml</PackagePath>
+      <Modified>2012-12-03T17:35:43.575</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\Tile Update every minute\C#\Clock\bin\Release\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2013-01-25T09:55:14.140</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

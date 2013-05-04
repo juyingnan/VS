@@ -1,0 +1,14 @@
+C:\Users\bunny\AppData\Local\Temporary Projects\OnlineShopLiteDemoClient\bin\Debug\OnlineShopLiteDemoClient.exe.config
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\OnlineShopLiteDemoClient\OnlineShopLiteDemoClient\bin\Debug\OnlineShopLiteDemoClient.exe.config
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\OnlineShopLiteDemoClient\OnlineShopLiteDemoClient\bin\Debug\OnlineShopLiteDemoClient.exe
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\OnlineShopLiteDemoClient\OnlineShopLiteDemoClient\bin\Debug\OnlineShopLiteDemoClient.pdb
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\OnlineShopLiteDemoClient\OnlineShopLiteDemoClient\obj\Debug\OnlineShopLiteDemoClient.csprojResolveAssemblyReference.cache
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\OnlineShopLiteDemoClient\OnlineShopLiteDemoClient\obj\Debug\MainWindow.baml
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\OnlineShopLiteDemoClient\OnlineShopLiteDemoClient\obj\Debug\MainWindow.g.cs
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\OnlineShopLiteDemoClient\OnlineShopLiteDemoClient\obj\Debug\App.g.cs
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\OnlineShopLiteDemoClient\OnlineShopLiteDemoClient\obj\Debug\OnlineShopLiteDemoClient_MarkupCompile.cache
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\OnlineShopLiteDemoClient\OnlineShopLiteDemoClient\obj\Debug\OnlineShopLiteDemoClient.g.resources
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\OnlineShopLiteDemoClient\OnlineShopLiteDemoClient\obj\Debug\OnlineShopLiteDemoClient.Properties.Resources.resources
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\OnlineShopLiteDemoClient\OnlineShopLiteDemoClient\obj\Debug\OnlineShopLiteDemoClient.csproj.GenerateResource.Cache
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\OnlineShopLiteDemoClient\OnlineShopLiteDemoClient\obj\Debug\OnlineShopLiteDemoClient.exe
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\OnlineShopLiteDemoClient\OnlineShopLiteDemoClient\obj\Debug\OnlineShopLiteDemoClient.pdb

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+  targetNamespace="http://ss.pku.courses.edu.cn"
+    xmlns:tns="http://ss.pku.courses.edu.cn"
+    elementFormDefault="qualified"
+  attributeFormDefault="qualified"
+>  
+  <element  name="class">
+    <complexType>
+      <sequence>
+        <element name="ClassName" type="string"></element>
+        <element name="Instructor" type="string"></element>
+        <element name="Enrollment" type="nonNegativeInteger"></element>
+        <element name="Semester" type="string"></element>
+      </sequence>
+      <attribute name="location" type="string"></attribute>
+    </complexType>
+  </element>  
+</schema>

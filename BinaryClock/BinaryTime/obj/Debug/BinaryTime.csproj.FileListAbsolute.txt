@@ -1,0 +1,14 @@
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\BinaryClock\BinaryTime\bin\Debug\BinaryTime.dll
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\BinaryClock\BinaryTime\bin\Debug\BinaryTime.pdb
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\BinaryClock\BinaryTime\bin\Debug\BinaryTime.pri
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\BinaryClock\BinaryTime\obj\Debug\BinaryTime.dll
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\BinaryClock\BinaryTime\obj\Debug\BinaryTime.pdb
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\BinaryClock\BinaryTime\obj\Debug\priconfig.xml.intermediate
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\BinaryClock\BinaryTime\obj\Debug\layout.resfiles.intermediate
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\BinaryClock\BinaryTime\obj\Debug\resources.resfiles.intermediate
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\BinaryClock\BinaryTime\obj\Debug\pri.resfiles.intermediate
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\BinaryClock\BinaryTime\obj\Debug\priconfig.xml
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\BinaryClock\BinaryTime\obj\Debug\layout.resfiles
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\BinaryClock\BinaryTime\obj\Debug\resources.resfiles
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\BinaryClock\BinaryTime\obj\Debug\pri.resfiles
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\BinaryClock\BinaryTime\obj\Debug\LanguageQualifiers.txt

@@ -1,0 +1,6 @@
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\DBTest\DBTest\bin\Debug\DBTest.exe.config
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\DBTest\DBTest\bin\Debug\DBTest.exe
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\DBTest\DBTest\bin\Debug\DBTest.pdb
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\DBTest\DBTest\obj\Debug\DBTest.csprojResolveAssemblyReference.cache
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\DBTest\DBTest\obj\Debug\DBTest.exe
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\DBTest\DBTest\obj\Debug\DBTest.pdb

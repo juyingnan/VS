@@ -1,0 +1,12 @@
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\HW1_Q2_DOM_WPF\HW1_Q2_DOM_WPF\bin\Debug\HW1_Q2_DOM_WPF.exe
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\HW1_Q2_DOM_WPF\HW1_Q2_DOM_WPF\bin\Debug\HW1_Q2_DOM_WPF.pdb
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\HW1_Q2_DOM_WPF\HW1_Q2_DOM_WPF\obj\Debug\HW1_Q2_DOM_WPF.csprojResolveAssemblyReference.cache
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\HW1_Q2_DOM_WPF\HW1_Q2_DOM_WPF\obj\Debug\MainWindow.baml
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\HW1_Q2_DOM_WPF\HW1_Q2_DOM_WPF\obj\Debug\MainWindow.g.cs
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\HW1_Q2_DOM_WPF\HW1_Q2_DOM_WPF\obj\Debug\App.g.cs
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\HW1_Q2_DOM_WPF\HW1_Q2_DOM_WPF\obj\Debug\HW1_Q2_DOM_WPF_MarkupCompile.cache
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\HW1_Q2_DOM_WPF\HW1_Q2_DOM_WPF\obj\Debug\HW1_Q2_DOM_WPF.g.resources
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\HW1_Q2_DOM_WPF\HW1_Q2_DOM_WPF\obj\Debug\HW1_Q2_DOM_WPF.Properties.Resources.resources
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\HW1_Q2_DOM_WPF\HW1_Q2_DOM_WPF\obj\Debug\HW1_Q2_DOM_WPF.csproj.GenerateResource.Cache
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\HW1_Q2_DOM_WPF\HW1_Q2_DOM_WPF\obj\Debug\HW1_Q2_DOM_WPF.exe
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\HW1_Q2_DOM_WPF\HW1_Q2_DOM_WPF\obj\Debug\HW1_Q2_DOM_WPF.pdb

@@ -1,0 +1,13 @@
+d:\bunny\documents\visual studio 2010\Projects\SavingTheWorldIn108Minutes\SavingTheWorldIn108Minutes\Bin\Debug\ApplicationIcon.png
+d:\bunny\documents\visual studio 2010\Projects\SavingTheWorldIn108Minutes\SavingTheWorldIn108Minutes\Bin\Debug\Background.png
+d:\bunny\documents\visual studio 2010\Projects\SavingTheWorldIn108Minutes\SavingTheWorldIn108Minutes\Bin\Debug\SavingTheWorldIn108Minutes.dll
+d:\bunny\documents\visual studio 2010\Projects\SavingTheWorldIn108Minutes\SavingTheWorldIn108Minutes\Bin\Debug\SavingTheWorldIn108Minutes.pdb
+d:\bunny\documents\visual studio 2010\Projects\SavingTheWorldIn108Minutes\SavingTheWorldIn108Minutes\Bin\Debug\AppManifest.xaml
+d:\bunny\documents\visual studio 2010\Projects\SavingTheWorldIn108Minutes\SavingTheWorldIn108Minutes\Bin\Debug\SavingTheWorldIn108Minutes.xap
+d:\bunny\documents\visual studio 2010\Projects\SavingTheWorldIn108Minutes\SavingTheWorldIn108Minutes\obj\Debug\ResolveAssemblyReference.cache
+d:\bunny\documents\visual studio 2010\Projects\SavingTheWorldIn108Minutes\SavingTheWorldIn108Minutes\obj\Debug\App.g.i.cs
+d:\bunny\documents\visual studio 2010\Projects\SavingTheWorldIn108Minutes\SavingTheWorldIn108Minutes\obj\Debug\MainPage.g.i.cs
+d:\bunny\documents\visual studio 2010\Projects\SavingTheWorldIn108Minutes\SavingTheWorldIn108Minutes\obj\Debug\SavingTheWorldIn108Minutes.g.resources
+d:\bunny\documents\visual studio 2010\Projects\SavingTheWorldIn108Minutes\SavingTheWorldIn108Minutes\obj\Debug\SavingTheWorldIn108Minutes.dll
+d:\bunny\documents\visual studio 2010\Projects\SavingTheWorldIn108Minutes\SavingTheWorldIn108Minutes\obj\Debug\SavingTheWorldIn108Minutes.pdb
+d:\bunny\documents\visual studio 2010\Projects\SavingTheWorldIn108Minutes\SavingTheWorldIn108Minutes\obj\Debug\XapCacheFile.xml

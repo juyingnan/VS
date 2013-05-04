@@ -1,0 +1,16 @@
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\SetTopClient\SetTopClient\bin\Debug\SetTopClient.exe.config
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\SetTopClient\SetTopClient\obj\Debug\SetTopClient.exe
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\SetTopClient\SetTopClient\obj\Debug\SetTopClient.pdb
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\SetTopClient\SetTopClient\bin\Debug\SetTopClient.exe
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\SetTopClient\SetTopClient\bin\Debug\SetTopClient.pdb
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\SetTopClient\SetTopClient\obj\Debug\SetTopClient.csprojResolveAssemblyReference.cache
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\SetTopClient\SetTopClient\obj\Debug\MainWindow.baml
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\SetTopClient\SetTopClient\obj\Debug\MainWindow.g.cs
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\SetTopClient\SetTopClient\obj\Debug\App.g.cs
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\SetTopClient\SetTopClient\obj\Debug\SetTopClient_MarkupCompile.cache
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\SetTopClient\SetTopClient\obj\Debug\SetTopClient.g.resources
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\SetTopClient\SetTopClient\obj\Debug\SetTopClient.Properties.Resources.resources
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\SetTopClient\SetTopClient\obj\Debug\SetTopClient.csproj.GenerateResource.Cache
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\SetTopClient\SetTopClient\bin\Debug\SetTopClient.exe.config
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\SetTopClient\SetTopClient\obj\Debug\SetTopClient.exe
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\SetTopClient\SetTopClient\obj\Debug\SetTopClient.pdb

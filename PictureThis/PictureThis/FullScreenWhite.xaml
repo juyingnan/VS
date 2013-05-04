@@ -1,0 +1,9 @@
+﻿<Window x:Class="PictureThis.FullScreenWhite"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="FullScreenWhite" Height="Auto" Width="Auto" Background="Silver" 
+        WindowStyle="None" WindowState="Maximized" WindowStartupLocation="CenterScreen" 
+        Topmost="True" ShowInTaskbar="False" ResizeMode="NoResize" Opacity="0.5" ForceCursor="False" 
+        Cursor="Cross" MouseLeftButtonUp="Window_MouseLeftButtonUp" AllowsTransparency="True" MouseLeftButtonDown="Window_MouseLeftButtonDown" MouseMove="Window_MouseMove">
+    <Rectangle Name="Boarder" Stroke="Black" StrokeThickness="2" StrokeDashArray="3 5"></Rectangle>
+</Window>

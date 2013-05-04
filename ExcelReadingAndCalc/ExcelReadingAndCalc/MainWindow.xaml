@@ -1,0 +1,17 @@
+﻿<Window x:Class="ExcelReadingAndCalc.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="276" Width="525">
+    <StackPanel  Name="stackPanel1">
+        <Separator Height="22" Name="separator4"  />
+        <Button Content="待比较文档1" Height="23" Name="inputButton1" Width="100" Click="inputButton1_Click" />
+        <TextBlock Height="23" Name="excelFilePath1" Text="请选择待比较文档1" />
+        <Separator Height="19" Name="separator2" />
+        <Button Content="待比较文档2" Height="23" Name="inputButton2" Width="100" Click="inputButton2_Click" />
+        <TextBlock Height="23" Name="excelFilePath2" Text="请选择待比较文档2" />
+        <Separator Height="29" Name="separator3"/>
+        <Button Content="运算" Height="23" Name="calAndOutputButton" Width="75" Click="calAndOutputButton_Click" />
+        <TextBlock Height="23" Name="Result" Text="" />
+        <Separator Height="39" Name="separator1" />
+    </StackPanel>
+</Window>

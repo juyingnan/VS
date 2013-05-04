@@ -1,0 +1,28 @@
+C:\Dave\Projects\Win8\Clock\Clock.WinRT\bin\Debug\Clock.WinRT.winmd
+C:\Dave\Projects\Win8\Clock\Clock.WinRT\bin\Debug\Clock.WinRT.pdb
+C:\Dave\Projects\Win8\Clock\Clock.WinRT\bin\Debug\Clock.WinRT.pri
+C:\Dave\Projects\Win8\Clock\Clock.WinRT\obj\Debug\Clock.WinRT.winmd
+C:\Dave\Projects\Win8\Clock\Clock.WinRT\obj\Debug\Clock.WinRT.pdb
+C:\Dave\Projects\Win8\Clock\Clock.WinRT\obj\Debug\Clock.WinRT.winmdobj
+C:\Dave\Projects\Win8\Clock\Clock.WinRT\obj\Debug\Clock.WinRT.compile.pdb
+C:\Dave\Projects\Win8\Clock\Clock.WinRT\obj\Debug\priconfig.xml
+C:\Dave\Projects\Win8\Clock\Clock.WinRT\obj\Debug\layout.resfiles
+C:\Dave\Projects\Win8\Clock\Clock.WinRT\obj\Debug\resources.resfiles
+C:\Dave\Projects\Win8\Clock\Clock.WinRT\obj\Debug\pri.resfiles
+C:\Dave\Projects\Win8\Clock\Clock.WinRT\obj\Debug\LanguageQualifiers.txt
+C:\Dave\Projects\Win8\Clock\Clock.WinRT\obj\Debug\priconfig.xml.intermediate
+C:\Dave\Projects\Win8\Clock\Clock.WinRT\obj\Debug\layout.resfiles.intermediate
+C:\Dave\Projects\Win8\Clock\Clock.WinRT\obj\Debug\resources.resfiles.intermediate
+C:\Dave\Projects\Win8\Clock\Clock.WinRT\obj\Debug\pri.resfiles.intermediate
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock.WinRT\bin\Debug\Clock.WinRT.winmd
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock.WinRT\bin\Debug\Clock.WinRT.pdb
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock.WinRT\bin\Debug\Clock.WinRT.pri
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock.WinRT\obj\Debug\Clock.WinRT.winmd
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock.WinRT\obj\Debug\Clock.WinRT.pdb
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock.WinRT\obj\Debug\Clock.WinRT.winmdobj
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock.WinRT\obj\Debug\Clock.WinRT.compile.pdb
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock.WinRT\obj\Debug\priconfig.xml
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock.WinRT\obj\Debug\layout.resfiles
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock.WinRT\obj\Debug\resources.resfiles
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock.WinRT\obj\Debug\pri.resfiles
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock.WinRT\obj\Debug\LanguageQualifiers.txt

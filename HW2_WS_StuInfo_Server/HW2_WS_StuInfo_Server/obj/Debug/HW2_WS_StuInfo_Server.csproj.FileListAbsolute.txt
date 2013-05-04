@@ -1,0 +1,5 @@
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\HW2_WS_StuInfo_Server\HW2_WS_StuInfo_Server\bin\HW2_WS_StuInfo_Server.dll
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\HW2_WS_StuInfo_Server\HW2_WS_StuInfo_Server\bin\HW2_WS_StuInfo_Server.pdb
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\HW2_WS_StuInfo_Server\HW2_WS_StuInfo_Server\obj\Debug\HW2_WS_StuInfo_Server.dll
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\HW2_WS_StuInfo_Server\HW2_WS_StuInfo_Server\obj\Debug\HW2_WS_StuInfo_Server.pdb
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\HW2_WS_StuInfo_Server\HW2_WS_StuInfo_Server\obj\Debug\HW2_WS_StuInfo_Server.csprojResolveAssemblyReference.cache

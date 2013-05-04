@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="8881bunny.EasyBinaryClock" Publisher="CN=CAAC4B3F-C686-42E9-A0AE-0F625BA4482B" Version="1.0.0.0" />
+  <Properties>
+    <DisplayName>Easy Binary Clock</DisplayName>
+    <PublisherDisplayName>bunny</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="BinaryClock.App">
+      <VisualElements DisplayName="Easy Binary Clock" Logo="Assets\Logo.png" SmallLogo="Assets\SmallLogo.png" Description="BinaryClock" ForegroundText="light" BackgroundColor="#660099">
+        <LockScreen Notification="badge" BadgeLogo="Assets\BadgeLogo.png" />
+        <DefaultTile ShowName="allLogos" WideLogo="Assets\WideLogo.png" />
+        <SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="#660099" />
+      </VisualElements>
+      <Extensions>
+        <Extension Category="windows.backgroundTasks" EntryPoint="BackgroundTask.TileSchedulerTask">
+          <BackgroundTasks>
+            <Task Type="timer" />
+            <Task Type="systemEvent" />
+          </BackgroundTasks>
+        </Extension>
+      </Extensions>
+    </Application>
+  </Applications>
+</Package>

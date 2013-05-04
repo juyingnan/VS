@@ -1,0 +1,14 @@
+C:\Users\Bunny\AppData\Local\Temporary Projects\CPU_USage_Sine\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Bunny\AppData\Local\Temporary Projects\CPU_USage_Sine\bin\Debug\CPU_USage_Sine.exe
+C:\Users\Bunny\AppData\Local\Temporary Projects\CPU_USage_Sine\bin\Debug\CPU_USage_Sine.pdb
+C:\Users\Bunny\AppData\Local\Temporary Projects\CPU_USage_Sine\obj\x86\Debug\CPU_USage_Sine.exe
+C:\Users\Bunny\AppData\Local\Temporary Projects\CPU_USage_Sine\obj\x86\Debug\CPU_USage_Sine.pdb
+d:\bunny\documents\visual studio 2010\Projects\CPU_USage_Sine\CPU_USage_Sine\obj\x86\Debug\CPU_USage_Sine.exe
+d:\bunny\documents\visual studio 2010\Projects\CPU_USage_Sine\CPU_USage_Sine\obj\x86\Debug\CPU_USage_Sine.pdb
+d:\bunny\documents\visual studio 2010\Projects\CPU_USage_Sine\CPU_USage_Sine\bin\Debug\CPU_USage_Sine.exe
+d:\bunny\documents\visual studio 2010\Projects\CPU_USage_Sine\CPU_USage_Sine\bin\Debug\CPU_USage_Sine.pdb
+d:\bunny\documents\visual studio 2010\Projects\CPU_USage_Sine\CPU_USage_Sine\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Bunny\Documents\Visual Studio 2012\Projects\CPU_USage_Sine\CPU_USage_Sine\obj\x86\Debug\CPU_USage_Sine.exe
+C:\Users\Bunny\Documents\Visual Studio 2012\Projects\CPU_USage_Sine\CPU_USage_Sine\obj\x86\Debug\CPU_USage_Sine.pdb
+C:\Users\Bunny\Documents\Visual Studio 2012\Projects\CPU_USage_Sine\CPU_USage_Sine\bin\Debug\CPU_USage_Sine.exe
+C:\Users\Bunny\Documents\Visual Studio 2012\Projects\CPU_USage_Sine\CPU_USage_Sine\bin\Debug\CPU_USage_Sine.pdb

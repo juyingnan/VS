@@ -1,0 +1,9 @@
+d:\bunny\documents\visual studio 2010\Projects\Lottery_30C7\Lottery_30C7\bin\Debug\Lottery_30C7.exe
+d:\bunny\documents\visual studio 2010\Projects\Lottery_30C7\Lottery_30C7\bin\Debug\Lottery_30C7.pdb
+d:\bunny\documents\visual studio 2010\Projects\Lottery_30C7\Lottery_30C7\obj\x86\Debug\ResolveAssemblyReference.cache
+d:\bunny\documents\visual studio 2010\Projects\Lottery_30C7\Lottery_30C7\obj\x86\Debug\Lottery_30C7.exe
+d:\bunny\documents\visual studio 2010\Projects\Lottery_30C7\Lottery_30C7\obj\x86\Debug\Lottery_30C7.pdb
+C:\Users\Bunny\Documents\Visual Studio 2012\Projects\Lottery_30C7\Lottery_30C7\obj\x86\Debug\Lottery_30C7.exe
+C:\Users\Bunny\Documents\Visual Studio 2012\Projects\Lottery_30C7\Lottery_30C7\obj\x86\Debug\Lottery_30C7.pdb
+C:\Users\Bunny\Documents\Visual Studio 2012\Projects\Lottery_30C7\Lottery_30C7\bin\Debug\Lottery_30C7.exe
+C:\Users\Bunny\Documents\Visual Studio 2012\Projects\Lottery_30C7\Lottery_30C7\bin\Debug\Lottery_30C7.pdb

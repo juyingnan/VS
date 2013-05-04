@@ -1,0 +1,13 @@
+D:\Bunny\Documents\Visual Studio 2010\Projects\AskingProjectAnswerGenerator\AskingProjectAnswerGenerator\bin\Release\AskingProjectAnswerGenerator.exe
+D:\Bunny\Documents\Visual Studio 2010\Projects\AskingProjectAnswerGenerator\AskingProjectAnswerGenerator\bin\Release\AskingProjectAnswerGenerator.pdb
+D:\Bunny\Documents\Visual Studio 2010\Projects\AskingProjectAnswerGenerator\AskingProjectAnswerGenerator\obj\x86\Release\ResolveAssemblyReference.cache
+D:\Bunny\Documents\Visual Studio 2010\Projects\AskingProjectAnswerGenerator\AskingProjectAnswerGenerator\obj\x86\Release\MainWindow.baml
+D:\Bunny\Documents\Visual Studio 2010\Projects\AskingProjectAnswerGenerator\AskingProjectAnswerGenerator\obj\x86\Release\MainWindow.g.cs
+D:\Bunny\Documents\Visual Studio 2010\Projects\AskingProjectAnswerGenerator\AskingProjectAnswerGenerator\obj\x86\Release\App.g.cs
+D:\Bunny\Documents\Visual Studio 2010\Projects\AskingProjectAnswerGenerator\AskingProjectAnswerGenerator\obj\x86\Release\AskingProjectAnswerGenerator_MarkupCompile.cache
+D:\Bunny\Documents\Visual Studio 2010\Projects\AskingProjectAnswerGenerator\AskingProjectAnswerGenerator\obj\x86\Release\AskingProjectAnswerGenerator.g.resources
+D:\Bunny\Documents\Visual Studio 2010\Projects\AskingProjectAnswerGenerator\AskingProjectAnswerGenerator\obj\x86\Release\AskingProjectAnswerGenerator.Properties.Resources.resources
+D:\Bunny\Documents\Visual Studio 2010\Projects\AskingProjectAnswerGenerator\AskingProjectAnswerGenerator\obj\x86\Release\ResGen.read.1.tlog
+D:\Bunny\Documents\Visual Studio 2010\Projects\AskingProjectAnswerGenerator\AskingProjectAnswerGenerator\obj\x86\Release\ResGen.write.1.tlog
+D:\Bunny\Documents\Visual Studio 2010\Projects\AskingProjectAnswerGenerator\AskingProjectAnswerGenerator\obj\x86\Release\AskingProjectAnswerGenerator.exe
+D:\Bunny\Documents\Visual Studio 2010\Projects\AskingProjectAnswerGenerator\AskingProjectAnswerGenerator\obj\x86\Release\AskingProjectAnswerGenerator.pdb

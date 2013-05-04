@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:ns="http://StuInfoWebService" xmlns:ns1="http://org.apache.axis2/xsd" targetNamespace="http://StuInfoWebService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation>StuInfoWebService</wsdl:documentation>
+  <wsdl:types>
+    <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://StuInfoWebService">
+      <xs:element name="UpdateStudentInfo">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="Info" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="UpdateStudentInfoResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="InsertStudentInfo">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="Info" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="InsertStudentInfoResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="DeleteStudentInfo">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="ID_No" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="DeleteStudentInfoResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetStudentMajor">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="ID_No" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetStudentMajorResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetStudentGender">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="ID_No" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetStudentGenderResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetStudentEmailAddress">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="ID_No" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetStudentEmailAddressResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetStudentName">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="ID_No" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetStudentNameResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="DeleteStudentInfoRequest">
+    <wsdl:part name="parameters" element="ns:DeleteStudentInfo" />
+  </wsdl:message>
+  <wsdl:message name="DeleteStudentInfoResponse">
+    <wsdl:part name="parameters" element="ns:DeleteStudentInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetStudentEmailAddressRequest">
+    <wsdl:part name="parameters" element="ns:GetStudentEmailAddress" />
+  </wsdl:message>
+  <wsdl:message name="GetStudentEmailAddressResponse">
+    <wsdl:part name="parameters" element="ns:GetStudentEmailAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateStudentInfoRequest">
+    <wsdl:part name="parameters" element="ns:UpdateStudentInfo" />
+  </wsdl:message>
+  <wsdl:message name="UpdateStudentInfoResponse">
+    <wsdl:part name="parameters" element="ns:UpdateStudentInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetStudentNameRequest">
+    <wsdl:part name="parameters" element="ns:GetStudentName" />
+  </wsdl:message>
+  <wsdl:message name="GetStudentNameResponse">
+    <wsdl:part name="parameters" element="ns:GetStudentNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetStudentGenderRequest">
+    <wsdl:part name="parameters" element="ns:GetStudentGender" />
+  </wsdl:message>
+  <wsdl:message name="GetStudentGenderResponse">
+    <wsdl:part name="parameters" element="ns:GetStudentGenderResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetStudentMajorRequest">
+    <wsdl:part name="parameters" element="ns:GetStudentMajor" />
+  </wsdl:message>
+  <wsdl:message name="GetStudentMajorResponse">
+    <wsdl:part name="parameters" element="ns:GetStudentMajorResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertStudentInfoRequest">
+    <wsdl:part name="parameters" element="ns:InsertStudentInfo" />
+  </wsdl:message>
+  <wsdl:message name="InsertStudentInfoResponse">
+    <wsdl:part name="parameters" element="ns:InsertStudentInfoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="StuInfoWebServicePortType">
+    <wsdl:operation name="DeleteStudentInfo">
+      <wsdl:input wsaw:Action="urn:DeleteStudentInfo" message="ns:DeleteStudentInfoRequest" />
+      <wsdl:output wsaw:Action="urn:DeleteStudentInfoResponse" message="ns:DeleteStudentInfoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStudentEmailAddress">
+      <wsdl:input wsaw:Action="urn:GetStudentEmailAddress" message="ns:GetStudentEmailAddressRequest" />
+      <wsdl:output wsaw:Action="urn:GetStudentEmailAddressResponse" message="ns:GetStudentEmailAddressResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStudentInfo">
+      <wsdl:input wsaw:Action="urn:UpdateStudentInfo" message="ns:UpdateStudentInfoRequest" />
+      <wsdl:output wsaw:Action="urn:UpdateStudentInfoResponse" message="ns:UpdateStudentInfoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStudentName">
+      <wsdl:input wsaw:Action="urn:GetStudentName" message="ns:GetStudentNameRequest" />
+      <wsdl:output wsaw:Action="urn:GetStudentNameResponse" message="ns:GetStudentNameResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStudentGender">
+      <wsdl:input wsaw:Action="urn:GetStudentGender" message="ns:GetStudentGenderRequest" />
+      <wsdl:output wsaw:Action="urn:GetStudentGenderResponse" message="ns:GetStudentGenderResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStudentMajor">
+      <wsdl:input wsaw:Action="urn:GetStudentMajor" message="ns:GetStudentMajorRequest" />
+      <wsdl:output wsaw:Action="urn:GetStudentMajorResponse" message="ns:GetStudentMajorResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertStudentInfo">
+      <wsdl:input wsaw:Action="urn:InsertStudentInfo" message="ns:InsertStudentInfoRequest" />
+      <wsdl:output wsaw:Action="urn:InsertStudentInfoResponse" message="ns:InsertStudentInfoResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="StuInfoWebServiceSoap11Binding" type="ns:StuInfoWebServicePortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DeleteStudentInfo">
+      <soap:operation soapAction="urn:DeleteStudentInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStudentEmailAddress">
+      <soap:operation soapAction="urn:GetStudentEmailAddress" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStudentInfo">
+      <soap:operation soapAction="urn:UpdateStudentInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStudentName">
+      <soap:operation soapAction="urn:GetStudentName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStudentGender">
+      <soap:operation soapAction="urn:GetStudentGender" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStudentMajor">
+      <soap:operation soapAction="urn:GetStudentMajor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertStudentInfo">
+      <soap:operation soapAction="urn:InsertStudentInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="StuInfoWebServiceSoap12Binding" type="ns:StuInfoWebServicePortType">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DeleteStudentInfo">
+      <soap12:operation soapAction="urn:DeleteStudentInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStudentEmailAddress">
+      <soap12:operation soapAction="urn:GetStudentEmailAddress" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStudentInfo">
+      <soap12:operation soapAction="urn:UpdateStudentInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStudentName">
+      <soap12:operation soapAction="urn:GetStudentName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStudentGender">
+      <soap12:operation soapAction="urn:GetStudentGender" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStudentMajor">
+      <soap12:operation soapAction="urn:GetStudentMajor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertStudentInfo">
+      <soap12:operation soapAction="urn:InsertStudentInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="StuInfoWebServiceHttpBinding" type="ns:StuInfoWebServicePortType">
+    <http:binding verb="POST" />
+    <wsdl:operation name="DeleteStudentInfo">
+      <http:operation location="DeleteStudentInfo" />
+      <wsdl:input>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStudentEmailAddress">
+      <http:operation location="GetStudentEmailAddress" />
+      <wsdl:input>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStudentInfo">
+      <http:operation location="UpdateStudentInfo" />
+      <wsdl:input>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStudentName">
+      <http:operation location="GetStudentName" />
+      <wsdl:input>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStudentGender">
+      <http:operation location="GetStudentGender" />
+      <wsdl:input>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStudentMajor">
+      <http:operation location="GetStudentMajor" />
+      <wsdl:input>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertStudentInfo">
+      <http:operation location="InsertStudentInfo" />
+      <wsdl:input>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="StuInfoWebService">
+    <wsdl:port name="StuInfoWebServiceHttpSoap11Endpoint" binding="ns:StuInfoWebServiceSoap11Binding">
+      <soap:address location="http://localhost:8080/axis2/services/StuInfoWebService.StuInfoWebServiceHttpSoap11Endpoint/" />
+    </wsdl:port>
+    <wsdl:port name="StuInfoWebServiceHttpSoap12Endpoint" binding="ns:StuInfoWebServiceSoap12Binding">
+      <soap12:address location="http://localhost:8080/axis2/services/StuInfoWebService.StuInfoWebServiceHttpSoap12Endpoint/" />
+    </wsdl:port>
+    <wsdl:port name="StuInfoWebServiceHttpEndpoint" binding="ns:StuInfoWebServiceHttpBinding">
+      <http:address location="http://localhost:8080/axis2/services/StuInfoWebService.StuInfoWebServiceHttpEndpoint/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

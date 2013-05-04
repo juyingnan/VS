@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetStudentName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ID_No" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStudentNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetStudentNameResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStudentGender">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ID_No" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStudentGenderResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetStudentGenderResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStudentMajor">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ID_No" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStudentMajorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetStudentMajorResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStudentEmail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ID_No" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStudentEmailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetStudentEmailResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteStudentInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ID_No" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteStudentInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeleteStudentInfoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertStudentInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Info" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertStudentInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertStudentInfoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateStudentInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Info" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateStudentInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateStudentInfoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetStudentNameSoapIn">
+    <wsdl:part name="parameters" element="tns:GetStudentName" />
+  </wsdl:message>
+  <wsdl:message name="GetStudentNameSoapOut">
+    <wsdl:part name="parameters" element="tns:GetStudentNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetStudentGenderSoapIn">
+    <wsdl:part name="parameters" element="tns:GetStudentGender" />
+  </wsdl:message>
+  <wsdl:message name="GetStudentGenderSoapOut">
+    <wsdl:part name="parameters" element="tns:GetStudentGenderResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetStudentMajorSoapIn">
+    <wsdl:part name="parameters" element="tns:GetStudentMajor" />
+  </wsdl:message>
+  <wsdl:message name="GetStudentMajorSoapOut">
+    <wsdl:part name="parameters" element="tns:GetStudentMajorResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetStudentEmailSoapIn">
+    <wsdl:part name="parameters" element="tns:GetStudentEmail" />
+  </wsdl:message>
+  <wsdl:message name="GetStudentEmailSoapOut">
+    <wsdl:part name="parameters" element="tns:GetStudentEmailResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteStudentInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteStudentInfo" />
+  </wsdl:message>
+  <wsdl:message name="DeleteStudentInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteStudentInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertStudentInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertStudentInfo" />
+  </wsdl:message>
+  <wsdl:message name="InsertStudentInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertStudentInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateStudentInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateStudentInfo" />
+  </wsdl:message>
+  <wsdl:message name="UpdateStudentInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateStudentInfoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="StuInfoWebServiceSoap">
+    <wsdl:operation name="GetStudentName">
+      <wsdl:input message="tns:GetStudentNameSoapIn" />
+      <wsdl:output message="tns:GetStudentNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStudentGender">
+      <wsdl:input message="tns:GetStudentGenderSoapIn" />
+      <wsdl:output message="tns:GetStudentGenderSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStudentMajor">
+      <wsdl:input message="tns:GetStudentMajorSoapIn" />
+      <wsdl:output message="tns:GetStudentMajorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStudentEmail">
+      <wsdl:input message="tns:GetStudentEmailSoapIn" />
+      <wsdl:output message="tns:GetStudentEmailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteStudentInfo">
+      <wsdl:input message="tns:DeleteStudentInfoSoapIn" />
+      <wsdl:output message="tns:DeleteStudentInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertStudentInfo">
+      <wsdl:input message="tns:InsertStudentInfoSoapIn" />
+      <wsdl:output message="tns:InsertStudentInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStudentInfo">
+      <wsdl:input message="tns:UpdateStudentInfoSoapIn" />
+      <wsdl:output message="tns:UpdateStudentInfoSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="StuInfoWebServiceSoap" type="tns:StuInfoWebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetStudentName">
+      <soap:operation soapAction="http://tempuri.org/GetStudentName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStudentGender">
+      <soap:operation soapAction="http://tempuri.org/GetStudentGender" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStudentMajor">
+      <soap:operation soapAction="http://tempuri.org/GetStudentMajor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStudentEmail">
+      <soap:operation soapAction="http://tempuri.org/GetStudentEmail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteStudentInfo">
+      <soap:operation soapAction="http://tempuri.org/DeleteStudentInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertStudentInfo">
+      <soap:operation soapAction="http://tempuri.org/InsertStudentInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStudentInfo">
+      <soap:operation soapAction="http://tempuri.org/UpdateStudentInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="StuInfoWebServiceSoap12" type="tns:StuInfoWebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetStudentName">
+      <soap12:operation soapAction="http://tempuri.org/GetStudentName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStudentGender">
+      <soap12:operation soapAction="http://tempuri.org/GetStudentGender" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStudentMajor">
+      <soap12:operation soapAction="http://tempuri.org/GetStudentMajor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStudentEmail">
+      <soap12:operation soapAction="http://tempuri.org/GetStudentEmail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteStudentInfo">
+      <soap12:operation soapAction="http://tempuri.org/DeleteStudentInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertStudentInfo">
+      <soap12:operation soapAction="http://tempuri.org/InsertStudentInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStudentInfo">
+      <soap12:operation soapAction="http://tempuri.org/UpdateStudentInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="StuInfoWebService">
+    <wsdl:port name="StuInfoWebServiceSoap" binding="tns:StuInfoWebServiceSoap">
+      <soap:address location="http://localhost:60519/StuInfoWebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="StuInfoWebServiceSoap12" binding="tns:StuInfoWebServiceSoap12">
+      <soap12:address location="http://localhost:60519/StuInfoWebService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

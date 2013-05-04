@@ -1,0 +1,104 @@
+﻿<Window x:Class="HW2_WS_Q2_RESTClient_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="360" Width="640" >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"></RowDefinition>
+            <RowDefinition Height="25"></RowDefinition>
+            <RowDefinition ></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0">Service EPR</TextBlock>
+        <TextBox Grid.Row="1" Name="URL_TEXTBOX">http://localhost:8080/axis2/services/StuInfoWebService/</TextBox>
+        <TabControl Grid.Row="2">
+            <TabItem Name="tab1" Header="GET">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="25"></RowDefinition>
+                        <RowDefinition Height="40"></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <StackPanel Grid.Row="0" Orientation="Horizontal">
+                        <TextBlock VerticalAlignment="Center" Margin="5,0">ID_No:</TextBlock>
+                        <TextBox VerticalAlignment="Center" MinWidth="200" Name="GET_TAB_ID_No_TEXTBOX" Margin="5,0">1201210631</TextBox>
+                        <CheckBox VerticalAlignment="Center" Name="GET_TAB_CheckBox_Name" Margin="5,0" IsChecked="True">Name</CheckBox>
+                        <CheckBox VerticalAlignment="Center" Name="GET_TAB_CheckBox_Gender" Margin="5,0" IsChecked="True">Gender</CheckBox>
+                        <CheckBox VerticalAlignment="Center" Name="GET_TAB_CheckBox_Major" Margin="5,0" IsChecked="True">Major</CheckBox>
+                        <CheckBox VerticalAlignment="Center" Name="GET_TAB_CheckBox_Email_Address" Margin="5,0" IsChecked="True">EmailAddress</CheckBox>
+                    </StackPanel>
+                    <Button Name="GET_TAB_GET_Button" Grid.Row="1" Margin="5" Width="200" Click="GET_TAB_GET_Button_Click">Press here to get the data</Button>
+                    <TextBox AcceptsReturn="True" Grid.Row="2" ScrollViewer.CanContentScroll="True" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" TextWrapping="Wrap" Name="GET_TAB_RESULT_TEXTBOX"></TextBox>
+                </Grid>
+            </TabItem>
+            <TabItem Name="tab2" Header="POST">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="25"></RowDefinition>
+                        <RowDefinition Height="25"></RowDefinition>
+                        <RowDefinition Height="40"></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <StackPanel Grid.Row="0" Orientation="Horizontal">
+                        <TextBlock VerticalAlignment="Center" Margin="5,0">ID_No:</TextBlock>
+                        <TextBox VerticalAlignment="Center" MinWidth="100" Name="POST_TAB_ID_No_TEXTBOX" Margin="5,0">1201219999</TextBox>
+                        <TextBlock VerticalAlignment="Center" Margin="5,0">Name:</TextBlock>
+                        <TextBox VerticalAlignment="Center" MinWidth="100" Name="POST_TAB_Name_TEXTBOX" Margin="5,0">路人甲</TextBox>
+                        <TextBlock VerticalAlignment="Center" Margin="5,0">Gender:</TextBlock>
+                        <TextBox VerticalAlignment="Center" MinWidth="50" Name="POST_TAB_Gender_TEXTBOX" Margin="5,0">男</TextBox>
+                    </StackPanel>
+                    <StackPanel Grid.Row="1" Orientation="Horizontal">
+                        <TextBlock VerticalAlignment="Center" Margin="5,0">Major:</TextBlock>
+                        <TextBox VerticalAlignment="Center" MinWidth="150" Name="POST_TAB_Major_TEXTBOX" Margin="5,0">软件开发</TextBox>
+                        <TextBlock VerticalAlignment="Center" Margin="5,0">Email Address:</TextBlock>
+                        <TextBox VerticalAlignment="Center" MinWidth="200" Name="POST_TAB_EmailAddress_TEXTBOX" Margin="5,0">1201219999@pub.ss.pku.edu.cn</TextBox>
+                    </StackPanel>
+                    <Button Name="POST_TAB_GET_Button" Grid.Row="2" Margin="5" Width="200" Click="POST_TAB_GET_Button_Click">Press here to Add the data</Button>
+                    <TextBox AcceptsReturn="True" Grid.Row="3" ScrollViewer.CanContentScroll="True" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" TextWrapping="Wrap" Name="POST_TAB_RESULT_TEXTBOX"></TextBox>
+                </Grid>
+            </TabItem>
+            <TabItem Name="tab3" Header="DELETE">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="25"></RowDefinition>
+                        <RowDefinition Height="40"></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <StackPanel Grid.Row="0" Orientation="Horizontal">
+                        <TextBlock VerticalAlignment="Center" Margin="5,0">ID_No:</TextBlock>
+                        <TextBox VerticalAlignment="Center" MinWidth="200" Name="DELETE_TAB_ID_No_TEXTBOX" Margin="5,0">1201219999</TextBox>
+                    </StackPanel>
+                    <Button Name="DELETE_TAB_GET_Button" Grid.Row="1" Margin="5" Width="200" Click="DELETE_TAB_GET_Button_Click" >Press here to delete the data</Button>
+                    <TextBox AcceptsReturn="True" Grid.Row="2" ScrollViewer.CanContentScroll="True" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" TextWrapping="Wrap" Name="DELETE_TAB_RESULT_TEXTBOX"></TextBox>
+                </Grid>
+            </TabItem>
+            <TabItem Name="tab4" Header="PUT">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="25"></RowDefinition>
+                        <RowDefinition Height="25"></RowDefinition>
+                        <RowDefinition Height="40"></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <StackPanel Grid.Row="0" Orientation="Horizontal">
+                        <TextBlock VerticalAlignment="Center" Margin="5,0">ID_No:</TextBlock>
+                        <TextBox VerticalAlignment="Center" MinWidth="100" Name="PUT_TAB_ID_No_TEXTBOX" Margin="5,0">1201219999</TextBox>
+                        <TextBlock VerticalAlignment="Center" Margin="5,0">Name:</TextBlock>
+                        <TextBox VerticalAlignment="Center" MinWidth="100" Name="PUT_TAB_Name_TEXTBOX" Margin="5,0">路人乙</TextBox>
+                        <TextBlock VerticalAlignment="Center" Margin="5,0">Gender:</TextBlock>
+                        <TextBox VerticalAlignment="Center" MinWidth="50" Name="PUT_TAB_Gender_TEXTBOX" Margin="5,0">女</TextBox>
+                    </StackPanel>
+                    <StackPanel Grid.Row="1" Orientation="Horizontal">
+                        <TextBlock VerticalAlignment="Center" Margin="5,0">Major:</TextBlock>
+                        <TextBox VerticalAlignment="Center" MinWidth="150" Name="PUT_TAB_Major_TEXTBOX" Margin="5,0">软件开发</TextBox>
+                        <TextBlock VerticalAlignment="Center" Margin="5,0">Email Address:</TextBlock>
+                        <TextBox VerticalAlignment="Center" MinWidth="200" Name="PUT_TAB_EmailAddress_TEXTBOX" Margin="5,0">1201219999@pub.ss.pku.edu.cn</TextBox>
+                    </StackPanel>
+                    <Button Name="PUT_TAB_GET_Button" Grid.Row="2" Margin="5" Width="200" Click="PUT_TAB_GET_Button_Click" >Press here to Add the data</Button>
+                    <TextBox AcceptsReturn="True" Grid.Row="3" ScrollViewer.CanContentScroll="True" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" TextWrapping="Wrap" Name="PUT_TAB_RESULT_TEXTBOX"></TextBox>
+                </Grid>
+            </TabItem>
+
+
+        </TabControl>
+    </Grid>
+</Window>

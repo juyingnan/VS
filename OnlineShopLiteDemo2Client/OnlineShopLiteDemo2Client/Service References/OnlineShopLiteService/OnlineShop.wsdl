@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:vprop="http://docs.oasis-open.org/wsbpel/2.0/varprop" xmlns:tns="ss.pku.edu.cn" xmlns:plnk="http://docs.oasis-open.org/wsbpel/2.0/plnktype" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:wsdl1="http://cn.edu.pku.ss.stock" xmlns:ns0="http://cn.edu.pku.ss.bank" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:ns1="http://cn.edu.pku.ss.stock" targetNamespace="ss.pku.edu.cn" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://cn.edu.pku.ss.bank" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="ss.pku.edu.cn">
+      <xsd:element name="OnlineShopRequest">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="CreditCardNo" type="xsd:string" />
+            <xsd:element name="OrderID" type="xsd:string" />
+            <xsd:element name="ToasterType" type="xsd:string" />
+            <xsd:element name="Quantity" type="xsd:int" />
+            <xsd:element name="IsCanceled" type="xsd:boolean" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="OnlineShopResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="OrderID" type="xsd:string" />
+            <xsd:element name="OrderResult" type="xsd:int" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+    <xsd:schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:impl="http://cn.edu.pku.ss.bank" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:intf="http://cn.edu.pku.ss.bank" xmlns:apachesoap="http://xml.apache.org/xml-soap" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://cn.edu.pku.ss.bank">
+      <xsd:element name="creditCardAuthorization">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="creditCardNo" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="creditCardAuthorizationResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="creditCardAuthorizationReturn" type="xsd:boolean" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+    <xsd:schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:impl="http://cn.edu.pku.ss.stock" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:intf="http://cn.edu.pku.ss.stock" xmlns:apachesoap="http://xml.apache.org/xml-soap" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://cn.edu.pku.ss.stock">
+      <xsd:element name="stockInquiry">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="tosterType" type="xsd:string" />
+            <xsd:element name="quantity" type="xsd:int" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="stockInquiryResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="stockInquiryReturn" type="xsd:boolean" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="OnlineShopRequestMessage">
+    <wsdl:part name="payload" element="tns:OnlineShopRequest" />
+  </wsdl:message>
+  <wsdl:message name="OnlineShopResponseMessage">
+    <wsdl:part name="payload" element="tns:OnlineShopResponse" />
+  </wsdl:message>
+  <wsdl:portType name="OnlineShopPortType">
+    <wsdl:operation name="process">
+      <wsdl:input wsaw:Action="ss.pku.edu.cn/process" message="tns:OnlineShopRequestMessage" />
+      <wsdl:output wsaw:Action="ss.pku.edu.cn/OnlineShop/processResponse" message="tns:OnlineShopResponseMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="OnlineShopSOAP11Binding" type="tns:OnlineShopPortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="process">
+      <soap:operation soapAction="ss.pku.edu.cn/process" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="OnlineShopSOAP12Binding" type="tns:OnlineShopPortType">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="process">
+      <soap12:operation soapAction="ss.pku.edu.cn/process" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="OnlineShopHttpBinding" type="tns:OnlineShopPortType">
+    <http:binding verb="POST" />
+    <wsdl:operation name="process">
+      <http:operation location="OnlineShop/process" />
+      <wsdl:input>
+        <mime:content part="process" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="process" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="OnlineShop">
+    <wsdl:port name="OnlineShopSOAP11port_http" binding="tns:OnlineShopSOAP11Binding">
+      <soap:address location="http://localhost:8080/ode/processes/OnlineShop" />
+    </wsdl:port>
+    <wsdl:port name="OnlineShopSOAP12port_http" binding="tns:OnlineShopSOAP12Binding">
+      <soap12:address location="http://localhost:8080/ode/processes/OnlineShop" />
+    </wsdl:port>
+    <wsdl:port name="OnlineShopHttpport" binding="tns:OnlineShopHttpBinding">
+      <http:address location="http://localhost:8080/ode/processes/OnlineShop" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

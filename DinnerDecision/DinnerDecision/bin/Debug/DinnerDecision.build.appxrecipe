@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>BUNNY-PC</Machine>
+    <WindowsUser>bunny_000</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecision\DinnerDecision\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecision\DinnerDecision\bin\Debug\DinnerDecision.exe">
+      <PackagePath>DinnerDecision.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecision\DinnerDecision\bin\Debug\DinnerDecision.pdb">
+      <PackagePath>DinnerDecision.pdb</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecision\DinnerDecision\Assets\Logo.png">
+      <PackagePath>Assets\Logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecision\DinnerDecision\Assets\SmallLogo.png">
+      <PackagePath>Assets\SmallLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecision\DinnerDecision\Assets\SplashScreen.png">
+      <PackagePath>Assets\SplashScreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecision\DinnerDecision\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecision\DinnerDecision\Assets\LightGray.png">
+      <PackagePath>Assets\LightGray.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecision\DinnerDecision\Assets\MediumGray.png">
+      <PackagePath>Assets\MediumGray.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecision\DinnerDecision\Assets\DarkGray.png">
+      <PackagePath>Assets\DarkGray.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecision\DinnerDecision\Assets\WideLogo.png">
+      <PackagePath>Assets\WideLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecision\DinnerDecision\bin\Debug\App.xaml">
+      <PackagePath>App.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecision\DinnerDecision\bin\Debug\Common\StandardStyles.xaml">
+      <PackagePath>Common\StandardStyles.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecision\DinnerDecision\bin\Debug\MainPage.xaml">
+      <PackagePath>MainPage.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecision\DinnerDecision\bin\Debug\MenuPage.xaml">
+      <PackagePath>MenuPage.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecision\DinnerDecision\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

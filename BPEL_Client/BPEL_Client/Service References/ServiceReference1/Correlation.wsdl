@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:tns="http://correlation.bpel.tps" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:plnk="http://docs.oasis-open.org/wsbpel/2.0/plnktype" xmlns:vprop="http://docs.oasis-open.org/wsbpel/2.0/varprop" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns="http://schemas.xmlsoap.org/wsdl/" targetNamespace="http://correlation.bpel.tps" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema xmlns="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://correlation.bpel.tps">
+      <xsd:element name="CorrelationRequest">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="input" type="xsd:double" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="CorrelationResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="result" type="xsd:double" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="CorrelationRequestMessage">
+    <wsdl:part name="payload" element="tns:CorrelationRequest" />
+  </wsdl:message>
+  <wsdl:message name="CorrelationResponseMessage">
+    <wsdl:part name="payload" element="tns:CorrelationResponse" />
+  </wsdl:message>
+  <wsdl:portType name="CorrelationPortType">
+    <wsdl:operation name="process">
+      <wsdl:input wsaw:Action="http://correlation.bpel.tps/process" message="tns:CorrelationRequestMessage" />
+      <wsdl:output wsaw:Action="http://correlation.bpel.tps/Correlation/processResponse" message="tns:CorrelationResponseMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CorrelationSOAP11Binding" type="tns:CorrelationPortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="process">
+      <soap:operation soapAction="http://correlation.bpel.tps/process" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="CorrelationSOAP12Binding" type="tns:CorrelationPortType">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="process">
+      <soap12:operation soapAction="http://correlation.bpel.tps/process" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="CorrelationHttpBinding" type="tns:CorrelationPortType">
+    <http:binding verb="POST" />
+    <wsdl:operation name="process">
+      <http:operation location="Correlation/process" />
+      <wsdl:input>
+        <mime:content part="process" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="process" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Correlation">
+    <wsdl:port name="CorrelationSOAP11port_http" binding="tns:CorrelationSOAP11Binding">
+      <soap:address location="http://localhost:8080/ode/processes/Correlation" />
+    </wsdl:port>
+    <wsdl:port name="CorrelationSOAP12port_http" binding="tns:CorrelationSOAP12Binding">
+      <soap12:address location="http://localhost:8080/ode/processes/Correlation" />
+    </wsdl:port>
+    <wsdl:port name="CorrelationHttpport" binding="tns:CorrelationHttpBinding">
+      <http:address location="http://localhost:8080/ode/processes/Correlation" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

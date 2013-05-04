@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>BUNNY-PC</Machine>
+    <WindowsUser>bunny_000</WindowsUser>
+    <SolutionConfiguration>Release|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <RegisteredManifestChecksum>CD766BF6913C603AFEA8C2F44DFB111A70779CA4D3F8AEFC426EDD42ABCEDD4F</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>8881bunny.EasyBinaryClock_1.0.0.0_neutral__ah4fzebd391rm</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>8881bunny.EasyBinaryClock_ah4fzebd391rm!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>8881bunny.EasyBinaryClock</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=CAAC4B3F-C686-42E9-A0AE-0F625BA4482B</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\BinaryClock\BinaryClock\bin\Release\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-01-26T14:07:13.761</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\BinaryClock\BinaryClock\bin\Release\BinaryClock.exe">
+      <PackagePath>BinaryClock.exe</PackagePath>
+      <Modified>2013-01-26T14:07:13.466</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\BinaryClock\BinaryClock\bin\Release\BinaryClock.pdb">
+      <PackagePath>BinaryClock.pdb</PackagePath>
+      <Modified>2013-01-26T14:07:13.392</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\BinaryClock\BackgroundTask\bin\Release\BackgroundTask.pdb">
+      <PackagePath>BackgroundTask.pdb</PackagePath>
+      <Modified>2013-01-26T14:05:19.502</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\BinaryClock\TimeDefination\bin\Release\TimeDefination.pdb">
+      <PackagePath>TimeDefination.pdb</PackagePath>
+      <Modified>2013-01-26T14:05:18.730</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\BinaryClock\BackgroundTask\bin\Release\BackgroundTask.winmd">
+      <PackagePath>BackgroundTask.winmd</PackagePath>
+      <Modified>2013-01-26T14:05:19.514</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\BinaryClock\TimeDefination\bin\Release\TimeDefination.dll">
+      <PackagePath>TimeDefination.dll</PackagePath>
+      <Modified>2013-01-26T14:05:18.795</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\BinaryClock\BinaryClock\Assets\BadgeLogo.png">
+      <PackagePath>Assets\BadgeLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-01-22T13:59:35.353</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\BinaryClock\BinaryClock\Assets\Logo.png">
+      <PackagePath>Assets\Logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-01-22T13:59:35.794</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\BinaryClock\BinaryClock\Assets\SmallLogo24.png">
+      <PackagePath>Assets\SmallLogo24.png</PackagePath>
+      <Modified>2013-01-22T09:09:22.209</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\BinaryClock\BinaryClock\Assets\SmallLogo.png">
+      <PackagePath>Assets\SmallLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-01-22T13:59:34.354</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\BinaryClock\BinaryClock\Assets\SplashScreen.png">
+      <PackagePath>Assets\SplashScreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-01-22T13:59:34.867</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\BinaryClock\BinaryClock\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-01-22T13:59:35.331</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\BinaryClock\BinaryClock\Assets\WideLogo.png">
+      <PackagePath>Assets\WideLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-01-22T13:59:35.340</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\BinaryClock\BinaryClock\bin\Release\App.xaml">
+      <PackagePath>App.xaml</PackagePath>
+      <Modified>2013-01-20T17:29:48.520</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\BinaryClock\BinaryClock\bin\Release\Common\StandardStyles.xaml">
+      <PackagePath>Common\StandardStyles.xaml</PackagePath>
+      <Modified>2012-06-26T08:19:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\BinaryClock\BinaryClock\bin\Release\MainPage.xaml">
+      <PackagePath>MainPage.xaml</PackagePath>
+      <Modified>2013-01-22T18:37:26.805</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\BinaryClock\BinaryClock\bin\Release\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2013-01-26T14:07:13.676</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

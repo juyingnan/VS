@@ -1,0 +1,1847 @@
+﻿<Window x:Class="ADB_Airport_Info.InfoWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="InfoWindow" Height="720" Width="1280" ResizeMode="NoResize" MaxHeight="1000" MaxWidth="1280" MinHeight="720" MinWidth="1280" Name="mainInfoWindow" WindowStyle="ToolWindow" Closing="mainInfoWindow_Closing" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <Style x:Key="{x:Type TextBlock}" TargetType="{x:Type TextBlock}">
+            <Setter Property="TextAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+        </Style>
+        <Style x:Key="{x:Type TextBox}" TargetType="{x:Type TextBox}">
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="FontWeight" Value="Regular"/>
+        </Style>
+    </Window.Resources>
+    <StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <ToolBar Height="26" Name="toolBar1" Width="800" >
+                <Button Height="26" Name="saveButton" Width="120" Click="saveButton_Click">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="/ICO/save.png" Width="20" Height="20"></Image>
+                        <TextBlock >Save and Exit</TextBlock>
+                    </StackPanel>
+                </Button>
+                <Separator></Separator>
+                <Button Height="26" Name="addProjectButton" Width="140" Click="addProjectButton_Click">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="/ICO/plus.png" Width="20" Height="20"></Image>
+                        <TextBlock >Add New Project</TextBlock>
+                    </StackPanel>
+                </Button>
+                <Separator></Separator>
+                <Button Height="26" Name="deleteProjectButton" Width="150" Click="deleteProjectButton_Click">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="/ICO/delete.png" Width="20" Height="20"></Image>
+                        <TextBlock >Delete Last Project</TextBlock>
+                    </StackPanel>
+                </Button>
+            </ToolBar>
+        </StackPanel>
+        <TabControl Name="tabControl1" MaxWidth="1280" MinHeight="670" MinWidth="1260" MaxHeight="1024" Height="675">
+            <TabItem Header="Basic Info" Name="basicInfoTab" FontWeight="Bold">
+                <ScrollViewer>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Row="0" Grid.Column="0" Name="basicInfoName01" Grid.RowSpan="2">Airport Name<LineBreak/>机场名称</TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="4" Name="basicInfoName02" Grid.ColumnSpan="2" Grid.RowSpan="2">Name of Airport Authorizes<LineBreak/>机场管理机构名称</TextBlock>
+                        <StackPanel Grid.Row="0" Grid.Column="3" Orientation="Horizontal" >
+                            <TextBlock Name="basicInfoName03" Width="50">ICAO</TextBlock>
+                            <TextBox Name="basicInfoContent02" Width="50"></TextBox>
+                        </StackPanel>
+                        <StackPanel Grid.Row="1" Grid.Column="3" Orientation="Horizontal" >
+                            <TextBlock Width="50" Name="basicInfoName04">IATA</TextBlock>
+                            <TextBox Name="basicInfoContent03" Width="50"></TextBox>
+                        </StackPanel>
+                        <TextBlock Grid.Row="2" Grid.Column="4" Name="basicInfoName05" Grid.RowSpan="2">Runway Qty<LineBreak/>跑道数量</TextBlock>
+                        <TextBlock Grid.Row="4" Grid.Column="4" Name="basicInfoName06" Grid.RowSpan="2">City<LineBreak/>城市</TextBlock>
+                        <TextBlock Grid.Row="6" Grid.Column="4" Name="basicInfoName07" Grid.RowSpan="2">Province<LineBreak/>省份</TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="6" Name="basicInfoName08" Grid.RowSpan="2">Airport Usage<LineBreak/>机场使用性质</TextBlock>
+                        <TextBlock Grid.Row="6" Grid.Column="6" Name="basicInfoName09" Grid.ColumnSpan="2">Geography Loc.地理位置</TextBlock>
+                        <TextBlock Grid.Row="7" Grid.Column="6" Name="basicInfoName11" Grid.RowSpan="2">latitude纬度<LineBreak/>Longitude经度</TextBlock>
+                        <TextBlock Grid.Row="4" Grid.Column="6" Name="basicInfoName10" Grid.RowSpan="2">Altitude<LineBreak/>海拔高度</TextBlock>
+                        <TextBlock Grid.Row="8" Grid.Column="4" Name="basicInfoName12" Grid.RowSpan="2">Annual Sunshine<LineBreak/>年日照时间</TextBlock>
+                        <TextBlock Grid.Row="10" Grid.Column="4" Name="basicInfoName13" Grid.RowSpan="2">Sales Region<LineBreak/>销售区域</TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="0" Name="basicInfoName14" Grid.RowSpan="10">Navigation Lighting<LineBreak/> System<LineBreak/>助航灯光系统</TextBlock>
+                        <TextBlock Grid.Row="12" Grid.Column="0" Name="basicInfoName25" Grid.RowSpan="2">Airfield<LineBreak/>飞行区</TextBlock>
+                        <TextBlock Grid.Row="12" Grid.Column="1" Name="basicInfoName26" Grid.RowSpan="2">Fly Zone Indicators<LineBreak/>飞行区指标</TextBlock>
+                        <TextBlock Grid.Row="12" Grid.Column="3" Name="basicInfoName27" Grid.RowSpan="2">Take-off/landing<LineBreak/>高飞小时起降架次</TextBlock>
+                        <Separator Grid.Row="14" Grid.ColumnSpan="8"></Separator>
+                        <TextBlock Grid.Row="15" Grid.Column="1" Name="basicInfoName28" >Runway Name<LineBreak/>跑道名称</TextBlock>
+                        <TextBlock Grid.Row="15" Grid.Column="0" Name="basicInfoName29" Grid.RowSpan="6">Runwya Info<LineBreak/>跑道信息</TextBlock>
+                        <TextBlock Grid.Row="15" Grid.Column="2" Name="basicInfoName30" >Dimension ( L x W )<LineBreak/>尺寸（长 X 宽）</TextBlock>
+                        <TextBlock Grid.Row="15" Grid.Column="3" Name="basicInfoName31" >Level and CAT<LineBreak/>级别和实际CAT</TextBlock>
+                        <TextBlock Grid.Row="15" Grid.Column="4" Name="basicInfoName32">PCN <LineBreak/>道面等级序号</TextBlock>
+                        <!--<TextBlock Grid.Row="15" Grid.Column="3" Name="basicInfoName33" Grid.RowSpan="5">largst Aircraft<LineBreak/>可起降最大机型</TextBlock>-->
+                        <TextBlock Grid.Row="15" Grid.Column="5" Name="basicInfoName34" >largst Aircraft<LineBreak/>可起降最大机型</TextBlock>
+                        <TextBlock Grid.Row="15" Grid.Column="6" Name="basicInfoName35" Grid.ColumnSpan="2">Rwy Surface type<LineBreak/>跑道表面类型</TextBlock>
+                        <Separator Grid.Row="23" Grid.ColumnSpan="8"></Separator>
+                        <TextBlock Grid.Row="24" Grid.Column="0" Name="basicInfoName36" Grid.RowSpan="2">Sub-Station info<LineBreak/>灯光站信息</TextBlock>
+                        <TextBlock Grid.Row="24" Grid.Column="1" Name="basicInfoName37" Grid.RowSpan="2">Sub-Station Qtr<LineBreak/>灯光站数量</TextBlock>
+                        <TextBlock Grid.Row="24" Grid.Column="3" Name="basicInfoName38" Grid.RowSpan="2">Maintenance Qtr<LineBreak/>维护中心数量</TextBlock>
+                        <TextBlock Grid.Row="24" Grid.Column="5" Name="basicInfoName39" Grid.RowSpan="2">Control Tower Qtr<LineBreak/>塔台数量</TextBlock>
+                        <Separator Grid.Row="26" Grid.ColumnSpan="8"></Separator>
+                        <TextBlock Grid.Row="27" Grid.Column="0" Name="basicInfoName40" Grid.ColumnSpan="8">Airfield Mangement Staff Infomation<LineBreak/>机场助航灯光管理人员信息</TextBlock>
+                        <TextBlock Grid.Row="28" Grid.Column="0" Name="basicInfoName41" Grid.ColumnSpan="3">Job Description<LineBreak/>职位描述</TextBlock>
+                        <TextBlock Grid.Row="28" Grid.Column="3" Name="basicInfoName42" >Name<LineBreak/>姓名</TextBlock>
+                        <TextBlock Grid.Row="28" Grid.Column="4" Name="basicInfoName43" >Contact<LineBreak/>联系方式</TextBlock>
+                        <TextBlock Grid.Row="28" Grid.Column="5" Name="basicInfoName44" >Mobile<LineBreak/>移动电话</TextBlock>
+                        <TextBlock Grid.Row="28" Grid.Column="6" Name="basicInfoName45" >Other Description<LineBreak/>其它描述</TextBlock>
+                        <TextBlock Grid.Row="28" Grid.Column="7" Name="basicInfoName46" >Remarks<LineBreak/>备注</TextBlock>
+                        <TextBlock Grid.Row="29" Grid.Column="0" Name="basicInfoName47" Grid.ColumnSpan="8" TextAlignment="Left">I. Airport Airfield lightingSection<LineBreak/>一. 机场助航灯光科</TextBlock>
+                        <TextBlock Grid.Row="30" Grid.Column="0" Name="basicInfoName48" Grid.ColumnSpan="3" FontWeight="Regular" TextAlignment="Left">Head of Airport Airfield lighting Section<LineBreak/>机场助航灯光科-科长</TextBlock>
+                        <TextBlock Grid.Row="31" Grid.Column="0" Name="basicInfoName49" Grid.ColumnSpan="3" FontWeight="Regular" TextAlignment="Left">Deputy d of Airport Airfield lighting Section<LineBreak/>机场助航灯光科-副科长</TextBlock>
+                        <TextBlock Grid.Row="32" Grid.Column="0" Name="basicInfoName50" Grid.ColumnSpan="3" FontWeight="Regular" TextAlignment="Left">Deputy d of Airport Airfield lighting Section<LineBreak/>机场助航灯光科-副科长</TextBlock>
+                        <TextBlock Grid.Row="33" Grid.Column="0" Name="basicInfoName51" Grid.ColumnSpan="3" FontWeight="Regular" TextAlignment="Left">Secretary Airport Airfield lighting Section<LineBreak/>机场助航灯光科-书记</TextBlock>
+                        <TextBlock Grid.Row="34" Grid.Column="0" Name="basicInfoName52" Grid.ColumnSpan="3" FontWeight="Regular" TextAlignment="Left">Head of Airport Sub-station<LineBreak/>灯光站-站长</TextBlock>
+                        <TextBlock Grid.Row="35" Grid.Column="0" Name="basicInfoName53" Grid.ColumnSpan="8" TextAlignment="Left">II. Airport Construction Headquarters<LineBreak/>二. 机场建设指挥部</TextBlock>
+                        <TextBlock Grid.Row="36" Grid.Column="0" Name="basicInfoName54" Grid.ColumnSpan="3" FontWeight="Regular" TextAlignment="Left">Airport Construction Headquartrs - Commander<LineBreak/>机场建设指挥部-指挥长（总指挥）</TextBlock>
+                        <TextBlock Grid.Row="37" Grid.Column="0" Name="basicInfoName55" Grid.ColumnSpan="3" FontWeight="Regular" TextAlignment="Left">Airport Construction Headquartrs - Section Head<LineBreak/>机场建设指挥部-部长</TextBlock>
+                        <TextBlock Grid.Row="38" Grid.Column="0" Name="basicInfoName56" Grid.ColumnSpan="3" FontWeight="Regular" TextAlignment="Left">Airport Construction Headquartrs - Section Head<LineBreak/>机场建设指挥部-部长</TextBlock>
+                        <TextBlock Grid.Row="39" Grid.Column="0" Name="basicInfoName57" Grid.ColumnSpan="3" FontWeight="Regular" TextAlignment="Left">Airport Construction Headquartrs - Tech. and Finance<LineBreak/>机场建设指挥部-技财部</TextBlock>
+                        <TextBlock Grid.Row="40" Grid.Column="0" Name="basicInfoName58" Grid.ColumnSpan="3" FontWeight="Regular" TextAlignment="Left">Airport Construction Headquartrs - Equip. Division<LineBreak/>机场建设指挥部-设备部（部长）</TextBlock>
+                        <TextBlock Grid.Row="41" Grid.Column="0" Name="basicInfoName59" Grid.ColumnSpan="3" FontWeight="Regular" TextAlignment="Left">Airport Construction Headquartrs - Equip. Division<LineBreak/>机场建设指挥部-设备部/管理机场助航灯光</TextBlock>
+                        <TextBlock Grid.Row="42" Grid.Column="0" Name="basicInfoName60" Grid.ColumnSpan="3" FontWeight="Regular" TextAlignment="Left">Airport Construction Headquartrs - Equip. Division<LineBreak/>机场建设指挥部-设备部/管理机场供电机柜</TextBlock>
+                        <Separator Grid.Row="43" Grid.ColumnSpan="8"></Separator>
+                        <TextBlock Grid.Row="44" Grid.Column="0" Name="basicInfoName61" Grid.ColumnSpan="8" TextAlignment="Left">III. Potential opportunity list in next two years<LineBreak/>三. 未来两年潜在业务机会</TextBlock>
+                        <TextBlock Grid.Row="45" Grid.Column="0" Name="basicInfoName62" Grid.ColumnSpan="3">Name<LineBreak/>名称</TextBlock>
+                        <TextBlock Grid.Row="45" Grid.Column="3" Name="basicInfoName63" >Time<LineBreak/>时间</TextBlock>
+                        <TextBlock Grid.Row="45" Grid.Column="4" Name="basicInfoName64" >Budget<LineBreak/>预算</TextBlock>
+                        <TextBlock Grid.Row="45" Grid.Column="5" Name="basicInfoName65" Grid.ColumnSpan="2">Products information<LineBreak/> 产品信息</TextBlock>
+                        <TextBlock Grid.Row="45" Grid.Column="7" Name="basicInfoName66" >SAP</TextBlock>
+                        <!--Content-->
+                        <TextBox Grid.Row="0" Grid.Column="1" Name="basicInfoContent00" Grid.ColumnSpan="2"></TextBox>
+                        <TextBox Grid.Row="1" Grid.Column="1" Name="basicInfoContent01" Grid.ColumnSpan="2"></TextBox>
+                        <TextBox Grid.Row="0" Grid.Column="6" Name="basicInfoContent04" Grid.ColumnSpan="2"></TextBox>
+                        <TextBox Grid.Row="1" Grid.Column="6" Name="basicInfoContent05" Grid.ColumnSpan="2"></TextBox>
+                        <TextBox Grid.Row="2" Grid.Column="5" Name="basicInfoContent06" Grid.RowSpan="2"></TextBox>
+                        <TextBox Grid.Row="2" Grid.Column="7" Name="basicInfoContent07"></TextBox>
+                        <TextBox Grid.Row="3" Grid.Column="7" Name="basicInfoContent08"></TextBox>
+                        <TextBox Grid.Row="6" Grid.Column="5" Name="basicInfoContent09"></TextBox>
+                        <TextBox Grid.Row="7" Grid.Column="5" Name="basicInfoContent10"></TextBox>
+                        <TextBox Grid.Row="7" Grid.Column="7" Name="basicInfoContent11"></TextBox>
+                        <TextBox Grid.Row="8" Grid.Column="7" Name="basicInfoContent12"></TextBox>
+                        <TextBox Grid.Row="4" Grid.Column="5" Name="basicInfoContent13"></TextBox>
+                        <TextBox Grid.Row="5" Grid.Column="5" Name="basicInfoContent14"></TextBox>
+                        <TextBox Grid.Row="4" Grid.Column="7" Name="basicInfoContent15"></TextBox>
+                        <TextBox Grid.Row="5" Grid.Column="7" Name="basicInfoContent16"></TextBox>
+                        <TextBox Grid.Row="8" Grid.Column="5" Name="basicInfoContent17"></TextBox>
+                        <TextBox Grid.Row="9" Grid.Column="5" Name="basicInfoContent18"></TextBox>
+                        <TextBox Grid.Row="10" Grid.Column="5" Name="basicInfoContent19"></TextBox>
+                        <TextBox Grid.Row="11" Grid.Column="5" Name="basicInfoContent20"></TextBox>
+                        <TextBox Grid.Row="12" Grid.Column="4" Name="basicInfoContent21" Grid.RowSpan="2"></TextBox>
+                        <TextBox Grid.Row="25" Grid.Column="2" Name="basicInfoContent22"></TextBox>
+                        <TextBox Grid.Row="25" Grid.Column="4" Name="basicInfoContent23"></TextBox>
+                        <TextBox Grid.Row="25" Grid.Column="6" Name="basicInfoContent24"></TextBox>
+
+                        <!--flyzone indicator-->
+                        <TextBlock FontWeight="Regular"  Grid.Row="13" Grid.Column="2">
+                            <TextBlock.Text>
+                                <MultiBinding StringFormat=" {0} {1} {2} {3} {4}">
+                                    <Binding ElementName="runwayInfoContent03" Path="Text"></Binding>
+                                    <Binding ElementName="runwayInfoContent13" Path="Text"></Binding>
+                                    <Binding ElementName="runwayInfoContent23" Path="Text"></Binding>
+                                    <Binding ElementName="runwayInfoContent33" Path="Text"></Binding>
+                                    <Binding ElementName="runwayInfoContent43" Path="Text"></Binding>
+                                </MultiBinding>
+                            </TextBlock.Text>
+                        </TextBlock>
+
+                        <!--runway name-->
+                        <StackPanel Grid.Row="16" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center">
+                            <TextBlock FontWeight="Regular">1. Runway</TextBlock>
+                            <TextBox Width="40" Name="runwayInfoContent010"></TextBox>
+                            <TextBlock FontWeight="Regular" Name="runwayNameInfo1" Grid.Row="16" Grid.Column="1">
+                            <TextBlock.Text>
+                                <MultiBinding StringFormat=" {0}R-{1}L">
+                                    <Binding ElementName="runwayInfoContent00" Path="Text"></Binding>
+                                    <Binding ElementName="runwayInfoContent01" Path="Text"></Binding>
+                                </MultiBinding>
+                            </TextBlock.Text>
+                            </TextBlock>
+                        </StackPanel>
+
+                        <StackPanel Grid.Row="17" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center">
+                            <TextBlock FontWeight="Regular">2. Runway</TextBlock>
+                            <TextBox Width="40" Name="runwayInfoContent110"></TextBox>
+                            <TextBlock FontWeight="Regular" Name="runwayNameInfo2" Grid.Row="16" Grid.Column="1">
+                            <TextBlock.Text>
+                                <MultiBinding StringFormat=" {0}R-{1}L">
+                                    <Binding ElementName="runwayInfoContent10" Path="Text"></Binding>
+                                    <Binding ElementName="runwayInfoContent11" Path="Text"></Binding>
+                                </MultiBinding>
+                            </TextBlock.Text>
+                            </TextBlock>
+                        </StackPanel>
+                        <StackPanel Grid.Row="18" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center">
+                            <TextBlock FontWeight="Regular">3. Runway</TextBlock>
+                            <TextBox Width="40" Name="runwayInfoContent210"></TextBox>
+                            <TextBlock FontWeight="Regular" Name="runwayNameInfo3" Grid.Row="16" Grid.Column="1">
+                            <TextBlock.Text>
+                                <MultiBinding StringFormat=" {0}R-{1}L">
+                                    <Binding ElementName="runwayInfoContent20" Path="Text"></Binding>
+                                    <Binding ElementName="runwayInfoContent21" Path="Text"></Binding>
+                                </MultiBinding>
+                            </TextBlock.Text>
+                            </TextBlock>
+                        </StackPanel>
+                        <StackPanel Grid.Row="19" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center">
+                            <TextBlock FontWeight="Regular">4. Runway</TextBlock>
+                            <TextBox Width="40" Name="runwayInfoContent310"></TextBox>
+                            <TextBlock FontWeight="Regular" Name="runwayNameInfo4" Grid.Row="16" Grid.Column="1">
+                            <TextBlock.Text>
+                                <MultiBinding StringFormat=" {0}R-{1}L">
+                                    <Binding ElementName="runwayInfoContent30" Path="Text"></Binding>
+                                    <Binding ElementName="runwayInfoContent31" Path="Text"></Binding>
+                                </MultiBinding>
+                            </TextBlock.Text>
+                            </TextBlock>
+                        </StackPanel>
+                        <StackPanel Grid.Row="20" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center">
+                            <TextBlock FontWeight="Regular">5. Runway</TextBlock>
+                            <TextBox Width="40" Name="runwayInfoContent410"></TextBox>
+                            <TextBlock FontWeight="Regular" Name="runwayNameInfo5" Grid.Row="16" Grid.Column="1">
+                            <TextBlock.Text>
+                                <MultiBinding StringFormat=" {0}R-{1}L">
+                                    <Binding ElementName="runwayInfoContent40" Path="Text"></Binding>
+                                    <Binding ElementName="runwayInfoContent41" Path="Text"></Binding>
+                                </MultiBinding>
+                            </TextBlock.Text>
+                            </TextBlock>
+                        </StackPanel>
+
+                        <StackPanel Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="3" Grid.RowSpan="2" Orientation="Horizontal" Name="runway1NaviInfo">
+                            <TextBlock FontWeight="Regular">1. Runway</TextBlock>
+                            <TextBox Width="50" Text="{Binding ElementName=runwayInfoContent010, Path=Text, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+                            <Separator Visibility="Hidden"></Separator>
+                            <TextBlock FontWeight="Regular" TextAlignment="Left">Runway Direction:<LineBreak/>跑道方向</TextBlock>
+                            <TextBox Name="runwayInfoContent00" Width="20"></TextBox>
+                            <TextBlock FontWeight="Regular" TextAlignment="Left">R</TextBlock>
+                            <TextBox Name="runwayInfoContent01" Width="20"></TextBox>
+                            <TextBlock FontWeight="Regular" TextAlignment="Left">L</TextBlock>
+                            <Separator Width="20" Visibility="Hidden"></Separator>
+                            <TextBlock FontWeight="Regular" TextAlignment="Left">CAT</TextBlock>
+                            <TextBox Name="runwayInfoContent02" Width="20"></TextBox>
+                            <TextBlock FontWeight="Regular" TextAlignment="Left">Precision Approach<LineBreak/>类精密进近</TextBlock>
+                        </StackPanel>
+                        <StackPanel Grid.Row="16" Grid.Column="2"  Orientation="Horizontal" Name="runway1DemensionInfo" HorizontalAlignment="Left">
+                            <TextBox Name="runwayInfoContent04" Width="40"></TextBox>
+                            <TextBlock FontWeight="Regular" TextAlignment="Left">M x</TextBlock>
+                            <TextBox Name="runwayInfoContent05" Width="40"></TextBox>
+                            <TextBlock FontWeight="Regular" TextAlignment="Left">M</TextBlock>
+                        </StackPanel>
+                        <StackPanel Grid.Row="16" Grid.Column="3"  Orientation="Horizontal" Name="runway1levelandCAT" HorizontalAlignment="Center">
+                            <TextBlock FontWeight="Regular" TextAlignment="Left">Level</TextBlock>
+                            <TextBox Name="runwayInfoContent03" Width="30">4E</TextBox>
+                            <TextBlock FontWeight="Regular" TextAlignment="Left">CAT</TextBlock>
+                            <TextBox Name="runwayInfoContent09" Width="20"></TextBox>
+                        </StackPanel>
+                        <TextBox Name="runwayInfoContent06" Width="100" Grid.Column="4" Grid.Row="16"></TextBox>
+                        <TextBox Name="runwayInfoContent07" Width="100" Grid.Column="5" Grid.Row="16"></TextBox>
+                        <TextBox Name="runwayInfoContent08" Width="170" Grid.Column="6" Grid.Row="16" Grid.ColumnSpan="2"></TextBox>
+
+
+                        <StackPanel Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="3" Grid.RowSpan="2" Orientation="Horizontal" Name="runway2NaviInfo">
+                            <TextBlock FontWeight="Regular">2. Runway</TextBlock>
+                            <TextBox Width="50" Text="{Binding ElementName=runwayInfoContent110, Path=Text, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+                            <Separator Visibility="Hidden"></Separator>
+                            <TextBlock FontWeight="Regular" TextAlignment="Left">Runway Direction:<LineBreak/>跑道方向</TextBlock>
+                            <TextBox Name="runwayInfoContent10" Width="20"></TextBox>
+                            <TextBlock FontWeight="Regular" TextAlignment="Left">R</TextBlock>
+                            <TextBox Name="runwayInfoContent11" Width="20"></TextBox>
+                            <TextBlock FontWeight="Regular" TextAlignment="Left">L</TextBlock>
+                            <Separator Width="20" Visibility="Hidden"></Separator>
+                            <TextBlock FontWeight="Regular" TextAlignment="Left">CAT</TextBlock>
+                            <TextBox Name="runwayInfoContent12" Width="20"></TextBox>
+                            <TextBlock FontWeight="Regular" TextAlignment="Left">Precision Approach<LineBreak/>类精密进近</TextBlock>
+                        </StackPanel>
+                        <StackPanel Grid.Row="17" Grid.Column="2"  Orientation="Horizontal" Name="runway2DemensionInfo" HorizontalAlignment="Left">
+                            <TextBox Name="runwayInfoContent14" Width="40"></TextBox>
+                            <TextBlock FontWeight="Regular" TextAlignment="Left">M x</TextBlock>
+                            <TextBox Name="runwayInfoContent15" Width="40"></TextBox>
+                            <TextBlock FontWeight="Regular" TextAlignment="Left">M</TextBlock>
+                        </StackPanel>
+                        <StackPanel Grid.Row="17" Grid.Column="3"  Orientation="Horizontal" Name="runway2levelandCAT" HorizontalAlignment="Center">
+                            <TextBlock FontWeight="Regular" TextAlignment="Left">Level</TextBlock>
+                            <TextBox Name="runwayInfoContent13" Width="30"></TextBox>
+                            <TextBlock FontWeight="Regular" TextAlignment="Left">CAT</TextBlock>
+                            <TextBox Name="runwayInfoContent19" Width="20"></TextBox>
+                        </StackPanel>
+                        <TextBox Name="runwayInfoContent16" Width="100" Grid.Column="4" Grid.Row="17"></TextBox>
+                        <TextBox Name="runwayInfoContent17" Width="100" Grid.Column="5" Grid.Row="17"></TextBox>
+                        <TextBox Name="runwayInfoContent18" Width="170" Grid.Column="6" Grid.Row="17" Grid.ColumnSpan="2"></TextBox>
+
+                        <StackPanel Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="3" Grid.RowSpan="2" Orientation="Horizontal" Name="runway3NaviInfo">
+                            <TextBlock FontWeight="Regular">3. Runway</TextBlock>
+                            <TextBox Width="50" Text="{Binding ElementName=runwayInfoContent210, Path=Text, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+                            <Separator Visibility="Hidden"></Separator>
+
+                            <TextBlock FontWeight="Regular" TextAlignment="Left">Runway Direction:<LineBreak/>跑道方向</TextBlock>
+                            <TextBox Name="runwayInfoContent20" Width="20"></TextBox>
+                            <TextBlock FontWeight="Regular" TextAlignment="Left">R</TextBlock>
+                            <TextBox Name="runwayInfoContent21" Width="20"></TextBox>
+                            <TextBlock FontWeight="Regular" TextAlignment="Left">L</TextBlock>
+                            <Separator Width="20" Visibility="Hidden"></Separator>
+                            <TextBlock FontWeight="Regular" TextAlignment="Left">CAT</TextBlock>
+                            <TextBox Name="runwayInfoContent22" Width="20"></TextBox>
+                            <TextBlock FontWeight="Regular" TextAlignment="Left">Precision Approach<LineBreak/>类精密进近</TextBlock>
+                        </StackPanel>
+                        <StackPanel Grid.Row="18" Grid.Column="2"  Orientation="Horizontal" Name="runway3DemensionInfo" HorizontalAlignment="Left">
+                            <TextBox Name="runwayInfoContent24" Width="40"></TextBox>
+                            <TextBlock FontWeight="Regular" TextAlignment="Left">M x</TextBlock>
+                            <TextBox Name="runwayInfoContent25" Width="40"></TextBox>
+                            <TextBlock FontWeight="Regular" TextAlignment="Left">M</TextBlock>
+                        </StackPanel>
+                        <StackPanel Grid.Row="18" Grid.Column="3"  Orientation="Horizontal" Name="runway3levelandCAT" HorizontalAlignment="Center">
+                            <TextBlock FontWeight="Regular" TextAlignment="Left">Level</TextBlock>
+                            <TextBox Name="runwayInfoContent23" Width="30"></TextBox>
+                            <TextBlock FontWeight="Regular" TextAlignment="Left">CAT</TextBlock>
+                            <TextBox Name="runwayInfoContent29" Width="20"></TextBox>
+                        </StackPanel>
+                        <TextBox Name="runwayInfoContent26" Width="100" Grid.Column="4" Grid.Row="18"></TextBox>
+                        <TextBox Name="runwayInfoContent27" Width="100" Grid.Column="5" Grid.Row="18"></TextBox>
+                        <TextBox Name="runwayInfoContent28" Width="170" Grid.Column="6" Grid.Row="18" Grid.ColumnSpan="2"></TextBox>
+
+                        <StackPanel Grid.Row="8" Grid.Column="1" Grid.ColumnSpan="3" Grid.RowSpan="2" Orientation="Horizontal" Name="runway4NaviInfo">
+                            <TextBlock FontWeight="Regular">4. Runway</TextBlock>
+                            <TextBox Width="50" Text="{Binding ElementName=runwayInfoContent310, Path=Text, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+                            <Separator Visibility="Hidden"></Separator>
+                            <TextBlock FontWeight="Regular" TextAlignment="Left">Runway Direction:<LineBreak/>跑道方向</TextBlock>
+                            <TextBox Name="runwayInfoContent30" Width="20"></TextBox>
+                            <TextBlock FontWeight="Regular" TextAlignment="Left">R</TextBlock>
+                            <TextBox Name="runwayInfoContent31" Width="20"></TextBox>
+                            <TextBlock FontWeight="Regular" TextAlignment="Left">L</TextBlock>
+                            <Separator Width="20" Visibility="Hidden"></Separator>
+                            <TextBlock FontWeight="Regular" TextAlignment="Left">CAT</TextBlock>
+                            <TextBox Name="runwayInfoContent32" Width="20"></TextBox>
+                            <TextBlock FontWeight="Regular" TextAlignment="Left">Precision Approach<LineBreak/>类精密进近</TextBlock>
+                        </StackPanel>
+                        <StackPanel Grid.Row="19" Grid.Column="2"  Orientation="Horizontal" Name="runway4DemensionInfo" HorizontalAlignment="Left">
+                            <TextBox Name="runwayInfoContent34" Width="40"></TextBox>
+                            <TextBlock FontWeight="Regular" TextAlignment="Left">M x</TextBlock>
+                            <TextBox Name="runwayInfoContent35" Width="40"></TextBox>
+                            <TextBlock FontWeight="Regular" TextAlignment="Left">M</TextBlock>
+                        </StackPanel>
+                        <StackPanel Grid.Row="19" Grid.Column="3"  Orientation="Horizontal" Name="runway4levelandCAT" HorizontalAlignment="Center">
+                            <TextBlock FontWeight="Regular" TextAlignment="Left">Level</TextBlock>
+                            <TextBox Name="runwayInfoContent33" Width="30"></TextBox>
+                            <TextBlock FontWeight="Regular" TextAlignment="Left">CAT</TextBlock>
+                            <TextBox Name="runwayInfoContent39" Width="20"></TextBox>
+                        </StackPanel>
+                        <TextBox Name="runwayInfoContent36" Width="100" Grid.Column="4" Grid.Row="19"></TextBox>
+                        <TextBox Name="runwayInfoContent37" Width="100" Grid.Column="5" Grid.Row="19"></TextBox>
+                        <TextBox Name="runwayInfoContent38" Width="170" Grid.Column="6" Grid.Row="19" Grid.ColumnSpan="2"></TextBox>
+
+                        <StackPanel Grid.Row="10" Grid.Column="1" Grid.ColumnSpan="3" Grid.RowSpan="2" Orientation="Horizontal" Name="runway5NaviInfo">
+                            <TextBlock FontWeight="Regular">5. Runway</TextBlock>
+                            <TextBox Width="50" Text="{Binding ElementName=runwayInfoContent410, Path=Text, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+                            <Separator Visibility="Hidden"></Separator>
+                            <TextBlock FontWeight="Regular" TextAlignment="Left">Runway Direction:<LineBreak/>跑道方向</TextBlock>
+                            <TextBox Name="runwayInfoContent40" Width="20"></TextBox>
+                            <TextBlock FontWeight="Regular" TextAlignment="Left">R</TextBlock>
+                            <TextBox Name="runwayInfoContent41" Width="20"></TextBox>
+                            <TextBlock FontWeight="Regular" TextAlignment="Left">L</TextBlock>
+                            <Separator Width="20" Visibility="Hidden"></Separator>
+                            <TextBlock FontWeight="Regular" TextAlignment="Left">CAT</TextBlock>
+                            <TextBox Name="runwayInfoContent42" Width="20"></TextBox>
+                            <TextBlock FontWeight="Regular" TextAlignment="Left">Precision Approach<LineBreak/>类精密进近</TextBlock>
+                        </StackPanel>
+                        <StackPanel Grid.Row="20" Grid.Column="2"  Orientation="Horizontal" Name="runway5DemensionInfo" HorizontalAlignment="Left">
+                            <TextBox Name="runwayInfoContent44" Width="40"></TextBox>
+                            <TextBlock FontWeight="Regular" TextAlignment="Left">M x</TextBlock>
+                            <TextBox Name="runwayInfoContent45" Width="40"></TextBox>
+                            <TextBlock FontWeight="Regular" TextAlignment="Left">M</TextBlock>
+                        </StackPanel>
+                        <StackPanel Grid.Row="20" Grid.Column="3"  Orientation="Horizontal" Name="runway5levelandCAT" HorizontalAlignment="Center">
+                            <TextBlock FontWeight="Regular" TextAlignment="Left">Level</TextBlock>
+                            <TextBox Name="runwayInfoContent43" Width="30"></TextBox>
+                            <TextBlock FontWeight="Regular" TextAlignment="Left">CAT</TextBlock>
+                            <TextBox Name="runwayInfoContent49" Width="20"></TextBox>
+                        </StackPanel>
+                        <TextBox Name="runwayInfoContent46" Width="100" Grid.Column="4" Grid.Row="20"></TextBox>
+                        <TextBox Name="runwayInfoContent47" Width="100" Grid.Column="5" Grid.Row="20"></TextBox>
+                        <TextBox Name="runwayInfoContent48" Width="170" Grid.Column="6" Grid.Row="20" Grid.ColumnSpan="2"></TextBox>
+
+                        <!---->                        
+                        <TextBox Grid.Row="30" Grid.Column="3" Name="staffInfoContent00"></TextBox>
+                        <TextBox Grid.Row="30" Grid.Column="4" Name="staffInfoContent01"></TextBox>
+                        <TextBox Grid.Row="30" Grid.Column="5" Name="staffInfoContent02"></TextBox>
+                        <TextBox Grid.Row="30" Grid.Column="6" Name="staffInfoContent03"></TextBox>
+                        <TextBox Grid.Row="30" Grid.Column="7" Name="staffInfoContent04"></TextBox>
+                        <TextBox Grid.Row="31" Grid.Column="3" Name="staffInfoContent10"></TextBox>
+                        <TextBox Grid.Row="31" Grid.Column="4" Name="staffInfoContent11"></TextBox>
+                        <TextBox Grid.Row="31" Grid.Column="5" Name="staffInfoContent12"></TextBox>
+                        <TextBox Grid.Row="31" Grid.Column="6" Name="staffInfoContent13"></TextBox>
+                        <TextBox Grid.Row="31" Grid.Column="7" Name="staffInfoContent14"></TextBox>
+                        <TextBox Grid.Row="32" Grid.Column="3" Name="staffInfoContent20"></TextBox>
+                        <TextBox Grid.Row="32" Grid.Column="4" Name="staffInfoContent21"></TextBox>
+                        <TextBox Grid.Row="32" Grid.Column="5" Name="staffInfoContent22"></TextBox>
+                        <TextBox Grid.Row="32" Grid.Column="6" Name="staffInfoContent23"></TextBox>
+                        <TextBox Grid.Row="32" Grid.Column="7" Name="staffInfoContent24"></TextBox>
+                        <TextBox Grid.Row="33" Grid.Column="3" Name="staffInfoContent30"></TextBox>
+                        <TextBox Grid.Row="33" Grid.Column="4" Name="staffInfoContent31"></TextBox>
+                        <TextBox Grid.Row="33" Grid.Column="5" Name="staffInfoContent32"></TextBox>
+                        <TextBox Grid.Row="33" Grid.Column="6" Name="staffInfoContent33"></TextBox>
+                        <TextBox Grid.Row="33" Grid.Column="7" Name="staffInfoContent34"></TextBox>
+                        <TextBox Grid.Row="34" Grid.Column="3" Name="staffInfoContent40"></TextBox>
+                        <TextBox Grid.Row="34" Grid.Column="4" Name="staffInfoContent41"></TextBox>
+                        <TextBox Grid.Row="34" Grid.Column="5" Name="staffInfoContent42"></TextBox>
+                        <TextBox Grid.Row="34" Grid.Column="6" Name="staffInfoContent43"></TextBox>
+                        <TextBox Grid.Row="34" Grid.Column="7" Name="staffInfoContent44"></TextBox>
+                        <!---->
+                        <TextBox Grid.Row="36" Grid.Column="3" Name="staffInfoContent50"></TextBox>
+                        <TextBox Grid.Row="36" Grid.Column="4" Name="staffInfoContent51"></TextBox>
+                        <TextBox Grid.Row="36" Grid.Column="5" Name="staffInfoContent52"></TextBox>
+                        <TextBox Grid.Row="36" Grid.Column="6" Name="staffInfoContent53"></TextBox>
+                        <TextBox Grid.Row="36" Grid.Column="7" Name="staffInfoContent54"></TextBox>
+                        <TextBox Grid.Row="37" Grid.Column="3" Name="staffInfoContent60"></TextBox>
+                        <TextBox Grid.Row="37" Grid.Column="4" Name="staffInfoContent61"></TextBox>
+                        <TextBox Grid.Row="37" Grid.Column="5" Name="staffInfoContent62"></TextBox>
+                        <TextBox Grid.Row="37" Grid.Column="6" Name="staffInfoContent63"></TextBox>
+                        <TextBox Grid.Row="37" Grid.Column="7" Name="staffInfoContent64"></TextBox>
+                        <TextBox Grid.Row="38" Grid.Column="3" Name="staffInfoContent70"></TextBox>
+                        <TextBox Grid.Row="38" Grid.Column="4" Name="staffInfoContent71"></TextBox>
+                        <TextBox Grid.Row="38" Grid.Column="5" Name="staffInfoContent72"></TextBox>
+                        <TextBox Grid.Row="38" Grid.Column="6" Name="staffInfoContent73"></TextBox>
+                        <TextBox Grid.Row="38" Grid.Column="7" Name="staffInfoContent74"></TextBox>
+                        <TextBox Grid.Row="39" Grid.Column="3" Name="staffInfoContent80"></TextBox>
+                        <TextBox Grid.Row="39" Grid.Column="4" Name="staffInfoContent81"></TextBox>
+                        <TextBox Grid.Row="39" Grid.Column="5" Name="staffInfoContent82"></TextBox>
+                        <TextBox Grid.Row="39" Grid.Column="6" Name="staffInfoContent83"></TextBox>
+                        <TextBox Grid.Row="39" Grid.Column="7" Name="staffInfoContent84"></TextBox>
+                        <TextBox Grid.Row="40" Grid.Column="3" Name="staffInfoContent90"></TextBox>
+                        <TextBox Grid.Row="40" Grid.Column="4" Name="staffInfoContent91"></TextBox>
+                        <TextBox Grid.Row="40" Grid.Column="5" Name="staffInfoContent92"></TextBox>
+                        <TextBox Grid.Row="40" Grid.Column="6" Name="staffInfoContent93"></TextBox>
+                        <TextBox Grid.Row="40" Grid.Column="7" Name="staffInfoContent94"></TextBox>
+                        <TextBox Grid.Row="41" Grid.Column="3" Name="staffInfoContent100"></TextBox>
+                        <TextBox Grid.Row="41" Grid.Column="4" Name="staffInfoContent101"></TextBox>
+                        <TextBox Grid.Row="41" Grid.Column="5" Name="staffInfoContent102"></TextBox>
+                        <TextBox Grid.Row="41" Grid.Column="6" Name="staffInfoContent103"></TextBox>
+                        <TextBox Grid.Row="41" Grid.Column="7" Name="staffInfoContent104"></TextBox>
+                        <TextBox Grid.Row="42" Grid.Column="3" Name="staffInfoContent110"></TextBox>
+                        <TextBox Grid.Row="42" Grid.Column="4" Name="staffInfoContent111"></TextBox>
+                        <TextBox Grid.Row="42" Grid.Column="5" Name="staffInfoContent112"></TextBox>
+                        <TextBox Grid.Row="42" Grid.Column="6" Name="staffInfoContent113"></TextBox>
+                        <TextBox Grid.Row="42" Grid.Column="7" Name="staffInfoContent114"></TextBox>
+
+                        <TextBox Grid.Row="46" Grid.Column="0" Name="cooperationInfoContent00" Grid.ColumnSpan="3"></TextBox>
+                        <TextBox Grid.Row="46" Grid.Column="3" Name="cooperationInfoContent01"></TextBox>
+                        <TextBox Grid.Row="46" Grid.Column="4" Name="cooperationInfoContent02"></TextBox>
+                        <TextBox Grid.Row="46" Grid.Column="5" Name="cooperationInfoContent03" Grid.ColumnSpan="2"></TextBox>
+                        <TextBox Grid.Row="46" Grid.Column="7" Name="cooperationInfoContent04"></TextBox>
+                        <TextBox Grid.Row="47" Grid.Column="0" Name="cooperationInfoContent10" Grid.ColumnSpan="3"></TextBox>
+                        <TextBox Grid.Row="47" Grid.Column="3" Name="cooperationInfoContent11"></TextBox>
+                        <TextBox Grid.Row="47" Grid.Column="4" Name="cooperationInfoContent12"></TextBox>
+                        <TextBox Grid.Row="47" Grid.Column="5" Name="cooperationInfoContent13" Grid.ColumnSpan="2"></TextBox>
+                        <TextBox Grid.Row="47" Grid.Column="7" Name="cooperationInfoContent14"></TextBox>
+                        <TextBox Grid.Row="48" Grid.Column="0" Name="cooperationInfoContent20" Grid.ColumnSpan="3"></TextBox>
+                        <TextBox Grid.Row="48" Grid.Column="3" Name="cooperationInfoContent21"></TextBox>
+                        <TextBox Grid.Row="48" Grid.Column="4" Name="cooperationInfoContent22"></TextBox>
+                        <TextBox Grid.Row="48" Grid.Column="5" Name="cooperationInfoContent23" Grid.ColumnSpan="2"></TextBox>
+                        <TextBox Grid.Row="48" Grid.Column="7" Name="cooperationInfoContent24"></TextBox>
+                        <TextBox Grid.Row="49" Grid.Column="0" Name="cooperationInfoContent30" Grid.ColumnSpan="3"></TextBox>
+                        <TextBox Grid.Row="49" Grid.Column="3" Name="cooperationInfoContent31"></TextBox>
+                        <TextBox Grid.Row="49" Grid.Column="4" Name="cooperationInfoContent32"></TextBox>
+                        <TextBox Grid.Row="49" Grid.Column="5" Name="cooperationInfoContent33" Grid.ColumnSpan="2"></TextBox>
+                        <TextBox Grid.Row="49" Grid.Column="7" Name="cooperationInfoContent34"></TextBox>
+                        <TextBox Grid.Row="50" Grid.Column="0" Name="cooperationInfoContent40" Grid.ColumnSpan="3"></TextBox>
+                        <TextBox Grid.Row="50" Grid.Column="3" Name="cooperationInfoContent41"></TextBox>
+                        <TextBox Grid.Row="50" Grid.Column="4" Name="cooperationInfoContent42"></TextBox>
+                        <TextBox Grid.Row="50" Grid.Column="5" Name="cooperationInfoContent43" Grid.ColumnSpan="2"></TextBox>
+                        <TextBox Grid.Row="50" Grid.Column="7" Name="cooperationInfoContent44"></TextBox>
+
+                        <TextBox Grid.Row="51" Grid.Column="0" Name="cooperationInfoContent50" Grid.ColumnSpan="3"></TextBox>
+                        <TextBox Grid.Row="51" Grid.Column="3" Name="cooperationInfoContent51"></TextBox>
+                        <TextBox Grid.Row="51" Grid.Column="4" Name="cooperationInfoContent52"></TextBox>
+                        <TextBox Grid.Row="51" Grid.Column="5" Name="cooperationInfoContent53" Grid.ColumnSpan="2"></TextBox>
+                        <TextBox Grid.Row="51" Grid.Column="7" Name="cooperationInfoContent54"></TextBox>
+                        <TextBox Grid.Row="52" Grid.Column="0" Name="cooperationInfoContent60" Grid.ColumnSpan="3"></TextBox>
+                        <TextBox Grid.Row="52" Grid.Column="3" Name="cooperationInfoContent61"></TextBox>
+                        <TextBox Grid.Row="52" Grid.Column="4" Name="cooperationInfoContent62"></TextBox>
+                        <TextBox Grid.Row="52" Grid.Column="5" Name="cooperationInfoContent63" Grid.ColumnSpan="2"></TextBox>
+                        <TextBox Grid.Row="52" Grid.Column="7" Name="cooperationInfoContent64"></TextBox>
+                        <TextBox Grid.Row="53" Grid.Column="0" Name="cooperationInfoContent70" Grid.ColumnSpan="3"></TextBox>
+                        <TextBox Grid.Row="53" Grid.Column="3" Name="cooperationInfoContent71"></TextBox>
+                        <TextBox Grid.Row="53" Grid.Column="4" Name="cooperationInfoContent72"></TextBox>
+                        <TextBox Grid.Row="53" Grid.Column="5" Name="cooperationInfoContent73" Grid.ColumnSpan="2"></TextBox>
+                        <TextBox Grid.Row="53" Grid.Column="7" Name="cooperationInfoContent74"></TextBox>
+                        <TextBox Grid.Row="54" Grid.Column="0" Name="cooperationInfoContent80" Grid.ColumnSpan="3"></TextBox>
+                        <TextBox Grid.Row="54" Grid.Column="3" Name="cooperationInfoContent81"></TextBox>
+                        <TextBox Grid.Row="54" Grid.Column="4" Name="cooperationInfoContent82"></TextBox>
+                        <TextBox Grid.Row="54" Grid.Column="5" Name="cooperationInfoContent83" Grid.ColumnSpan="2"></TextBox>
+                        <TextBox Grid.Row="54" Grid.Column="7" Name="cooperationInfoContent84"></TextBox>
+                        <TextBox Grid.Row="55" Grid.Column="0" Name="cooperationInfoContent90" Grid.ColumnSpan="3"></TextBox>
+                        <TextBox Grid.Row="55" Grid.Column="3" Name="cooperationInfoContent91"></TextBox>
+                        <TextBox Grid.Row="55" Grid.Column="4" Name="cooperationInfoContent92"></TextBox>
+                        <TextBox Grid.Row="55" Grid.Column="5" Name="cooperationInfoContent93" Grid.ColumnSpan="2"></TextBox>
+                        <TextBox Grid.Row="55" Grid.Column="7" Name="cooperationInfoContent94"></TextBox>
+
+
+                        <TextBox Grid.Row="56" Grid.Column="0" Name="cooperationInfoContent100" Grid.ColumnSpan="3"></TextBox>
+                        <TextBox Grid.Row="56" Grid.Column="3" Name="cooperationInfoContent101"></TextBox>
+                        <TextBox Grid.Row="56" Grid.Column="4" Name="cooperationInfoContent102"></TextBox>
+                        <TextBox Grid.Row="56" Grid.Column="5" Name="cooperationInfoContent103" Grid.ColumnSpan="2"></TextBox>
+                        <TextBox Grid.Row="56" Grid.Column="7" Name="cooperationInfoContent104"></TextBox>
+                        <TextBox Grid.Row="57" Grid.Column="0" Name="cooperationInfoContent110" Grid.ColumnSpan="3"></TextBox>
+                        <TextBox Grid.Row="57" Grid.Column="3" Name="cooperationInfoContent111"></TextBox>
+                        <TextBox Grid.Row="57" Grid.Column="4" Name="cooperationInfoContent112"></TextBox>
+                        <TextBox Grid.Row="57" Grid.Column="5" Name="cooperationInfoContent113" Grid.ColumnSpan="2"></TextBox>
+                        <TextBox Grid.Row="57" Grid.Column="7" Name="cooperationInfoContent114"></TextBox>
+                        <TextBox Grid.Row="58" Grid.Column="0" Name="cooperationInfoContent120" Grid.ColumnSpan="3"></TextBox>
+                        <TextBox Grid.Row="58" Grid.Column="3" Name="cooperationInfoContent121"></TextBox>
+                        <TextBox Grid.Row="58" Grid.Column="4" Name="cooperationInfoContent122"></TextBox>
+                        <TextBox Grid.Row="58" Grid.Column="5" Name="cooperationInfoContent123" Grid.ColumnSpan="2"></TextBox>
+                        <TextBox Grid.Row="58" Grid.Column="7" Name="cooperationInfoContent124"></TextBox>
+                        <TextBox Grid.Row="59" Grid.Column="0" Name="cooperationInfoContent130" Grid.ColumnSpan="3"></TextBox>
+                        <TextBox Grid.Row="59" Grid.Column="3" Name="cooperationInfoContent131"></TextBox>
+                        <TextBox Grid.Row="59" Grid.Column="4" Name="cooperationInfoContent132"></TextBox>
+                        <TextBox Grid.Row="59" Grid.Column="5" Name="cooperationInfoContent133" Grid.ColumnSpan="2"></TextBox>
+                        <TextBox Grid.Row="59" Grid.Column="7" Name="cooperationInfoContent134"></TextBox>
+                        <TextBox Grid.Row="60" Grid.Column="0" Name="cooperationInfoContent140" Grid.ColumnSpan="3"></TextBox>
+                        <TextBox Grid.Row="60" Grid.Column="3" Name="cooperationInfoContent141"></TextBox>
+                        <TextBox Grid.Row="60" Grid.Column="4" Name="cooperationInfoContent142"></TextBox>
+                        <TextBox Grid.Row="60" Grid.Column="5" Name="cooperationInfoContent143" Grid.ColumnSpan="2"></TextBox>
+                        <TextBox Grid.Row="60" Grid.Column="7" Name="cooperationInfoContent144"></TextBox>
+
+                        <TextBox Grid.Row="61" Grid.Column="0" Name="cooperationInfoContent150" Grid.ColumnSpan="3"></TextBox>
+                        <TextBox Grid.Row="61" Grid.Column="3" Name="cooperationInfoContent151"></TextBox>
+                        <TextBox Grid.Row="61" Grid.Column="4" Name="cooperationInfoContent152"></TextBox>
+                        <TextBox Grid.Row="61" Grid.Column="5" Name="cooperationInfoContent153" Grid.ColumnSpan="2"></TextBox>
+                        <TextBox Grid.Row="61" Grid.Column="7" Name="cooperationInfoContent154"></TextBox>
+                        <TextBox Grid.Row="62" Grid.Column="0" Name="cooperationInfoContent160" Grid.ColumnSpan="3"></TextBox>
+                        <TextBox Grid.Row="62" Grid.Column="3" Name="cooperationInfoContent161"></TextBox>
+                        <TextBox Grid.Row="62" Grid.Column="4" Name="cooperationInfoContent162"></TextBox>
+                        <TextBox Grid.Row="62" Grid.Column="5" Name="cooperationInfoContent163" Grid.ColumnSpan="2"></TextBox>
+                        <TextBox Grid.Row="62" Grid.Column="7" Name="cooperationInfoContent164"></TextBox>
+                        <TextBox Grid.Row="63" Grid.Column="0" Name="cooperationInfoContent170" Grid.ColumnSpan="3"></TextBox>
+                        <TextBox Grid.Row="63" Grid.Column="3" Name="cooperationInfoContent171"></TextBox>
+                        <TextBox Grid.Row="63" Grid.Column="4" Name="cooperationInfoContent172"></TextBox>
+                        <TextBox Grid.Row="63" Grid.Column="5" Name="cooperationInfoContent173" Grid.ColumnSpan="2"></TextBox>
+                        <TextBox Grid.Row="63" Grid.Column="7" Name="cooperationInfoContent174"></TextBox>
+                        <TextBox Grid.Row="64" Grid.Column="0" Name="cooperationInfoContent180" Grid.ColumnSpan="3"></TextBox>
+                        <TextBox Grid.Row="64" Grid.Column="3" Name="cooperationInfoContent181"></TextBox>
+                        <TextBox Grid.Row="64" Grid.Column="4" Name="cooperationInfoContent182"></TextBox>
+                        <TextBox Grid.Row="64" Grid.Column="5" Name="cooperationInfoContent183" Grid.ColumnSpan="2"></TextBox>
+                        <TextBox Grid.Row="64" Grid.Column="7" Name="cooperationInfoContent184"></TextBox>
+                        <TextBox Grid.Row="65" Grid.Column="0" Name="cooperationInfoContent190" Grid.ColumnSpan="3"></TextBox>
+                        <TextBox Grid.Row="65" Grid.Column="3" Name="cooperationInfoContent191"></TextBox>
+                        <TextBox Grid.Row="65" Grid.Column="4" Name="cooperationInfoContent192"></TextBox>
+                        <TextBox Grid.Row="65" Grid.Column="5" Name="cooperationInfoContent193" Grid.ColumnSpan="2"></TextBox>
+                        <TextBox Grid.Row="65" Grid.Column="7" Name="cooperationInfoContent194"></TextBox>
+
+                    </Grid>
+                </ScrollViewer>
+            </TabItem>
+            <TabItem Header="equipment Info" Name="equipmentInfoTab" FontWeight="Bold">
+                <ScrollViewer HorizontalScrollBarVisibility="Auto">
+                    <Grid Width="1600" >
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="3*" />
+                            <ColumnDefinition />
+                            <ColumnDefinition Width="0.5*" />
+                            <ColumnDefinition Width="2*" />
+                            <ColumnDefinition />
+                            <ColumnDefinition Width="0.5*" />
+                            <ColumnDefinition Width="2*" />
+                            <ColumnDefinition />
+                            <ColumnDefinition Width="0.5*" />
+                            <ColumnDefinition Width="2*" />
+                            <ColumnDefinition />
+                            <ColumnDefinition Width="0.5*" />
+                            <ColumnDefinition Width="2*" />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="14" FontSize="20">Airport Airfiled Lighting Equipment info<LineBreak/>机场助航灯光产品信息</TextBlock>
+                        <Separator Grid.Row="1" Grid.ColumnSpan="14"></Separator>
+                        <TextBlock Grid.Row="2" Grid.Column="0">Description<LineBreak/>产品描述</TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="1">Rwy No.<LineBreak/>跑道名称</TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="2">QTR<LineBreak/>数量</TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="3">Factory/Ins. Date<LineBreak/>厂家名称/安装时间</TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="4">Rwy No.<LineBreak/>跑道名称</TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="5">QTR<LineBreak/>数量</TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="6">Factory/Ins. Date<LineBreak/>厂家名称/安装时间</TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="7">Rwy No.<LineBreak/>跑道名称</TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="8">QTR<LineBreak/>数量</TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="9">Factory/Ins. Date<LineBreak/>厂家名称/安装时间</TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="10">Rwy No.<LineBreak/>跑道名称</TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="11">QTR<LineBreak/>数量</TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="12">Factory/Ins. Date<LineBreak/>厂家名称/安装时间</TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="13">Remarks<LineBreak/>备注</TextBlock>
+                        <TextBlock Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="14" TextAlignment="Left">I. Airfield lighting Control System<LineBreak/>一. 机场助航灯光监控系统</TextBlock>
+                        <TextBlock Grid.Row="9" Grid.Column="0" Grid.ColumnSpan="14" TextAlignment="Left">II. Approach Lighting System<LineBreak/>二. 近进灯光系统</TextBlock>
+                        <TextBlock Grid.Row="16" Grid.Column="0" Grid.ColumnSpan="14" TextAlignment="Left">III. Runway Lighting<LineBreak/>三. 跑道灯光</TextBlock>
+                        <TextBlock Grid.Row="28" Grid.Column="0" Grid.ColumnSpan="14" TextAlignment="Left">IV. Taxiway Lighting<LineBreak/>四. 滑行道灯光</TextBlock>
+                        <TextBlock Grid.Row="34" Grid.Column="0" Grid.ColumnSpan="14" TextAlignment="Left">V. Guiden Signs<LineBreak/>五. 引导标记牌</TextBlock>
+                        <TextBlock Grid.Row="40" Grid.Column="0" Grid.ColumnSpan="14" TextAlignment="Left">VI. Costant Current regulator<LineBreak/>六. 恒流调光器</TextBlock>
+                        <TextBlock Grid.Row="4" Grid.Column="0" TextAlignment='Left' FontWeight="Regular" >1.1 ALCs control System<LineBreak/>助航灯光监控系统</TextBlock>
+                        <TextBlock Grid.Row="5" Grid.Column="0" TextAlignment='Left' FontWeight="Regular" >1.2 Individual Lamp Control System<LineBreak/>单灯监控系统-计算机</TextBlock>
+                        <TextBlock Grid.Row="6" Grid.Column="0" TextAlignment='Left' FontWeight="Regular" >1.3 AGLAS Master <LineBreak/>单灯监控-主机</TextBlock>
+                        <TextBlock Grid.Row="7" Grid.Column="0" TextAlignment='Left' FontWeight="Regular" >1.4 AGLAS Remote<LineBreak/>单灯监控-外场单元</TextBlock>
+                        <TextBlock Grid.Row="8" Grid.Column="0" TextAlignment='Left' FontWeight="Regular" >1.5 Microwave Detector<LineBreak/>微波探测器-对</TextBlock>
+                        <TextBlock Grid.Row="10" Grid.Column="0" TextAlignment='Left' FontWeight="Regular" >2.1 Inset Approach Light<LineBreak/>嵌入式进近灯光</TextBlock>
+                        <TextBlock Grid.Row="11" Grid.Column="0" TextAlignment='Left' FontWeight="Regular" >2.2 Elevated  Approach Light<LineBreak/>立式进近灯光</TextBlock>
+                        <TextBlock Grid.Row="12" Grid.Column="0" TextAlignment='Left' FontWeight="Regular" >2.3 Inset Side-Row Light<LineBreak/>嵌入式侧边灯（下滑灯）</TextBlock>
+                        <TextBlock Grid.Row="13" Grid.Column="0" TextAlignment='Left' FontWeight="Regular" >2.4 Elevated Side-Row Light<LineBreak/>立式侧边灯（下滑灯）</TextBlock>
+                        <TextBlock Grid.Row="14" Grid.Column="0" TextAlignment='Left' FontWeight="Regular" >2.5 SFL System 30 unit<LineBreak/>顺闪闪光灯 30盏-1套</TextBlock>
+                        <TextBlock Grid.Row="15" Grid.Column="0" TextAlignment='Left' FontWeight="Regular" >2.6 SFL System 21 unit<LineBreak/>顺闪闪光灯 21盏-1套</TextBlock>
+                        <TextBlock Grid.Row="17" Grid.Column="0" TextAlignment='Left' FontWeight="Regular" >3.1 Inset Threshold Light<LineBreak/>嵌入式跑道入口灯</TextBlock>
+                        <TextBlock Grid.Row="18" Grid.Column="0" TextAlignment='Left' FontWeight="Regular" >3.2 Elevated Threshold Light<LineBreak/>立式跑道入口灯</TextBlock>
+                        <TextBlock Grid.Row="19" Grid.Column="0" TextAlignment='Left' FontWeight="Regular" >3.3 Inset Threshold Wing-bar Light<LineBreak/>嵌入式跑道入口翼排灯</TextBlock>
+                        <TextBlock Grid.Row="20" Grid.Column="0" TextAlignment='Left' FontWeight="Regular" >3.4 Elevated Threshold Wing-bar <LineBreak/>立式跑道入口翼排灯</TextBlock>
+                        <TextBlock Grid.Row="21" Grid.Column="0" TextAlignment='Left' FontWeight="Regular" >3.5 Inset Runway End Light<LineBreak/>嵌入式跑道末端灯</TextBlock>
+                        <TextBlock Grid.Row="22" Grid.Column="0" TextAlignment='Left' FontWeight="Regular" >3.6 Elevated Runway End Light<LineBreak/>立式跑道末端灯</TextBlock>
+                        <TextBlock Grid.Row="23" Grid.Column="0" TextAlignment='Left' FontWeight="Regular" >3.7 Inset Runway Edge Light<LineBreak/>嵌入式跑道边灯</TextBlock>
+                        <TextBlock Grid.Row="24" Grid.Column="0" TextAlignment='Left' FontWeight="Regular" >3.8 Elevated  Runway Edge Light<LineBreak/>立式跑道边灯</TextBlock>
+                        <TextBlock Grid.Row="25" Grid.Column="0" TextAlignment='Left' FontWeight="Regular" >3.9 Inset Runway Centreline Light<LineBreak/>嵌入式跑道中线灯</TextBlock>
+                        <TextBlock Grid.Row="26" Grid.Column="0" TextAlignment='Left' FontWeight="Regular" >3.10 Inset Touch Down Zone Light<LineBreak/>嵌入式接地带灯</TextBlock>
+                        <TextBlock Grid.Row="27" Grid.Column="0" TextAlignment='Left' FontWeight="Regular" >3.11 Inset Runway Guard Light<LineBreak/>嵌入式跑道警戒灯</TextBlock>
+                        <TextBlock Grid.Row="29" Grid.Column="0" TextAlignment='Left' FontWeight="Regular" >4.1 Inset Taxiway Centreline Light<LineBreak/>嵌入式滑行道中线灯</TextBlock>
+                        <TextBlock Grid.Row="30" Grid.Column="0" TextAlignment='Left' FontWeight="Regular" >4.2 Inset HoldingPosition light<LineBreak/>嵌入式等待位置灯</TextBlock>
+                        <TextBlock Grid.Row="31" Grid.Column="0" TextAlignment='Left' FontWeight="Regular" >4.3 Inset Rapid Taxiway Exit Light<LineBreak/>嵌入式快速出口滑行道指示灯</TextBlock>
+                        <TextBlock Grid.Row="32" Grid.Column="0" TextAlignment='Left' FontWeight="Regular" >4.4 Inset Taxiway Edge Light<LineBreak/>嵌入式滑行道边灯</TextBlock>
+                        <TextBlock Grid.Row="33" Grid.Column="0" TextAlignment='Left' FontWeight="Regular" >4.5 Elevated Taxiway Edge Light<LineBreak/>立式滑行道边灯</TextBlock>
+                        <TextBlock Grid.Row="35" Grid.Column="0" TextAlignment='Left' FontWeight="Regular" >5.1 PVH Guiden Signs<LineBreak/>滑行引导标记牌-卤素灯</TextBlock>
+                        <TextBlock Grid.Row="36" Grid.Column="0" TextAlignment='Left' FontWeight="Regular" >5.2 PVOGuiden Signs<LineBreak/>滑行引导标记牌-荧光灯</TextBlock>
+                        <TextBlock Grid.Row="37" Grid.Column="0" TextAlignment='Left' FontWeight="Regular" >5.3 PVLGuiden Signs<LineBreak/>滑行引导标记牌-LED光源</TextBlock>
+                        <TextBlock Grid.Row="38" Grid.Column="0" TextAlignment='Left' FontWeight="Regular" >5.4 PVO Apron Signs<LineBreak/>机位标记牌-荧光灯</TextBlock>
+                        <TextBlock Grid.Row="39" Grid.Column="0" TextAlignment='Left' FontWeight="Regular" >5.5 PVL Apron Signs<LineBreak/>机位标记牌-LED灯</TextBlock>
+                        <TextBlock Grid.Row="41" Grid.Column="0" TextAlignment='Left' FontWeight="Regular" >6.1 4KVA Costant Current Regulator<LineBreak/>4kVA 恒流调光器</TextBlock>
+                        <TextBlock Grid.Row="42" Grid.Column="0" TextAlignment='Left' FontWeight="Regular" >6.2 5KVA Costant Current Regulator<LineBreak/>5kVA 恒流调光器</TextBlock>
+                        <TextBlock Grid.Row="43" Grid.Column="0" TextAlignment='Left' FontWeight="Regular" >6.3 10KVA Costant Current Regulator<LineBreak/>10kVA 恒流调光器</TextBlock>
+                        <TextBlock Grid.Row="44" Grid.Column="0" TextAlignment='Left' FontWeight="Regular" >6.4 15KVA Costant Current Regulator<LineBreak/>15kVA 恒流调光器</TextBlock>
+                        <TextBlock Grid.Row="45" Grid.Column="0" TextAlignment='Left' FontWeight="Regular" >6.5 20KVA Costant Current Regulator<LineBreak/>20kVA 恒流调光器</TextBlock>
+                        <TextBlock Grid.Row="46" Grid.Column="0" TextAlignment='Left' FontWeight="Regular" >6.6 25KVA Costant Current Regulator<LineBreak/>25kVA 恒流调光器</TextBlock>
+                        <TextBlock Grid.Row="47" Grid.Column="0" TextAlignment='Left' FontWeight="Regular" >6.7 30KVA Costant Current Regulator<LineBreak/>30kVA 恒流调光器</TextBlock>
+                        <!---->
+                        <TextBox Grid.Row="4" Grid.Column="1" Name="equipmentInfoContent000"></TextBox>
+                        <TextBox Grid.Row="4" Grid.Column="2" Name="equipmentInfoContent001"></TextBox>
+                        <TextBox Grid.Row="4" Grid.Column="3" Name="equipmentInfoContent002"></TextBox>
+                        <TextBox Grid.Row="4" Grid.Column="4" Name="equipmentInfoContent003"></TextBox>
+                        <TextBox Grid.Row="4" Grid.Column="5" Name="equipmentInfoContent004"></TextBox>
+                        <TextBox Grid.Row="4" Grid.Column="6" Name="equipmentInfoContent005"></TextBox>
+                        <TextBox Grid.Row="4" Grid.Column="7" Name="equipmentInfoContent006"></TextBox>
+                        <TextBox Grid.Row="4" Grid.Column="8" Name="equipmentInfoContent007"></TextBox>
+                        <TextBox Grid.Row="4" Grid.Column="9" Name="equipmentInfoContent008"></TextBox>
+                        <TextBox Grid.Row="4" Grid.Column="10" Name="equipmentInfoContent009"></TextBox>
+                        <TextBox Grid.Row="4" Grid.Column="11" Name="equipmentInfoContent010"></TextBox>
+                        <TextBox Grid.Row="4" Grid.Column="12" Name="equipmentInfoContent011"></TextBox>
+                        <TextBox Grid.Row="4" Grid.Column="13" Name="equipmentInfoContent012"></TextBox>
+                        <TextBox Grid.Row="5" Grid.Column="1" Name="equipmentInfoContent100"></TextBox>
+                        <TextBox Grid.Row="5" Grid.Column="2" Name="equipmentInfoContent101"></TextBox>
+                        <TextBox Grid.Row="5" Grid.Column="3" Name="equipmentInfoContent102"></TextBox>
+                        <TextBox Grid.Row="5" Grid.Column="4" Name="equipmentInfoContent103"></TextBox>
+                        <TextBox Grid.Row="5" Grid.Column="5" Name="equipmentInfoContent104"></TextBox>
+                        <TextBox Grid.Row="5" Grid.Column="6" Name="equipmentInfoContent105"></TextBox>
+                        <TextBox Grid.Row="5" Grid.Column="7" Name="equipmentInfoContent106"></TextBox>
+                        <TextBox Grid.Row="5" Grid.Column="8" Name="equipmentInfoContent107"></TextBox>
+                        <TextBox Grid.Row="5" Grid.Column="9" Name="equipmentInfoContent108"></TextBox>
+                        <TextBox Grid.Row="5" Grid.Column="10" Name="equipmentInfoContent109"></TextBox>
+                        <TextBox Grid.Row="5" Grid.Column="11" Name="equipmentInfoContent110"></TextBox>
+                        <TextBox Grid.Row="5" Grid.Column="12" Name="equipmentInfoContent111"></TextBox>
+                        <TextBox Grid.Row="5" Grid.Column="13" Name="equipmentInfoContent112"></TextBox>
+                        <TextBox Grid.Row="6" Grid.Column="1" Name="equipmentInfoContent200"></TextBox>
+                        <TextBox Grid.Row="6" Grid.Column="2" Name="equipmentInfoContent201"></TextBox>
+                        <TextBox Grid.Row="6" Grid.Column="3" Name="equipmentInfoContent202"></TextBox>
+                        <TextBox Grid.Row="6" Grid.Column="4" Name="equipmentInfoContent203"></TextBox>
+                        <TextBox Grid.Row="6" Grid.Column="5" Name="equipmentInfoContent204"></TextBox>
+                        <TextBox Grid.Row="6" Grid.Column="6" Name="equipmentInfoContent205"></TextBox>
+                        <TextBox Grid.Row="6" Grid.Column="7" Name="equipmentInfoContent206"></TextBox>
+                        <TextBox Grid.Row="6" Grid.Column="8" Name="equipmentInfoContent207"></TextBox>
+                        <TextBox Grid.Row="6" Grid.Column="9" Name="equipmentInfoContent208"></TextBox>
+                        <TextBox Grid.Row="6" Grid.Column="10" Name="equipmentInfoContent209"></TextBox>
+                        <TextBox Grid.Row="6" Grid.Column="11" Name="equipmentInfoContent210"></TextBox>
+                        <TextBox Grid.Row="6" Grid.Column="12" Name="equipmentInfoContent211"></TextBox>
+                        <TextBox Grid.Row="6" Grid.Column="13" Name="equipmentInfoContent212"></TextBox>
+                        <TextBox Grid.Row="7" Grid.Column="1" Name="equipmentInfoContent300"></TextBox>
+                        <TextBox Grid.Row="7" Grid.Column="2" Name="equipmentInfoContent301"></TextBox>
+                        <TextBox Grid.Row="7" Grid.Column="3" Name="equipmentInfoContent302"></TextBox>
+                        <TextBox Grid.Row="7" Grid.Column="4" Name="equipmentInfoContent303"></TextBox>
+                        <TextBox Grid.Row="7" Grid.Column="5" Name="equipmentInfoContent304"></TextBox>
+                        <TextBox Grid.Row="7" Grid.Column="6" Name="equipmentInfoContent305"></TextBox>
+                        <TextBox Grid.Row="7" Grid.Column="7" Name="equipmentInfoContent306"></TextBox>
+                        <TextBox Grid.Row="7" Grid.Column="8" Name="equipmentInfoContent307"></TextBox>
+                        <TextBox Grid.Row="7" Grid.Column="9" Name="equipmentInfoContent308"></TextBox>
+                        <TextBox Grid.Row="7" Grid.Column="10" Name="equipmentInfoContent309"></TextBox>
+                        <TextBox Grid.Row="7" Grid.Column="11" Name="equipmentInfoContent310"></TextBox>
+                        <TextBox Grid.Row="7" Grid.Column="12" Name="equipmentInfoContent311"></TextBox>
+                        <TextBox Grid.Row="7" Grid.Column="13" Name="equipmentInfoContent312"></TextBox>
+                        <TextBox Grid.Row="8" Grid.Column="1" Name="equipmentInfoContent400"></TextBox>
+                        <TextBox Grid.Row="8" Grid.Column="2" Name="equipmentInfoContent401"></TextBox>
+                        <TextBox Grid.Row="8" Grid.Column="3" Name="equipmentInfoContent402"></TextBox>
+                        <TextBox Grid.Row="8" Grid.Column="4" Name="equipmentInfoContent403"></TextBox>
+                        <TextBox Grid.Row="8" Grid.Column="5" Name="equipmentInfoContent404"></TextBox>
+                        <TextBox Grid.Row="8" Grid.Column="6" Name="equipmentInfoContent405"></TextBox>
+                        <TextBox Grid.Row="8" Grid.Column="7" Name="equipmentInfoContent406"></TextBox>
+                        <TextBox Grid.Row="8" Grid.Column="8" Name="equipmentInfoContent407"></TextBox>
+                        <TextBox Grid.Row="8" Grid.Column="9" Name="equipmentInfoContent408"></TextBox>
+                        <TextBox Grid.Row="8" Grid.Column="10" Name="equipmentInfoContent409"></TextBox>
+                        <TextBox Grid.Row="8" Grid.Column="11" Name="equipmentInfoContent410"></TextBox>
+                        <TextBox Grid.Row="8" Grid.Column="12" Name="equipmentInfoContent411"></TextBox>
+                        <TextBox Grid.Row="8" Grid.Column="13" Name="equipmentInfoContent412"></TextBox>
+                        <TextBox Grid.Row="10" Grid.Column="1" Name="equipmentInfoContent500"></TextBox>
+                        <TextBox Grid.Row="10" Grid.Column="2" Name="equipmentInfoContent501"></TextBox>
+                        <TextBox Grid.Row="10" Grid.Column="3" Name="equipmentInfoContent502"></TextBox>
+                        <TextBox Grid.Row="10" Grid.Column="4" Name="equipmentInfoContent503"></TextBox>
+                        <TextBox Grid.Row="10" Grid.Column="5" Name="equipmentInfoContent504"></TextBox>
+                        <TextBox Grid.Row="10" Grid.Column="6" Name="equipmentInfoContent505"></TextBox>
+                        <TextBox Grid.Row="10" Grid.Column="7" Name="equipmentInfoContent506"></TextBox>
+                        <TextBox Grid.Row="10" Grid.Column="8" Name="equipmentInfoContent507"></TextBox>
+                        <TextBox Grid.Row="10" Grid.Column="9" Name="equipmentInfoContent508"></TextBox>
+                        <TextBox Grid.Row="10" Grid.Column="10" Name="equipmentInfoContent509"></TextBox>
+                        <TextBox Grid.Row="10" Grid.Column="11" Name="equipmentInfoContent510"></TextBox>
+                        <TextBox Grid.Row="10" Grid.Column="12" Name="equipmentInfoContent511"></TextBox>
+                        <TextBox Grid.Row="10" Grid.Column="13" Name="equipmentInfoContent512"></TextBox>
+                        <TextBox Grid.Row="11" Grid.Column="1" Name="equipmentInfoContent600"></TextBox>
+                        <TextBox Grid.Row="11" Grid.Column="2" Name="equipmentInfoContent601"></TextBox>
+                        <TextBox Grid.Row="11" Grid.Column="3" Name="equipmentInfoContent602"></TextBox>
+                        <TextBox Grid.Row="11" Grid.Column="4" Name="equipmentInfoContent603"></TextBox>
+                        <TextBox Grid.Row="11" Grid.Column="5" Name="equipmentInfoContent604"></TextBox>
+                        <TextBox Grid.Row="11" Grid.Column="6" Name="equipmentInfoContent605"></TextBox>
+                        <TextBox Grid.Row="11" Grid.Column="7" Name="equipmentInfoContent606"></TextBox>
+                        <TextBox Grid.Row="11" Grid.Column="8" Name="equipmentInfoContent607"></TextBox>
+                        <TextBox Grid.Row="11" Grid.Column="9" Name="equipmentInfoContent608"></TextBox>
+                        <TextBox Grid.Row="11" Grid.Column="10" Name="equipmentInfoContent609"></TextBox>
+                        <TextBox Grid.Row="11" Grid.Column="11" Name="equipmentInfoContent610"></TextBox>
+                        <TextBox Grid.Row="11" Grid.Column="12" Name="equipmentInfoContent611"></TextBox>
+                        <TextBox Grid.Row="11" Grid.Column="13" Name="equipmentInfoContent612"></TextBox>
+                        <TextBox Grid.Row="12" Grid.Column="1" Name="equipmentInfoContent700"></TextBox>
+                        <TextBox Grid.Row="12" Grid.Column="2" Name="equipmentInfoContent701"></TextBox>
+                        <TextBox Grid.Row="12" Grid.Column="3" Name="equipmentInfoContent702"></TextBox>
+                        <TextBox Grid.Row="12" Grid.Column="4" Name="equipmentInfoContent703"></TextBox>
+                        <TextBox Grid.Row="12" Grid.Column="5" Name="equipmentInfoContent704"></TextBox>
+                        <TextBox Grid.Row="12" Grid.Column="6" Name="equipmentInfoContent705"></TextBox>
+                        <TextBox Grid.Row="12" Grid.Column="7" Name="equipmentInfoContent706"></TextBox>
+                        <TextBox Grid.Row="12" Grid.Column="8" Name="equipmentInfoContent707"></TextBox>
+                        <TextBox Grid.Row="12" Grid.Column="9" Name="equipmentInfoContent708"></TextBox>
+                        <TextBox Grid.Row="12" Grid.Column="10" Name="equipmentInfoContent709"></TextBox>
+                        <TextBox Grid.Row="12" Grid.Column="11" Name="equipmentInfoContent710"></TextBox>
+                        <TextBox Grid.Row="12" Grid.Column="12" Name="equipmentInfoContent711"></TextBox>
+                        <TextBox Grid.Row="12" Grid.Column="13" Name="equipmentInfoContent712"></TextBox>
+                        <TextBox Grid.Row="13" Grid.Column="1" Name="equipmentInfoContent800"></TextBox>
+                        <TextBox Grid.Row="13" Grid.Column="2" Name="equipmentInfoContent801"></TextBox>
+                        <TextBox Grid.Row="13" Grid.Column="3" Name="equipmentInfoContent802"></TextBox>
+                        <TextBox Grid.Row="13" Grid.Column="4" Name="equipmentInfoContent803"></TextBox>
+                        <TextBox Grid.Row="13" Grid.Column="5" Name="equipmentInfoContent804"></TextBox>
+                        <TextBox Grid.Row="13" Grid.Column="6" Name="equipmentInfoContent805"></TextBox>
+                        <TextBox Grid.Row="13" Grid.Column="7" Name="equipmentInfoContent806"></TextBox>
+                        <TextBox Grid.Row="13" Grid.Column="8" Name="equipmentInfoContent807"></TextBox>
+                        <TextBox Grid.Row="13" Grid.Column="9" Name="equipmentInfoContent808"></TextBox>
+                        <TextBox Grid.Row="13" Grid.Column="10" Name="equipmentInfoContent809"></TextBox>
+                        <TextBox Grid.Row="13" Grid.Column="11" Name="equipmentInfoContent810"></TextBox>
+                        <TextBox Grid.Row="13" Grid.Column="12" Name="equipmentInfoContent811"></TextBox>
+                        <TextBox Grid.Row="13" Grid.Column="13" Name="equipmentInfoContent812"></TextBox>
+                        <TextBox Grid.Row="14" Grid.Column="1" Name="equipmentInfoContent900"></TextBox>
+                        <TextBox Grid.Row="14" Grid.Column="2" Name="equipmentInfoContent901"></TextBox>
+                        <TextBox Grid.Row="14" Grid.Column="3" Name="equipmentInfoContent902"></TextBox>
+                        <TextBox Grid.Row="14" Grid.Column="4" Name="equipmentInfoContent903"></TextBox>
+                        <TextBox Grid.Row="14" Grid.Column="5" Name="equipmentInfoContent904"></TextBox>
+                        <TextBox Grid.Row="14" Grid.Column="6" Name="equipmentInfoContent905"></TextBox>
+                        <TextBox Grid.Row="14" Grid.Column="7" Name="equipmentInfoContent906"></TextBox>
+                        <TextBox Grid.Row="14" Grid.Column="8" Name="equipmentInfoContent907"></TextBox>
+                        <TextBox Grid.Row="14" Grid.Column="9" Name="equipmentInfoContent908"></TextBox>
+                        <TextBox Grid.Row="14" Grid.Column="10" Name="equipmentInfoContent909"></TextBox>
+                        <TextBox Grid.Row="14" Grid.Column="11" Name="equipmentInfoContent910"></TextBox>
+                        <TextBox Grid.Row="14" Grid.Column="12" Name="equipmentInfoContent911"></TextBox>
+                        <TextBox Grid.Row="14" Grid.Column="13" Name="equipmentInfoContent912"></TextBox>
+                        <TextBox Grid.Row="15" Grid.Column="1" Name="equipmentInfoContent1000"></TextBox>
+                        <TextBox Grid.Row="15" Grid.Column="2" Name="equipmentInfoContent1001"></TextBox>
+                        <TextBox Grid.Row="15" Grid.Column="3" Name="equipmentInfoContent1002"></TextBox>
+                        <TextBox Grid.Row="15" Grid.Column="4" Name="equipmentInfoContent1003"></TextBox>
+                        <TextBox Grid.Row="15" Grid.Column="5" Name="equipmentInfoContent1004"></TextBox>
+                        <TextBox Grid.Row="15" Grid.Column="6" Name="equipmentInfoContent1005"></TextBox>
+                        <TextBox Grid.Row="15" Grid.Column="7" Name="equipmentInfoContent1006"></TextBox>
+                        <TextBox Grid.Row="15" Grid.Column="8" Name="equipmentInfoContent1007"></TextBox>
+                        <TextBox Grid.Row="15" Grid.Column="9" Name="equipmentInfoContent1008"></TextBox>
+                        <TextBox Grid.Row="15" Grid.Column="10" Name="equipmentInfoContent1009"></TextBox>
+                        <TextBox Grid.Row="15" Grid.Column="11" Name="equipmentInfoContent1010"></TextBox>
+                        <TextBox Grid.Row="15" Grid.Column="12" Name="equipmentInfoContent1011"></TextBox>
+                        <TextBox Grid.Row="15" Grid.Column="13" Name="equipmentInfoContent1012"></TextBox>
+                        <TextBox Grid.Row="17" Grid.Column="1" Name="equipmentInfoContent1100"></TextBox>
+                        <TextBox Grid.Row="17" Grid.Column="2" Name="equipmentInfoContent1101"></TextBox>
+                        <TextBox Grid.Row="17" Grid.Column="3" Name="equipmentInfoContent1102"></TextBox>
+                        <TextBox Grid.Row="17" Grid.Column="4" Name="equipmentInfoContent1103"></TextBox>
+                        <TextBox Grid.Row="17" Grid.Column="5" Name="equipmentInfoContent1104"></TextBox>
+                        <TextBox Grid.Row="17" Grid.Column="6" Name="equipmentInfoContent1105"></TextBox>
+                        <TextBox Grid.Row="17" Grid.Column="7" Name="equipmentInfoContent1106"></TextBox>
+                        <TextBox Grid.Row="17" Grid.Column="8" Name="equipmentInfoContent1107"></TextBox>
+                        <TextBox Grid.Row="17" Grid.Column="9" Name="equipmentInfoContent1108"></TextBox>
+                        <TextBox Grid.Row="17" Grid.Column="10" Name="equipmentInfoContent1109"></TextBox>
+                        <TextBox Grid.Row="17" Grid.Column="11" Name="equipmentInfoContent1110"></TextBox>
+                        <TextBox Grid.Row="17" Grid.Column="12" Name="equipmentInfoContent1111"></TextBox>
+                        <TextBox Grid.Row="17" Grid.Column="13" Name="equipmentInfoContent1112"></TextBox>
+                        <TextBox Grid.Row="18" Grid.Column="1" Name="equipmentInfoContent1200"></TextBox>
+                        <TextBox Grid.Row="18" Grid.Column="2" Name="equipmentInfoContent1201"></TextBox>
+                        <TextBox Grid.Row="18" Grid.Column="3" Name="equipmentInfoContent1202"></TextBox>
+                        <TextBox Grid.Row="18" Grid.Column="4" Name="equipmentInfoContent1203"></TextBox>
+                        <TextBox Grid.Row="18" Grid.Column="5" Name="equipmentInfoContent1204"></TextBox>
+                        <TextBox Grid.Row="18" Grid.Column="6" Name="equipmentInfoContent1205"></TextBox>
+                        <TextBox Grid.Row="18" Grid.Column="7" Name="equipmentInfoContent1206"></TextBox>
+                        <TextBox Grid.Row="18" Grid.Column="8" Name="equipmentInfoContent1207"></TextBox>
+                        <TextBox Grid.Row="18" Grid.Column="9" Name="equipmentInfoContent1208"></TextBox>
+                        <TextBox Grid.Row="18" Grid.Column="10" Name="equipmentInfoContent1209"></TextBox>
+                        <TextBox Grid.Row="18" Grid.Column="11" Name="equipmentInfoContent1210"></TextBox>
+                        <TextBox Grid.Row="18" Grid.Column="12" Name="equipmentInfoContent1211"></TextBox>
+                        <TextBox Grid.Row="18" Grid.Column="13" Name="equipmentInfoContent1212"></TextBox>
+                        <TextBox Grid.Row="19" Grid.Column="1" Name="equipmentInfoContent1300"></TextBox>
+                        <TextBox Grid.Row="19" Grid.Column="2" Name="equipmentInfoContent1301"></TextBox>
+                        <TextBox Grid.Row="19" Grid.Column="3" Name="equipmentInfoContent1302"></TextBox>
+                        <TextBox Grid.Row="19" Grid.Column="4" Name="equipmentInfoContent1303"></TextBox>
+                        <TextBox Grid.Row="19" Grid.Column="5" Name="equipmentInfoContent1304"></TextBox>
+                        <TextBox Grid.Row="19" Grid.Column="6" Name="equipmentInfoContent1305"></TextBox>
+                        <TextBox Grid.Row="19" Grid.Column="7" Name="equipmentInfoContent1306"></TextBox>
+                        <TextBox Grid.Row="19" Grid.Column="8" Name="equipmentInfoContent1307"></TextBox>
+                        <TextBox Grid.Row="19" Grid.Column="9" Name="equipmentInfoContent1308"></TextBox>
+                        <TextBox Grid.Row="19" Grid.Column="10" Name="equipmentInfoContent1309"></TextBox>
+                        <TextBox Grid.Row="19" Grid.Column="11" Name="equipmentInfoContent1310"></TextBox>
+                        <TextBox Grid.Row="19" Grid.Column="12" Name="equipmentInfoContent1311"></TextBox>
+                        <TextBox Grid.Row="19" Grid.Column="13" Name="equipmentInfoContent1312"></TextBox>
+                        <TextBox Grid.Row="20" Grid.Column="1" Name="equipmentInfoContent1400"></TextBox>
+                        <TextBox Grid.Row="20" Grid.Column="2" Name="equipmentInfoContent1401"></TextBox>
+                        <TextBox Grid.Row="20" Grid.Column="3" Name="equipmentInfoContent1402"></TextBox>
+                        <TextBox Grid.Row="20" Grid.Column="4" Name="equipmentInfoContent1403"></TextBox>
+                        <TextBox Grid.Row="20" Grid.Column="5" Name="equipmentInfoContent1404"></TextBox>
+                        <TextBox Grid.Row="20" Grid.Column="6" Name="equipmentInfoContent1405"></TextBox>
+                        <TextBox Grid.Row="20" Grid.Column="7" Name="equipmentInfoContent1406"></TextBox>
+                        <TextBox Grid.Row="20" Grid.Column="8" Name="equipmentInfoContent1407"></TextBox>
+                        <TextBox Grid.Row="20" Grid.Column="9" Name="equipmentInfoContent1408"></TextBox>
+                        <TextBox Grid.Row="20" Grid.Column="10" Name="equipmentInfoContent1409"></TextBox>
+                        <TextBox Grid.Row="20" Grid.Column="11" Name="equipmentInfoContent1410"></TextBox>
+                        <TextBox Grid.Row="20" Grid.Column="12" Name="equipmentInfoContent1411"></TextBox>
+                        <TextBox Grid.Row="20" Grid.Column="13" Name="equipmentInfoContent1412"></TextBox>
+                        <TextBox Grid.Row="21" Grid.Column="1" Name="equipmentInfoContent1500"></TextBox>
+                        <TextBox Grid.Row="21" Grid.Column="2" Name="equipmentInfoContent1501"></TextBox>
+                        <TextBox Grid.Row="21" Grid.Column="3" Name="equipmentInfoContent1502"></TextBox>
+                        <TextBox Grid.Row="21" Grid.Column="4" Name="equipmentInfoContent1503"></TextBox>
+                        <TextBox Grid.Row="21" Grid.Column="5" Name="equipmentInfoContent1504"></TextBox>
+                        <TextBox Grid.Row="21" Grid.Column="6" Name="equipmentInfoContent1505"></TextBox>
+                        <TextBox Grid.Row="21" Grid.Column="7" Name="equipmentInfoContent1506"></TextBox>
+                        <TextBox Grid.Row="21" Grid.Column="8" Name="equipmentInfoContent1507"></TextBox>
+                        <TextBox Grid.Row="21" Grid.Column="9" Name="equipmentInfoContent1508"></TextBox>
+                        <TextBox Grid.Row="21" Grid.Column="10" Name="equipmentInfoContent1509"></TextBox>
+                        <TextBox Grid.Row="21" Grid.Column="11" Name="equipmentInfoContent1510"></TextBox>
+                        <TextBox Grid.Row="21" Grid.Column="12" Name="equipmentInfoContent1511"></TextBox>
+                        <TextBox Grid.Row="21" Grid.Column="13" Name="equipmentInfoContent1512"></TextBox>
+                        <TextBox Grid.Row="22" Grid.Column="1" Name="equipmentInfoContent1600"></TextBox>
+                        <TextBox Grid.Row="22" Grid.Column="2" Name="equipmentInfoContent1601"></TextBox>
+                        <TextBox Grid.Row="22" Grid.Column="3" Name="equipmentInfoContent1602"></TextBox>
+                        <TextBox Grid.Row="22" Grid.Column="4" Name="equipmentInfoContent1603"></TextBox>
+                        <TextBox Grid.Row="22" Grid.Column="5" Name="equipmentInfoContent1604"></TextBox>
+                        <TextBox Grid.Row="22" Grid.Column="6" Name="equipmentInfoContent1605"></TextBox>
+                        <TextBox Grid.Row="22" Grid.Column="7" Name="equipmentInfoContent1606"></TextBox>
+                        <TextBox Grid.Row="22" Grid.Column="8" Name="equipmentInfoContent1607"></TextBox>
+                        <TextBox Grid.Row="22" Grid.Column="9" Name="equipmentInfoContent1608"></TextBox>
+                        <TextBox Grid.Row="22" Grid.Column="10" Name="equipmentInfoContent1609"></TextBox>
+                        <TextBox Grid.Row="22" Grid.Column="11" Name="equipmentInfoContent1610"></TextBox>
+                        <TextBox Grid.Row="22" Grid.Column="12" Name="equipmentInfoContent1611"></TextBox>
+                        <TextBox Grid.Row="22" Grid.Column="13" Name="equipmentInfoContent1612"></TextBox>
+                        <TextBox Grid.Row="23" Grid.Column="1" Name="equipmentInfoContent1700"></TextBox>
+                        <TextBox Grid.Row="23" Grid.Column="2" Name="equipmentInfoContent1701"></TextBox>
+                        <TextBox Grid.Row="23" Grid.Column="3" Name="equipmentInfoContent1702"></TextBox>
+                        <TextBox Grid.Row="23" Grid.Column="4" Name="equipmentInfoContent1703"></TextBox>
+                        <TextBox Grid.Row="23" Grid.Column="5" Name="equipmentInfoContent1704"></TextBox>
+                        <TextBox Grid.Row="23" Grid.Column="6" Name="equipmentInfoContent1705"></TextBox>
+                        <TextBox Grid.Row="23" Grid.Column="7" Name="equipmentInfoContent1706"></TextBox>
+                        <TextBox Grid.Row="23" Grid.Column="8" Name="equipmentInfoContent1707"></TextBox>
+                        <TextBox Grid.Row="23" Grid.Column="9" Name="equipmentInfoContent1708"></TextBox>
+                        <TextBox Grid.Row="23" Grid.Column="10" Name="equipmentInfoContent1709"></TextBox>
+                        <TextBox Grid.Row="23" Grid.Column="11" Name="equipmentInfoContent1710"></TextBox>
+                        <TextBox Grid.Row="23" Grid.Column="12" Name="equipmentInfoContent1711"></TextBox>
+                        <TextBox Grid.Row="23" Grid.Column="13" Name="equipmentInfoContent1712"></TextBox>
+                        <TextBox Grid.Row="24" Grid.Column="1" Name="equipmentInfoContent1800"></TextBox>
+                        <TextBox Grid.Row="24" Grid.Column="2" Name="equipmentInfoContent1801"></TextBox>
+                        <TextBox Grid.Row="24" Grid.Column="3" Name="equipmentInfoContent1802"></TextBox>
+                        <TextBox Grid.Row="24" Grid.Column="4" Name="equipmentInfoContent1803"></TextBox>
+                        <TextBox Grid.Row="24" Grid.Column="5" Name="equipmentInfoContent1804"></TextBox>
+                        <TextBox Grid.Row="24" Grid.Column="6" Name="equipmentInfoContent1805"></TextBox>
+                        <TextBox Grid.Row="24" Grid.Column="7" Name="equipmentInfoContent1806"></TextBox>
+                        <TextBox Grid.Row="24" Grid.Column="8" Name="equipmentInfoContent1807"></TextBox>
+                        <TextBox Grid.Row="24" Grid.Column="9" Name="equipmentInfoContent1808"></TextBox>
+                        <TextBox Grid.Row="24" Grid.Column="10" Name="equipmentInfoContent1809"></TextBox>
+                        <TextBox Grid.Row="24" Grid.Column="11" Name="equipmentInfoContent1810"></TextBox>
+                        <TextBox Grid.Row="24" Grid.Column="12" Name="equipmentInfoContent1811"></TextBox>
+                        <TextBox Grid.Row="24" Grid.Column="13" Name="equipmentInfoContent1812"></TextBox>
+                        <TextBox Grid.Row="25" Grid.Column="1" Name="equipmentInfoContent1900"></TextBox>
+                        <TextBox Grid.Row="25" Grid.Column="2" Name="equipmentInfoContent1901"></TextBox>
+                        <TextBox Grid.Row="25" Grid.Column="3" Name="equipmentInfoContent1902"></TextBox>
+                        <TextBox Grid.Row="25" Grid.Column="4" Name="equipmentInfoContent1903"></TextBox>
+                        <TextBox Grid.Row="25" Grid.Column="5" Name="equipmentInfoContent1904"></TextBox>
+                        <TextBox Grid.Row="25" Grid.Column="6" Name="equipmentInfoContent1905"></TextBox>
+                        <TextBox Grid.Row="25" Grid.Column="7" Name="equipmentInfoContent1906"></TextBox>
+                        <TextBox Grid.Row="25" Grid.Column="8" Name="equipmentInfoContent1907"></TextBox>
+                        <TextBox Grid.Row="25" Grid.Column="9" Name="equipmentInfoContent1908"></TextBox>
+                        <TextBox Grid.Row="25" Grid.Column="10" Name="equipmentInfoContent1909"></TextBox>
+                        <TextBox Grid.Row="25" Grid.Column="11" Name="equipmentInfoContent1910"></TextBox>
+                        <TextBox Grid.Row="25" Grid.Column="12" Name="equipmentInfoContent1911"></TextBox>
+                        <TextBox Grid.Row="25" Grid.Column="13" Name="equipmentInfoContent1912"></TextBox>
+                        <TextBox Grid.Row="26" Grid.Column="1" Name="equipmentInfoContent2000"></TextBox>
+                        <TextBox Grid.Row="26" Grid.Column="2" Name="equipmentInfoContent2001"></TextBox>
+                        <TextBox Grid.Row="26" Grid.Column="3" Name="equipmentInfoContent2002"></TextBox>
+                        <TextBox Grid.Row="26" Grid.Column="4" Name="equipmentInfoContent2003"></TextBox>
+                        <TextBox Grid.Row="26" Grid.Column="5" Name="equipmentInfoContent2004"></TextBox>
+                        <TextBox Grid.Row="26" Grid.Column="6" Name="equipmentInfoContent2005"></TextBox>
+                        <TextBox Grid.Row="26" Grid.Column="7" Name="equipmentInfoContent2006"></TextBox>
+                        <TextBox Grid.Row="26" Grid.Column="8" Name="equipmentInfoContent2007"></TextBox>
+                        <TextBox Grid.Row="26" Grid.Column="9" Name="equipmentInfoContent2008"></TextBox>
+                        <TextBox Grid.Row="26" Grid.Column="10" Name="equipmentInfoContent2009"></TextBox>
+                        <TextBox Grid.Row="26" Grid.Column="11" Name="equipmentInfoContent2010"></TextBox>
+                        <TextBox Grid.Row="26" Grid.Column="12" Name="equipmentInfoContent2011"></TextBox>
+                        <TextBox Grid.Row="26" Grid.Column="13" Name="equipmentInfoContent2012"></TextBox>
+                        <TextBox Grid.Row="27" Grid.Column="1" Name="equipmentInfoContent2100"></TextBox>
+                        <TextBox Grid.Row="27" Grid.Column="2" Name="equipmentInfoContent2101"></TextBox>
+                        <TextBox Grid.Row="27" Grid.Column="3" Name="equipmentInfoContent2102"></TextBox>
+                        <TextBox Grid.Row="27" Grid.Column="4" Name="equipmentInfoContent2103"></TextBox>
+                        <TextBox Grid.Row="27" Grid.Column="5" Name="equipmentInfoContent2104"></TextBox>
+                        <TextBox Grid.Row="27" Grid.Column="6" Name="equipmentInfoContent2105"></TextBox>
+                        <TextBox Grid.Row="27" Grid.Column="7" Name="equipmentInfoContent2106"></TextBox>
+                        <TextBox Grid.Row="27" Grid.Column="8" Name="equipmentInfoContent2107"></TextBox>
+                        <TextBox Grid.Row="27" Grid.Column="9" Name="equipmentInfoContent2108"></TextBox>
+                        <TextBox Grid.Row="27" Grid.Column="10" Name="equipmentInfoContent2109"></TextBox>
+                        <TextBox Grid.Row="27" Grid.Column="11" Name="equipmentInfoContent2110"></TextBox>
+                        <TextBox Grid.Row="27" Grid.Column="12" Name="equipmentInfoContent2111"></TextBox>
+                        <TextBox Grid.Row="27" Grid.Column="13" Name="equipmentInfoContent2112"></TextBox>
+                        <TextBox Grid.Row="29" Grid.Column="1" Name="equipmentInfoContent2200"></TextBox>
+                        <TextBox Grid.Row="29" Grid.Column="2" Name="equipmentInfoContent2201"></TextBox>
+                        <TextBox Grid.Row="29" Grid.Column="3" Name="equipmentInfoContent2202"></TextBox>
+                        <TextBox Grid.Row="29" Grid.Column="4" Name="equipmentInfoContent2203"></TextBox>
+                        <TextBox Grid.Row="29" Grid.Column="5" Name="equipmentInfoContent2204"></TextBox>
+                        <TextBox Grid.Row="29" Grid.Column="6" Name="equipmentInfoContent2205"></TextBox>
+                        <TextBox Grid.Row="29" Grid.Column="7" Name="equipmentInfoContent2206"></TextBox>
+                        <TextBox Grid.Row="29" Grid.Column="8" Name="equipmentInfoContent2207"></TextBox>
+                        <TextBox Grid.Row="29" Grid.Column="9" Name="equipmentInfoContent2208"></TextBox>
+                        <TextBox Grid.Row="29" Grid.Column="10" Name="equipmentInfoContent2209"></TextBox>
+                        <TextBox Grid.Row="29" Grid.Column="11" Name="equipmentInfoContent2210"></TextBox>
+                        <TextBox Grid.Row="29" Grid.Column="12" Name="equipmentInfoContent2211"></TextBox>
+                        <TextBox Grid.Row="29" Grid.Column="13" Name="equipmentInfoContent2212"></TextBox>
+                        <TextBox Grid.Row="30" Grid.Column="1" Name="equipmentInfoContent2300"></TextBox>
+                        <TextBox Grid.Row="30" Grid.Column="2" Name="equipmentInfoContent2301"></TextBox>
+                        <TextBox Grid.Row="30" Grid.Column="3" Name="equipmentInfoContent2302"></TextBox>
+                        <TextBox Grid.Row="30" Grid.Column="4" Name="equipmentInfoContent2303"></TextBox>
+                        <TextBox Grid.Row="30" Grid.Column="5" Name="equipmentInfoContent2304"></TextBox>
+                        <TextBox Grid.Row="30" Grid.Column="6" Name="equipmentInfoContent2305"></TextBox>
+                        <TextBox Grid.Row="30" Grid.Column="7" Name="equipmentInfoContent2306"></TextBox>
+                        <TextBox Grid.Row="30" Grid.Column="8" Name="equipmentInfoContent2307"></TextBox>
+                        <TextBox Grid.Row="30" Grid.Column="9" Name="equipmentInfoContent2308"></TextBox>
+                        <TextBox Grid.Row="30" Grid.Column="10" Name="equipmentInfoContent2309"></TextBox>
+                        <TextBox Grid.Row="30" Grid.Column="11" Name="equipmentInfoContent2310"></TextBox>
+                        <TextBox Grid.Row="30" Grid.Column="12" Name="equipmentInfoContent2311"></TextBox>
+                        <TextBox Grid.Row="30" Grid.Column="13" Name="equipmentInfoContent2312"></TextBox>
+                        <TextBox Grid.Row="31" Grid.Column="1" Name="equipmentInfoContent2400"></TextBox>
+                        <TextBox Grid.Row="31" Grid.Column="2" Name="equipmentInfoContent2401"></TextBox>
+                        <TextBox Grid.Row="31" Grid.Column="3" Name="equipmentInfoContent2402"></TextBox>
+                        <TextBox Grid.Row="31" Grid.Column="4" Name="equipmentInfoContent2403"></TextBox>
+                        <TextBox Grid.Row="31" Grid.Column="5" Name="equipmentInfoContent2404"></TextBox>
+                        <TextBox Grid.Row="31" Grid.Column="6" Name="equipmentInfoContent2405"></TextBox>
+                        <TextBox Grid.Row="31" Grid.Column="7" Name="equipmentInfoContent2406"></TextBox>
+                        <TextBox Grid.Row="31" Grid.Column="8" Name="equipmentInfoContent2407"></TextBox>
+                        <TextBox Grid.Row="31" Grid.Column="9" Name="equipmentInfoContent2408"></TextBox>
+                        <TextBox Grid.Row="31" Grid.Column="10" Name="equipmentInfoContent2409"></TextBox>
+                        <TextBox Grid.Row="31" Grid.Column="11" Name="equipmentInfoContent2410"></TextBox>
+                        <TextBox Grid.Row="31" Grid.Column="12" Name="equipmentInfoContent2411"></TextBox>
+                        <TextBox Grid.Row="31" Grid.Column="13" Name="equipmentInfoContent2412"></TextBox>
+                        <TextBox Grid.Row="32" Grid.Column="1" Name="equipmentInfoContent2500"></TextBox>
+                        <TextBox Grid.Row="32" Grid.Column="2" Name="equipmentInfoContent2501"></TextBox>
+                        <TextBox Grid.Row="32" Grid.Column="3" Name="equipmentInfoContent2502"></TextBox>
+                        <TextBox Grid.Row="32" Grid.Column="4" Name="equipmentInfoContent2503"></TextBox>
+                        <TextBox Grid.Row="32" Grid.Column="5" Name="equipmentInfoContent2504"></TextBox>
+                        <TextBox Grid.Row="32" Grid.Column="6" Name="equipmentInfoContent2505"></TextBox>
+                        <TextBox Grid.Row="32" Grid.Column="7" Name="equipmentInfoContent2506"></TextBox>
+                        <TextBox Grid.Row="32" Grid.Column="8" Name="equipmentInfoContent2507"></TextBox>
+                        <TextBox Grid.Row="32" Grid.Column="9" Name="equipmentInfoContent2508"></TextBox>
+                        <TextBox Grid.Row="32" Grid.Column="10" Name="equipmentInfoContent2509"></TextBox>
+                        <TextBox Grid.Row="32" Grid.Column="11" Name="equipmentInfoContent2510"></TextBox>
+                        <TextBox Grid.Row="32" Grid.Column="12" Name="equipmentInfoContent2511"></TextBox>
+                        <TextBox Grid.Row="32" Grid.Column="13" Name="equipmentInfoContent2512"></TextBox>
+                        <TextBox Grid.Row="33" Grid.Column="1" Name="equipmentInfoContent2600"></TextBox>
+                        <TextBox Grid.Row="33" Grid.Column="2" Name="equipmentInfoContent2601"></TextBox>
+                        <TextBox Grid.Row="33" Grid.Column="3" Name="equipmentInfoContent2602"></TextBox>
+                        <TextBox Grid.Row="33" Grid.Column="4" Name="equipmentInfoContent2603"></TextBox>
+                        <TextBox Grid.Row="33" Grid.Column="5" Name="equipmentInfoContent2604"></TextBox>
+                        <TextBox Grid.Row="33" Grid.Column="6" Name="equipmentInfoContent2605"></TextBox>
+                        <TextBox Grid.Row="33" Grid.Column="7" Name="equipmentInfoContent2606"></TextBox>
+                        <TextBox Grid.Row="33" Grid.Column="8" Name="equipmentInfoContent2607"></TextBox>
+                        <TextBox Grid.Row="33" Grid.Column="9" Name="equipmentInfoContent2608"></TextBox>
+                        <TextBox Grid.Row="33" Grid.Column="10" Name="equipmentInfoContent2609"></TextBox>
+                        <TextBox Grid.Row="33" Grid.Column="11" Name="equipmentInfoContent2610"></TextBox>
+                        <TextBox Grid.Row="33" Grid.Column="12" Name="equipmentInfoContent2611"></TextBox>
+                        <TextBox Grid.Row="33" Grid.Column="13" Name="equipmentInfoContent2612"></TextBox>
+                        <TextBox Grid.Row="35" Grid.Column="1" Name="equipmentInfoContent2700"></TextBox>
+                        <TextBox Grid.Row="35" Grid.Column="2" Name="equipmentInfoContent2701"></TextBox>
+                        <TextBox Grid.Row="35" Grid.Column="3" Name="equipmentInfoContent2702"></TextBox>
+                        <TextBox Grid.Row="35" Grid.Column="4" Name="equipmentInfoContent2703"></TextBox>
+                        <TextBox Grid.Row="35" Grid.Column="5" Name="equipmentInfoContent2704"></TextBox>
+                        <TextBox Grid.Row="35" Grid.Column="6" Name="equipmentInfoContent2705"></TextBox>
+                        <TextBox Grid.Row="35" Grid.Column="7" Name="equipmentInfoContent2706"></TextBox>
+                        <TextBox Grid.Row="35" Grid.Column="8" Name="equipmentInfoContent2707"></TextBox>
+                        <TextBox Grid.Row="35" Grid.Column="9" Name="equipmentInfoContent2708"></TextBox>
+                        <TextBox Grid.Row="35" Grid.Column="10" Name="equipmentInfoContent2709"></TextBox>
+                        <TextBox Grid.Row="35" Grid.Column="11" Name="equipmentInfoContent2710"></TextBox>
+                        <TextBox Grid.Row="35" Grid.Column="12" Name="equipmentInfoContent2711"></TextBox>
+                        <TextBox Grid.Row="35" Grid.Column="13" Name="equipmentInfoContent2712"></TextBox>
+                        <TextBox Grid.Row="36" Grid.Column="1" Name="equipmentInfoContent2800"></TextBox>
+                        <TextBox Grid.Row="36" Grid.Column="2" Name="equipmentInfoContent2801"></TextBox>
+                        <TextBox Grid.Row="36" Grid.Column="3" Name="equipmentInfoContent2802"></TextBox>
+                        <TextBox Grid.Row="36" Grid.Column="4" Name="equipmentInfoContent2803"></TextBox>
+                        <TextBox Grid.Row="36" Grid.Column="5" Name="equipmentInfoContent2804"></TextBox>
+                        <TextBox Grid.Row="36" Grid.Column="6" Name="equipmentInfoContent2805"></TextBox>
+                        <TextBox Grid.Row="36" Grid.Column="7" Name="equipmentInfoContent2806"></TextBox>
+                        <TextBox Grid.Row="36" Grid.Column="8" Name="equipmentInfoContent2807"></TextBox>
+                        <TextBox Grid.Row="36" Grid.Column="9" Name="equipmentInfoContent2808"></TextBox>
+                        <TextBox Grid.Row="36" Grid.Column="10" Name="equipmentInfoContent2809"></TextBox>
+                        <TextBox Grid.Row="36" Grid.Column="11" Name="equipmentInfoContent2810"></TextBox>
+                        <TextBox Grid.Row="36" Grid.Column="12" Name="equipmentInfoContent2811"></TextBox>
+                        <TextBox Grid.Row="36" Grid.Column="13" Name="equipmentInfoContent2812"></TextBox>
+                        <TextBox Grid.Row="37" Grid.Column="1" Name="equipmentInfoContent2900"></TextBox>
+                        <TextBox Grid.Row="37" Grid.Column="2" Name="equipmentInfoContent2901"></TextBox>
+                        <TextBox Grid.Row="37" Grid.Column="3" Name="equipmentInfoContent2902"></TextBox>
+                        <TextBox Grid.Row="37" Grid.Column="4" Name="equipmentInfoContent2903"></TextBox>
+                        <TextBox Grid.Row="37" Grid.Column="5" Name="equipmentInfoContent2904"></TextBox>
+                        <TextBox Grid.Row="37" Grid.Column="6" Name="equipmentInfoContent2905"></TextBox>
+                        <TextBox Grid.Row="37" Grid.Column="7" Name="equipmentInfoContent2906"></TextBox>
+                        <TextBox Grid.Row="37" Grid.Column="8" Name="equipmentInfoContent2907"></TextBox>
+                        <TextBox Grid.Row="37" Grid.Column="9" Name="equipmentInfoContent2908"></TextBox>
+                        <TextBox Grid.Row="37" Grid.Column="10" Name="equipmentInfoContent2909"></TextBox>
+                        <TextBox Grid.Row="37" Grid.Column="11" Name="equipmentInfoContent2910"></TextBox>
+                        <TextBox Grid.Row="37" Grid.Column="12" Name="equipmentInfoContent2911"></TextBox>
+                        <TextBox Grid.Row="37" Grid.Column="13" Name="equipmentInfoContent2912"></TextBox>
+                        <TextBox Grid.Row="38" Grid.Column="1" Name="equipmentInfoContent3000"></TextBox>
+                        <TextBox Grid.Row="38" Grid.Column="2" Name="equipmentInfoContent3001"></TextBox>
+                        <TextBox Grid.Row="38" Grid.Column="3" Name="equipmentInfoContent3002"></TextBox>
+                        <TextBox Grid.Row="38" Grid.Column="4" Name="equipmentInfoContent3003"></TextBox>
+                        <TextBox Grid.Row="38" Grid.Column="5" Name="equipmentInfoContent3004"></TextBox>
+                        <TextBox Grid.Row="38" Grid.Column="6" Name="equipmentInfoContent3005"></TextBox>
+                        <TextBox Grid.Row="38" Grid.Column="7" Name="equipmentInfoContent3006"></TextBox>
+                        <TextBox Grid.Row="38" Grid.Column="8" Name="equipmentInfoContent3007"></TextBox>
+                        <TextBox Grid.Row="38" Grid.Column="9" Name="equipmentInfoContent3008"></TextBox>
+                        <TextBox Grid.Row="38" Grid.Column="10" Name="equipmentInfoContent3009"></TextBox>
+                        <TextBox Grid.Row="38" Grid.Column="11" Name="equipmentInfoContent3010"></TextBox>
+                        <TextBox Grid.Row="38" Grid.Column="12" Name="equipmentInfoContent3011"></TextBox>
+                        <TextBox Grid.Row="38" Grid.Column="13" Name="equipmentInfoContent3012"></TextBox>
+                        <TextBox Grid.Row="39" Grid.Column="1" Name="equipmentInfoContent3100"></TextBox>
+                        <TextBox Grid.Row="39" Grid.Column="2" Name="equipmentInfoContent3101"></TextBox>
+                        <TextBox Grid.Row="39" Grid.Column="3" Name="equipmentInfoContent3102"></TextBox>
+                        <TextBox Grid.Row="39" Grid.Column="4" Name="equipmentInfoContent3103"></TextBox>
+                        <TextBox Grid.Row="39" Grid.Column="5" Name="equipmentInfoContent3104"></TextBox>
+                        <TextBox Grid.Row="39" Grid.Column="6" Name="equipmentInfoContent3105"></TextBox>
+                        <TextBox Grid.Row="39" Grid.Column="7" Name="equipmentInfoContent3106"></TextBox>
+                        <TextBox Grid.Row="39" Grid.Column="8" Name="equipmentInfoContent3107"></TextBox>
+                        <TextBox Grid.Row="39" Grid.Column="9" Name="equipmentInfoContent3108"></TextBox>
+                        <TextBox Grid.Row="39" Grid.Column="10" Name="equipmentInfoContent3109"></TextBox>
+                        <TextBox Grid.Row="39" Grid.Column="11" Name="equipmentInfoContent3110"></TextBox>
+                        <TextBox Grid.Row="39" Grid.Column="12" Name="equipmentInfoContent3111"></TextBox>
+                        <TextBox Grid.Row="39" Grid.Column="13" Name="equipmentInfoContent3112"></TextBox>
+                        <TextBox Grid.Row="41" Grid.Column="1" Name="equipmentInfoContent3200"></TextBox>
+                        <TextBox Grid.Row="41" Grid.Column="2" Name="equipmentInfoContent3201"></TextBox>
+                        <TextBox Grid.Row="41" Grid.Column="3" Name="equipmentInfoContent3202"></TextBox>
+                        <TextBox Grid.Row="41" Grid.Column="4" Name="equipmentInfoContent3203"></TextBox>
+                        <TextBox Grid.Row="41" Grid.Column="5" Name="equipmentInfoContent3204"></TextBox>
+                        <TextBox Grid.Row="41" Grid.Column="6" Name="equipmentInfoContent3205"></TextBox>
+                        <TextBox Grid.Row="41" Grid.Column="7" Name="equipmentInfoContent3206"></TextBox>
+                        <TextBox Grid.Row="41" Grid.Column="8" Name="equipmentInfoContent3207"></TextBox>
+                        <TextBox Grid.Row="41" Grid.Column="9" Name="equipmentInfoContent3208"></TextBox>
+                        <TextBox Grid.Row="41" Grid.Column="10" Name="equipmentInfoContent3209"></TextBox>
+                        <TextBox Grid.Row="41" Grid.Column="11" Name="equipmentInfoContent3210"></TextBox>
+                        <TextBox Grid.Row="41" Grid.Column="12" Name="equipmentInfoContent3211"></TextBox>
+                        <TextBox Grid.Row="41" Grid.Column="13" Name="equipmentInfoContent3212"></TextBox>
+                        <TextBox Grid.Row="42" Grid.Column="1" Name="equipmentInfoContent3300"></TextBox>
+                        <TextBox Grid.Row="42" Grid.Column="2" Name="equipmentInfoContent3301"></TextBox>
+                        <TextBox Grid.Row="42" Grid.Column="3" Name="equipmentInfoContent3302"></TextBox>
+                        <TextBox Grid.Row="42" Grid.Column="4" Name="equipmentInfoContent3303"></TextBox>
+                        <TextBox Grid.Row="42" Grid.Column="5" Name="equipmentInfoContent3304"></TextBox>
+                        <TextBox Grid.Row="42" Grid.Column="6" Name="equipmentInfoContent3305"></TextBox>
+                        <TextBox Grid.Row="42" Grid.Column="7" Name="equipmentInfoContent3306"></TextBox>
+                        <TextBox Grid.Row="42" Grid.Column="8" Name="equipmentInfoContent3307"></TextBox>
+                        <TextBox Grid.Row="42" Grid.Column="9" Name="equipmentInfoContent3308"></TextBox>
+                        <TextBox Grid.Row="42" Grid.Column="10" Name="equipmentInfoContent3309"></TextBox>
+                        <TextBox Grid.Row="42" Grid.Column="11" Name="equipmentInfoContent3310"></TextBox>
+                        <TextBox Grid.Row="42" Grid.Column="12" Name="equipmentInfoContent3311"></TextBox>
+                        <TextBox Grid.Row="42" Grid.Column="13" Name="equipmentInfoContent3312"></TextBox>
+                        <TextBox Grid.Row="43" Grid.Column="1" Name="equipmentInfoContent3400"></TextBox>
+                        <TextBox Grid.Row="43" Grid.Column="2" Name="equipmentInfoContent3401"></TextBox>
+                        <TextBox Grid.Row="43" Grid.Column="3" Name="equipmentInfoContent3402"></TextBox>
+                        <TextBox Grid.Row="43" Grid.Column="4" Name="equipmentInfoContent3403"></TextBox>
+                        <TextBox Grid.Row="43" Grid.Column="5" Name="equipmentInfoContent3404"></TextBox>
+                        <TextBox Grid.Row="43" Grid.Column="6" Name="equipmentInfoContent3405"></TextBox>
+                        <TextBox Grid.Row="43" Grid.Column="7" Name="equipmentInfoContent3406"></TextBox>
+                        <TextBox Grid.Row="43" Grid.Column="8" Name="equipmentInfoContent3407"></TextBox>
+                        <TextBox Grid.Row="43" Grid.Column="9" Name="equipmentInfoContent3408"></TextBox>
+                        <TextBox Grid.Row="43" Grid.Column="10" Name="equipmentInfoContent3409"></TextBox>
+                        <TextBox Grid.Row="43" Grid.Column="11" Name="equipmentInfoContent3410"></TextBox>
+                        <TextBox Grid.Row="43" Grid.Column="12" Name="equipmentInfoContent3411"></TextBox>
+                        <TextBox Grid.Row="43" Grid.Column="13" Name="equipmentInfoContent3412"></TextBox>
+                        <TextBox Grid.Row="44" Grid.Column="1" Name="equipmentInfoContent3500"></TextBox>
+                        <TextBox Grid.Row="44" Grid.Column="2" Name="equipmentInfoContent3501"></TextBox>
+                        <TextBox Grid.Row="44" Grid.Column="3" Name="equipmentInfoContent3502"></TextBox>
+                        <TextBox Grid.Row="44" Grid.Column="4" Name="equipmentInfoContent3503"></TextBox>
+                        <TextBox Grid.Row="44" Grid.Column="5" Name="equipmentInfoContent3504"></TextBox>
+                        <TextBox Grid.Row="44" Grid.Column="6" Name="equipmentInfoContent3505"></TextBox>
+                        <TextBox Grid.Row="44" Grid.Column="7" Name="equipmentInfoContent3506"></TextBox>
+                        <TextBox Grid.Row="44" Grid.Column="8" Name="equipmentInfoContent3507"></TextBox>
+                        <TextBox Grid.Row="44" Grid.Column="9" Name="equipmentInfoContent3508"></TextBox>
+                        <TextBox Grid.Row="44" Grid.Column="10" Name="equipmentInfoContent3509"></TextBox>
+                        <TextBox Grid.Row="44" Grid.Column="11" Name="equipmentInfoContent3510"></TextBox>
+                        <TextBox Grid.Row="44" Grid.Column="12" Name="equipmentInfoContent3511"></TextBox>
+                        <TextBox Grid.Row="44" Grid.Column="13" Name="equipmentInfoContent3512"></TextBox>
+                        <TextBox Grid.Row="45" Grid.Column="1" Name="equipmentInfoContent3600"></TextBox>
+                        <TextBox Grid.Row="45" Grid.Column="2" Name="equipmentInfoContent3601"></TextBox>
+                        <TextBox Grid.Row="45" Grid.Column="3" Name="equipmentInfoContent3602"></TextBox>
+                        <TextBox Grid.Row="45" Grid.Column="4" Name="equipmentInfoContent3603"></TextBox>
+                        <TextBox Grid.Row="45" Grid.Column="5" Name="equipmentInfoContent3604"></TextBox>
+                        <TextBox Grid.Row="45" Grid.Column="6" Name="equipmentInfoContent3605"></TextBox>
+                        <TextBox Grid.Row="45" Grid.Column="7" Name="equipmentInfoContent3606"></TextBox>
+                        <TextBox Grid.Row="45" Grid.Column="8" Name="equipmentInfoContent3607"></TextBox>
+                        <TextBox Grid.Row="45" Grid.Column="9" Name="equipmentInfoContent3608"></TextBox>
+                        <TextBox Grid.Row="45" Grid.Column="10" Name="equipmentInfoContent3609"></TextBox>
+                        <TextBox Grid.Row="45" Grid.Column="11" Name="equipmentInfoContent3610"></TextBox>
+                        <TextBox Grid.Row="45" Grid.Column="12" Name="equipmentInfoContent3611"></TextBox>
+                        <TextBox Grid.Row="45" Grid.Column="13" Name="equipmentInfoContent3612"></TextBox>
+                        <TextBox Grid.Row="46" Grid.Column="1" Name="equipmentInfoContent3700"></TextBox>
+                        <TextBox Grid.Row="46" Grid.Column="2" Name="equipmentInfoContent3701"></TextBox>
+                        <TextBox Grid.Row="46" Grid.Column="3" Name="equipmentInfoContent3702"></TextBox>
+                        <TextBox Grid.Row="46" Grid.Column="4" Name="equipmentInfoContent3703"></TextBox>
+                        <TextBox Grid.Row="46" Grid.Column="5" Name="equipmentInfoContent3704"></TextBox>
+                        <TextBox Grid.Row="46" Grid.Column="6" Name="equipmentInfoContent3705"></TextBox>
+                        <TextBox Grid.Row="46" Grid.Column="7" Name="equipmentInfoContent3706"></TextBox>
+                        <TextBox Grid.Row="46" Grid.Column="8" Name="equipmentInfoContent3707"></TextBox>
+                        <TextBox Grid.Row="46" Grid.Column="9" Name="equipmentInfoContent3708"></TextBox>
+                        <TextBox Grid.Row="46" Grid.Column="10" Name="equipmentInfoContent3709"></TextBox>
+                        <TextBox Grid.Row="46" Grid.Column="11" Name="equipmentInfoContent3710"></TextBox>
+                        <TextBox Grid.Row="46" Grid.Column="12" Name="equipmentInfoContent3711"></TextBox>
+                        <TextBox Grid.Row="46" Grid.Column="13" Name="equipmentInfoContent3712"></TextBox>
+                        <TextBox Grid.Row="47" Grid.Column="1" Name="equipmentInfoContent3800"></TextBox>
+                        <TextBox Grid.Row="47" Grid.Column="2" Name="equipmentInfoContent3801"></TextBox>
+                        <TextBox Grid.Row="47" Grid.Column="3" Name="equipmentInfoContent3802"></TextBox>
+                        <TextBox Grid.Row="47" Grid.Column="4" Name="equipmentInfoContent3803"></TextBox>
+                        <TextBox Grid.Row="47" Grid.Column="5" Name="equipmentInfoContent3804"></TextBox>
+                        <TextBox Grid.Row="47" Grid.Column="6" Name="equipmentInfoContent3805"></TextBox>
+                        <TextBox Grid.Row="47" Grid.Column="7" Name="equipmentInfoContent3806"></TextBox>
+                        <TextBox Grid.Row="47" Grid.Column="8" Name="equipmentInfoContent3807"></TextBox>
+                        <TextBox Grid.Row="47" Grid.Column="9" Name="equipmentInfoContent3808"></TextBox>
+                        <TextBox Grid.Row="47" Grid.Column="10" Name="equipmentInfoContent3809"></TextBox>
+                        <TextBox Grid.Row="47" Grid.Column="11" Name="equipmentInfoContent3810"></TextBox>
+                        <TextBox Grid.Row="47" Grid.Column="12" Name="equipmentInfoContent3811"></TextBox>
+                        <TextBox Grid.Row="47" Grid.Column="13" Name="equipmentInfoContent3812"></TextBox>
+                    </Grid>
+                </ScrollViewer>
+            </TabItem>
+            <TabItem Header="Project 1" Name="projectInfoTab1" FontWeight="Bold">
+                <ScrollViewer>
+                    <Grid>
+                        <Grid.RowDefinitions><RowDefinition /><RowDefinition /><RowDefinition /><RowDefinition /><RowDefinition /><RowDefinition /><RowDefinition /><RowDefinition /><RowDefinition /><RowDefinition /><RowDefinition /><RowDefinition /><RowDefinition /><RowDefinition /><RowDefinition /><RowDefinition /><RowDefinition /><RowDefinition /><RowDefinition /><RowDefinition /><RowDefinition /><RowDefinition /><RowDefinition /><RowDefinition /><RowDefinition /><RowDefinition /><RowDefinition /><RowDefinition /><RowDefinition /><RowDefinition /><RowDefinition /><RowDefinition /><RowDefinition /><RowDefinition /><RowDefinition /><RowDefinition /></Grid.RowDefinitions><Grid.ColumnDefinitions><ColumnDefinition /><ColumnDefinition /><ColumnDefinition /><ColumnDefinition /><ColumnDefinition /><ColumnDefinition /><ColumnDefinition /></Grid.ColumnDefinitions>
+                        <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="7" FontSize="20">ADB CN Project Information Tracking Card<LineBreak/>埃迪必克中国项目信息追踪卡</TextBlock>
+                        <Separator Grid.Row="1" Grid.ColumnSpan="7"></Separator>
+                        <TextBlock Grid.Row="2" Grid.Column="0">Project Information<LineBreak/>项目信息</TextBlock>
+                        <TextBlock Grid.Row="3" Grid.Column="0">Design Institute Information<LineBreak/>设计院信息</TextBlock>
+                        <TextBlock Grid.Row="4" Grid.Column="0">Contractor Information<LineBreak/>工程承包商信息</TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="4">Airport Contact Information <LineBreak/>机场联络信息</TextBlock>
+                        <TextBlock Grid.Row="3" Grid.Column="4">Contact Information <LineBreak/>联络信息</TextBlock>
+                        <TextBlock Grid.Row="4" Grid.Column="4">Contact Information <LineBreak/>联络信息</TextBlock>
+                        <TextBlock Grid.Row="5" Grid.Column="0" >Project Status <LineBreak/>项目状态</TextBlock>
+                        <TextBlock Grid.Row="5" Grid.Column="2">Technical Info. <LineBreak/>技术资料</TextBlock>
+                        <TextBlock Grid.Row="6" Grid.Column="0" Grid.RowSpan="2">Project Progress <LineBreak/>项目工期</TextBlock>
+                        <TextBlock Grid.Row="6" Grid.Column="1">Bidding <LineBreak/>招标</TextBlock>
+                        <TextBlock Grid.Row="6" Grid.Column="3">Installation <LineBreak/>设备安装</TextBlock>
+                        <TextBlock Grid.Row="6" Grid.Column="5">FAT <LineBreak/>项目验收</TextBlock>
+                        <TextBlock Grid.Row="7" Grid.Column="1">Contract <LineBreak/>合同签订</TextBlock>
+                        <TextBlock Grid.Row="7" Grid.Column="3">Delivery <LineBreak/>交货</TextBlock>
+                        <TextBlock Grid.Row="7" Grid.Column="5">CAAC FAT <LineBreak/>民航行业验收</TextBlock>
+                        <Separator Grid.Row="8" Grid.ColumnSpan="7"></Separator>
+                        <TextBlock Grid.Row="9" Grid.Column="1" Grid.ColumnSpan="2">Lights and Power Equipment <LineBreak/>灯具及供电设备</TextBlock>
+                        <TextBlock Grid.Row="9" Grid.Column="3" >System <LineBreak/>系统</TextBlock>
+                        <TextBlock Grid.Row="10" Grid.Column="0" Grid.RowSpan="5">Products Required<LineBreak/> by the Project <LineBreak/>项目设备及系统内容</TextBlock>
+                        <TextBlock Grid.Row="15" Grid.Column="0" Grid.RowSpan="2">Purchase Method <LineBreak/>采购方式</TextBlock>
+                        <TextBlock Grid.Row="17" Grid.Column="0">Sales Strategy  <LineBreak/>销售策略</TextBlock>
+                        <TextBlock Grid.Row="18" Grid.Column="0">Competition status <LineBreak/>潜在竞争对手动态</TextBlock>
+                        <Separator Grid.Row="19" Grid.ColumnSpan="7"></Separator>
+                        <TextBlock Grid.Row="20" Grid.Column="0" Grid.ColumnSpan="7">Purchaser Information <LineBreak/>采购方信息</TextBlock>
+                        <TextBlock Grid.Row="21" Grid.Column="0">Airport Decision making Chart <LineBreak/>机场决策流程图</TextBlock>
+                        <TextBlock Grid.Row="22" Grid.Column="0">Purchaser Info. <LineBreak/>采购方联系方式</TextBlock>
+                        <Separator Grid.Row="23" Grid.ColumnSpan="7"></Separator>
+                        <TextBlock Grid.Row="24" Grid.Column="0" Grid.ColumnSpan="7">Sales  Activities Record <LineBreak/>销售活动信息记录</TextBlock>
+                        <TextBlock Grid.Row="25" Grid.Column="0">Date <LineBreak/>日期</TextBlock>
+                        <TextBlock Grid.Row="25" Grid.Column="1">Contact to <LineBreak/>联络方</TextBlock>
+                        <TextBlock Grid.Row="25" Grid.Column="2" Grid.ColumnSpan="4">Description <LineBreak/>描述</TextBlock>
+                        <TextBlock Grid.Row="25" Grid.Column="6">Responsible <LineBreak/>负责人</TextBlock>
+                        <!---->
+                        <TextBox Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="3" Name="project1InfoContent00" TextWrapping="WrapWithOverflow" Height="40" AcceptsReturn="True"></TextBox>
+                        <TextBox Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="3" Name="project1InfoContent01" TextWrapping="WrapWithOverflow" Height="40" AcceptsReturn="True"></TextBox>
+                        <TextBox Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="3" Name="project1InfoContent02" TextWrapping="WrapWithOverflow" Height="40" AcceptsReturn="True"></TextBox>
+                        <TextBox Grid.Row="2" Grid.Column="5" Grid.ColumnSpan="2" Name="project1InfoContent03" TextWrapping="WrapWithOverflow" Height="40" AcceptsReturn="True"></TextBox>
+                        <TextBox Grid.Row="3" Grid.Column="5" Grid.ColumnSpan="2" Name="project1InfoContent04" TextWrapping="WrapWithOverflow" Height="40" AcceptsReturn="True"></TextBox>
+                        <TextBox Grid.Row="4" Grid.Column="5" Grid.ColumnSpan="2" Name="project1InfoContent05" TextWrapping="WrapWithOverflow" Height="40" AcceptsReturn="True"></TextBox>
+                        <TextBox Grid.Row="6" Grid.Column="2" Name="project1InfoContent06" ></TextBox>
+                        <TextBox Grid.Row="6" Grid.Column="4" Name="project1InfoContent07" ></TextBox>
+                        <TextBox Grid.Row="6" Grid.Column="6" Name="project1InfoContent08" ></TextBox>
+                        <TextBox Grid.Row="7" Grid.Column="2" Name="project1InfoContent09" ></TextBox>
+                        <TextBox Grid.Row="7" Grid.Column="4" Name="project1InfoContent10" ></TextBox>
+                        <TextBox Grid.Row="7" Grid.Column="6" Name="project1InfoContent11" ></TextBox>
+                        <TextBox Grid.Row="17" Grid.Column="1" Grid.ColumnSpan="6" Name="project1InfoContent12" Height="60" TextWrapping="WrapWithOverflow" AcceptsReturn="True"></TextBox>
+                        <TextBox Grid.Row="18" Grid.Column="1" Grid.ColumnSpan="6" Name="project1InfoContent13" Height="60" TextWrapping="WrapWithOverflow" AcceptsReturn="True"></TextBox>
+                        <TextBox Grid.Row="22" Grid.Column="1" Grid.ColumnSpan="6" Name="project1InfoContent14" Height="60" TextWrapping="WrapWithOverflow" AcceptsReturn="True"></TextBox>
+                        <!---->
+                        <TextBox Grid.Row="26" Grid.Column="0" Name="project1SalesContent00" ></TextBox>
+                        <TextBox Grid.Row="26" Grid.Column="1" Name="project1SalesContent01" ></TextBox>
+                        <TextBox Grid.Row="26" Grid.Column="2" Grid.ColumnSpan="4" Name="project1SalesContent02" ></TextBox>
+                        <TextBox Grid.Row="26" Grid.Column="6" Name="project1SalesContent03" ></TextBox>
+
+                        <TextBox Grid.Row="27" Grid.Column="0" Name="project1SalesContent10" ></TextBox>
+                        <TextBox Grid.Row="27" Grid.Column="1" Name="project1SalesContent11" ></TextBox>
+                        <TextBox Grid.Row="27" Grid.Column="2" Grid.ColumnSpan="4" Name="project1SalesContent12" ></TextBox>
+                        <TextBox Grid.Row="27" Grid.Column="6" Name="project1SalesContent13" ></TextBox>
+
+                        <TextBox Grid.Row="28" Grid.Column="0" Name="project1SalesContent20" ></TextBox>
+                        <TextBox Grid.Row="28" Grid.Column="1" Name="project1SalesContent21" ></TextBox>
+                        <TextBox Grid.Row="28" Grid.Column="2" Grid.ColumnSpan="4" Name="project1SalesContent22" ></TextBox>
+                        <TextBox Grid.Row="28" Grid.Column="6" Name="project1SalesContent23" ></TextBox>
+
+                        <TextBox Grid.Row="29" Grid.Column="0" Name="project1SalesContent30" ></TextBox>
+                        <TextBox Grid.Row="29" Grid.Column="1" Name="project1SalesContent31" ></TextBox>
+                        <TextBox Grid.Row="29" Grid.Column="2" Grid.ColumnSpan="4" Name="project1SalesContent32" ></TextBox>
+                        <TextBox Grid.Row="29" Grid.Column="6" Name="project1SalesContent33" ></TextBox>
+
+                        <TextBox Grid.Row="30" Grid.Column="0" Name="project1SalesContent40" ></TextBox>
+                        <TextBox Grid.Row="30" Grid.Column="1" Name="project1SalesContent41" ></TextBox>
+                        <TextBox Grid.Row="30" Grid.Column="2" Grid.ColumnSpan="4" Name="project1SalesContent42" ></TextBox>
+                        <TextBox Grid.Row="30" Grid.Column="6" Name="project1SalesContent43" ></TextBox>
+
+                        <TextBox Grid.Row="31" Grid.Column="0" Name="project1SalesContent50" ></TextBox>
+                        <TextBox Grid.Row="31" Grid.Column="1" Name="project1SalesContent51" ></TextBox>
+                        <TextBox Grid.Row="31" Grid.Column="2" Grid.ColumnSpan="4" Name="project1SalesContent52" ></TextBox>
+                        <TextBox Grid.Row="31" Grid.Column="6" Name="project1SalesContent53" ></TextBox>
+
+                        <TextBox Grid.Row="32" Grid.Column="0" Name="project1SalesContent60" ></TextBox>
+                        <TextBox Grid.Row="32" Grid.Column="1" Name="project1SalesContent61" ></TextBox>
+                        <TextBox Grid.Row="32" Grid.Column="2" Grid.ColumnSpan="4" Name="project1SalesContent62" ></TextBox>
+                        <TextBox Grid.Row="32" Grid.Column="6" Name="project1SalesContent63" ></TextBox>
+
+                        <TextBox Grid.Row="33" Grid.Column="0" Name="project1SalesContent70" ></TextBox>
+                        <TextBox Grid.Row="33" Grid.Column="1" Name="project1SalesContent71" ></TextBox>
+                        <TextBox Grid.Row="33" Grid.Column="2" Grid.ColumnSpan="4" Name="project1SalesContent72" ></TextBox>
+                        <TextBox Grid.Row="33" Grid.Column="6" Name="project1SalesContent73" ></TextBox>
+
+                        <TextBox Grid.Row="34" Grid.Column="0" Name="project1SalesContent80" ></TextBox>
+                        <TextBox Grid.Row="34" Grid.Column="1" Name="project1SalesContent81" ></TextBox>
+                        <TextBox Grid.Row="34" Grid.Column="2" Grid.ColumnSpan="4" Name="project1SalesContent82" ></TextBox>
+                        <TextBox Grid.Row="34" Grid.Column="6" Name="project1SalesContent83" ></TextBox>
+
+                        <TextBox Grid.Row="35" Grid.Column="0" Name="project1SalesContent90" ></TextBox>
+                        <TextBox Grid.Row="35" Grid.Column="1" Name="project1SalesContent91" ></TextBox>
+                        <TextBox Grid.Row="35" Grid.Column="2" Grid.ColumnSpan="4" Name="project1SalesContent92" ></TextBox>
+                        <TextBox Grid.Row="35" Grid.Column="6" Name="project1SalesContent93" ></TextBox>
+                        <!---->
+                        <StackPanel Grid.Row="5" Grid.Column="1" Height="50" >
+                            <Separator></Separator>
+                            <CheckBox  Height="20" FontWeight="Regular" Name="project1CheckBox0">Feasible Study 审批</CheckBox>
+                            <CheckBox  Height="20" FontWeight="Regular" Name="project1CheckBox1">Approved 立项</CheckBox>
+                            <Separator></Separator>
+                        </StackPanel>
+                        <StackPanel Grid.Row="5" Grid.Column="3" Grid.ColumnSpan="2" Height="50">
+                            <Separator></Separator>
+                            <CheckBox  Height="20" FontWeight="Regular" Name="project1CheckBox2">Design Plan 设计图纸</CheckBox>
+                            <CheckBox  Height="20" FontWeight="Regular" Name="project1CheckBox3">Detailed Design Plan 深化设计图纸</CheckBox>
+                            <Separator></Separator>
+                        </StackPanel>
+                        <StackPanel Grid.Row="5" Grid.Column="5" Grid.ColumnSpan="2" Height="50">
+                            <Separator></Separator>
+                            <CheckBox  Height="20" FontWeight="Regular" Name="project1CheckBox4">Project Budget项目预算</CheckBox>
+                            <CheckBox  Height="20" FontWeight="Regular" Name="project1CheckBox5">Product List设备清单</CheckBox>
+                            <Separator></Separator>
+                        </StackPanel>
+                        <CheckBox  Grid.Row="10" Grid.Column="1"  Height="20" FontWeight="Regular" Name="project1CheckBox6" >PAPI 坡度灯</CheckBox>
+                        <CheckBox  Grid.Row="11" Grid.Column="1"  Height="20" FontWeight="Regular" Name="project1CheckBox7">CCR 调光器</CheckBox>
+                        <CheckBox  Grid.Row="12" Grid.Column="1"  Height="20" FontWeight="Regular" Name="project1CheckBox8">SFL 顺序闪光灯</CheckBox>
+                        <CheckBox  Grid.Row="13" Grid.Column="1"  Height="20" FontWeight="Regular" Name="project1CheckBox9">Signs 标记牌</CheckBox>
+                        <CheckBox  Grid.Row="14" Grid.Column="1"  Height="20" FontWeight="Regular" Name="project1CheckBox10">RST 隔离变压器</CheckBox>
+                        <CheckBox  Grid.Row="10" Grid.Column="2"  Height="20" FontWeight="Regular" Name="project1CheckBox11">TXY Lights 滑行道灯具</CheckBox>
+                        <CheckBox  Grid.Row="11" Grid.Column="2"  Height="20" FontWeight="Regular" Name="project1CheckBox12">Apporach 进近灯灯具</CheckBox>
+                        <CheckBox  Grid.Row="12" Grid.Column="2"  Height="20" FontWeight="Regular" Name="project1CheckBox13">RXY Lights 跑道灯具</CheckBox>
+                        <CheckBox  Grid.Row="13" Grid.Column="2"  Height="20" FontWeight="Regular" Name="project1CheckBox14">Solar Lights 太阳能灯具</CheckBox>
+                        <CheckBox  Grid.Row="14" Grid.Column="2"  Height="20" FontWeight="Regular" Name="project1CheckBox15">Heliport 直升机坪灯</CheckBox>
+
+                        <CheckBox  Grid.Row="10" Grid.Column="3"  Grid.ColumnSpan="2" Height="20" FontWeight="Regular" Name="project1CheckBox16">AGLAS 单灯监控系统</CheckBox>
+                        <CheckBox  Grid.Row="11" Grid.Column="3"  Grid.ColumnSpan="2" Height="20" FontWeight="Regular" Name="project1CheckBox17">ALCS 助航灯光监控系统</CheckBox>
+                        <CheckBox  Grid.Row="12" Grid.Column="3"  Grid.ColumnSpan="2" Height="20" FontWeight="Regular" Name="project1CheckBox18">H-ALCS 直升机灯光监控系统</CheckBox>
+                        <CheckBox  Grid.Row="13" Grid.Column="3"  Grid.ColumnSpan="2" Height="20" FontWeight="Regular" Name="project1CheckBox19">Service 服务</CheckBox>
+                        <CheckBox  Grid.Row="14" Grid.Column="3"  Grid.ColumnSpan="2" Height="20" FontWeight="Regular" Name="project1CheckBox20">Third Party 第三方产品/服务</CheckBox>
+                        
+                        <StackPanel Grid.Row="15" Grid.Column="1" Grid.ColumnSpan="2">
+                            <Separator></Separator>
+                            <CheckBox  Height="20" FontWeight="Regular" Name="project1CheckBox21">Invite Bidding 公开招标</CheckBox>
+                            <CheckBox  Height="20" FontWeight="Regular" Name="project1CheckBox22">Negotiated Bidding 使用方议标</CheckBox>
+                            <Separator></Separator>
+                        </StackPanel>
+                        <StackPanel Grid.Row="15" Grid.Column="3" Grid.ColumnSpan="2">
+                            <Separator></Separator>
+                            <CheckBox  Height="20" FontWeight="Regular" Name="project1CheckBox23">Main Contactor Purchase 总包采购</CheckBox>
+                            <CheckBox  Height="20" FontWeight="Regular" Name="project1CheckBox24">Distributor Purchase 经销商采购</CheckBox>
+                            <Separator></Separator>
+                        </StackPanel>
+                    <!--Chart-->
+                        <Viewbox Grid.Row="21" Grid.Column="1" Grid.ColumnSpan="5">
+                            <Image Name="chartImage1">
+                                
+                            </Image>
+                        </Viewbox>
+                        <StackPanel Grid.Row="21" Grid.Column="6">
+                            <Button  Height="30" Width="100" Name="chartLoadButton1" Click="chartLoadButton1_Click">Load</Button>
+                            <TextBlock Name="chartAddress1" TextWrapping="Wrap"></TextBlock>
+                        </StackPanel>                                             
+                    </Grid>
+                </ScrollViewer>
+            </TabItem>
+            <TabItem Header="Project 2" Name="projectInfoTab2" FontWeight="Bold">
+                <ScrollViewer>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="7" FontSize="20">ADB CN Project Information Tracking Card<LineBreak/>埃迪必克中国项目信息追踪卡</TextBlock>
+                        <Separator Grid.Row="1" Grid.ColumnSpan="7"></Separator>
+                        <TextBlock Grid.Row="2" Grid.Column="0">Project Information<LineBreak/>项目信息</TextBlock>
+                        <TextBlock Grid.Row="3" Grid.Column="0">Design Institute Information<LineBreak/>设计院信息</TextBlock>
+                        <TextBlock Grid.Row="4" Grid.Column="0">Contractor Information<LineBreak/>工程承包商信息</TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="4">Airport Contact Information <LineBreak/>机场联络信息</TextBlock>
+                        <TextBlock Grid.Row="3" Grid.Column="4">Contact Information <LineBreak/>联络信息</TextBlock>
+                        <TextBlock Grid.Row="4" Grid.Column="4">Contact Information <LineBreak/>联络信息</TextBlock>
+                        <TextBlock Grid.Row="5" Grid.Column="0" >Project Status <LineBreak/>项目状态</TextBlock>
+                        <TextBlock Grid.Row="5" Grid.Column="2">Technical Info. <LineBreak/>技术资料</TextBlock>
+                        <TextBlock Grid.Row="6" Grid.Column="0" Grid.RowSpan="2">Project Progress <LineBreak/>项目工期</TextBlock>
+                        <TextBlock Grid.Row="6" Grid.Column="1">Bidding <LineBreak/>招标</TextBlock>
+                        <TextBlock Grid.Row="6" Grid.Column="3">Installation <LineBreak/>设备安装</TextBlock>
+                        <TextBlock Grid.Row="6" Grid.Column="5">FAT <LineBreak/>项目验收</TextBlock>
+                        <TextBlock Grid.Row="7" Grid.Column="1">Contract <LineBreak/>合同签订</TextBlock>
+                        <TextBlock Grid.Row="7" Grid.Column="3">Delivery <LineBreak/>交货</TextBlock>
+                        <TextBlock Grid.Row="7" Grid.Column="5">CAAC FAT <LineBreak/>民航行业验收</TextBlock>
+                        <Separator Grid.Row="8" Grid.ColumnSpan="7"></Separator>
+                        <TextBlock Grid.Row="9" Grid.Column="1" Grid.ColumnSpan="2">Lights and Power Equipment <LineBreak/>灯具及供电设备</TextBlock>
+                        <TextBlock Grid.Row="9" Grid.Column="3" >System <LineBreak/>系统</TextBlock>
+                        <TextBlock Grid.Row="10" Grid.Column="0" Grid.RowSpan="5">Products Required<LineBreak/> by the Project <LineBreak/>项目设备及系统内容</TextBlock>
+                        <TextBlock Grid.Row="15" Grid.Column="0" Grid.RowSpan="2">Purchase Method <LineBreak/>采购方式</TextBlock>
+                        <TextBlock Grid.Row="17" Grid.Column="0">Sales Strategy  <LineBreak/>销售策略</TextBlock>
+                        <TextBlock Grid.Row="18" Grid.Column="0">Competition status <LineBreak/>潜在竞争对手动态</TextBlock>
+                        <Separator Grid.Row="19" Grid.ColumnSpan="7"></Separator>
+                        <TextBlock Grid.Row="20" Grid.Column="0" Grid.ColumnSpan="7">Purchaser Information <LineBreak/>采购方信息</TextBlock>
+                        <TextBlock Grid.Row="21" Grid.Column="0">Airport Decision making Chart <LineBreak/>机场决策流程图</TextBlock>
+                        <TextBlock Grid.Row="22" Grid.Column="0">Purchaser Info. <LineBreak/>采购方联系方式</TextBlock>
+                        <Separator Grid.Row="23" Grid.ColumnSpan="7"></Separator>
+                        <TextBlock Grid.Row="24" Grid.Column="0" Grid.ColumnSpan="7">Sales  Activities Record <LineBreak/>销售活动信息记录</TextBlock>
+                        <TextBlock Grid.Row="25" Grid.Column="0">Date <LineBreak/>日期</TextBlock>
+                        <TextBlock Grid.Row="25" Grid.Column="1">Contact to <LineBreak/>联络方</TextBlock>
+                        <TextBlock Grid.Row="25" Grid.Column="2" Grid.ColumnSpan="4">Description <LineBreak/>描述</TextBlock>
+                        <TextBlock Grid.Row="25" Grid.Column="6">Responsible <LineBreak/>负责人</TextBlock>
+                        <!---->
+                        <TextBox Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="3" Name="project2InfoContent00" TextWrapping="WrapWithOverflow" Height="40" AcceptsReturn="True"></TextBox>
+                        <TextBox Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="3" Name="project2InfoContent01" TextWrapping="WrapWithOverflow" Height="40" AcceptsReturn="True"></TextBox>
+                        <TextBox Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="3" Name="project2InfoContent02" TextWrapping="WrapWithOverflow" Height="40" AcceptsReturn="True"></TextBox>
+                        <TextBox Grid.Row="2" Grid.Column="5" Grid.ColumnSpan="2" Name="project2InfoContent03" TextWrapping="WrapWithOverflow" Height="40" AcceptsReturn="True"></TextBox>
+                        <TextBox Grid.Row="3" Grid.Column="5" Grid.ColumnSpan="2" Name="project2InfoContent04" TextWrapping="WrapWithOverflow" Height="40" AcceptsReturn="True"></TextBox>
+                        <TextBox Grid.Row="4" Grid.Column="5" Grid.ColumnSpan="2" Name="project2InfoContent05" TextWrapping="WrapWithOverflow" Height="40" AcceptsReturn="True"></TextBox>
+                        <TextBox Grid.Row="6" Grid.Column="2" Name="project2InfoContent06" ></TextBox>
+                        <TextBox Grid.Row="6" Grid.Column="4" Name="project2InfoContent07" ></TextBox>
+                        <TextBox Grid.Row="6" Grid.Column="6" Name="project2InfoContent08" ></TextBox>
+                        <TextBox Grid.Row="7" Grid.Column="2" Name="project2InfoContent09" ></TextBox>
+                        <TextBox Grid.Row="7" Grid.Column="4" Name="project2InfoContent10" ></TextBox>
+                        <TextBox Grid.Row="7" Grid.Column="6" Name="project2InfoContent11" ></TextBox>
+                        <TextBox Grid.Row="17" Grid.Column="1" Grid.ColumnSpan="6" Name="project2InfoContent12" Height="60" TextWrapping="WrapWithOverflow" AcceptsReturn="True"></TextBox>
+                        <TextBox Grid.Row="18" Grid.Column="1" Grid.ColumnSpan="6" Name="project2InfoContent13" Height="60" TextWrapping="WrapWithOverflow" AcceptsReturn="True"></TextBox>
+                        <TextBox Grid.Row="22" Grid.Column="1" Grid.ColumnSpan="6" Name="project2InfoContent14" Height="60" TextWrapping="WrapWithOverflow" AcceptsReturn="True"></TextBox>
+                        <!---->
+                        <TextBox Grid.Row="26" Grid.Column="0" Name="project2SalesContent00" ></TextBox>
+                        <TextBox Grid.Row="26" Grid.Column="1" Name="project2SalesContent01" ></TextBox>
+                        <TextBox Grid.Row="26" Grid.Column="2" Grid.ColumnSpan="4" Name="project2SalesContent02" ></TextBox>
+                        <TextBox Grid.Row="26" Grid.Column="6" Name="project2SalesContent03" ></TextBox>
+
+                        <TextBox Grid.Row="27" Grid.Column="0" Name="project2SalesContent10" ></TextBox>
+                        <TextBox Grid.Row="27" Grid.Column="1" Name="project2SalesContent11" ></TextBox>
+                        <TextBox Grid.Row="27" Grid.Column="2" Grid.ColumnSpan="4" Name="project2SalesContent12" ></TextBox>
+                        <TextBox Grid.Row="27" Grid.Column="6" Name="project2SalesContent13" ></TextBox>
+
+                        <TextBox Grid.Row="28" Grid.Column="0" Name="project2SalesContent20" ></TextBox>
+                        <TextBox Grid.Row="28" Grid.Column="1" Name="project2SalesContent21" ></TextBox>
+                        <TextBox Grid.Row="28" Grid.Column="2" Grid.ColumnSpan="4" Name="project2SalesContent22" ></TextBox>
+                        <TextBox Grid.Row="28" Grid.Column="6" Name="project2SalesContent23" ></TextBox>
+
+                        <TextBox Grid.Row="29" Grid.Column="0" Name="project2SalesContent30" ></TextBox>
+                        <TextBox Grid.Row="29" Grid.Column="1" Name="project2SalesContent31" ></TextBox>
+                        <TextBox Grid.Row="29" Grid.Column="2" Grid.ColumnSpan="4" Name="project2SalesContent32" ></TextBox>
+                        <TextBox Grid.Row="29" Grid.Column="6" Name="project2SalesContent33" ></TextBox>
+
+                        <TextBox Grid.Row="30" Grid.Column="0" Name="project2SalesContent40" ></TextBox>
+                        <TextBox Grid.Row="30" Grid.Column="1" Name="project2SalesContent41" ></TextBox>
+                        <TextBox Grid.Row="30" Grid.Column="2" Grid.ColumnSpan="4" Name="project2SalesContent42" ></TextBox>
+                        <TextBox Grid.Row="30" Grid.Column="6" Name="project2SalesContent43" ></TextBox>
+
+                        <TextBox Grid.Row="31" Grid.Column="0" Name="project2SalesContent50" ></TextBox>
+                        <TextBox Grid.Row="31" Grid.Column="1" Name="project2SalesContent51" ></TextBox>
+                        <TextBox Grid.Row="31" Grid.Column="2" Grid.ColumnSpan="4" Name="project2SalesContent52" ></TextBox>
+                        <TextBox Grid.Row="31" Grid.Column="6" Name="project2SalesContent53" ></TextBox>
+
+                        <TextBox Grid.Row="32" Grid.Column="0" Name="project2SalesContent60" ></TextBox>
+                        <TextBox Grid.Row="32" Grid.Column="1" Name="project2SalesContent61" ></TextBox>
+                        <TextBox Grid.Row="32" Grid.Column="2" Grid.ColumnSpan="4" Name="project2SalesContent62" ></TextBox>
+                        <TextBox Grid.Row="32" Grid.Column="6" Name="project2SalesContent63" ></TextBox>
+
+                        <TextBox Grid.Row="33" Grid.Column="0" Name="project2SalesContent70" ></TextBox>
+                        <TextBox Grid.Row="33" Grid.Column="1" Name="project2SalesContent71" ></TextBox>
+                        <TextBox Grid.Row="33" Grid.Column="2" Grid.ColumnSpan="4" Name="project2SalesContent72" ></TextBox>
+                        <TextBox Grid.Row="33" Grid.Column="6" Name="project2SalesContent73" ></TextBox>
+
+                        <TextBox Grid.Row="34" Grid.Column="0" Name="project2SalesContent80" ></TextBox>
+                        <TextBox Grid.Row="34" Grid.Column="1" Name="project2SalesContent81" ></TextBox>
+                        <TextBox Grid.Row="34" Grid.Column="2" Grid.ColumnSpan="4" Name="project2SalesContent82" ></TextBox>
+                        <TextBox Grid.Row="34" Grid.Column="6" Name="project2SalesContent83" ></TextBox>
+
+                        <TextBox Grid.Row="35" Grid.Column="0" Name="project2SalesContent90" ></TextBox>
+                        <TextBox Grid.Row="35" Grid.Column="1" Name="project2SalesContent91" ></TextBox>
+                        <TextBox Grid.Row="35" Grid.Column="2" Grid.ColumnSpan="4" Name="project2SalesContent92" ></TextBox>
+                        <TextBox Grid.Row="35" Grid.Column="6" Name="project2SalesContent93" ></TextBox>
+                        <!---->
+                        <StackPanel Grid.Row="5" Grid.Column="1" Height="50" >
+                            <Separator></Separator>
+                            <CheckBox  Height="20" FontWeight="Regular" Name="project2CheckBox0">Feasible Study 审批</CheckBox>
+                            <CheckBox  Height="20" FontWeight="Regular" Name="project2CheckBox1">Approved 立项</CheckBox>
+                            <Separator></Separator>
+                        </StackPanel>
+                        <StackPanel Grid.Row="5" Grid.Column="3" Grid.ColumnSpan="2" Height="50">
+                            <Separator></Separator>
+                            <CheckBox  Height="20" FontWeight="Regular" Name="project2CheckBox2">Design Plan 设计图纸</CheckBox>
+                            <CheckBox  Height="20" FontWeight="Regular" Name="project2CheckBox3">Detailed Design Plan 深化设计图纸</CheckBox>
+                            <Separator></Separator>
+                        </StackPanel>
+                        <StackPanel Grid.Row="5" Grid.Column="5" Grid.ColumnSpan="2" Height="50">
+                            <Separator></Separator>
+                            <CheckBox  Height="20" FontWeight="Regular" Name="project2CheckBox4">Project Budget项目预算</CheckBox>
+                            <CheckBox  Height="20" FontWeight="Regular" Name="project2CheckBox5">Product List设备清单</CheckBox>
+                            <Separator></Separator>
+                        </StackPanel>
+                        <CheckBox  Grid.Row="10" Grid.Column="1"  Height="20" FontWeight="Regular" Name="project2CheckBox6" >PAPI 坡度灯</CheckBox>
+                        <CheckBox  Grid.Row="11" Grid.Column="1"  Height="20" FontWeight="Regular" Name="project2CheckBox7">CCR 调光器</CheckBox>
+                        <CheckBox  Grid.Row="12" Grid.Column="1"  Height="20" FontWeight="Regular" Name="project2CheckBox8">SFL 顺序闪光灯</CheckBox>
+                        <CheckBox  Grid.Row="13" Grid.Column="1"  Height="20" FontWeight="Regular" Name="project2CheckBox9">Signs 标记牌</CheckBox>
+                        <CheckBox  Grid.Row="14" Grid.Column="1"  Height="20" FontWeight="Regular" Name="project2CheckBox10">RST 隔离变压器</CheckBox>
+                        <CheckBox  Grid.Row="10" Grid.Column="2"  Height="20" FontWeight="Regular" Name="project2CheckBox11">TXY Lights 滑行道灯具</CheckBox>
+                        <CheckBox  Grid.Row="11" Grid.Column="2"  Height="20" FontWeight="Regular" Name="project2CheckBox12">Apporach 进近灯灯具</CheckBox>
+                        <CheckBox  Grid.Row="12" Grid.Column="2"  Height="20" FontWeight="Regular" Name="project2CheckBox13">RXY Lights 跑道灯具</CheckBox>
+                        <CheckBox  Grid.Row="13" Grid.Column="2"  Height="20" FontWeight="Regular" Name="project2CheckBox14">Solar Lights 太阳能灯具</CheckBox>
+                        <CheckBox  Grid.Row="14" Grid.Column="2"  Height="20" FontWeight="Regular" Name="project2CheckBox15">Heliport 直升机坪灯</CheckBox>
+
+                        <CheckBox  Grid.Row="10" Grid.Column="3"  Grid.ColumnSpan="2" Height="20" FontWeight="Regular" Name="project2CheckBox16">AGLAS 单灯监控系统</CheckBox>
+                        <CheckBox  Grid.Row="11" Grid.Column="3"  Grid.ColumnSpan="2" Height="20" FontWeight="Regular" Name="project2CheckBox17">ALCS 助航灯光监控系统</CheckBox>
+                        <CheckBox  Grid.Row="12" Grid.Column="3"  Grid.ColumnSpan="2" Height="20" FontWeight="Regular" Name="project2CheckBox18">H-ALCS 直升机灯光监控系统</CheckBox>
+                        <CheckBox  Grid.Row="13" Grid.Column="3"  Grid.ColumnSpan="2" Height="20" FontWeight="Regular" Name="project2CheckBox19">Service 服务</CheckBox>
+                        <CheckBox  Grid.Row="14" Grid.Column="3"  Grid.ColumnSpan="2" Height="20" FontWeight="Regular" Name="project2CheckBox20">Third Party 第三方产品/服务</CheckBox>
+                        
+                        <StackPanel Grid.Row="15" Grid.Column="1" Grid.ColumnSpan="2">
+                            <Separator></Separator>
+                            <CheckBox  Height="20" FontWeight="Regular" Name="project2CheckBox21">Invite Bidding 公开招标</CheckBox>
+                            <CheckBox  Height="20" FontWeight="Regular" Name="project2CheckBox22">Negotiated Bidding 使用方议标</CheckBox>
+                            <Separator></Separator>
+                        </StackPanel>
+                        <StackPanel Grid.Row="15" Grid.Column="3" Grid.ColumnSpan="2">
+                            <Separator></Separator>
+                            <CheckBox  Height="20" FontWeight="Regular" Name="project2CheckBox23">Main Contactor Purchase 总包采购</CheckBox>
+                            <CheckBox  Height="20" FontWeight="Regular" Name="project2CheckBox24">Distributor Purchase 经销商采购</CheckBox>
+                            <Separator></Separator>
+                        </StackPanel>
+                    <!--Chart-->
+                        <Viewbox Grid.Row="21" Grid.Column="1" Grid.ColumnSpan="5">
+                            <Image Name="chartImage2">
+
+                            </Image>
+                        </Viewbox>
+                        <StackPanel Grid.Row="21" Grid.Column="6">
+                            <Button  Height="30" Width="100" Name="chartLoadButton2" Click="chartLoadButton2_Click">Load</Button>
+                            <TextBlock Name="chartAddress2" TextWrapping="Wrap"></TextBlock>
+                        </StackPanel>
+
+                    </Grid>
+                </ScrollViewer>
+            </TabItem>
+            <TabItem Header="Project 3" Name="projectInfoTab3" FontWeight="Bold">
+                 <ScrollViewer>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="7" FontSize="20">ADB CN Project Information Tracking Card<LineBreak/>埃迪必克中国项目信息追踪卡</TextBlock>
+                        <Separator Grid.Row="1" Grid.ColumnSpan="7"></Separator>
+                        <TextBlock Grid.Row="2" Grid.Column="0">Project Information<LineBreak/>项目信息</TextBlock>
+                        <TextBlock Grid.Row="3" Grid.Column="0">Design Institute Information<LineBreak/>设计院信息</TextBlock>
+                        <TextBlock Grid.Row="4" Grid.Column="0">Contractor Information<LineBreak/>工程承包商信息</TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="4">Airport Contact Information <LineBreak/>机场联络信息</TextBlock>
+                        <TextBlock Grid.Row="3" Grid.Column="4">Contact Information <LineBreak/>联络信息</TextBlock>
+                        <TextBlock Grid.Row="4" Grid.Column="4">Contact Information <LineBreak/>联络信息</TextBlock>
+                        <TextBlock Grid.Row="5" Grid.Column="0" >Project Status <LineBreak/>项目状态</TextBlock>
+                        <TextBlock Grid.Row="5" Grid.Column="2">Technical Info. <LineBreak/>技术资料</TextBlock>
+                        <TextBlock Grid.Row="6" Grid.Column="0" Grid.RowSpan="2">Project Progress <LineBreak/>项目工期</TextBlock>
+                        <TextBlock Grid.Row="6" Grid.Column="1">Bidding <LineBreak/>招标</TextBlock>
+                        <TextBlock Grid.Row="6" Grid.Column="3">Installation <LineBreak/>设备安装</TextBlock>
+                        <TextBlock Grid.Row="6" Grid.Column="5">FAT <LineBreak/>项目验收</TextBlock>
+                        <TextBlock Grid.Row="7" Grid.Column="1">Contract <LineBreak/>合同签订</TextBlock>
+                        <TextBlock Grid.Row="7" Grid.Column="3">Delivery <LineBreak/>交货</TextBlock>
+                        <TextBlock Grid.Row="7" Grid.Column="5">CAAC FAT <LineBreak/>民航行业验收</TextBlock>
+                        <Separator Grid.Row="8" Grid.ColumnSpan="7"></Separator>
+                        <TextBlock Grid.Row="9" Grid.Column="1" Grid.ColumnSpan="2">Lights and Power Equipment <LineBreak/>灯具及供电设备</TextBlock>
+                        <TextBlock Grid.Row="9" Grid.Column="3" >System <LineBreak/>系统</TextBlock>
+                        <TextBlock Grid.Row="10" Grid.Column="0" Grid.RowSpan="5">Products Required<LineBreak/> by the Project <LineBreak/>项目设备及系统内容</TextBlock>
+                        <TextBlock Grid.Row="15" Grid.Column="0" Grid.RowSpan="2">Purchase Method <LineBreak/>采购方式</TextBlock>
+                        <TextBlock Grid.Row="17" Grid.Column="0">Sales Strategy  <LineBreak/>销售策略</TextBlock>
+                        <TextBlock Grid.Row="18" Grid.Column="0">Competition status <LineBreak/>潜在竞争对手动态</TextBlock>
+                        <Separator Grid.Row="19" Grid.ColumnSpan="7"></Separator>
+                        <TextBlock Grid.Row="20" Grid.Column="0" Grid.ColumnSpan="7">Purchaser Information <LineBreak/>采购方信息</TextBlock>
+                        <TextBlock Grid.Row="21" Grid.Column="0">Airport Decision making Chart <LineBreak/>机场决策流程图</TextBlock>
+                        <TextBlock Grid.Row="22" Grid.Column="0">Purchaser Info. <LineBreak/>采购方联系方式</TextBlock>
+                        <Separator Grid.Row="23" Grid.ColumnSpan="7"></Separator>
+                        <TextBlock Grid.Row="24" Grid.Column="0" Grid.ColumnSpan="7">Sales  Activities Record <LineBreak/>销售活动信息记录</TextBlock>
+                        <TextBlock Grid.Row="25" Grid.Column="0">Date <LineBreak/>日期</TextBlock>
+                        <TextBlock Grid.Row="25" Grid.Column="1">Contact to <LineBreak/>联络方</TextBlock>
+                        <TextBlock Grid.Row="25" Grid.Column="2" Grid.ColumnSpan="4">Description <LineBreak/>描述</TextBlock>
+                        <TextBlock Grid.Row="25" Grid.Column="6">Responsible <LineBreak/>负责人</TextBlock>
+                        <!---->
+                        <TextBox Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="3" Name="project3InfoContent00" TextWrapping="WrapWithOverflow" Height="40" AcceptsReturn="True"></TextBox>
+                        <TextBox Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="3" Name="project3InfoContent01" TextWrapping="WrapWithOverflow" Height="40" AcceptsReturn="True"></TextBox>
+                        <TextBox Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="3" Name="project3InfoContent02" TextWrapping="WrapWithOverflow" Height="40" AcceptsReturn="True"></TextBox>
+                        <TextBox Grid.Row="2" Grid.Column="5" Grid.ColumnSpan="2" Name="project3InfoContent03" TextWrapping="WrapWithOverflow" Height="40" AcceptsReturn="True"></TextBox>
+                        <TextBox Grid.Row="3" Grid.Column="5" Grid.ColumnSpan="2" Name="project3InfoContent04" TextWrapping="WrapWithOverflow" Height="40" AcceptsReturn="True"></TextBox>
+                        <TextBox Grid.Row="4" Grid.Column="5" Grid.ColumnSpan="2" Name="project3InfoContent05" TextWrapping="WrapWithOverflow" Height="40" AcceptsReturn="True"></TextBox>
+                        <TextBox Grid.Row="6" Grid.Column="2" Name="project3InfoContent06" ></TextBox>
+                        <TextBox Grid.Row="6" Grid.Column="4" Name="project3InfoContent07" ></TextBox>
+                        <TextBox Grid.Row="6" Grid.Column="6" Name="project3InfoContent08" ></TextBox>
+                        <TextBox Grid.Row="7" Grid.Column="2" Name="project3InfoContent09" ></TextBox>
+                        <TextBox Grid.Row="7" Grid.Column="4" Name="project3InfoContent10" ></TextBox>
+                        <TextBox Grid.Row="7" Grid.Column="6" Name="project3InfoContent11" ></TextBox>
+                        <TextBox Grid.Row="17" Grid.Column="1" Grid.ColumnSpan="6" Name="project3InfoContent12" Height="60" TextWrapping="WrapWithOverflow" AcceptsReturn="True"></TextBox>
+                        <TextBox Grid.Row="18" Grid.Column="1" Grid.ColumnSpan="6" Name="project3InfoContent13" Height="60" TextWrapping="WrapWithOverflow" AcceptsReturn="True"></TextBox>
+                        <TextBox Grid.Row="22" Grid.Column="1" Grid.ColumnSpan="6" Name="project3InfoContent14" Height="60" TextWrapping="WrapWithOverflow" AcceptsReturn="True"></TextBox>
+                        <!---->
+                        <TextBox Grid.Row="26" Grid.Column="0" Name="project3SalesContent00" ></TextBox>
+                        <TextBox Grid.Row="26" Grid.Column="1" Name="project3SalesContent01" ></TextBox>
+                        <TextBox Grid.Row="26" Grid.Column="2" Grid.ColumnSpan="4" Name="project3SalesContent02" ></TextBox>
+                        <TextBox Grid.Row="26" Grid.Column="6" Name="project3SalesContent03" ></TextBox>
+
+                        <TextBox Grid.Row="27" Grid.Column="0" Name="project3SalesContent10" ></TextBox>
+                        <TextBox Grid.Row="27" Grid.Column="1" Name="project3SalesContent11" ></TextBox>
+                        <TextBox Grid.Row="27" Grid.Column="2" Grid.ColumnSpan="4" Name="project3SalesContent12" ></TextBox>
+                        <TextBox Grid.Row="27" Grid.Column="6" Name="project3SalesContent13" ></TextBox>
+
+                        <TextBox Grid.Row="28" Grid.Column="0" Name="project3SalesContent20" ></TextBox>
+                        <TextBox Grid.Row="28" Grid.Column="1" Name="project3SalesContent21" ></TextBox>
+                        <TextBox Grid.Row="28" Grid.Column="2" Grid.ColumnSpan="4" Name="project3SalesContent22" ></TextBox>
+                        <TextBox Grid.Row="28" Grid.Column="6" Name="project3SalesContent23" ></TextBox>
+
+                        <TextBox Grid.Row="29" Grid.Column="0" Name="project3SalesContent30" ></TextBox>
+                        <TextBox Grid.Row="29" Grid.Column="1" Name="project3SalesContent31" ></TextBox>
+                        <TextBox Grid.Row="29" Grid.Column="2" Grid.ColumnSpan="4" Name="project3SalesContent32" ></TextBox>
+                        <TextBox Grid.Row="29" Grid.Column="6" Name="project3SalesContent33" ></TextBox>
+
+                        <TextBox Grid.Row="30" Grid.Column="0" Name="project3SalesContent40" ></TextBox>
+                        <TextBox Grid.Row="30" Grid.Column="1" Name="project3SalesContent41" ></TextBox>
+                        <TextBox Grid.Row="30" Grid.Column="2" Grid.ColumnSpan="4" Name="project3SalesContent42" ></TextBox>
+                        <TextBox Grid.Row="30" Grid.Column="6" Name="project3SalesContent43" ></TextBox>
+
+                        <TextBox Grid.Row="31" Grid.Column="0" Name="project3SalesContent50" ></TextBox>
+                        <TextBox Grid.Row="31" Grid.Column="1" Name="project3SalesContent51" ></TextBox>
+                        <TextBox Grid.Row="31" Grid.Column="2" Grid.ColumnSpan="4" Name="project3SalesContent52" ></TextBox>
+                        <TextBox Grid.Row="31" Grid.Column="6" Name="project3SalesContent53" ></TextBox>
+
+                        <TextBox Grid.Row="32" Grid.Column="0" Name="project3SalesContent60" ></TextBox>
+                        <TextBox Grid.Row="32" Grid.Column="1" Name="project3SalesContent61" ></TextBox>
+                        <TextBox Grid.Row="32" Grid.Column="2" Grid.ColumnSpan="4" Name="project3SalesContent62" ></TextBox>
+                        <TextBox Grid.Row="32" Grid.Column="6" Name="project3SalesContent63" ></TextBox>
+
+                        <TextBox Grid.Row="33" Grid.Column="0" Name="project3SalesContent70" ></TextBox>
+                        <TextBox Grid.Row="33" Grid.Column="1" Name="project3SalesContent71" ></TextBox>
+                        <TextBox Grid.Row="33" Grid.Column="2" Grid.ColumnSpan="4" Name="project3SalesContent72" ></TextBox>
+                        <TextBox Grid.Row="33" Grid.Column="6" Name="project3SalesContent73" ></TextBox>
+
+                        <TextBox Grid.Row="34" Grid.Column="0" Name="project3SalesContent80" ></TextBox>
+                        <TextBox Grid.Row="34" Grid.Column="1" Name="project3SalesContent81" ></TextBox>
+                        <TextBox Grid.Row="34" Grid.Column="2" Grid.ColumnSpan="4" Name="project3SalesContent82" ></TextBox>
+                        <TextBox Grid.Row="34" Grid.Column="6" Name="project3SalesContent83" ></TextBox>
+
+                        <TextBox Grid.Row="35" Grid.Column="0" Name="project3SalesContent90" ></TextBox>
+                        <TextBox Grid.Row="35" Grid.Column="1" Name="project3SalesContent91" ></TextBox>
+                        <TextBox Grid.Row="35" Grid.Column="2" Grid.ColumnSpan="4" Name="project3SalesContent92" ></TextBox>
+                        <TextBox Grid.Row="35" Grid.Column="6" Name="project3SalesContent93" ></TextBox>
+                        <!---->
+                        <StackPanel Grid.Row="5" Grid.Column="1" Height="50" >
+                            <Separator></Separator>
+                            <CheckBox  Height="20" FontWeight="Regular" Name="project3CheckBox0">Feasible Study 审批</CheckBox>
+                            <CheckBox  Height="20" FontWeight="Regular" Name="project3CheckBox1">Approved 立项</CheckBox>
+                            <Separator></Separator>
+                        </StackPanel>
+                        <StackPanel Grid.Row="5" Grid.Column="3" Grid.ColumnSpan="2" Height="50">
+                            <Separator></Separator>
+                            <CheckBox  Height="20" FontWeight="Regular" Name="project3CheckBox2">Design Plan 设计图纸</CheckBox>
+                            <CheckBox  Height="20" FontWeight="Regular" Name="project3CheckBox3">Detailed Design Plan 深化设计图纸</CheckBox>
+                            <Separator></Separator>
+                        </StackPanel>
+                        <StackPanel Grid.Row="5" Grid.Column="5" Grid.ColumnSpan="2" Height="50">
+                            <Separator></Separator>
+                            <CheckBox  Height="20" FontWeight="Regular" Name="project3CheckBox4">Project Budget项目预算</CheckBox>
+                            <CheckBox  Height="20" FontWeight="Regular" Name="project3CheckBox5">Product List设备清单</CheckBox>
+                            <Separator></Separator>
+                        </StackPanel>
+                        <CheckBox  Grid.Row="10" Grid.Column="1"  Height="20" FontWeight="Regular" Name="project3CheckBox6" >PAPI 坡度灯</CheckBox>
+                        <CheckBox  Grid.Row="11" Grid.Column="1"  Height="20" FontWeight="Regular" Name="project3CheckBox7">CCR 调光器</CheckBox>
+                        <CheckBox  Grid.Row="12" Grid.Column="1"  Height="20" FontWeight="Regular" Name="project3CheckBox8">SFL 顺序闪光灯</CheckBox>
+                        <CheckBox  Grid.Row="13" Grid.Column="1"  Height="20" FontWeight="Regular" Name="project3CheckBox9">Signs 标记牌</CheckBox>
+                        <CheckBox  Grid.Row="14" Grid.Column="1"  Height="20" FontWeight="Regular" Name="project3CheckBox10">RST 隔离变压器</CheckBox>
+                        <CheckBox  Grid.Row="10" Grid.Column="2"  Height="20" FontWeight="Regular" Name="project3CheckBox11">TXY Lights 滑行道灯具</CheckBox>
+                        <CheckBox  Grid.Row="11" Grid.Column="2"  Height="20" FontWeight="Regular" Name="project3CheckBox12">Apporach 进近灯灯具</CheckBox>
+                        <CheckBox  Grid.Row="12" Grid.Column="2"  Height="20" FontWeight="Regular" Name="project3CheckBox13">RXY Lights 跑道灯具</CheckBox>
+                        <CheckBox  Grid.Row="13" Grid.Column="2"  Height="20" FontWeight="Regular" Name="project3CheckBox14">Solar Lights 太阳能灯具</CheckBox>
+                        <CheckBox  Grid.Row="14" Grid.Column="2"  Height="20" FontWeight="Regular" Name="project3CheckBox15">Heliport 直升机坪灯</CheckBox>
+
+                        <CheckBox  Grid.Row="10" Grid.Column="3"  Grid.ColumnSpan="2" Height="20" FontWeight="Regular" Name="project3CheckBox16">AGLAS 单灯监控系统</CheckBox>
+                        <CheckBox  Grid.Row="11" Grid.Column="3"  Grid.ColumnSpan="2" Height="20" FontWeight="Regular" Name="project3CheckBox17">ALCS 助航灯光监控系统</CheckBox>
+                        <CheckBox  Grid.Row="12" Grid.Column="3"  Grid.ColumnSpan="2" Height="20" FontWeight="Regular" Name="project3CheckBox18">H-ALCS 直升机灯光监控系统</CheckBox>
+                        <CheckBox  Grid.Row="13" Grid.Column="3"  Grid.ColumnSpan="2" Height="20" FontWeight="Regular" Name="project3CheckBox19">Service 服务</CheckBox>
+                        <CheckBox  Grid.Row="14" Grid.Column="3"  Grid.ColumnSpan="2" Height="20" FontWeight="Regular" Name="project3CheckBox20">Third Party 第三方产品/服务</CheckBox>
+
+                        <StackPanel Grid.Row="15" Grid.Column="1" Grid.ColumnSpan="2">
+                            <Separator></Separator>
+                            <CheckBox  Height="20" FontWeight="Regular" Name="project3CheckBox21">Invite Bidding 公开招标</CheckBox>
+                            <CheckBox  Height="20" FontWeight="Regular" Name="project3CheckBox22">Negotiated Bidding 使用方议标</CheckBox>
+                            <Separator></Separator>
+                        </StackPanel>
+                        <StackPanel Grid.Row="15" Grid.Column="3" Grid.ColumnSpan="2">
+                            <Separator></Separator>
+                            <CheckBox  Height="20" FontWeight="Regular" Name="project3CheckBox23">Main Contactor Purchase 总包采购</CheckBox>
+                            <CheckBox  Height="20" FontWeight="Regular" Name="project3CheckBox24">Distributor Purchase 经销商采购</CheckBox>
+                            <Separator></Separator>
+                        </StackPanel>
+                    <!--Chart-->
+                        <Viewbox Grid.Row="21" Grid.Column="1" Grid.ColumnSpan="5">
+                            <Image Name="chartImage3">
+
+                            </Image>
+                        </Viewbox>
+                        <StackPanel Grid.Row="21" Grid.Column="6">
+                            <Button  Height="30" Width="100" Name="chartLoadButton3" Click="chartLoadButton3_Click">Load</Button>
+                            <TextBlock Name="chartAddress3" TextWrapping="Wrap"></TextBlock>
+                        </StackPanel>
+
+                    </Grid>
+                </ScrollViewer>
+            </TabItem>
+        </TabControl>
+    </StackPanel>
+</Window>

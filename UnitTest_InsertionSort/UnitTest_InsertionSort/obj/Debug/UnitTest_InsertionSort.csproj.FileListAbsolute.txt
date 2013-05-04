@@ -1,0 +1,10 @@
+C:\Users\Bunny\AppData\Local\Temporary Projects\UnitTest_InsertionSort\obj\Debug\UnitTest_InsertionSort.csprojResolveAssemblyReference.cache
+C:\Users\Bunny\AppData\Local\Temporary Projects\UnitTest_InsertionSort\bin\Debug\UnitTest_InsertionSort.dll
+C:\Users\Bunny\AppData\Local\Temporary Projects\UnitTest_InsertionSort\bin\Debug\UnitTest_InsertionSort.pdb
+C:\Users\Bunny\AppData\Local\Temporary Projects\UnitTest_InsertionSort\obj\Debug\UnitTest_InsertionSort.dll
+C:\Users\Bunny\AppData\Local\Temporary Projects\UnitTest_InsertionSort\obj\Debug\UnitTest_InsertionSort.pdb
+C:\Users\Bunny\Documents\Visual Studio 2012\Projects\UnitTest_InsertionSort\UnitTest_InsertionSort\bin\Debug\UnitTest_InsertionSort.dll
+C:\Users\Bunny\Documents\Visual Studio 2012\Projects\UnitTest_InsertionSort\UnitTest_InsertionSort\bin\Debug\UnitTest_InsertionSort.pdb
+C:\Users\Bunny\Documents\Visual Studio 2012\Projects\UnitTest_InsertionSort\UnitTest_InsertionSort\obj\Debug\UnitTest_InsertionSort.csprojResolveAssemblyReference.cache
+C:\Users\Bunny\Documents\Visual Studio 2012\Projects\UnitTest_InsertionSort\UnitTest_InsertionSort\obj\Debug\UnitTest_InsertionSort.dll
+C:\Users\Bunny\Documents\Visual Studio 2012\Projects\UnitTest_InsertionSort\UnitTest_InsertionSort\obj\Debug\UnitTest_InsertionSort.pdb

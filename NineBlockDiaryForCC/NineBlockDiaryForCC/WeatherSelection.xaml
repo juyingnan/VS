@@ -1,0 +1,79 @@
+﻿<Window x:Class="NineBlockDiaryForCC.WeatherSelection"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="WeatherSelection" Height="247" Width="300" WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="NoResize" BorderBrush="#FFADADAD" BorderThickness="3" AllowsTransparency="True">
+    <Grid Opacity="1" Background="{x:Null}">
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Rectangle Height="69" HorizontalAlignment="Left" Name="rectangle1" Stroke="{x:Null}" VerticalAlignment="Top" Width="69" Grid.Row="0" Grid.Column="0" Uid="1" MouseLeftButtonUp="rectangle_MouseLeftButtonUp">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/NineBlockDiaryForCC;component/Images/Blizzard.png" Stretch="Uniform" TileMode="None" />
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle Height="69" HorizontalAlignment="Left" Name="rectangle2" Stroke="{x:Null}" VerticalAlignment="Top" Width="69" Grid.Row="0" Grid.Column="1" Uid="2" MouseLeftButtonUp="rectangle_MouseLeftButtonUp">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/NineBlockDiaryForCC;component/Images/Freezing.png" Stretch="Uniform" TileMode="None" />
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle Height="69" HorizontalAlignment="Left" Name="rectangle3" Stroke="{x:Null}" VerticalAlignment="Top" Width="69" Grid.Row="0" Grid.Column="2" Uid="3" MouseLeftButtonUp="rectangle_MouseLeftButtonUp">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/NineBlockDiaryForCC;component/Images/HeavyRain.png" Stretch="Uniform" TileMode="None" />
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle Height="69" HorizontalAlignment="Left" Name="rectangle4" Stroke="{x:Null}" VerticalAlignment="Top" Width="69" Grid.Row="0" Grid.Column="3" Uid="4" MouseLeftButtonUp="rectangle_MouseLeftButtonUp">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/NineBlockDiaryForCC;component/Images/LightCloud.png" Stretch="Uniform" TileMode="None" />
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle Height="69" HorizontalAlignment="Left" Name="rectangle5" Stroke="{x:Null}" VerticalAlignment="Top" Width="69" Grid.Row="1" Grid.Column="0" Uid="5" MouseLeftButtonUp="rectangle_MouseLeftButtonUp">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/NineBlockDiaryForCC;component/Images/LightRain.png" Stretch="Uniform" TileMode="None" />
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle Height="69" HorizontalAlignment="Left" Name="rectangle6" Stroke="{x:Null}" VerticalAlignment="Top" Width="69" Grid.Row="1" Grid.Column="1" Uid="6" MouseLeftButtonUp="rectangle_MouseLeftButtonUp">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/NineBlockDiaryForCC;component/Images/MuchCloud.png" Stretch="Uniform" TileMode="None" />
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle Height="69" HorizontalAlignment="Left" Name="rectangle7" Stroke="{x:Null}" VerticalAlignment="Top" Width="69" Grid.Row="1" Grid.Column="2" Uid="7" MouseLeftButtonUp="rectangle_MouseLeftButtonUp">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/NineBlockDiaryForCC;component/Images/Rainbow.png" Stretch="Uniform" TileMode="None" />
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle Height="69" HorizontalAlignment="Left" Name="rectangle8" Stroke="{x:Null}" VerticalAlignment="Top" Width="69" Grid.Row="1" Grid.Column="3" Uid="8" MouseLeftButtonUp="rectangle_MouseLeftButtonUp">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/NineBlockDiaryForCC;component/Images/Snow.png" Stretch="Uniform" TileMode="None" />
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle Height="69" HorizontalAlignment="Left" Name="rectangle9" Stroke="{x:Null}" VerticalAlignment="Top" Width="69" Grid.Row="2" Grid.Column="0" Uid="9" MouseLeftButtonUp="rectangle_MouseLeftButtonUp">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/NineBlockDiaryForCC;component/Images/Sun.png" />
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle Height="69" Name="rectangle10" Stroke="{x:Null}" VerticalAlignment="Top" Grid.Row="2" Grid.Column="1" Uid="10" MouseLeftButtonUp="rectangle_MouseLeftButtonUp">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/NineBlockDiaryForCC;component/Images/SunBath.png" Stretch="Uniform" TileMode="None" />
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle Height="69" HorizontalAlignment="Left" Name="rectangle11" Stroke="{x:Null}" VerticalAlignment="Top" Width="69" Grid.Row="2" Grid.Column="2" MouseLeftButtonUp="rectangle_MouseLeftButtonUp" Uid="11">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/NineBlockDiaryForCC;component/Images/ThunderRain.png" />
+            </Rectangle.Fill>
+        </Rectangle>
+    </Grid>
+    <Window.Background>
+        <RadialGradientBrush>
+            <GradientStop Color="AliceBlue" Offset="0.576" />
+            <GradientStop Color="Transparent" Offset="1" />
+        </RadialGradientBrush>
+    </Window.Background>
+</Window>

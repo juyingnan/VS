@@ -1,0 +1,19 @@
+﻿<Window x:Class="AskingProjectAnswerGenerator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Width="200" SizeToContent="Height" ResizeMode="NoResize" WindowStyle="ToolWindow">
+    <StackPanel>
+        <Button Name="OpenQuestionFileButton" Click="OpenQuestionFileButton_Click">
+            Open Question File
+        </Button>
+        <Label Name="QuestionFilePathLabel">
+            ...
+        </Label>
+        <TextBox Name="outputQuantity" GotFocus="outputQuantity_GotFocus" MouseMove="outputQuantity_MouseMove">
+            Input quantity you want
+        </TextBox>
+        <Button Name="outputButton" Click="outputButton_Click">
+            Output
+        </Button>
+    </StackPanel>
+</Window>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="12680davesmits.ClockTile" Publisher="CN=8E0BD33D-EFAB-4DBE-A5C6-9E59F0D283C2" Version="1.0.0.2" />
+  <Properties>
+    <DisplayName>Clock Tile</DisplayName>
+    <PublisherDisplayName>dave smits</PublisherDisplayName>
+    <Logo>Assets\clock 50x50.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="Clock.App">
+      <VisualElements DisplayName="Clock Tile" Logo="Assets\clock 150x150.png" SmallLogo="Assets\clock 30x30.png" Description="Clock" ForegroundText="light" BackgroundColor="#4bb3d3">
+        <LockScreen Notification="badge" BadgeLogo="Assets\clock 24x24.png" />
+        <DefaultTile ShowName="allLogos" WideLogo="Assets\clock 310x150.png" ShortName="Clock Tile" />
+        <SplashScreen Image="Assets\SplashScreen.png" />
+      </VisualElements>
+      <Extensions>
+        <Extension Category="windows.backgroundTasks" EntryPoint="Clock.WinRT.TileSchedulerTask">
+          <BackgroundTasks>
+            <Task Type="timer" />
+            <Task Type="systemEvent" />
+          </BackgroundTasks>
+        </Extension>
+      </Extensions>
+    </Application>
+  </Applications>
+</Package>

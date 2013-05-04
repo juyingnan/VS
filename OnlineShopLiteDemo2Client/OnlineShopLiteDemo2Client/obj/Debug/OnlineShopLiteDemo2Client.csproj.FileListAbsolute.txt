@@ -1,0 +1,14 @@
+C:\Users\bunny\AppData\Local\Temporary Projects\OnlineShopLiteDemo2Client\bin\Debug\OnlineShopLiteDemo2Client.exe.config
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\OnlineShopLiteDemo2Client\OnlineShopLiteDemo2Client\bin\Debug\OnlineShopLiteDemo2Client.exe.config
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\OnlineShopLiteDemo2Client\OnlineShopLiteDemo2Client\bin\Debug\OnlineShopLiteDemo2Client.exe
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\OnlineShopLiteDemo2Client\OnlineShopLiteDemo2Client\bin\Debug\OnlineShopLiteDemo2Client.pdb
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\OnlineShopLiteDemo2Client\OnlineShopLiteDemo2Client\obj\Debug\OnlineShopLiteDemo2Client.csprojResolveAssemblyReference.cache
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\OnlineShopLiteDemo2Client\OnlineShopLiteDemo2Client\obj\Debug\MainWindow.baml
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\OnlineShopLiteDemo2Client\OnlineShopLiteDemo2Client\obj\Debug\MainWindow.g.cs
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\OnlineShopLiteDemo2Client\OnlineShopLiteDemo2Client\obj\Debug\App.g.cs
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\OnlineShopLiteDemo2Client\OnlineShopLiteDemo2Client\obj\Debug\OnlineShopLiteDemo2Client_MarkupCompile.cache
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\OnlineShopLiteDemo2Client\OnlineShopLiteDemo2Client\obj\Debug\OnlineShopLiteDemo2Client.g.resources
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\OnlineShopLiteDemo2Client\OnlineShopLiteDemo2Client\obj\Debug\OnlineShopLiteDemo2Client.Properties.Resources.resources
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\OnlineShopLiteDemo2Client\OnlineShopLiteDemo2Client\obj\Debug\OnlineShopLiteDemo2Client.csproj.GenerateResource.Cache
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\OnlineShopLiteDemo2Client\OnlineShopLiteDemo2Client\obj\Debug\OnlineShopLiteDemo2Client.exe
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\OnlineShopLiteDemo2Client\OnlineShopLiteDemo2Client\obj\Debug\OnlineShopLiteDemo2Client.pdb

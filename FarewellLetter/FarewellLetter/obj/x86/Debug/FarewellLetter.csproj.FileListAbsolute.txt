@@ -1,0 +1,39 @@
+C:\Users\Administrator\AppData\Local\Temporary Projects\FarewellLetter\bin\Debug\FarewellLetter.exe
+C:\Users\Administrator\AppData\Local\Temporary Projects\FarewellLetter\bin\Debug\FarewellLetter.pdb
+C:\Users\Administrator\AppData\Local\Temporary Projects\FarewellLetter\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\AppData\Local\Temporary Projects\FarewellLetter\obj\x86\Debug\MainWindow.baml
+C:\Users\Administrator\AppData\Local\Temporary Projects\FarewellLetter\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Administrator\AppData\Local\Temporary Projects\FarewellLetter\obj\x86\Debug\App.g.cs
+C:\Users\Administrator\AppData\Local\Temporary Projects\FarewellLetter\obj\x86\Debug\FarewellLetter_MarkupCompile.cache
+C:\Users\Administrator\AppData\Local\Temporary Projects\FarewellLetter\obj\x86\Debug\FarewellLetter.g.resources
+C:\Users\Administrator\AppData\Local\Temporary Projects\FarewellLetter\obj\x86\Debug\FarewellLetter.Properties.Resources.resources
+C:\Users\Administrator\AppData\Local\Temporary Projects\FarewellLetter\obj\x86\Debug\ResGen.read.1.tlog
+C:\Users\Administrator\AppData\Local\Temporary Projects\FarewellLetter\obj\x86\Debug\ResGen.write.1.tlog
+C:\Users\Administrator\AppData\Local\Temporary Projects\FarewellLetter\obj\x86\Debug\FarewellLetter.exe
+C:\Users\Administrator\AppData\Local\Temporary Projects\FarewellLetter\obj\x86\Debug\FarewellLetter.pdb
+C:\Users\Administrator\documents\visual studio 2010\Projects\FarewellLetter\FarewellLetter\obj\x86\Debug\FarewellLetter.exe
+C:\Users\Administrator\documents\visual studio 2010\Projects\FarewellLetter\FarewellLetter\obj\x86\Debug\FarewellLetter.pdb
+C:\Users\Administrator\documents\visual studio 2010\Projects\FarewellLetter\FarewellLetter\bin\Debug\FarewellLetter.exe
+C:\Users\Administrator\documents\visual studio 2010\Projects\FarewellLetter\FarewellLetter\bin\Debug\FarewellLetter.pdb
+C:\Users\Administrator\documents\visual studio 2010\Projects\FarewellLetter\FarewellLetter\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\documents\visual studio 2010\Projects\FarewellLetter\FarewellLetter\obj\x86\Debug\MainWindow.baml
+C:\Users\Administrator\documents\visual studio 2010\Projects\FarewellLetter\FarewellLetter\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Administrator\documents\visual studio 2010\Projects\FarewellLetter\FarewellLetter\obj\x86\Debug\App.g.cs
+C:\Users\Administrator\documents\visual studio 2010\Projects\FarewellLetter\FarewellLetter\obj\x86\Debug\FarewellLetter_MarkupCompile.cache
+C:\Users\Administrator\documents\visual studio 2010\Projects\FarewellLetter\FarewellLetter\obj\x86\Debug\FarewellLetter.g.resources
+C:\Users\Administrator\documents\visual studio 2010\Projects\FarewellLetter\FarewellLetter\obj\x86\Debug\FarewellLetter.Properties.Resources.resources
+C:\Users\Administrator\documents\visual studio 2010\Projects\FarewellLetter\FarewellLetter\obj\x86\Debug\ResGen.read.1.tlog
+C:\Users\Administrator\documents\visual studio 2010\Projects\FarewellLetter\FarewellLetter\obj\x86\Debug\ResGen.write.1.tlog
+D:\Bunny\Documents\Visual Studio 2010\Projects\FarewellLetter\FarewellLetter\obj\x86\Debug\FarewellLetter.exe
+D:\Bunny\Documents\Visual Studio 2010\Projects\FarewellLetter\FarewellLetter\obj\x86\Debug\FarewellLetter.pdb
+D:\Bunny\Documents\Visual Studio 2010\Projects\FarewellLetter\FarewellLetter\bin\Debug\FarewellLetter.exe
+D:\Bunny\Documents\Visual Studio 2010\Projects\FarewellLetter\FarewellLetter\bin\Debug\FarewellLetter.pdb
+D:\Bunny\Documents\Visual Studio 2010\Projects\FarewellLetter\FarewellLetter\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Bunny\Documents\Visual Studio 2010\Projects\FarewellLetter\FarewellLetter\obj\x86\Debug\MainWindow.baml
+D:\Bunny\Documents\Visual Studio 2010\Projects\FarewellLetter\FarewellLetter\obj\x86\Debug\MainWindow.g.cs
+D:\Bunny\Documents\Visual Studio 2010\Projects\FarewellLetter\FarewellLetter\obj\x86\Debug\App.g.cs
+D:\Bunny\Documents\Visual Studio 2010\Projects\FarewellLetter\FarewellLetter\obj\x86\Debug\FarewellLetter_MarkupCompile.cache
+D:\Bunny\Documents\Visual Studio 2010\Projects\FarewellLetter\FarewellLetter\obj\x86\Debug\FarewellLetter.g.resources
+D:\Bunny\Documents\Visual Studio 2010\Projects\FarewellLetter\FarewellLetter\obj\x86\Debug\FarewellLetter.Properties.Resources.resources
+D:\Bunny\Documents\Visual Studio 2010\Projects\FarewellLetter\FarewellLetter\obj\x86\Debug\ResGen.read.1.tlog
+D:\Bunny\Documents\Visual Studio 2010\Projects\FarewellLetter\FarewellLetter\obj\x86\Debug\ResGen.write.1.tlog

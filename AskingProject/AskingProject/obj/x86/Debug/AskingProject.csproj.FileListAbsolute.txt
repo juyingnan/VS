@@ -1,0 +1,19 @@
+C:\Users\Administrator\AppData\Local\Temporary Projects\AskingProject\bin\Debug\AskingProject.exe
+C:\Users\Administrator\AppData\Local\Temporary Projects\AskingProject\bin\Debug\AskingProject.pdb
+C:\Users\Administrator\AppData\Local\Temporary Projects\AskingProject\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\AppData\Local\Temporary Projects\AskingProject\obj\x86\Debug\AskingProject.Form1.resources
+C:\Users\Administrator\AppData\Local\Temporary Projects\AskingProject\obj\x86\Debug\AskingProject.Properties.Resources.resources
+C:\Users\Administrator\AppData\Local\Temporary Projects\AskingProject\obj\x86\Debug\ResGen.read.1.tlog
+C:\Users\Administrator\AppData\Local\Temporary Projects\AskingProject\obj\x86\Debug\ResGen.write.1.tlog
+C:\Users\Administrator\AppData\Local\Temporary Projects\AskingProject\obj\x86\Debug\AskingProject.exe
+C:\Users\Administrator\AppData\Local\Temporary Projects\AskingProject\obj\x86\Debug\AskingProject.pdb
+D:\Bunny\Documents\Visual Studio 2010\Projects\AskingProject\AskingProject\obj\x86\Debug\AskingProject.exe
+D:\Bunny\Documents\Visual Studio 2010\Projects\AskingProject\AskingProject\obj\x86\Debug\AskingProject.pdb
+D:\Bunny\Documents\Visual Studio 2010\Projects\AskingProject\AskingProject\bin\Debug\AskingProject.exe
+D:\Bunny\Documents\Visual Studio 2010\Projects\AskingProject\AskingProject\bin\Debug\AskingProject.pdb
+D:\Bunny\Documents\Visual Studio 2010\Projects\AskingProject\AskingProject\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Bunny\Documents\Visual Studio 2010\Projects\AskingProject\AskingProject\obj\x86\Debug\AskingProject.Form1.resources
+D:\Bunny\Documents\Visual Studio 2010\Projects\AskingProject\AskingProject\obj\x86\Debug\AskingProject.Properties.Resources.resources
+D:\Bunny\Documents\Visual Studio 2010\Projects\AskingProject\AskingProject\obj\x86\Debug\ResGen.read.1.tlog
+D:\Bunny\Documents\Visual Studio 2010\Projects\AskingProject\AskingProject\obj\x86\Debug\ResGen.write.1.tlog
+D:\Bunny\Documents\Visual Studio 2010\Projects\AskingProject\AskingProject\obj\x86\Debug\AskingProject.test.resources

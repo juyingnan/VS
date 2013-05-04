@@ -1,0 +1,44 @@
+C:\Dave\Projects\Win8\Clock\Clock.WinRT\bin\Release\Clock.WinRT.winmd
+C:\Dave\Projects\Win8\Clock\Clock.WinRT\bin\Release\Clock.WinRT.pdb
+C:\Dave\Projects\Win8\Clock\Clock.WinRT\bin\Release\Clock.WinRT.pri
+C:\Dave\Projects\Win8\Clock\Clock.WinRT\obj\Release\Clock.WinRT.winmd
+C:\Dave\Projects\Win8\Clock\Clock.WinRT\obj\Release\Clock.WinRT.pdb
+C:\Dave\Projects\Win8\Clock\Clock.WinRT\obj\Release\Clock.WinRT.winmdobj
+C:\Dave\Projects\Win8\Clock\Clock.WinRT\obj\Release\Clock.WinRT.compile.pdb
+C:\Dave\Projects\Win8\Clock\Clock.WinRT\obj\Release\priconfig.xml.intermediate
+C:\Dave\Projects\Win8\Clock\Clock.WinRT\obj\Release\layout.resfiles.intermediate
+C:\Dave\Projects\Win8\Clock\Clock.WinRT\obj\Release\resources.resfiles.intermediate
+C:\Dave\Projects\Win8\Clock\Clock.WinRT\obj\Release\pri.resfiles.intermediate
+C:\Dave\Projects\Win8\Clock\Clock.WinRT\obj\Release\priconfig.xml
+C:\Dave\Projects\Win8\Clock\Clock.WinRT\obj\Release\layout.resfiles
+C:\Dave\Projects\Win8\Clock\Clock.WinRT\obj\Release\resources.resfiles
+C:\Dave\Projects\Win8\Clock\Clock.WinRT\obj\Release\pri.resfiles
+C:\Dave\Projects\Win8\Clock\Clock.WinRT\obj\Release\LanguageQualifiers.txt
+C:\Dave\TFS\SMITSTFS.TFSPREVIEW.COM\DefaultCollection\Clock Tile\Trunk\Clock\Clock.WinRT\bin\Release\Clock.WinRT.winmd
+C:\Dave\TFS\SMITSTFS.TFSPREVIEW.COM\DefaultCollection\Clock Tile\Trunk\Clock\Clock.WinRT\bin\Release\Clock.WinRT.pdb
+C:\Dave\TFS\SMITSTFS.TFSPREVIEW.COM\DefaultCollection\Clock Tile\Trunk\Clock\Clock.WinRT\bin\Release\Clock.WinRT.pri
+C:\Dave\TFS\SMITSTFS.TFSPREVIEW.COM\DefaultCollection\Clock Tile\Trunk\Clock\Clock.WinRT\obj\Release\Clock.WinRT.winmd
+C:\Dave\TFS\SMITSTFS.TFSPREVIEW.COM\DefaultCollection\Clock Tile\Trunk\Clock\Clock.WinRT\obj\Release\Clock.WinRT.pdb
+C:\Dave\TFS\SMITSTFS.TFSPREVIEW.COM\DefaultCollection\Clock Tile\Trunk\Clock\Clock.WinRT\obj\Release\Clock.WinRT.winmdobj
+C:\Dave\TFS\SMITSTFS.TFSPREVIEW.COM\DefaultCollection\Clock Tile\Trunk\Clock\Clock.WinRT\obj\Release\Clock.WinRT.compile.pdb
+C:\Dave\TFS\SMITSTFS.TFSPREVIEW.COM\DefaultCollection\Clock Tile\Trunk\Clock\Clock.WinRT\obj\Release\priconfig.xml.intermediate
+C:\Dave\TFS\SMITSTFS.TFSPREVIEW.COM\DefaultCollection\Clock Tile\Trunk\Clock\Clock.WinRT\obj\Release\layout.resfiles.intermediate
+C:\Dave\TFS\SMITSTFS.TFSPREVIEW.COM\DefaultCollection\Clock Tile\Trunk\Clock\Clock.WinRT\obj\Release\resources.resfiles.intermediate
+C:\Dave\TFS\SMITSTFS.TFSPREVIEW.COM\DefaultCollection\Clock Tile\Trunk\Clock\Clock.WinRT\obj\Release\pri.resfiles.intermediate
+C:\Dave\TFS\SMITSTFS.TFSPREVIEW.COM\DefaultCollection\Clock Tile\Trunk\Clock\Clock.WinRT\obj\Release\priconfig.xml
+C:\Dave\TFS\SMITSTFS.TFSPREVIEW.COM\DefaultCollection\Clock Tile\Trunk\Clock\Clock.WinRT\obj\Release\layout.resfiles
+C:\Dave\TFS\SMITSTFS.TFSPREVIEW.COM\DefaultCollection\Clock Tile\Trunk\Clock\Clock.WinRT\obj\Release\resources.resfiles
+C:\Dave\TFS\SMITSTFS.TFSPREVIEW.COM\DefaultCollection\Clock Tile\Trunk\Clock\Clock.WinRT\obj\Release\pri.resfiles
+C:\Dave\TFS\SMITSTFS.TFSPREVIEW.COM\DefaultCollection\Clock Tile\Trunk\Clock\Clock.WinRT\obj\Release\LanguageQualifiers.txt
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock.WinRT\bin\Release\Clock.WinRT.winmd
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock.WinRT\bin\Release\Clock.WinRT.pdb
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock.WinRT\bin\Release\Clock.WinRT.pri
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock.WinRT\obj\Release\Clock.WinRT.winmd
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock.WinRT\obj\Release\Clock.WinRT.pdb
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock.WinRT\obj\Release\Clock.WinRT.winmdobj
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock.WinRT\obj\Release\Clock.WinRT.compile.pdb
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock.WinRT\obj\Release\priconfig.xml
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock.WinRT\obj\Release\layout.resfiles
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock.WinRT\obj\Release\resources.resfiles
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock.WinRT\obj\Release\pri.resfiles
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock.WinRT\obj\Release\LanguageQualifiers.txt

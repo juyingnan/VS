@@ -1,0 +1,24 @@
+C:\Users\bunny\AppData\Local\Temporary Projects\HW2_WS_Q2_RESTClient_WPF\bin\Debug\HW2_WS_Q2_RESTClient_WPF.exe
+C:\Users\bunny\AppData\Local\Temporary Projects\HW2_WS_Q2_RESTClient_WPF\bin\Debug\HW2_WS_Q2_RESTClient_WPF.pdb
+C:\Users\bunny\AppData\Local\Temporary Projects\HW2_WS_Q2_RESTClient_WPF\obj\Debug\HW2_WS_Q2_RESTClient_WPF.csprojResolveAssemblyReference.cache
+C:\Users\bunny\AppData\Local\Temporary Projects\HW2_WS_Q2_RESTClient_WPF\obj\Debug\MainWindow.baml
+C:\Users\bunny\AppData\Local\Temporary Projects\HW2_WS_Q2_RESTClient_WPF\obj\Debug\MainWindow.g.cs
+C:\Users\bunny\AppData\Local\Temporary Projects\HW2_WS_Q2_RESTClient_WPF\obj\Debug\App.g.cs
+C:\Users\bunny\AppData\Local\Temporary Projects\HW2_WS_Q2_RESTClient_WPF\obj\Debug\HW2_WS_Q2_RESTClient_WPF_MarkupCompile.cache
+C:\Users\bunny\AppData\Local\Temporary Projects\HW2_WS_Q2_RESTClient_WPF\obj\Debug\HW2_WS_Q2_RESTClient_WPF.g.resources
+C:\Users\bunny\AppData\Local\Temporary Projects\HW2_WS_Q2_RESTClient_WPF\obj\Debug\HW2_WS_Q2_RESTClient_WPF.Properties.Resources.resources
+C:\Users\bunny\AppData\Local\Temporary Projects\HW2_WS_Q2_RESTClient_WPF\obj\Debug\HW2_WS_Q2_RESTClient_WPF.csproj.GenerateResource.Cache
+C:\Users\bunny\AppData\Local\Temporary Projects\HW2_WS_Q2_RESTClient_WPF\obj\Debug\HW2_WS_Q2_RESTClient_WPF.exe
+C:\Users\bunny\AppData\Local\Temporary Projects\HW2_WS_Q2_RESTClient_WPF\obj\Debug\HW2_WS_Q2_RESTClient_WPF.pdb
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\HW2_WS_Q2_RESTClient_WPF\HW2_WS_Q2_RESTClient_WPF\obj\Debug\HW2_WS_Q2_RESTClient_WPF.exe
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\HW2_WS_Q2_RESTClient_WPF\HW2_WS_Q2_RESTClient_WPF\obj\Debug\HW2_WS_Q2_RESTClient_WPF.pdb
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\HW2_WS_Q2_RESTClient_WPF\HW2_WS_Q2_RESTClient_WPF\obj\Debug\HW2_WS_Q2_RESTClient_WPF.csprojResolveAssemblyReference.cache
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\HW2_WS_Q2_RESTClient_WPF\HW2_WS_Q2_RESTClient_WPF\obj\Debug\MainWindow.baml
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\HW2_WS_Q2_RESTClient_WPF\HW2_WS_Q2_RESTClient_WPF\obj\Debug\MainWindow.g.cs
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\HW2_WS_Q2_RESTClient_WPF\HW2_WS_Q2_RESTClient_WPF\obj\Debug\App.g.cs
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\HW2_WS_Q2_RESTClient_WPF\HW2_WS_Q2_RESTClient_WPF\obj\Debug\HW2_WS_Q2_RESTClient_WPF_MarkupCompile.cache
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\HW2_WS_Q2_RESTClient_WPF\HW2_WS_Q2_RESTClient_WPF\obj\Debug\HW2_WS_Q2_RESTClient_WPF.g.resources
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\HW2_WS_Q2_RESTClient_WPF\HW2_WS_Q2_RESTClient_WPF\obj\Debug\HW2_WS_Q2_RESTClient_WPF.Properties.Resources.resources
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\HW2_WS_Q2_RESTClient_WPF\HW2_WS_Q2_RESTClient_WPF\obj\Debug\HW2_WS_Q2_RESTClient_WPF.csproj.GenerateResource.Cache
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\HW2_WS_Q2_RESTClient_WPF\HW2_WS_Q2_RESTClient_WPF\bin\Debug\HW2_WS_Q2_RESTClient_WPF.exe
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\HW2_WS_Q2_RESTClient_WPF\HW2_WS_Q2_RESTClient_WPF\bin\Debug\HW2_WS_Q2_RESTClient_WPF.pdb

@@ -1,0 +1,26 @@
+C:\Users\bunny\AppData\Local\Temporary Projects\BPEL_Client\bin\Debug\BPEL_Client.exe.config
+C:\Users\bunny\AppData\Local\Temporary Projects\BPEL_Client\bin\Debug\BPEL_Client.exe
+C:\Users\bunny\AppData\Local\Temporary Projects\BPEL_Client\bin\Debug\BPEL_Client.pdb
+C:\Users\bunny\AppData\Local\Temporary Projects\BPEL_Client\obj\Debug\BPEL_Client.csprojResolveAssemblyReference.cache
+C:\Users\bunny\AppData\Local\Temporary Projects\BPEL_Client\obj\Debug\MainWindow.baml
+C:\Users\bunny\AppData\Local\Temporary Projects\BPEL_Client\obj\Debug\MainWindow.g.cs
+C:\Users\bunny\AppData\Local\Temporary Projects\BPEL_Client\obj\Debug\App.g.cs
+C:\Users\bunny\AppData\Local\Temporary Projects\BPEL_Client\obj\Debug\BPEL_Client_MarkupCompile.cache
+C:\Users\bunny\AppData\Local\Temporary Projects\BPEL_Client\obj\Debug\BPEL_Client.g.resources
+C:\Users\bunny\AppData\Local\Temporary Projects\BPEL_Client\obj\Debug\BPEL_Client.Properties.Resources.resources
+C:\Users\bunny\AppData\Local\Temporary Projects\BPEL_Client\obj\Debug\BPEL_Client.csproj.GenerateResource.Cache
+C:\Users\bunny\AppData\Local\Temporary Projects\BPEL_Client\obj\Debug\BPEL_Client.exe
+C:\Users\bunny\AppData\Local\Temporary Projects\BPEL_Client\obj\Debug\BPEL_Client.pdb
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\BPEL_Client\BPEL_Client\bin\Debug\BPEL_Client.exe.config
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\BPEL_Client\BPEL_Client\obj\Debug\BPEL_Client.exe
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\BPEL_Client\BPEL_Client\obj\Debug\BPEL_Client.pdb
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\BPEL_Client\BPEL_Client\bin\Debug\BPEL_Client.exe
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\BPEL_Client\BPEL_Client\bin\Debug\BPEL_Client.pdb
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\BPEL_Client\BPEL_Client\obj\Debug\BPEL_Client.csprojResolveAssemblyReference.cache
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\BPEL_Client\BPEL_Client\obj\Debug\MainWindow.baml
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\BPEL_Client\BPEL_Client\obj\Debug\MainWindow.g.cs
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\BPEL_Client\BPEL_Client\obj\Debug\App.g.cs
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\BPEL_Client\BPEL_Client\obj\Debug\BPEL_Client_MarkupCompile.cache
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\BPEL_Client\BPEL_Client\obj\Debug\BPEL_Client.g.resources
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\BPEL_Client\BPEL_Client\obj\Debug\BPEL_Client.Properties.Resources.resources
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\BPEL_Client\BPEL_Client\obj\Debug\BPEL_Client.csproj.GenerateResource.Cache

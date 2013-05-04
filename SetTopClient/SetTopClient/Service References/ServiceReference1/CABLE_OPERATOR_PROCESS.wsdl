@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsdl1="http://cn.edu.pku.ss.bank" xmlns:wsdl2="ss.oku.edu.cn" xmlns:plnk="http://docs.oasis-open.org/wsbpel/2.0/plnktype" xmlns:tns="ss.pku.edu.cn" xmlns:p="http://www.w3.org/2001/XMLSchema" xmlns:vprop="http://docs.oasis-open.org/wsbpel/2.0/varprop" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://tempuri.org/" name="CABLE_OPERATOR_PROCESS" targetNamespace="ss.pku.edu.cn" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <plnk:partnerLinkType name="verificationPLT">
+    <plnk:role name="VerificationProvider" portType="wsdl:CableServiceSoap" />
+  </plnk:partnerLinkType>
+  <plnk:partnerLinkType name="bankPLT">
+    <plnk:role name="bankProvider" portType="wsdl1:BankService" />
+  </plnk:partnerLinkType>
+  <vprop:property name="MyCS" type="p:string" />
+  <vprop:propertyAlias messageType="tns:CABLE_OPERATOR_PROCESSRequestMessage" part="CustomerINFO" propertyName="tns:MyCS">
+    <vprop:query><![CDATA[/tns:EventID]]></vprop:query>
+    <vprop:query><![CDATA[/tns:CustomerID]]></vprop:query>
+  </vprop:propertyAlias>
+  <vprop:propertyAlias messageType="tns:CABLE_OPERATOR_PROCESSResponseMessage" part="CustomerINFO" propertyName="tns:MyCS">
+    <vprop:query><![CDATA[/tns:EventID]]></vprop:query>
+    <vprop:query><![CDATA[/tns:CustomerID]]></vprop:query>
+  </vprop:propertyAlias>
+  <plnk:partnerLinkType name="CABLE_OPERATOR_PROCESS">
+    <plnk:role name="CABLE_OPERATOR_PROCESSProvider" portType="tns:CABLE_OPERATOR_PROCESS" />
+    <plnk:role name="CABLE_OPERATOR_PROCESSRequester" portType="tns:CABLE_OPERATOR_PROCESSCallback" />
+  </plnk:partnerLinkType>
+  <import namespace="http://tempuri.org/" location="CableService.wsdl" />
+  <import namespace="http://cn.edu.pku.ss.bank" location="BankService.wsdl" />
+  <types>
+    <p:schema xmlns="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="ss.pku.edu.cn">
+      <p:element name="CABLE_OPERATOR_PROCESSRequest">
+        <p:complexType>
+          <p:sequence>
+            <p:element name="CustomerID" type="p:string" />
+            <p:element name="EventID" type="p:int" />
+          </p:sequence>
+        </p:complexType>
+      </p:element>
+      <p:element name="CABLE_OPERATOR_PROCESSResponse">
+        <p:complexType>
+          <p:sequence>
+            <p:element name="CustomerID" type="p:string" />
+            <p:element name="EventID" type="p:int" />
+            <p:element name="Result" type="p:string" />
+          </p:sequence>
+        </p:complexType>
+      </p:element>
+    </p:schema>
+  </types>
+  <message name="CABLE_OPERATOR_PROCESSRequestMessage">
+    <part name="CustomerINFO" element="tns:CABLE_OPERATOR_PROCESSRequest" />
+  </message>
+  <message name="CABLE_OPERATOR_PROCESSResponseMessage">
+    <part name="CustomerINFO" element="tns:CABLE_OPERATOR_PROCESSResponse" />
+  </message>
+  <portType name="CABLE_OPERATOR_PROCESS">
+    <operation name="initiate">
+      <input message="tns:CABLE_OPERATOR_PROCESSRequestMessage" />
+    </operation>
+  </portType>
+  <portType name="CABLE_OPERATOR_PROCESSCallback">
+    <operation name="onResult">
+      <input message="tns:CABLE_OPERATOR_PROCESSResponseMessage" />
+    </operation>
+  </portType>
+  <binding name="CABLE_OPERATOR_PROCESSBinding" type="tns:CABLE_OPERATOR_PROCESS">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="initiate">
+      <soap:operation soapAction="ss.pku.edu.cn/initiate" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+    </operation>
+  </binding>
+  <binding name="CABLE_OPERATOR_PROCESSCallbackBinding" type="tns:CABLE_OPERATOR_PROCESSCallback">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="onResult">
+      <soap:operation soapAction="ss.pku.edu.cn/onResult" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+    </operation>
+  </binding>
+  <service name="CABLE_OPERATOR_PROCESSService">
+    <port name="CABLE_OPERATOR_PROCESSPort" binding="tns:CABLE_OPERATOR_PROCESSBinding">
+      <soap:address location="http://localhost:8080/ode/processes/CABLE_OPERATOR_PROCESS" />
+    </port>
+  </service>
+  <service name="CABLE_OPERATOR_PROCESSServiceCallback">
+    <port name="CABLE_OPERATOR_PROCESSPortCallbackPort" binding="tns:CABLE_OPERATOR_PROCESSCallbackBinding">
+      <soap:address location="http://localhost:8080/ode/processes/CABLE_OPERATOR_PROCESSCallback" />
+    </port>
+  </service>
+</definitions>

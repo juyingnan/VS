@@ -1,0 +1,13 @@
+d:\bunny\documents\visual studio 2010\Projects\BigBottom\BigBottom\bin\Debug\BigBottom.exe
+d:\bunny\documents\visual studio 2010\Projects\BigBottom\BigBottom\bin\Debug\BigBottom.pdb
+d:\bunny\documents\visual studio 2010\Projects\BigBottom\BigBottom\obj\x86\Debug\ResolveAssemblyReference.cache
+d:\bunny\documents\visual studio 2010\Projects\BigBottom\BigBottom\obj\x86\Debug\MainWindow.baml
+d:\bunny\documents\visual studio 2010\Projects\BigBottom\BigBottom\obj\x86\Debug\MainWindow.g.cs
+d:\bunny\documents\visual studio 2010\Projects\BigBottom\BigBottom\obj\x86\Debug\App.g.cs
+d:\bunny\documents\visual studio 2010\Projects\BigBottom\BigBottom\obj\x86\Debug\BigBottom_MarkupCompile.cache
+d:\bunny\documents\visual studio 2010\Projects\BigBottom\BigBottom\obj\x86\Debug\BigBottom.g.resources
+d:\bunny\documents\visual studio 2010\Projects\BigBottom\BigBottom\obj\x86\Debug\BigBottom.Properties.Resources.resources
+d:\bunny\documents\visual studio 2010\Projects\BigBottom\BigBottom\obj\x86\Debug\GenerateResource.read.1.tlog
+d:\bunny\documents\visual studio 2010\Projects\BigBottom\BigBottom\obj\x86\Debug\GenerateResource.write.1.tlog
+d:\bunny\documents\visual studio 2010\Projects\BigBottom\BigBottom\obj\x86\Debug\BigBottom.exe
+d:\bunny\documents\visual studio 2010\Projects\BigBottom\BigBottom\obj\x86\Debug\BigBottom.pdb

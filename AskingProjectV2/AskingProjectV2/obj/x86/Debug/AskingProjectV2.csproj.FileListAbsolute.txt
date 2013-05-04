@@ -1,0 +1,10 @@
+D:\Bunny\Documents\Visual Studio 2010\Projects\AskingProjectV2\AskingProjectV2\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Bunny\Documents\Visual Studio 2010\Projects\AskingProjectV2\AskingProjectV2\obj\x86\Debug\AskingProjectV2.Form1.resources
+D:\Bunny\Documents\Visual Studio 2010\Projects\AskingProjectV2\AskingProjectV2\obj\x86\Debug\AskingProjectV2.Properties.Resources.resources
+D:\Bunny\Documents\Visual Studio 2010\Projects\AskingProjectV2\AskingProjectV2\obj\x86\Debug\ResGen.read.1.tlog
+D:\Bunny\Documents\Visual Studio 2010\Projects\AskingProjectV2\AskingProjectV2\obj\x86\Debug\ResGen.write.1.tlog
+D:\Bunny\Documents\Visual Studio 2010\Projects\AskingProjectV2\AskingProjectV2\bin\Debug\AskingProjectV2.exe
+D:\Bunny\Documents\Visual Studio 2010\Projects\AskingProjectV2\AskingProjectV2\bin\Debug\AskingProjectV2.pdb
+D:\Bunny\Documents\Visual Studio 2010\Projects\AskingProjectV2\AskingProjectV2\obj\x86\Debug\AskingProjectV2.exe
+D:\Bunny\Documents\Visual Studio 2010\Projects\AskingProjectV2\AskingProjectV2\obj\x86\Debug\AskingProjectV2.pdb
+D:\Bunny\Documents\Visual Studio 2010\Projects\AskingProjectV2\AskingProjectV2\obj\x86\Debug\AskingProjectV2.loadProgressWindow.resources

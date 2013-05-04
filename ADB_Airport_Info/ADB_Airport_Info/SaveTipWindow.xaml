@@ -1,0 +1,24 @@
+﻿<Window x:Class="ADB_Airport_Info.SaveTipWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="SaveTipWindow" Height="120" Width="250" WindowStyle="ToolWindow">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="3.5*" />
+            <RowDefinition />
+            <RowDefinition Height="2.5*" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition Width="3*" />
+            <ColumnDefinition />
+            <ColumnDefinition Width="3*" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="3">Do you want to save the file?<LineBreak/>是否要保存？</TextBlock>
+        <Button Grid.Column="1" Grid.Row="3" Click="Button_Click_1">Yes</Button>
+        <Button Grid.Column="3" Grid.Row="3" Click="Button_Click">No</Button>
+    </Grid>
+</Window>

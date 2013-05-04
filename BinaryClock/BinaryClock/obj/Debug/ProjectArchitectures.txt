@@ -1,0 +1,4 @@
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\BinaryClock\BackgroundTask\BackgroundTask.csproj;neutral
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\BinaryClock\BinaryClock\BinaryClock.csproj;neutral
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\BinaryClock\TimeDefination\TimeDefination.csproj;neutral
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\BinaryClock\TimeDefination\TimeDefination.csproj;neutral

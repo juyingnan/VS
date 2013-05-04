@@ -1,0 +1,5 @@
+c:\users\bunny\documents\visual studio 2012\Projects\CableService\CableService\bin\CableService.dll
+c:\users\bunny\documents\visual studio 2012\Projects\CableService\CableService\bin\CableService.pdb
+c:\users\bunny\documents\visual studio 2012\Projects\CableService\CableService\obj\Release\CableService.dll
+c:\users\bunny\documents\visual studio 2012\Projects\CableService\CableService\obj\Release\CableService.pdb
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\CableService\CableService\obj\Release\CableService.csprojResolveAssemblyReference.cache

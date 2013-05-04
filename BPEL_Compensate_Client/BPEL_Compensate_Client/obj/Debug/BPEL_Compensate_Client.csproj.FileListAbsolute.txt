@@ -1,0 +1,14 @@
+C:\Users\bunny\AppData\Local\Temporary Projects\BPEL_Compensate_Client\bin\Debug\BPEL_Compensate_Client.exe.config
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\BPEL_Compensate_Client\BPEL_Compensate_Client\bin\Debug\BPEL_Compensate_Client.exe.config
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\BPEL_Compensate_Client\BPEL_Compensate_Client\bin\Debug\BPEL_Compensate_Client.exe
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\BPEL_Compensate_Client\BPEL_Compensate_Client\bin\Debug\BPEL_Compensate_Client.pdb
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\BPEL_Compensate_Client\BPEL_Compensate_Client\obj\Debug\BPEL_Compensate_Client.csprojResolveAssemblyReference.cache
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\BPEL_Compensate_Client\BPEL_Compensate_Client\obj\Debug\MainWindow.baml
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\BPEL_Compensate_Client\BPEL_Compensate_Client\obj\Debug\MainWindow.g.cs
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\BPEL_Compensate_Client\BPEL_Compensate_Client\obj\Debug\App.g.cs
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\BPEL_Compensate_Client\BPEL_Compensate_Client\obj\Debug\BPEL_Compensate_Client_MarkupCompile.cache
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\BPEL_Compensate_Client\BPEL_Compensate_Client\obj\Debug\BPEL_Compensate_Client.g.resources
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\BPEL_Compensate_Client\BPEL_Compensate_Client\obj\Debug\BPEL_Compensate_Client.Properties.Resources.resources
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\BPEL_Compensate_Client\BPEL_Compensate_Client\obj\Debug\BPEL_Compensate_Client.csproj.GenerateResource.Cache
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\BPEL_Compensate_Client\BPEL_Compensate_Client\obj\Debug\BPEL_Compensate_Client.exe
+C:\Users\bunny\Documents\Visual Studio 2012\Projects\BPEL_Compensate_Client\BPEL_Compensate_Client\obj\Debug\BPEL_Compensate_Client.pdb

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:vprop="http://docs.oasis-open.org/wsbpel/2.0/varprop" xmlns:tns="ss.oku.edu.cn" xmlns:plnk="http://docs.oasis-open.org/wsbpel/2.0/plnktype" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:wsdl2="http://tempuri.org/" xmlns:ns0="http://cn.edu.pku.ss.bank" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/wsdl/" targetNamespace="ss.oku.edu.cn" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="ss.pku.edu.cn" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="ss.oku.edu.cn">
+      <xsd:element name="ClientRequest">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="CustomerID" type="xsd:string" />
+            <xsd:element name="EventID" type="xsd:int" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="ClientResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="CustomerID" type="xsd:string" />
+            <xsd:element name="EventID" type="xsd:int" />
+            <xsd:element name="result" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="I2">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="CustomerID" type="xsd:string" />
+            <xsd:element name="EventID" type="xsd:int" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="NewOperationResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="out" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+    <p:schema xmlns:wsdl1="http://cn.edu.pku.ss.bank" xmlns:wsdl2="ss.oku.edu.cn" xmlns:tns="ss.pku.edu.cn" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://tempuri.org/" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="ss.pku.edu.cn" xmlns:p="http://www.w3.org/2001/XMLSchema">
+      <p:element name="CABLE_OPERATOR_PROCESSRequest">
+        <p:complexType>
+          <p:sequence>
+            <p:element name="CustomerID" type="p:string" />
+            <p:element name="EventID" type="p:int" />
+          </p:sequence>
+        </p:complexType>
+      </p:element>
+      <p:element name="CABLE_OPERATOR_PROCESSResponse">
+        <p:complexType>
+          <p:sequence>
+            <p:element name="CustomerID" type="p:string" />
+            <p:element name="EventID" type="p:int" />
+            <p:element name="Result" type="p:string" />
+          </p:sequence>
+        </p:complexType>
+      </p:element>
+    </p:schema>
+    <xsd:schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:impl="http://cn.edu.pku.ss.bank" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:intf="http://cn.edu.pku.ss.bank" xmlns:apachesoap="http://xml.apache.org/xml-soap" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://cn.edu.pku.ss.bank">
+      <xsd:element name="creditCardAuthorization">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="creditCardNo" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="creditCardAuthorizationResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="creditCardAuthorizationReturn" type="xsd:boolean" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+    <s:schema xmlns:tns="http://tempuri.org/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema">
+      <s:element name="GetCableInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" name="CustomerID" type="s:string" />
+            <s:element name="EventID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCableInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" name="GetCableInfoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdCableInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" name="CustomerID" type="s:string" />
+            <s:element name="EventID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdCableInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" name="UpdCableInfoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+    <s:schema xmlns:tns="http://tempuri.org/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema">
+      <s:element name="HelloWorld">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" name="CustomerID" type="s:string" />
+            <s:element minOccurs="0" name="RequestEventID" type="s:string" />
+            <s:element minOccurs="0" name="ResponseEventID" type="s:string" />
+            <s:element minOccurs="0" name="result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ClientRequestMessage">
+    <wsdl:part name="payload" element="tns:ClientRequest" />
+  </wsdl:message>
+  <wsdl:message name="I2Request">
+    <wsdl:part name="parameters" element="tns:I2" />
+  </wsdl:message>
+  <wsdl:portType name="ClientPortType">
+    <wsdl:operation name="initiate">
+      <wsdl:input wsaw:Action="ss.oku.edu.cn/initiate" message="tns:ClientRequestMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="I2">
+      <wsdl:input wsaw:Action="ss.oku.edu.cn/I2" message="tns:I2Request" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ClientSOAP11Binding" type="tns:ClientPortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="initiate">
+      <soap:operation soapAction="ss.oku.edu.cn/initiate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="I2">
+      <soap:operation soapAction="ss.oku.edu.cn/I2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ClientSOAP12Binding" type="tns:ClientPortType">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="initiate">
+      <soap12:operation soapAction="ss.oku.edu.cn/initiate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="I2">
+      <soap12:operation soapAction="ss.oku.edu.cn/I2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ClientHttpBinding" type="tns:ClientPortType">
+    <http:binding verb="POST" />
+    <wsdl:operation name="initiate">
+      <http:operation location="Client/initiate" />
+      <wsdl:input>
+        <mime:content part="initiate" type="text/xml" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="I2">
+      <http:operation location="Client/I2" />
+      <wsdl:input>
+        <mime:content part="I2" type="text/xml" />
+      </wsdl:input>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Client">
+    <wsdl:port name="ClientSOAP11port_http" binding="tns:ClientSOAP11Binding">
+      <soap:address location="http://localhost:8080/ode/processes/Client" />
+    </wsdl:port>
+    <wsdl:port name="ClientSOAP12port_http" binding="tns:ClientSOAP12Binding">
+      <soap12:address location="http://localhost:8080/ode/processes/Client" />
+    </wsdl:port>
+    <wsdl:port name="ClientHttpport" binding="tns:ClientHttpBinding">
+      <http:address location="http://localhost:8080/ode/processes/Client" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

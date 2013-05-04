@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="8881bunny.NineBlockDiary" Publisher="CN=CAAC4B3F-C686-42E9-A0AE-0F625BA4482B" Version="1.0.0.1" />
+  <Properties>
+    <DisplayName>Nine Block Diary</DisplayName>
+    <PublisherDisplayName>bunny</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="NineBlockDiary.App">
+      <VisualElements DisplayName="九宫格日记" Logo="Assets\Logo.png" SmallLogo="Assets\SmallLogo.png" Description="九宫格日记，快速记录一天心情！" ForegroundText="dark" BackgroundColor="white">
+        <DefaultTile ShowName="allLogos" ShortName="9Block" />
+        <SplashScreen Image="Assets\SplashScreen.png" />
+        <InitialRotationPreference>
+          <Rotation Preference="landscape" />
+          <Rotation Preference="landscapeFlipped" />
+        </InitialRotationPreference>
+      </VisualElements>
+    </Application>
+  </Applications>
+</Package>

@@ -1,0 +1,17 @@
+D:\Bunny\Documents\Visual Studio 2010\Projects\PictureThis\PictureThis\bin\Release\PictureThis.exe
+D:\Bunny\Documents\Visual Studio 2010\Projects\PictureThis\PictureThis\bin\Release\PictureThis.pdb
+D:\Bunny\Documents\Visual Studio 2010\Projects\PictureThis\PictureThis\obj\x86\Release\ResolveAssemblyReference.cache
+D:\Bunny\Documents\Visual Studio 2010\Projects\PictureThis\PictureThis\obj\x86\Release\FullScreenWhite.baml
+D:\Bunny\Documents\Visual Studio 2010\Projects\PictureThis\PictureThis\obj\x86\Release\MainWindow.baml
+D:\Bunny\Documents\Visual Studio 2010\Projects\PictureThis\PictureThis\obj\x86\Release\FullScreenWhite.g.cs
+D:\Bunny\Documents\Visual Studio 2010\Projects\PictureThis\PictureThis\obj\x86\Release\MainWindow.g.cs
+D:\Bunny\Documents\Visual Studio 2010\Projects\PictureThis\PictureThis\obj\x86\Release\App.g.cs
+D:\Bunny\Documents\Visual Studio 2010\Projects\PictureThis\PictureThis\obj\x86\Release\PictureThis_MarkupCompile.cache
+D:\Bunny\Documents\Visual Studio 2010\Projects\PictureThis\PictureThis\obj\x86\Release\PictureThis.g.resources
+D:\Bunny\Documents\Visual Studio 2010\Projects\PictureThis\PictureThis\obj\x86\Release\PictureThis.prtScrWindow.resources
+D:\Bunny\Documents\Visual Studio 2010\Projects\PictureThis\PictureThis\obj\x86\Release\PictureThis.Properties.Resources.resources
+D:\Bunny\Documents\Visual Studio 2010\Projects\PictureThis\PictureThis\obj\x86\Release\PictureThis.exe
+D:\Bunny\Documents\Visual Studio 2010\Projects\PictureThis\PictureThis\obj\x86\Release\PictureThis.pdb
+D:\Bunny\Documents\Visual Studio 2010\Projects\PictureThis\PictureThis\bin\Release\PictureThis.exe.config
+D:\Bunny\Documents\Visual Studio 2010\Projects\PictureThis\PictureThis\obj\x86\Release\ResGen.read.1.tlog
+D:\Bunny\Documents\Visual Studio 2010\Projects\PictureThis\PictureThis\obj\x86\Release\ResGen.write.1.tlog

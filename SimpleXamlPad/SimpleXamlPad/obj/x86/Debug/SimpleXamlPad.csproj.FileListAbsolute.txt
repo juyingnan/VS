@@ -1,0 +1,26 @@
+C:\Users\Administrator\AppData\Local\Temporary Projects\SimpleXamlPad\bin\Debug\SimpleXamlPad.exe
+C:\Users\Administrator\AppData\Local\Temporary Projects\SimpleXamlPad\bin\Debug\SimpleXamlPad.pdb
+C:\Users\Administrator\AppData\Local\Temporary Projects\SimpleXamlPad\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\AppData\Local\Temporary Projects\SimpleXamlPad\obj\x86\Debug\MainWindow.baml
+C:\Users\Administrator\AppData\Local\Temporary Projects\SimpleXamlPad\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Administrator\AppData\Local\Temporary Projects\SimpleXamlPad\obj\x86\Debug\App.g.cs
+C:\Users\Administrator\AppData\Local\Temporary Projects\SimpleXamlPad\obj\x86\Debug\SimpleXamlPad_MarkupCompile.cache
+C:\Users\Administrator\AppData\Local\Temporary Projects\SimpleXamlPad\obj\x86\Debug\SimpleXamlPad.g.resources
+C:\Users\Administrator\AppData\Local\Temporary Projects\SimpleXamlPad\obj\x86\Debug\SimpleXamlPad.Properties.Resources.resources
+C:\Users\Administrator\AppData\Local\Temporary Projects\SimpleXamlPad\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Administrator\AppData\Local\Temporary Projects\SimpleXamlPad\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Administrator\AppData\Local\Temporary Projects\SimpleXamlPad\obj\x86\Debug\SimpleXamlPad.exe
+C:\Users\Administrator\AppData\Local\Temporary Projects\SimpleXamlPad\obj\x86\Debug\SimpleXamlPad.pdb
+D:\Bunny\Documents\Visual Studio 2010\Projects\SimpleXamlPad\SimpleXamlPad\obj\x86\Debug\SimpleXamlPad.exe
+D:\Bunny\Documents\Visual Studio 2010\Projects\SimpleXamlPad\SimpleXamlPad\obj\x86\Debug\SimpleXamlPad.pdb
+D:\Bunny\Documents\Visual Studio 2010\Projects\SimpleXamlPad\SimpleXamlPad\bin\Debug\SimpleXamlPad.exe
+D:\Bunny\Documents\Visual Studio 2010\Projects\SimpleXamlPad\SimpleXamlPad\bin\Debug\SimpleXamlPad.pdb
+D:\Bunny\Documents\Visual Studio 2010\Projects\SimpleXamlPad\SimpleXamlPad\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Bunny\Documents\Visual Studio 2010\Projects\SimpleXamlPad\SimpleXamlPad\obj\x86\Debug\MainWindow.baml
+D:\Bunny\Documents\Visual Studio 2010\Projects\SimpleXamlPad\SimpleXamlPad\obj\x86\Debug\MainWindow.g.cs
+D:\Bunny\Documents\Visual Studio 2010\Projects\SimpleXamlPad\SimpleXamlPad\obj\x86\Debug\App.g.cs
+D:\Bunny\Documents\Visual Studio 2010\Projects\SimpleXamlPad\SimpleXamlPad\obj\x86\Debug\SimpleXamlPad_MarkupCompile.cache
+D:\Bunny\Documents\Visual Studio 2010\Projects\SimpleXamlPad\SimpleXamlPad\obj\x86\Debug\SimpleXamlPad.g.resources
+D:\Bunny\Documents\Visual Studio 2010\Projects\SimpleXamlPad\SimpleXamlPad\obj\x86\Debug\SimpleXamlPad.Properties.Resources.resources
+D:\Bunny\Documents\Visual Studio 2010\Projects\SimpleXamlPad\SimpleXamlPad\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Bunny\Documents\Visual Studio 2010\Projects\SimpleXamlPad\SimpleXamlPad\obj\x86\Debug\GenerateResource.write.1.tlog

@@ -1,0 +1,60 @@
+C:\Users\bunny_000\AppData\Local\Temporary Projects\DinnerDecision\bin\Debug\DinnerDecision.exe
+C:\Users\bunny_000\AppData\Local\Temporary Projects\DinnerDecision\bin\Debug\DinnerDecision.pdb
+C:\Users\bunny_000\AppData\Local\Temporary Projects\DinnerDecision\bin\Debug\resources.pri
+C:\Users\bunny_000\AppData\Local\Temporary Projects\DinnerDecision\bin\Debug\AppxManifest.xml
+C:\Users\bunny_000\AppData\Local\Temporary Projects\DinnerDecision\bin\Debug\DinnerDecision.build.appxrecipe
+C:\Users\bunny_000\AppData\Local\Temporary Projects\DinnerDecision\obj\Debug\App.g.i.cs
+C:\Users\bunny_000\AppData\Local\Temporary Projects\DinnerDecision\obj\Debug\App.g.cs
+C:\Users\bunny_000\AppData\Local\Temporary Projects\DinnerDecision\obj\Debug\Common\StandardStyles.g.i.cs
+C:\Users\bunny_000\AppData\Local\Temporary Projects\DinnerDecision\obj\Debug\Common\StandardStyles.g.cs
+C:\Users\bunny_000\AppData\Local\Temporary Projects\DinnerDecision\obj\Debug\ItemsPage.g.i.cs
+C:\Users\bunny_000\AppData\Local\Temporary Projects\DinnerDecision\obj\Debug\ItemsPage.g.cs
+C:\Users\bunny_000\AppData\Local\Temporary Projects\DinnerDecision\obj\Debug\SplitPage.g.i.cs
+C:\Users\bunny_000\AppData\Local\Temporary Projects\DinnerDecision\obj\Debug\SplitPage.g.cs
+C:\Users\bunny_000\AppData\Local\Temporary Projects\DinnerDecision\obj\Debug\XamlTypeInfo.g.cs
+C:\Users\bunny_000\AppData\Local\Temporary Projects\DinnerDecision\obj\Debug\App.xaml
+C:\Users\bunny_000\AppData\Local\Temporary Projects\DinnerDecision\obj\Debug\Common\StandardStyles.xaml
+C:\Users\bunny_000\AppData\Local\Temporary Projects\DinnerDecision\obj\Debug\ItemsPage.xaml
+C:\Users\bunny_000\AppData\Local\Temporary Projects\DinnerDecision\obj\Debug\SplitPage.xaml
+C:\Users\bunny_000\AppData\Local\Temporary Projects\DinnerDecision\obj\Debug\DinnerDecision.exe
+C:\Users\bunny_000\AppData\Local\Temporary Projects\DinnerDecision\obj\Debug\DinnerDecision.pdb
+C:\Users\bunny_000\AppData\Local\Temporary Projects\DinnerDecision\obj\Debug\priconfig.xml.intermediate
+C:\Users\bunny_000\AppData\Local\Temporary Projects\DinnerDecision\obj\Debug\layout.resfiles.intermediate
+C:\Users\bunny_000\AppData\Local\Temporary Projects\DinnerDecision\obj\Debug\resources.resfiles.intermediate
+C:\Users\bunny_000\AppData\Local\Temporary Projects\DinnerDecision\obj\Debug\pri.resfiles.intermediate
+C:\Users\bunny_000\AppData\Local\Temporary Projects\DinnerDecision\obj\Debug\priconfig.xml
+C:\Users\bunny_000\AppData\Local\Temporary Projects\DinnerDecision\obj\Debug\layout.resfiles
+C:\Users\bunny_000\AppData\Local\Temporary Projects\DinnerDecision\obj\Debug\resources.resfiles
+C:\Users\bunny_000\AppData\Local\Temporary Projects\DinnerDecision\obj\Debug\pri.resfiles
+C:\Users\bunny_000\AppData\Local\Temporary Projects\DinnerDecision\obj\Debug\LanguageQualifiers.txt
+C:\Users\bunny_000\AppData\Local\Temporary Projects\DinnerDecision\obj\Debug\ProjectArchitectures.txt
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecision\DinnerDecision\obj\Debug\App.g.i.cs
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecision\DinnerDecision\obj\Debug\App.g.cs
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecision\DinnerDecision\obj\Debug\Common\StandardStyles.g.i.cs
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecision\DinnerDecision\obj\Debug\Common\StandardStyles.g.cs
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecision\DinnerDecision\obj\Debug\XamlTypeInfo.g.cs
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecision\DinnerDecision\obj\Debug\App.xaml
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecision\DinnerDecision\obj\Debug\Common\StandardStyles.xaml
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecision\DinnerDecision\obj\Debug\DinnerDecision.exe
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecision\DinnerDecision\obj\Debug\DinnerDecision.pdb
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecision\DinnerDecision\bin\Debug\DinnerDecision.exe
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecision\DinnerDecision\bin\Debug\DinnerDecision.pdb
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecision\DinnerDecision\bin\Debug\resources.pri
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecision\DinnerDecision\bin\Debug\AppxManifest.xml
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecision\DinnerDecision\bin\Debug\DinnerDecision.build.appxrecipe
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecision\DinnerDecision\obj\Debug\priconfig.xml.intermediate
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecision\DinnerDecision\obj\Debug\layout.resfiles.intermediate
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecision\DinnerDecision\obj\Debug\resources.resfiles.intermediate
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecision\DinnerDecision\obj\Debug\pri.resfiles.intermediate
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecision\DinnerDecision\obj\Debug\priconfig.xml
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecision\DinnerDecision\obj\Debug\layout.resfiles
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecision\DinnerDecision\obj\Debug\resources.resfiles
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecision\DinnerDecision\obj\Debug\pri.resfiles
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecision\DinnerDecision\obj\Debug\LanguageQualifiers.txt
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecision\DinnerDecision\obj\Debug\ProjectArchitectures.txt
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecision\DinnerDecision\obj\Debug\MenuPage.g.i.cs
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecision\DinnerDecision\obj\Debug\MenuPage.g.cs
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecision\DinnerDecision\obj\Debug\MenuPage.xaml
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecision\DinnerDecision\obj\Debug\MainPage.g.i.cs
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecision\DinnerDecision\obj\Debug\MainPage.g.cs
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecision\DinnerDecision\obj\Debug\MainPage.xaml

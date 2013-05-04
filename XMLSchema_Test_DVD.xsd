@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<schema
+  xmlns="http://www.w3.org/2001/XMLSchema"
+  targetNamespace="http://tempuri.org/XMLSchema.xsd"
+    xmlns:mstns="http://tempuri.org/XMLSchema.xsd"  
+    elementFormDefault="qualified"
+  attributeFormDefault="qualified"
+>
+  <element name="DVD">
+    <complexType>
+      <sequence>
+        <element name="Title" type="string"/>
+        <element name="year" type="positiveInteger"></element>
+      </sequence>
+      <attribute name="Region" type="positiveInteger"></attribute>
+    </complexType>    
+  </element>  
+</schema>

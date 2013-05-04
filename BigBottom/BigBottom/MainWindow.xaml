@@ -1,0 +1,22 @@
+﻿<Window x:Class="BigBottom.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Big Bottom" Height="150" Width="200" ResizeMode="CanMinimize" Topmost="True" WindowStyle="SingleBorderWindow" ForceCursor="True" Icon="/BigBottom;component/35.ico">
+    <Grid ShowGridLines="False">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="4*" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Button Content="Get Start!" Height="90" HorizontalAlignment="Center" Name="StartButton" VerticalAlignment="Center" Width="180" Grid.ColumnSpan="3" Click="StartButton_Click" FontSize="36" FontWeight="Black" />
+        <Button Content="Got it!" Grid.Row="1" Height="23" HorizontalAlignment="Left" Name="GotitButton" VerticalAlignment="Bottom" Width="50" Click="GotitButton_Click" />
+        <Button Content="Postpone" Grid.Column="1" Grid.Row="1" Height="23" HorizontalAlignment="Center" Name="PostponeButton" VerticalAlignment="Bottom" Width="60" Click="PostponeButton_Click" />
+        <Button Content="Leave" Grid.Column="2" Grid.Row="1" Height="23" HorizontalAlignment="Right" Name="LeaveButton" VerticalAlignment="Bottom" Width="50" Click="LeaveButton_Click" />
+        <TextBlock Height="80" HorizontalAlignment="Left" Name="TimeBlock" Text="0:0" VerticalAlignment="Top" Grid.ColumnSpan="3" Width="190" FontSize="64" TextAlignment="Center" FontWeight="Black" FontStyle="Normal" />
+        <TextBlock Height="23" HorizontalAlignment="Left" Name="TipBlock" Text="Your Bottom is getting bigger:" VerticalAlignment="Top" Grid.ColumnSpan="3" FontWeight="SemiBold" Visibility="Visible" />
+    </Grid>
+</Window>

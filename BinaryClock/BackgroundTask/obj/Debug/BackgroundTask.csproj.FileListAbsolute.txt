@@ -1,0 +1,16 @@
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\BinaryClock\BackgroundTask\obj\Debug\BackgroundTask.winmd
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\BinaryClock\BackgroundTask\obj\Debug\BackgroundTask.winmdobj
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\BinaryClock\BackgroundTask\obj\Debug\BackgroundTask.compile.pdb
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\BinaryClock\BackgroundTask\obj\Debug\BackgroundTask.csprojResolveAssemblyReference.cache
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\BinaryClock\BackgroundTask\bin\Debug\BackgroundTask.winmd
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\BinaryClock\BackgroundTask\bin\Debug\BackgroundTask.pdb
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\BinaryClock\BackgroundTask\bin\Debug\BackgroundTask.pri
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\BinaryClock\BackgroundTask\bin\Debug\TimeDefination.dll
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\BinaryClock\BackgroundTask\bin\Debug\TimeDefination.pdb
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\BinaryClock\BackgroundTask\bin\Debug\TimeDefination.pri
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\BinaryClock\BackgroundTask\obj\Debug\BackgroundTask.pdb
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\BinaryClock\BackgroundTask\obj\Debug\priconfig.xml
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\BinaryClock\BackgroundTask\obj\Debug\layout.resfiles
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\BinaryClock\BackgroundTask\obj\Debug\resources.resfiles
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\BinaryClock\BackgroundTask\obj\Debug\pri.resfiles
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\BinaryClock\BackgroundTask\obj\Debug\LanguageQualifiers.txt

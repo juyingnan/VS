@@ -1,0 +1,14 @@
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\BinaryClock\TimeDefination\bin\Release\TimeDefination.dll
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\BinaryClock\TimeDefination\bin\Release\TimeDefination.pdb
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\BinaryClock\TimeDefination\bin\Release\TimeDefination.pri
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\BinaryClock\TimeDefination\obj\Release\TimeDefination.dll
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\BinaryClock\TimeDefination\obj\Release\TimeDefination.pdb
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\BinaryClock\TimeDefination\obj\Release\priconfig.xml.intermediate
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\BinaryClock\TimeDefination\obj\Release\layout.resfiles.intermediate
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\BinaryClock\TimeDefination\obj\Release\resources.resfiles.intermediate
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\BinaryClock\TimeDefination\obj\Release\pri.resfiles.intermediate
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\BinaryClock\TimeDefination\obj\Release\priconfig.xml
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\BinaryClock\TimeDefination\obj\Release\layout.resfiles
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\BinaryClock\TimeDefination\obj\Release\resources.resfiles
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\BinaryClock\TimeDefination\obj\Release\pri.resfiles
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\BinaryClock\TimeDefination\obj\Release\LanguageQualifiers.txt

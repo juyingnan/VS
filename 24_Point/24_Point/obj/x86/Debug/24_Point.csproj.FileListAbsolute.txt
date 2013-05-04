@@ -1,0 +1,10 @@
+d:\bunny\documents\visual studio 2010\Projects\24_Point\24_Point\obj\x86\Debug\ResolveAssemblyReference.cache
+d:\bunny\documents\visual studio 2010\Projects\24_Point\24_Point\bin\Debug\24_Point.exe
+d:\bunny\documents\visual studio 2010\Projects\24_Point\24_Point\bin\Debug\24_Point.pdb
+d:\bunny\documents\visual studio 2010\Projects\24_Point\24_Point\obj\x86\Debug\24_Point.exe
+d:\bunny\documents\visual studio 2010\Projects\24_Point\24_Point\obj\x86\Debug\24_Point.pdb
+C:\Users\Bunny\Documents\Visual Studio 2012\Projects\24_Point\24_Point\obj\x86\Debug\24_Point.exe
+C:\Users\Bunny\Documents\Visual Studio 2012\Projects\24_Point\24_Point\obj\x86\Debug\24_Point.pdb
+C:\Users\Bunny\Documents\Visual Studio 2012\Projects\24_Point\24_Point\bin\Debug\24_Point.exe
+C:\Users\Bunny\Documents\Visual Studio 2012\Projects\24_Point\24_Point\bin\Debug\24_Point.pdb
+C:\Users\Bunny\Documents\Visual Studio 2012\Projects\24_Point\24_Point\obj\x86\Debug\24_Point.csprojResolveAssemblyReference.cache

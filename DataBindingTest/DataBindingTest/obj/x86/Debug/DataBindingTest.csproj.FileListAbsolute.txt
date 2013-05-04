@@ -1,0 +1,41 @@
+C:\Users\Administrator\AppData\Local\Temporary Projects\DataBindingTest\bin\Debug\DataBindingTest.exe
+C:\Users\Administrator\AppData\Local\Temporary Projects\DataBindingTest\bin\Debug\DataBindingTest.pdb
+C:\Users\Administrator\AppData\Local\Temporary Projects\DataBindingTest\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\AppData\Local\Temporary Projects\DataBindingTest\obj\x86\Debug\MainWindow.baml
+C:\Users\Administrator\AppData\Local\Temporary Projects\DataBindingTest\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Administrator\AppData\Local\Temporary Projects\DataBindingTest\obj\x86\Debug\App.g.cs
+C:\Users\Administrator\AppData\Local\Temporary Projects\DataBindingTest\obj\x86\Debug\DataBindingTest_MarkupCompile.cache
+C:\Users\Administrator\AppData\Local\Temporary Projects\DataBindingTest\obj\x86\Debug\DataBindingTest.g.resources
+C:\Users\Administrator\AppData\Local\Temporary Projects\DataBindingTest\obj\x86\Debug\DataBindingTest.Properties.Resources.resources
+C:\Users\Administrator\AppData\Local\Temporary Projects\DataBindingTest\obj\x86\Debug\ResGen.read.1.tlog
+C:\Users\Administrator\AppData\Local\Temporary Projects\DataBindingTest\obj\x86\Debug\ResGen.write.1.tlog
+C:\Users\Administrator\AppData\Local\Temporary Projects\DataBindingTest\obj\x86\Debug\DataBindingTest.exe
+C:\Users\Administrator\AppData\Local\Temporary Projects\DataBindingTest\obj\x86\Debug\DataBindingTest.pdb
+D:\Bunny\Documents\Visual Studio 2010\Projects\DataBindingTest\DataBindingTest\obj\x86\Debug\DataBindingTest.exe
+D:\Bunny\Documents\Visual Studio 2010\Projects\DataBindingTest\DataBindingTest\obj\x86\Debug\DataBindingTest.pdb
+D:\Bunny\Documents\Visual Studio 2010\Projects\DataBindingTest\DataBindingTest\bin\Debug\DataBindingTest.exe
+D:\Bunny\Documents\Visual Studio 2010\Projects\DataBindingTest\DataBindingTest\bin\Debug\DataBindingTest.pdb
+D:\Bunny\Documents\Visual Studio 2010\Projects\DataBindingTest\DataBindingTest\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Bunny\Documents\Visual Studio 2010\Projects\DataBindingTest\DataBindingTest\obj\x86\Debug\MainWindow.baml
+D:\Bunny\Documents\Visual Studio 2010\Projects\DataBindingTest\DataBindingTest\obj\x86\Debug\MainWindow.g.cs
+D:\Bunny\Documents\Visual Studio 2010\Projects\DataBindingTest\DataBindingTest\obj\x86\Debug\App.g.cs
+D:\Bunny\Documents\Visual Studio 2010\Projects\DataBindingTest\DataBindingTest\obj\x86\Debug\DataBindingTest_MarkupCompile.cache
+D:\Bunny\Documents\Visual Studio 2010\Projects\DataBindingTest\DataBindingTest\obj\x86\Debug\DataBindingTest.g.resources
+D:\Bunny\Documents\Visual Studio 2010\Projects\DataBindingTest\DataBindingTest\obj\x86\Debug\DataBindingTest.Properties.Resources.resources
+D:\Bunny\Documents\Visual Studio 2010\Projects\DataBindingTest\DataBindingTest\obj\x86\Debug\ResGen.read.1.tlog
+D:\Bunny\Documents\Visual Studio 2010\Projects\DataBindingTest\DataBindingTest\obj\x86\Debug\ResGen.write.1.tlog
+D:\Bunny\Documents\Visual Studio 2010\Projects\DataBindingTest\DataBindingTest\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Bunny\Documents\Visual Studio 2010\Projects\DataBindingTest\DataBindingTest\obj\x86\Debug\DataBindingTest_MarkupCompile.lref
+C:\Users\Bunny\Documents\Visual Studio 2012\Projects\DataBindingTest\DataBindingTest\obj\x86\Debug\DataBindingTest.exe
+C:\Users\Bunny\Documents\Visual Studio 2012\Projects\DataBindingTest\DataBindingTest\obj\x86\Debug\DataBindingTest.pdb
+C:\Users\Bunny\Documents\Visual Studio 2012\Projects\DataBindingTest\DataBindingTest\bin\Debug\DataBindingTest.exe
+C:\Users\Bunny\Documents\Visual Studio 2012\Projects\DataBindingTest\DataBindingTest\bin\Debug\DataBindingTest.pdb
+C:\Users\Bunny\Documents\Visual Studio 2012\Projects\DataBindingTest\DataBindingTest\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Bunny\Documents\Visual Studio 2012\Projects\DataBindingTest\DataBindingTest\obj\x86\Debug\App.g.cs
+C:\Users\Bunny\Documents\Visual Studio 2012\Projects\DataBindingTest\DataBindingTest\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Bunny\Documents\Visual Studio 2012\Projects\DataBindingTest\DataBindingTest\obj\x86\Debug\DataBindingTest_MarkupCompile.cache
+C:\Users\Bunny\Documents\Visual Studio 2012\Projects\DataBindingTest\DataBindingTest\obj\x86\Debug\DataBindingTest_MarkupCompile.lref
+C:\Users\Bunny\Documents\Visual Studio 2012\Projects\DataBindingTest\DataBindingTest\obj\x86\Debug\MainWindow.baml
+C:\Users\Bunny\Documents\Visual Studio 2012\Projects\DataBindingTest\DataBindingTest\obj\x86\Debug\DataBindingTest.g.resources
+C:\Users\Bunny\Documents\Visual Studio 2012\Projects\DataBindingTest\DataBindingTest\obj\x86\Debug\DataBindingTest.Properties.Resources.resources
+C:\Users\Bunny\Documents\Visual Studio 2012\Projects\DataBindingTest\DataBindingTest\obj\x86\Debug\DataBindingTest.csproj.GenerateResource.Cache

@@ -1,0 +1,124 @@
+C:\Dave\Projects\Win8\Clock\Clock\bin\Release\Clock.exe
+C:\Dave\Projects\Win8\Clock\Clock\bin\Release\Clock.pdb
+C:\Dave\Projects\Win8\Clock\Clock\bin\Release\resources.pri
+C:\Dave\Projects\Win8\Clock\Clock\bin\Release\AppxManifest.xml
+C:\Dave\Projects\Win8\Clock\Clock\bin\Release\Clock.build.appxrecipe
+C:\Dave\Projects\Win8\Clock\Clock\bin\Release\Clock.WinRT.winmd
+C:\Dave\Projects\Win8\Clock\Clock\bin\Release\Clock.WinRT.pdb
+C:\Dave\Projects\Win8\Clock\Clock\bin\Release\Clock.WinRT.pri
+C:\Dave\Projects\Win8\Clock\Clock\obj\Release\Clock.csprojResolveAssemblyReference.cache
+C:\Dave\Projects\Win8\Clock\Clock\obj\Release\App.g.i.cs
+C:\Dave\Projects\Win8\Clock\Clock\obj\Release\App.g.cs
+C:\Dave\Projects\Win8\Clock\Clock\obj\Release\Common\StandardStyles.g.i.cs
+C:\Dave\Projects\Win8\Clock\Clock\obj\Release\Common\StandardStyles.g.cs
+C:\Dave\Projects\Win8\Clock\Clock\obj\Release\UIParts\HomeScreen\HomePageView.g.i.cs
+C:\Dave\Projects\Win8\Clock\Clock\obj\Release\UIParts\HomeScreen\HomePageView.g.cs
+C:\Dave\Projects\Win8\Clock\Clock\obj\Release\XamlTypeInfo.g.cs
+C:\Dave\Projects\Win8\Clock\Clock\obj\Release\App.xaml
+C:\Dave\Projects\Win8\Clock\Clock\obj\Release\Common\StandardStyles.xaml
+C:\Dave\Projects\Win8\Clock\Clock\obj\Release\UIParts\HomeScreen\HomePageView.xaml
+C:\Dave\Projects\Win8\Clock\Clock\obj\Release\Clock.exe
+C:\Dave\Projects\Win8\Clock\Clock\obj\Release\Clock.pdb
+C:\Dave\Projects\Win8\Clock\Clock\obj\Release\priconfig.xml
+C:\Dave\Projects\Win8\Clock\Clock\obj\Release\layout.resfiles
+C:\Dave\Projects\Win8\Clock\Clock\obj\Release\resources.resfiles
+C:\Dave\Projects\Win8\Clock\Clock\obj\Release\pri.resfiles
+C:\Dave\Projects\Win8\Clock\Clock\obj\Release\LanguageQualifiers.txt
+C:\Dave\Projects\Win8\Clock\Clock\obj\Release\ProjectArchitectures.txt
+C:\Dave\Projects\Win8\Clock\Clock\obj\Release\priconfig.xml.intermediate
+C:\Dave\Projects\Win8\Clock\Clock\obj\Release\layout.resfiles.intermediate
+C:\Dave\Projects\Win8\Clock\Clock\obj\Release\resources.resfiles.intermediate
+C:\Dave\Projects\Win8\Clock\Clock\obj\Release\pri.resfiles.intermediate
+C:\Dave\TFS\SMITSTFS.TFSPREVIEW.COM\DefaultCollection\Clock Tile\Trunk\Clock\Clock\obj\Release\Clock.csprojResolveAssemblyReference.cache
+C:\Dave\TFS\SMITSTFS.TFSPREVIEW.COM\DefaultCollection\Clock Tile\Trunk\Clock\Clock\obj\Release\App.g.i.cs
+C:\Dave\TFS\SMITSTFS.TFSPREVIEW.COM\DefaultCollection\Clock Tile\Trunk\Clock\Clock\obj\Release\App.g.cs
+C:\Dave\TFS\SMITSTFS.TFSPREVIEW.COM\DefaultCollection\Clock Tile\Trunk\Clock\Clock\obj\Release\Common\StandardStyles.g.i.cs
+C:\Dave\TFS\SMITSTFS.TFSPREVIEW.COM\DefaultCollection\Clock Tile\Trunk\Clock\Clock\obj\Release\Common\StandardStyles.g.cs
+C:\Dave\TFS\SMITSTFS.TFSPREVIEW.COM\DefaultCollection\Clock Tile\Trunk\Clock\Clock\obj\Release\UIParts\HomeScreen\HomePageView.g.i.cs
+C:\Dave\TFS\SMITSTFS.TFSPREVIEW.COM\DefaultCollection\Clock Tile\Trunk\Clock\Clock\obj\Release\UIParts\HomeScreen\HomePageView.g.cs
+C:\Dave\TFS\SMITSTFS.TFSPREVIEW.COM\DefaultCollection\Clock Tile\Trunk\Clock\Clock\obj\Release\XamlTypeInfo.g.cs
+C:\Dave\TFS\SMITSTFS.TFSPREVIEW.COM\DefaultCollection\Clock Tile\Trunk\Clock\Clock\obj\Release\App.xaml
+C:\Dave\TFS\SMITSTFS.TFSPREVIEW.COM\DefaultCollection\Clock Tile\Trunk\Clock\Clock\obj\Release\Common\StandardStyles.xaml
+C:\Dave\TFS\SMITSTFS.TFSPREVIEW.COM\DefaultCollection\Clock Tile\Trunk\Clock\Clock\obj\Release\UIParts\HomeScreen\HomePageView.xaml
+C:\Dave\TFS\SMITSTFS.TFSPREVIEW.COM\DefaultCollection\Clock Tile\Trunk\Clock\Clock\obj\Release\Clock.exe
+C:\Dave\TFS\SMITSTFS.TFSPREVIEW.COM\DefaultCollection\Clock Tile\Trunk\Clock\Clock\obj\Release\Clock.pdb
+C:\Dave\TFS\SMITSTFS.TFSPREVIEW.COM\DefaultCollection\Clock Tile\Trunk\Clock\Clock\bin\Release\Clock.exe
+C:\Dave\TFS\SMITSTFS.TFSPREVIEW.COM\DefaultCollection\Clock Tile\Trunk\Clock\Clock\bin\Release\Clock.pdb
+C:\Dave\TFS\SMITSTFS.TFSPREVIEW.COM\DefaultCollection\Clock Tile\Trunk\Clock\Clock\bin\Release\resources.pri
+C:\Dave\TFS\SMITSTFS.TFSPREVIEW.COM\DefaultCollection\Clock Tile\Trunk\Clock\Clock\bin\Release\AppxManifest.xml
+C:\Dave\TFS\SMITSTFS.TFSPREVIEW.COM\DefaultCollection\Clock Tile\Trunk\Clock\Clock\bin\Release\Clock.build.appxrecipe
+C:\Dave\TFS\SMITSTFS.TFSPREVIEW.COM\DefaultCollection\Clock Tile\Trunk\Clock\Clock\bin\Release\Clock.WinRT.winmd
+C:\Dave\TFS\SMITSTFS.TFSPREVIEW.COM\DefaultCollection\Clock Tile\Trunk\Clock\Clock\bin\Release\Clock.WinRT.pdb
+C:\Dave\TFS\SMITSTFS.TFSPREVIEW.COM\DefaultCollection\Clock Tile\Trunk\Clock\Clock\bin\Release\Clock.WinRT.pri
+C:\Dave\TFS\SMITSTFS.TFSPREVIEW.COM\DefaultCollection\Clock Tile\Trunk\Clock\Clock\obj\Release\priconfig.xml.intermediate
+C:\Dave\TFS\SMITSTFS.TFSPREVIEW.COM\DefaultCollection\Clock Tile\Trunk\Clock\Clock\obj\Release\layout.resfiles.intermediate
+C:\Dave\TFS\SMITSTFS.TFSPREVIEW.COM\DefaultCollection\Clock Tile\Trunk\Clock\Clock\obj\Release\resources.resfiles.intermediate
+C:\Dave\TFS\SMITSTFS.TFSPREVIEW.COM\DefaultCollection\Clock Tile\Trunk\Clock\Clock\obj\Release\pri.resfiles.intermediate
+C:\Dave\TFS\SMITSTFS.TFSPREVIEW.COM\DefaultCollection\Clock Tile\Trunk\Clock\Clock\obj\Release\priconfig.xml
+C:\Dave\TFS\SMITSTFS.TFSPREVIEW.COM\DefaultCollection\Clock Tile\Trunk\Clock\Clock\obj\Release\layout.resfiles
+C:\Dave\TFS\SMITSTFS.TFSPREVIEW.COM\DefaultCollection\Clock Tile\Trunk\Clock\Clock\obj\Release\resources.resfiles
+C:\Dave\TFS\SMITSTFS.TFSPREVIEW.COM\DefaultCollection\Clock Tile\Trunk\Clock\Clock\obj\Release\pri.resfiles
+C:\Dave\TFS\SMITSTFS.TFSPREVIEW.COM\DefaultCollection\Clock Tile\Trunk\Clock\Clock\obj\Release\LanguageQualifiers.txt
+C:\Dave\TFS\SMITSTFS.TFSPREVIEW.COM\DefaultCollection\Clock Tile\Trunk\Clock\Clock\obj\Release\ProjectArchitectures.txt
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock\bin\Release\Clock.exe
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock\bin\Release\Clock.pdb
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock\bin\Release\resources.pri
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock\bin\Release\AppxManifest.xml
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock\bin\Release\Clock.build.appxrecipe
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock\bin\Release\Clock.WinRT.winmd
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock\bin\Release\Clock.WinRT.pdb
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock\bin\Release\Clock.WinRT.pri
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock\obj\Release\Clock.csprojResolveAssemblyReference.cache
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock\obj\Release\App.g.i.cs
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock\obj\Release\App.g.cs
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock\obj\Release\Common\StandardStyles.g.i.cs
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock\obj\Release\Common\StandardStyles.g.cs
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock\obj\Release\UIParts\HomeScreen\HomePageView.g.i.cs
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock\obj\Release\UIParts\HomeScreen\HomePageView.g.cs
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock\obj\Release\XamlTypeInfo.g.cs
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock\obj\Release\App.xaml
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock\obj\Release\Common\StandardStyles.xaml
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock\obj\Release\UIParts\HomeScreen\HomePageView.xaml
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock\obj\Release\Clock.exe
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock\obj\Release\Clock.pdb
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock\obj\Release\priconfig.xml.intermediate
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock\obj\Release\layout.resfiles.intermediate
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock\obj\Release\resources.resfiles.intermediate
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock\obj\Release\pri.resfiles.intermediate
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock\obj\Release\priconfig.xml
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock\obj\Release\layout.resfiles
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock\obj\Release\resources.resfiles
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock\obj\Release\pri.resfiles
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock\obj\Release\LanguageQualifiers.txt
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock\obj\Release\ProjectArchitectures.txt
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\Tile Update every minute\C#\Clock\bin\Release\Clock.exe
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\Tile Update every minute\C#\Clock\bin\Release\Clock.pdb
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\Tile Update every minute\C#\Clock\bin\Release\resources.pri
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\Tile Update every minute\C#\Clock\bin\Release\AppxManifest.xml
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\Tile Update every minute\C#\Clock\bin\Release\Clock.build.appxrecipe
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\Tile Update every minute\C#\Clock\bin\Release\Clock.WinRT.winmd
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\Tile Update every minute\C#\Clock\bin\Release\Clock.WinRT.pdb
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\Tile Update every minute\C#\Clock\bin\Release\Clock.WinRT.pri
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\Tile Update every minute\C#\Clock\obj\Release\Clock.csprojResolveAssemblyReference.cache
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\Tile Update every minute\C#\Clock\obj\Release\App.g.i.cs
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\Tile Update every minute\C#\Clock\obj\Release\App.g.cs
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\Tile Update every minute\C#\Clock\obj\Release\Common\StandardStyles.g.i.cs
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\Tile Update every minute\C#\Clock\obj\Release\Common\StandardStyles.g.cs
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\Tile Update every minute\C#\Clock\obj\Release\UIParts\HomeScreen\HomePageView.g.i.cs
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\Tile Update every minute\C#\Clock\obj\Release\UIParts\HomeScreen\HomePageView.g.cs
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\Tile Update every minute\C#\Clock\obj\Release\XamlTypeInfo.g.cs
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\Tile Update every minute\C#\Clock\obj\Release\App.xaml
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\Tile Update every minute\C#\Clock\obj\Release\Common\StandardStyles.xaml
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\Tile Update every minute\C#\Clock\obj\Release\UIParts\HomeScreen\HomePageView.xaml
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\Tile Update every minute\C#\Clock\obj\Release\Clock.exe
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\Tile Update every minute\C#\Clock\obj\Release\Clock.pdb
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\Tile Update every minute\C#\Clock\obj\Release\priconfig.xml.intermediate
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\Tile Update every minute\C#\Clock\obj\Release\layout.resfiles.intermediate
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\Tile Update every minute\C#\Clock\obj\Release\resources.resfiles.intermediate
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\Tile Update every minute\C#\Clock\obj\Release\pri.resfiles.intermediate
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\Tile Update every minute\C#\Clock\obj\Release\priconfig.xml
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\Tile Update every minute\C#\Clock\obj\Release\layout.resfiles
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\Tile Update every minute\C#\Clock\obj\Release\resources.resfiles
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\Tile Update every minute\C#\Clock\obj\Release\pri.resfiles
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\Tile Update every minute\C#\Clock\obj\Release\LanguageQualifiers.txt
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\Tile Update every minute\C#\Clock\obj\Release\ProjectArchitectures.txt

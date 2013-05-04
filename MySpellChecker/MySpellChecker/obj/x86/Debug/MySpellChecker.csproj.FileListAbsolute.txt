@@ -1,0 +1,26 @@
+C:\Users\Administrator\AppData\Local\Temporary Projects\MySpellChecker\bin\Debug\MySpellChecker.exe
+C:\Users\Administrator\AppData\Local\Temporary Projects\MySpellChecker\bin\Debug\MySpellChecker.pdb
+C:\Users\Administrator\AppData\Local\Temporary Projects\MySpellChecker\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\AppData\Local\Temporary Projects\MySpellChecker\obj\x86\Debug\MainWindow.baml
+C:\Users\Administrator\AppData\Local\Temporary Projects\MySpellChecker\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Administrator\AppData\Local\Temporary Projects\MySpellChecker\obj\x86\Debug\App.g.cs
+C:\Users\Administrator\AppData\Local\Temporary Projects\MySpellChecker\obj\x86\Debug\MySpellChecker_MarkupCompile.cache
+C:\Users\Administrator\AppData\Local\Temporary Projects\MySpellChecker\obj\x86\Debug\MySpellChecker.g.resources
+C:\Users\Administrator\AppData\Local\Temporary Projects\MySpellChecker\obj\x86\Debug\MySpellChecker.Properties.Resources.resources
+C:\Users\Administrator\AppData\Local\Temporary Projects\MySpellChecker\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Administrator\AppData\Local\Temporary Projects\MySpellChecker\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Administrator\AppData\Local\Temporary Projects\MySpellChecker\obj\x86\Debug\MySpellChecker.exe
+C:\Users\Administrator\AppData\Local\Temporary Projects\MySpellChecker\obj\x86\Debug\MySpellChecker.pdb
+D:\Bunny\Documents\Visual Studio 2010\Projects\MySpellChecker\MySpellChecker\obj\x86\Debug\MySpellChecker.exe
+D:\Bunny\Documents\Visual Studio 2010\Projects\MySpellChecker\MySpellChecker\obj\x86\Debug\MySpellChecker.pdb
+D:\Bunny\Documents\Visual Studio 2010\Projects\MySpellChecker\MySpellChecker\bin\Debug\MySpellChecker.exe
+D:\Bunny\Documents\Visual Studio 2010\Projects\MySpellChecker\MySpellChecker\bin\Debug\MySpellChecker.pdb
+D:\Bunny\Documents\Visual Studio 2010\Projects\MySpellChecker\MySpellChecker\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Bunny\Documents\Visual Studio 2010\Projects\MySpellChecker\MySpellChecker\obj\x86\Debug\MainWindow.baml
+D:\Bunny\Documents\Visual Studio 2010\Projects\MySpellChecker\MySpellChecker\obj\x86\Debug\MainWindow.g.cs
+D:\Bunny\Documents\Visual Studio 2010\Projects\MySpellChecker\MySpellChecker\obj\x86\Debug\App.g.cs
+D:\Bunny\Documents\Visual Studio 2010\Projects\MySpellChecker\MySpellChecker\obj\x86\Debug\MySpellChecker_MarkupCompile.cache
+D:\Bunny\Documents\Visual Studio 2010\Projects\MySpellChecker\MySpellChecker\obj\x86\Debug\MySpellChecker.g.resources
+D:\Bunny\Documents\Visual Studio 2010\Projects\MySpellChecker\MySpellChecker\obj\x86\Debug\MySpellChecker.Properties.Resources.resources
+D:\Bunny\Documents\Visual Studio 2010\Projects\MySpellChecker\MySpellChecker\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Bunny\Documents\Visual Studio 2010\Projects\MySpellChecker\MySpellChecker\obj\x86\Debug\GenerateResource.write.1.tlog

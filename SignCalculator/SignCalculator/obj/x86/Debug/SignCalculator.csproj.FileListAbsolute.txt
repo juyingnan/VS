@@ -1,0 +1,17 @@
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\SignCalculator\SignCalculator\bin\Debug\SignCalculator.exe.manifest
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\SignCalculator\SignCalculator\bin\Debug\SignCalculator.application
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\SignCalculator\SignCalculator\bin\Debug\SignCalculator.exe
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\SignCalculator\SignCalculator\bin\Debug\SignCalculator.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\SignCalculator\SignCalculator\bin\Debug\Office.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\SignCalculator\SignCalculator\bin\Debug\Microsoft.Office.Interop.Excel.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\SignCalculator\SignCalculator\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\SignCalculator\SignCalculator\obj\x86\Debug\SignCalculator.csproj.ResolveComReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\SignCalculator\SignCalculator\obj\x86\Debug\SignCalculator.signCalculator.resources
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\SignCalculator\SignCalculator\obj\x86\Debug\SignCalculator.Properties.Resources.resources
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\SignCalculator\SignCalculator\obj\x86\Debug\ResGen.read.1.tlog
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\SignCalculator\SignCalculator\obj\x86\Debug\ResGen.write.1.tlog
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\SignCalculator\SignCalculator\obj\x86\Debug\SignCalculator.exe.manifest
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\SignCalculator\SignCalculator\obj\x86\Debug\SignCalculator.application
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\SignCalculator\SignCalculator\obj\x86\Debug\SignCalculator.exe
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\SignCalculator\SignCalculator\obj\x86\Debug\SignCalculator.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\SignCalculator\SignCalculator\obj\x86\Debug\SignCalculator.PriceInputForm.resources

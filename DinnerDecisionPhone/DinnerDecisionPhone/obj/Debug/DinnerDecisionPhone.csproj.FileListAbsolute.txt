@@ -1,0 +1,58 @@
+C:\Users\bunny_000\AppData\Local\Temporary Projects\DinnerDecisionPhone\Bin\Debug\Assets\ApplicationIcon.png
+C:\Users\bunny_000\AppData\Local\Temporary Projects\DinnerDecisionPhone\Bin\Debug\Assets\Tiles\FlipCycleTileLarge.png
+C:\Users\bunny_000\AppData\Local\Temporary Projects\DinnerDecisionPhone\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png
+C:\Users\bunny_000\AppData\Local\Temporary Projects\DinnerDecisionPhone\Bin\Debug\Assets\Tiles\FlipCycleTileSmall.png
+C:\Users\bunny_000\AppData\Local\Temporary Projects\DinnerDecisionPhone\Bin\Debug\Assets\Tiles\IconicTileMediumLarge.png
+C:\Users\bunny_000\AppData\Local\Temporary Projects\DinnerDecisionPhone\Bin\Debug\Assets\Tiles\IconicTileSmall.png
+C:\Users\bunny_000\AppData\Local\Temporary Projects\DinnerDecisionPhone\Bin\Debug\DinnerDecisionPhone.dll
+C:\Users\bunny_000\AppData\Local\Temporary Projects\DinnerDecisionPhone\Bin\Debug\DinnerDecisionPhone.pdb
+C:\Users\bunny_000\AppData\Local\Temporary Projects\DinnerDecisionPhone\Bin\Debug\AppManifest.xaml
+C:\Users\bunny_000\AppData\Local\Temporary Projects\DinnerDecisionPhone\Bin\Debug\DinnerDecisionPhone_Debug_AnyCPU.xap
+C:\Users\bunny_000\AppData\Local\Temporary Projects\DinnerDecisionPhone\obj\Debug\App.g.cs
+C:\Users\bunny_000\AppData\Local\Temporary Projects\DinnerDecisionPhone\obj\Debug\MainPage.g.cs
+C:\Users\bunny_000\AppData\Local\Temporary Projects\DinnerDecisionPhone\obj\Debug\DinnerDecisionPhone.g.resources
+C:\Users\bunny_000\AppData\Local\Temporary Projects\DinnerDecisionPhone\obj\Debug\DinnerDecisionPhone.Resources.AppResources.resources
+C:\Users\bunny_000\AppData\Local\Temporary Projects\DinnerDecisionPhone\obj\Debug\DinnerDecisionPhone.csproj.GenerateResource.Cache
+C:\Users\bunny_000\AppData\Local\Temporary Projects\DinnerDecisionPhone\obj\Debug\DinnerDecisionPhone.dll
+C:\Users\bunny_000\AppData\Local\Temporary Projects\DinnerDecisionPhone\obj\Debug\DinnerDecisionPhone.pdb
+C:\Users\bunny_000\AppData\Local\Temporary Projects\DinnerDecisionPhone\obj\Debug\XapCacheFile.xml
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecisionPhone\DinnerDecisionPhone\Bin\Debug\Assets\ApplicationIcon.png
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecisionPhone\DinnerDecisionPhone\Bin\Debug\Assets\Tiles\FlipCycleTileLarge.png
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecisionPhone\DinnerDecisionPhone\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecisionPhone\DinnerDecisionPhone\Bin\Debug\Assets\Tiles\FlipCycleTileSmall.png
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecisionPhone\DinnerDecisionPhone\Bin\Debug\Assets\Tiles\IconicTileMediumLarge.png
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecisionPhone\DinnerDecisionPhone\Bin\Debug\Assets\Tiles\IconicTileSmall.png
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecisionPhone\DinnerDecisionPhone\Bin\Debug\DinnerDecisionPhone.dll
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecisionPhone\DinnerDecisionPhone\Bin\Debug\DinnerDecisionPhone.pdb
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecisionPhone\DinnerDecisionPhone\Bin\Debug\AppManifest.xaml
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecisionPhone\DinnerDecisionPhone\Bin\Debug\DinnerDecisionPhone_Debug_AnyCPU.xap
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecisionPhone\DinnerDecisionPhone\obj\Debug\App.g.cs
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecisionPhone\DinnerDecisionPhone\obj\Debug\MainPage.g.cs
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecisionPhone\DinnerDecisionPhone\obj\Debug\DinnerDecisionPhone.g.resources
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecisionPhone\DinnerDecisionPhone\obj\Debug\DinnerDecisionPhone.Resources.AppResources.resources
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecisionPhone\DinnerDecisionPhone\obj\Debug\DinnerDecisionPhone.csproj.GenerateResource.Cache
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecisionPhone\DinnerDecisionPhone\obj\Debug\DinnerDecisionPhone.dll
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecisionPhone\DinnerDecisionPhone\obj\Debug\DinnerDecisionPhone.pdb
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecisionPhone\DinnerDecisionPhone\obj\Debug\XapCacheFile.xml
+C:\Users\孟春\Desktop\DinnerDecisionPhone\DinnerDecisionPhone\Bin\Debug\Assets\ApplicationIcon.png
+C:\Users\孟春\Desktop\DinnerDecisionPhone\DinnerDecisionPhone\Bin\Debug\Assets\Tiles\FlipCycleTileLarge.png
+C:\Users\孟春\Desktop\DinnerDecisionPhone\DinnerDecisionPhone\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png
+C:\Users\孟春\Desktop\DinnerDecisionPhone\DinnerDecisionPhone\Bin\Debug\Assets\Tiles\FlipCycleTileSmall.png
+C:\Users\孟春\Desktop\DinnerDecisionPhone\DinnerDecisionPhone\Bin\Debug\Assets\Tiles\IconicTileMediumLarge.png
+C:\Users\孟春\Desktop\DinnerDecisionPhone\DinnerDecisionPhone\Bin\Debug\Assets\Tiles\IconicTileSmall.png
+C:\Users\孟春\Desktop\DinnerDecisionPhone\DinnerDecisionPhone\Bin\Debug\DinnerDecisionPhone.dll
+C:\Users\孟春\Desktop\DinnerDecisionPhone\DinnerDecisionPhone\Bin\Debug\DinnerDecisionPhone.pdb
+C:\Users\孟春\Desktop\DinnerDecisionPhone\DinnerDecisionPhone\Bin\Debug\AppManifest.xaml
+C:\Users\孟春\Desktop\DinnerDecisionPhone\DinnerDecisionPhone\Bin\Debug\DinnerDecisionPhone_Debug_AnyCPU.xap
+C:\Users\孟春\Desktop\DinnerDecisionPhone\DinnerDecisionPhone\obj\Debug\App.g.cs
+C:\Users\孟春\Desktop\DinnerDecisionPhone\DinnerDecisionPhone\obj\Debug\MainPage.g.cs
+C:\Users\孟春\Desktop\DinnerDecisionPhone\DinnerDecisionPhone\obj\Debug\DinnerDecisionPhone.g.resources
+C:\Users\孟春\Desktop\DinnerDecisionPhone\DinnerDecisionPhone\obj\Debug\DinnerDecisionPhone.Resources.AppResources.resources
+C:\Users\孟春\Desktop\DinnerDecisionPhone\DinnerDecisionPhone\obj\Debug\DinnerDecisionPhone.csproj.GenerateResource.Cache
+C:\Users\孟春\Desktop\DinnerDecisionPhone\DinnerDecisionPhone\obj\Debug\DinnerDecisionPhone.dll
+C:\Users\孟春\Desktop\DinnerDecisionPhone\DinnerDecisionPhone\obj\Debug\DinnerDecisionPhone.pdb
+C:\Users\孟春\Desktop\DinnerDecisionPhone\DinnerDecisionPhone\obj\Debug\XapCacheFile.xml
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecisionPhone\DinnerDecisionPhone\Bin\Debug\Properties\WMAppManifest.xml
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecisionPhone\DinnerDecisionPhone\Bin\Debug\zh\DinnerDecisionPhone.resources.dll
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecisionPhone\DinnerDecisionPhone\obj\Debug\DinnerDecisionPhone.Resources.AppResources.zh.resources
+C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\DinnerDecisionPhone\DinnerDecisionPhone\obj\Debug\zh\DinnerDecisionPhone.resources.dll

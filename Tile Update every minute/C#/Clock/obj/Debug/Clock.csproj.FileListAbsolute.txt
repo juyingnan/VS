@@ -1,0 +1,62 @@
+C:\Dave\Projects\Win8\Clock\Clock\bin\Debug\Clock.exe
+C:\Dave\Projects\Win8\Clock\Clock\bin\Debug\Clock.pdb
+C:\Dave\Projects\Win8\Clock\Clock\bin\Debug\resources.pri
+C:\Dave\Projects\Win8\Clock\Clock\bin\Debug\AppxManifest.xml
+C:\Dave\Projects\Win8\Clock\Clock\bin\Debug\Clock.build.appxrecipe
+C:\Dave\Projects\Win8\Clock\Clock\obj\Debug\App.g.i.cs
+C:\Dave\Projects\Win8\Clock\Clock\obj\Debug\App.g.cs
+C:\Dave\Projects\Win8\Clock\Clock\obj\Debug\Common\StandardStyles.g.i.cs
+C:\Dave\Projects\Win8\Clock\Clock\obj\Debug\Common\StandardStyles.g.cs
+C:\Dave\Projects\Win8\Clock\Clock\obj\Debug\XamlTypeInfo.g.cs
+C:\Dave\Projects\Win8\Clock\Clock\obj\Debug\App.xaml
+C:\Dave\Projects\Win8\Clock\Clock\obj\Debug\Common\StandardStyles.xaml
+C:\Dave\Projects\Win8\Clock\Clock\obj\Debug\Clock.exe
+C:\Dave\Projects\Win8\Clock\Clock\obj\Debug\Clock.pdb
+C:\Dave\Projects\Win8\Clock\Clock\obj\Debug\priconfig.xml.intermediate
+C:\Dave\Projects\Win8\Clock\Clock\obj\Debug\layout.resfiles.intermediate
+C:\Dave\Projects\Win8\Clock\Clock\obj\Debug\resources.resfiles.intermediate
+C:\Dave\Projects\Win8\Clock\Clock\obj\Debug\pri.resfiles.intermediate
+C:\Dave\Projects\Win8\Clock\Clock\obj\Debug\priconfig.xml
+C:\Dave\Projects\Win8\Clock\Clock\obj\Debug\layout.resfiles
+C:\Dave\Projects\Win8\Clock\Clock\obj\Debug\resources.resfiles
+C:\Dave\Projects\Win8\Clock\Clock\obj\Debug\pri.resfiles
+C:\Dave\Projects\Win8\Clock\Clock\obj\Debug\LanguageQualifiers.txt
+C:\Dave\Projects\Win8\Clock\Clock\obj\Debug\ProjectArchitectures.txt
+C:\Dave\Projects\Win8\Clock\Clock\obj\Debug\UIParts\HomeScreen\HomePageView.g.i.cs
+C:\Dave\Projects\Win8\Clock\Clock\obj\Debug\UIParts\HomeScreen\HomePageView.g.cs
+C:\Dave\Projects\Win8\Clock\Clock\obj\Debug\UIParts\HomeScreen\HomePageView.xaml
+C:\Dave\Projects\Win8\Clock\Clock\bin\Debug\Clock.WinRT.winmd
+C:\Dave\Projects\Win8\Clock\Clock\bin\Debug\Clock.WinRT.pdb
+C:\Dave\Projects\Win8\Clock\Clock\bin\Debug\Clock.WinRT.pri
+C:\Dave\Projects\Win8\Clock\Clock\obj\Debug\Clock.csprojResolveAssemblyReference.cache
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock\bin\Debug\Clock.exe
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock\bin\Debug\Clock.pdb
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock\bin\Debug\resources.pri
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock\bin\Debug\AppxManifest.xml
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock\bin\Debug\Clock.build.appxrecipe
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock\bin\Debug\Clock.WinRT.winmd
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock\bin\Debug\Clock.WinRT.pdb
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock\bin\Debug\Clock.WinRT.pri
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock\obj\Debug\Clock.csprojResolveAssemblyReference.cache
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock\obj\Debug\App.g.i.cs
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock\obj\Debug\App.g.cs
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock\obj\Debug\Common\StandardStyles.g.i.cs
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock\obj\Debug\Common\StandardStyles.g.cs
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock\obj\Debug\UIParts\HomeScreen\HomePageView.g.i.cs
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock\obj\Debug\UIParts\HomeScreen\HomePageView.g.cs
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock\obj\Debug\XamlTypeInfo.g.cs
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock\obj\Debug\App.xaml
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock\obj\Debug\Common\StandardStyles.xaml
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock\obj\Debug\UIParts\HomeScreen\HomePageView.xaml
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock\obj\Debug\Clock.exe
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock\obj\Debug\Clock.pdb
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock\obj\Debug\priconfig.xml.intermediate
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock\obj\Debug\layout.resfiles.intermediate
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock\obj\Debug\resources.resfiles.intermediate
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock\obj\Debug\pri.resfiles.intermediate
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock\obj\Debug\priconfig.xml
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock\obj\Debug\layout.resfiles
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock\obj\Debug\resources.resfiles
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock\obj\Debug\pri.resfiles
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock\obj\Debug\LanguageQualifiers.txt
+C:\Users\bunny_000\Desktop\Tile Update every minute\C#\Clock\obj\Debug\ProjectArchitectures.txt

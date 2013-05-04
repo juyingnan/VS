@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsdl2="http://tempuri.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="ss.oku.edu.cn" xmlns:plnk="http://docs.oasis-open.org/wsbpel/2.0/plnktype" xmlns:vprop="http://docs.oasis-open.org/wsbpel/2.0/varprop" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="ss.pku.edu.cn" name="Client" targetNamespace="ss.oku.edu.cn" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <vprop:property name="MyCS" type="xsd:string" />
+  <vprop:propertyAlias messageType="tns:ClientRequestMessage" part="payload" propertyName="tns:MyCS">
+    <vprop:query><![CDATA[/tns:EventID]]></vprop:query>
+    <vprop:query><![CDATA[/tns:CustomerID]]></vprop:query>
+  </vprop:propertyAlias>
+  <vprop:propertyAlias messageType="wsdl:CABLE_OPERATOR_PROCESSResponseMessage" part="CustomerINFO" propertyName="tns:MyCS">
+    <vprop:query><![CDATA[/wsdl:EventID]]></vprop:query>
+    <vprop:query><![CDATA[/wsdl:CustomerID]]></vprop:query>
+  </vprop:propertyAlias>
+  <plnk:partnerLinkType name="Client">
+    <plnk:role name="ClientProvider" portType="tns:Client" />
+    <plnk:role name="ClientRequester" portType="tns:ClientCallback" />
+  </plnk:partnerLinkType>
+  <import namespace="ss.pku.edu.cn" location="CABLE_OPERATOR_PROCESSArtifacts.wsdl" />
+  <types>
+    <xsd:schema xmlns="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="ss.oku.edu.cn">
+      <xsd:element name="ClientRequest">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="CustomerID" type="xsd:string" />
+            <xsd:element name="EventID" type="xsd:int" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="ClientResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="CustomerID" type="xsd:string" />
+            <xsd:element name="EventID" type="xsd:int" />
+            <xsd:element name="result" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </types>
+  <message name="ClientRequestMessage">
+    <part name="payload" element="tns:ClientRequest" />
+  </message>
+  <message name="ClientResponseMessage">
+    <part name="payload" element="tns:ClientResponse" />
+  </message>
+  <portType name="Client">
+    <operation name="initiate">
+      <input message="tns:ClientRequestMessage" />
+    </operation>
+  </portType>
+  <portType name="ClientCallback">
+    <operation name="onResult">
+      <input message="tns:ClientResponseMessage" />
+    </operation>
+  </portType>
+  <binding name="ClientBinding" type="tns:Client">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="initiate">
+      <soap:operation soapAction="ss.oku.edu.cn/initiate" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+    </operation>
+  </binding>
+  <binding name="ClientCallbackBinding" type="tns:ClientCallback">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="onResult">
+      <soap:operation soapAction="ss.oku.edu.cn/onResult" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+    </operation>
+  </binding>
+  <service name="ClientService">
+    <port name="ClientPort" binding="tns:ClientBinding">
+      <soap:address location="http://localhost:8080/ode/processes/Client" />
+    </port>
+  </service>
+  <service name="ClientServiceCallback">
+    <port name="ClientPortCallbackPort" binding="tns:ClientCallbackBinding">
+      <soap:address location="http://localhost:8080/ode/processes/ClientCallback" />
+    </port>
+  </service>
+</definitions>
