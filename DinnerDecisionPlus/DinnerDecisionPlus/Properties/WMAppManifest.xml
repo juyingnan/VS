@@ -4,7 +4,7 @@
   <Languages xmlns="">
     <Language code="zh" />
   </Languages>
-  <App xmlns="" ProductID="{8e0a003a-7803-4b94-adea-6aa67cc871c2}" Title="今晚吃神马" RuntimeType="Silverlight" Version="1.0.0.1" Genre="apps.normal" Author="Bunny" Description="这个简单的应用解决了一个困扰很多人很久的难题！今晚吃神马？听天由命吧！输入可以吃的晚饭选项列表，从此告别选择恐惧症！&#xD;&#xA;(本应用可能使用到用户的网络数据连接和定位功能)" Publisher="Team Z" PublisherID="{38c2fe9b-c402-4040-9e40-ecb370cb3c13}">
+  <App xmlns="" ProductID="{8e0a003a-7803-4b94-adea-6aa67cc871c2}" Title="今晚吃神马" RuntimeType="Silverlight" Version="1.0.0.1" Genre="apps.normal" Author="Bunny" Description="这个简单的应用解决了一个困扰很多人很久的难题！今晚吃神马？听天由命吧！输入可以吃的晚饭选项列表，从此告别选择恐惧症！" Publisher="Team Z" PublisherID="{38c2fe9b-c402-4040-9e40-ecb370cb3c13}">
     <IconPath IsRelative="true" IsResource="false">Logo.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_NETWORKING" />
@@ -20,7 +20,7 @@
           <SmallImageURI IsRelative="true" IsResource="false">LogSmall.png</SmallImageURI>
           <Count>0</Count>
           <BackgroundImageURI IsRelative="true" IsResource="false">LogoMid.png</BackgroundImageURI>
-          <Title>真·今晚吃神马</Title>
+          <Title>今晚吃神马</Title>
           <BackContent>
           </BackContent>
           <BackBackgroundImageURI>

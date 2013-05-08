@@ -319,7 +319,7 @@ namespace DinnerDecisionPlus
                 longitude = -1;
                 latitude = -1;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 locationTextBlock.Text = "定位功能关闭或其他错误，定位失败";
                 longitude = -1;
