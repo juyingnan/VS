@@ -19,22 +19,22 @@ using System.Windows.Threading;
 
 namespace DinnerDecisionPlus
 {
-    //public class DinnerDecisionComments
-    //{
-    //    public int Id { get; set; }
+    public class DinnerDecisionComments
+    {
+        public int Id { get; set; }
 
-    //    [DataMember(Name = "location")]
-    //    public string Location { get; set; }
+        [DataMember(Name = "location")]
+        public string Location { get; set; }
 
-    //    [DataMember(Name = "comment")]
-    //    public string Comments { get; set; }
+        [DataMember(Name = "comment")]
+        public string Comments { get; set; }
 
-    //    [DataMember(Name = "isGood")]
-    //    public bool IsGood { get; set; }
+        [DataMember(Name = "isGood")]
+        public bool IsGood { get; set; }
 
-    //    [DataMember(Name = "isBad")]
-    //    public bool IsBad { get; set; }
-    //}
+        [DataMember(Name = "isBad")]
+        public bool IsBad { get; set; }
+    }
 
     public partial class MainPage : PhoneApplicationPage
     {
@@ -60,10 +60,10 @@ namespace DinnerDecisionPlus
         double longitude = -1;
         double radius = 1000;
 
-        ////Azure
-        //MobileServiceCollectionView<DinnerDecisionComments> items;
+        //Azure
+        MobileServiceCollectionView<DinnerDecisionComments> items;
 
-        //private IMobileServiceTable<DinnerDecisionComments> commentTable = App.MobileService.GetTable<DinnerDecisionComments>();
+        private IMobileServiceTable<DinnerDecisionComments> commentTable = App.MobileService.GetTable<DinnerDecisionComments>();
 
         //timer
         DispatcherTimer timer1 = new DispatcherTimer();
@@ -86,16 +86,16 @@ namespace DinnerDecisionPlus
 
             MenuInitialize();
             BindingInitialize();
-            //TimerInitialize();
+            TimerInitialize();
         }
 
-        //private void TimerInitialize()
-        //{
-        //    timer1.Interval = TimeSpan.FromMilliseconds(TIMEOUT);
-        //    timer1.Tick += timer_Tick;
-        //    timer2.Interval = TimeSpan.FromMilliseconds(MONITOR_INTERVAL);
-        //    timer2.Tick += timer2_Tick;
-        //}
+        private void TimerInitialize()
+        {
+            timer1.Interval = TimeSpan.FromMilliseconds(TIMEOUT);
+            timer1.Tick += timer_Tick;
+            timer2.Interval = TimeSpan.FromMilliseconds(MONITOR_INTERVAL);
+            timer2.Tick += timer2_Tick;
+        }
 
 
         private void MenuInitialize()
@@ -218,64 +218,64 @@ namespace DinnerDecisionPlus
             }
         }
 
-        //private void CommentsFunctionOn(string currentRestaurant)
-        //{
-        //    //上传数据餐厅选择
-        //    CommentRestaurantTextBlock.Text = "对\" " + currentRestaurant + "\"的评价：";
-        //    //获取评价
-        //    try
-        //    {
-        //        items = commentTable
-        //        .Where(dinnerdecisioncomments => dinnerdecisioncomments.Location.Trim() == currentRestaurant.Trim())
-        //        .ToCollectionView();
+        private void CommentsFunctionOn(string currentRestaurant)
+        {
+            //上传数据餐厅选择
+            CommentRestaurantTextBlock.Text = "对\" " + currentRestaurant + "\"的评价：";
+            //获取评价
+            try
+            {
+                items = commentTable
+                .Where(dinnerdecisioncomments => dinnerdecisioncomments.Location.Trim() == currentRestaurant.Trim())
+                .ToCollectionView();
 
-        //        timer1.Start();
-        //        timer2.Start();
-        //    }
-        //    catch (Exception)
-        //    {
-        //        timer1.Stop();
-        //        timer2.Stop();
-        //    }     
-        //}
+                timer1.Start();
+                timer2.Start();
+            }
+            catch (Exception)
+            {
+                timer1.Stop();
+                timer2.Stop();
+            }
+        }
 
-        //private void timer_Tick(object sender, EventArgs e)
-        //{
-        //    timer1.Stop();
-        //    timer2.Stop();
-        //}
+        private void timer_Tick(object sender, EventArgs e)
+        {
+            timer1.Stop();
+            timer2.Stop();
+        }
 
-        //void timer2_Tick(object sender, EventArgs e)
-        //{
-        //    try
-        //    {
+        void timer2_Tick(object sender, EventArgs e)
+        {
+            try
+            {
 
-        //    if (items.Count != 0)
-        //    {
-        //        timer2.Stop();
-        //        timer1.Stop();
-        //        List<string> comments = new List<string>();
-        //        foreach (var item in items)
-        //        {
-        //            comments.Add(item.Comments);
-        //        }
-        //        //显示评价
-        //        Random r = new Random();
-        //        for (int i = 0; i < BLINKINGBLOCKCOUNT; i++)
-        //        {
-        //            floatingTextBlocks[i].Text = comments[r.Next(comments.Count)];
-        //            floatingTextBlocks[i].isVisible = true;
-        //            floatingTextBlocks[i].isDisplay = true;
-        //            floatingTextBlocks[i].Timer_Start();
-        //        }
-        //    }
-        //    }
-        //    catch (Exception)
-        //    {
-        //        timer1.Stop();
-        //        timer2.Stop();
-        //    }
-        //}
+                if (items.Count != 0)
+                {
+                    timer2.Stop();
+                    timer1.Stop();
+                    List<string> comments = new List<string>();
+                    foreach (var item in items)
+                    {
+                        comments.Add(item.Comments);
+                    }
+                    //显示评价
+                    Random r = new Random();
+                    for (int i = 0; i < BLINKINGBLOCKCOUNT; i++)
+                    {
+                        floatingTextBlocks[i].Text = comments[r.Next(comments.Count)];
+                        floatingTextBlocks[i].isVisible = true;
+                        floatingTextBlocks[i].isDisplay = true;
+                        floatingTextBlocks[i].Timer_Start();
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                timer1.Stop();
+                timer2.Stop();
+            }
+        }
 
         private void Save_Button_Clicked(object sender, RoutedEventArgs e)
         {
@@ -429,10 +429,10 @@ namespace DinnerDecisionPlus
             }
         }
 
-        //private void CommentSaveButton_Click(object sender, RoutedEventArgs e)
-        //{
-        //    var comment = new DinnerDecisionComments { Location = current.CurrentItemContent, Comments = CommentTextBox.Text, IsBad = false, IsGood = false };
-        //    InsertComment(comment);
+        private void CommentSaveButton_Click(object sender, RoutedEventArgs e)
+        {
+            var comment = new DinnerDecisionComments { Location = current.CurrentItemContent, Comments = CommentTextBox.Text, IsBad = false, IsGood = false };
+            InsertComment(comment);
 
         //    ////Test
         //    //String[] commentsLib = {"量真叫一个小呀",
@@ -495,24 +495,24 @@ namespace DinnerDecisionPlus
         //    //        InsertComment(comment);
         //    //    }
         //    //}
-        //}
+        }
 
-        //private async void InsertComment(DinnerDecisionComments comment)
-        //{
-        //    // This code inserts a new TodoItem into the database. When the operation completes
-        //    // and Mobile Services has assigned an Id, the item is added to the CollectionView
-        //    try
-        //    {
-        //        CommentUploadStatus.Text = "";
-        //        await App.MobileService.GetTable<DinnerDecisionComments>().InsertAsync(comment);
-        //        CommentUploadStatus.Text = "上传成功";
-        //    }
-        //    catch (Exception)
-        //    {
-        //        CommentUploadStatus.Text = "上传失败";
-        //        throw;
-        //    }
-        //}
+        private async void InsertComment(DinnerDecisionComments comment)
+        {
+            // This code inserts a new TodoItem into the database. When the operation completes
+            // and Mobile Services has assigned an Id, the item is added to the CollectionView
+            try
+            {
+                CommentUploadStatus.Text = "";
+                await App.MobileService.GetTable<DinnerDecisionComments>().InsertAsync(comment);
+                CommentUploadStatus.Text = "上传成功";
+            }
+            catch (Exception)
+            {
+                CommentUploadStatus.Text = "上传失败";
+                throw;
+            }
+        }
 
         // Sample code for building a localized ApplicationBar
         //private void BuildLocalizedApplicationBar()

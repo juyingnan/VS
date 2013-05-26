@@ -91,7 +91,7 @@
                 </Grid>
             </phone:PivotItem>
 
-            <!--<phone:PivotItem Header="评价">
+            <phone:PivotItem Header="评价">
                 <Grid>                    
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="0.1*"/>
@@ -111,7 +111,7 @@
                         <Button Grid.Column="1" Grid.Row="2" Height="80" Width="200" Name="CommentSaveButton" Click="CommentSaveButton_Click">保存</Button>
                     </StackPanel>
                 </Grid>
-            </phone:PivotItem>-->
+            </phone:PivotItem>
         </phone:Pivot>
 
         <!--Uncomment to see an alignment grid to help ensure your controls are
