@@ -141,6 +141,7 @@
     <Content Include="Assets\favs.png" />
     <Content Include="Assets\feature.alarm.png" />
     <Content Include="Assets\feature.settings.png" />
+    <Content Include="Assets\glass-sml.png" />
     <Content Include="Assets\glass.png" />
     <Content Include="SplashScreenImage.jpg" />
     <Content Include="Background.png">

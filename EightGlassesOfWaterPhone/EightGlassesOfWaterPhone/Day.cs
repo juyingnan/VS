@@ -50,9 +50,6 @@ namespace EightGlassesOfWaterPhone
             {
                 string info = "";
                 DuplicateFromDay(XMLDeserialize<Day>(ReadFromSetting(info)));
-                //string temp = ReadFromSetting(info);
-                //Day d = XMLDeserialize<Day>(temp);
-                //DuplicateFromDay(d);
                 Refresh();
                 CalculateLeftGlasses();
                 tips.GetContent();

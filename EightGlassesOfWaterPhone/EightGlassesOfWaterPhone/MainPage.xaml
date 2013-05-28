@@ -34,18 +34,18 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>                
             </Grid.RowDefinitions>
-            <TextBlock Name="BackgroundStatTextBlock" Grid.RowSpan="2" FontSize="550" Canvas.ZIndex="-1" Margin="0,-250,-80,0" FontFamily="Segoe WP Light" HorizontalAlignment="Right" VerticalAlignment="Top" Opacity="1">7</TextBlock>
+            <TextBlock Name="BackgroundStatTextBlock" Grid.RowSpan="2" FontSize="550" Canvas.ZIndex="-1" Margin="0,-250,-80,0" FontFamily="Segoe WP Light" HorizontalAlignment="Right" VerticalAlignment="Top" Opacity="1">8</TextBlock>
             <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center">
-                <Image Name="Glass0" Source="/Assets/glass.png" Height="120" Tap="Glass_Tap"/>
-                <Image Name="Glass1" Source="/Assets/glass.png" Height="120" Tap="Glass_Tap"/>
-                <Image Name="Glass2" Source="/Assets/glass.png" Height="120" Tap="Glass_Tap"/>
-                <Image Name="Glass3" Source="/Assets/glass.png" Height="120" Tap="Glass_Tap"/>
+                <Image Name="Glass0" Source="/Assets/glass-sml.png" Height="120" Tap="Glass_Tap"/>
+                <Image Name="Glass1" Source="/Assets/glass-sml.png" Height="120" Tap="Glass_Tap"/>
+                <Image Name="Glass2" Source="/Assets/glass-sml.png" Height="120" Tap="Glass_Tap"/>
+                <Image Name="Glass3" Source="/Assets/glass-sml.png" Height="120" Tap="Glass_Tap"/>
             </StackPanel>
             <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
-                <Image Name="Glass4" Source="/Assets/glass.png" Height="120" Tap="Glass_Tap"/>
-                <Image Name="Glass5" Source="/Assets/glass.png" Height="120" Tap="Glass_Tap"/>
-                <Image Name="Glass6" Source="/Assets/glass.png" Height="120" Tap="Glass_Tap"/>
-                <Image Name="Glass7" Source="/Assets/glass.png" Height="120" Tap="Glass_Tap"/>
+                <Image Name="Glass4" Source="/Assets/glass-sml.png" Height="120" Tap="Glass_Tap"/>
+                <Image Name="Glass5" Source="/Assets/glass-sml.png" Height="120" Tap="Glass_Tap"/>
+                <Image Name="Glass6" Source="/Assets/glass-sml.png" Height="120" Tap="Glass_Tap"/>
+                <Image Name="Glass7" Source="/Assets/glass-sml.png" Height="120" Tap="Glass_Tap"/>
             </StackPanel>
             <StackPanel Grid.Row="2">
                 <TextBlock FontSize="40" FontFamily="Microsoft JhengHei UI" Style="{StaticResource PhoneTextNormalStyle}">小贴士:</TextBlock>
