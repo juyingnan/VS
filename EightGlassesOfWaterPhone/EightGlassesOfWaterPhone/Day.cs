@@ -99,6 +99,46 @@ namespace EightGlassesOfWaterPhone
             createTime = DateTime.Today.ToShortDateString();
         }
 
+        public string GetHistory()
+        {
+            string result = "";
+
+            List<string> temp = new List<string>();
+
+            foreach (var item in glasses)
+            {
+                if (item.IsDrunk)
+                {
+                    //if (item.Time.Length == 4)
+                    //    temp.Add("0" + item.Time + "\n");
+                    //else
+                        temp.Add(item.Time + "\n");
+                }
+            }
+
+            temp.Sort();
+
+            int leftGlasses = QUANTITY - temp.Count;
+
+            foreach (var item in temp)
+            {
+                result += item;
+            }
+
+            foreach (var item in glasses)
+            {
+                if (!item.IsDrunk)
+                    result += "--:--" + "\n";
+            }
+
+            if (leftGlasses == 0)
+                result += "今天的8杯水已经完成，明天继续努力！";
+            else
+                result += "还差" + leftGlasses + "杯，加油！";
+
+            return result;
+        }
+
         /// <summary>
         /// 需要序列化XML数据对象
         /// </summary>

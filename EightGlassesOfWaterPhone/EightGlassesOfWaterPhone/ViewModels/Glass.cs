@@ -107,6 +107,8 @@ namespace EightGlassesOfWaterPhone
         public void SetTime(DateTime d)
         {
             time = d.ToShortTimeString();
+            if (time.Length == 4)
+                time = "0" + time;
         }
     }
 }

@@ -58,7 +58,7 @@
         <shell:ApplicationBar Mode="Default" Opacity="1.0" IsMenuEnabled="False" IsVisible="True">
             <shell:ApplicationBarIconButton IconUri="/Assets/favs.png" Text="History" Click="AppBarHistoryButton_Click"/>
             <shell:ApplicationBarIconButton IconUri="/Assets/feature.alarm.png" Text="Alarm" Click="AppBarAlarmButton_Click"/>
-            <shell:ApplicationBarIconButton IconUri="/Assets/feature.settings.png" Text="Setting" Click="AppBarSettingButton_Click"/>
+            <!--<shell:ApplicationBarIconButton IconUri="/Assets/feature.settings.png" Text="Setting" Click="AppBarSettingButton_Click"/>-->
         </shell:ApplicationBar>
     </phone:PhoneApplicationPage.ApplicationBar>
 

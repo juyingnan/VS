@@ -121,7 +121,7 @@ namespace EightGlassesOfWaterPhone
             //day.LoadStates();
         }
 
-        private void Glass_Tap(object sender, GestureEventArgs e)
+        private void Glass_Tap(object sender, System.Windows.Input.GestureEventArgs e)
         {
             Image image = (Image)sender;
             int No = int.Parse(image.Name.Substring(5, 1));
@@ -130,17 +130,13 @@ namespace EightGlassesOfWaterPhone
 
         private void AppBarHistoryButton_Click(object sender, EventArgs e)
         {
-            UploadTips();
-        }
-
-        private void ApplicationBarIconButton_Click(object sender, EventArgs e)
-        {
-
+            //UploadTips();
+            MessageBox.Show(day.GetHistory(), "今日喝水记录", MessageBoxButton.OK);
         }
 
         private void AppBarAlarmButton_Click(object sender, EventArgs e)
         {
-
+            this.NavigationService.Navigate(new Uri("/AlarmPage.xaml", UriKind.Relative));
         }
 
         private void AppBarSettingButton_Click(object sender, EventArgs e)
@@ -230,6 +226,4 @@ namespace EightGlassesOfWaterPhone
         }
 
     }
-
-    public class Tips { public int Id { get; set; } public string content { get; set; } }
 }

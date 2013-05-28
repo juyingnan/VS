@@ -1,0 +1,65 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="EightGlassesOfWaterPhone.AlarmPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <phone:PhoneApplicationPage.Resources>
+        <DataTemplate x:Name="PickerFullModeItemTemplate">
+            <StackPanel Orientation="Horizontal" Margin="16 21 0 20" Background="{StaticResource PhoneAccentBrush}" Width="100" Height="100" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5" FontSize="48" FontWeight="Bold" Text="{Binding}" Foreground="{StaticResource PhoneForegroundBrush}" />
+            </StackPanel>
+        </DataTemplate>
+    </phone:PhoneApplicationPage.Resources>
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock Text="8杯水" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock Text="闹钟设置" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <!--<TextBlock FontSize="36">闹钟时间设定</TextBlock>-->
+            <toolkit:TimePicker Name="AlarmTimePicker" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Header="闹钟时间设定"></toolkit:TimePicker>
+            <!--<TextBlock FontSize="36" Grid.Row="1">闹钟开关</TextBlock>-->
+            <toolkit:ToggleSwitch Name="AlarmSwitch" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Header="闹钟开关"></toolkit:ToggleSwitch>
+            <!--<TextBlock FontSize="36" Grid.Row="2" >闹钟响起阈值</TextBlock>-->
+            <toolkit:ListPicker Name="AlarmThresholdPicker" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"  SelectionMode="Single" Header="喝水少于以下杯数时，闹钟响起" FullModeHeader="闹钟响起阈值" CacheMode="BitmapCache" FullModeItemTemplate="{StaticResource PickerFullModeItemTemplate}"></toolkit:ListPicker>
+            <TextBlock Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Name="TipTextBlock" TextWrapping="Wrap" Grid.RowSpan="2">
+                以上选项意味着，如果您在每天的某个时刻喝水少于上面设定的杯数，会有闹钟响起提醒喝水。<LineBreak/>
+                <LineBreak/>
+                例如，当闹钟开启并设置为12点，杯数设置为3的时候，每天12点时若喝水少于3杯则闹钟会在12点时响起提醒喝水。
+            </TextBlock>
+        </Grid>
+    </Grid>
+
+</phone:PhoneApplicationPage>
