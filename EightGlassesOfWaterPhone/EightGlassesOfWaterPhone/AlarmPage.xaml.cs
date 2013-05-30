@@ -16,7 +16,7 @@ namespace EightGlassesOfWaterPhone
     {
         private IsolatedStorageSettings _appSettings = IsolatedStorageSettings.ApplicationSettings;
 
-        List<int> AlarmThresholdPickerSource= new List<int>();
+        List<int> AlarmThresholdPickerSource = new List<int>();
 
         const bool DEFAULT_ALARM_SWITCH = false;
         const int DEFAULT_ALARM_THRESHOLD = 3;
@@ -38,7 +38,8 @@ namespace EightGlassesOfWaterPhone
             if (e.NavigationMode == NavigationMode.Back && e.Uri == new Uri("/MainPage.xaml", UriKind.Relative))
             {
                 SaveSetting();
-                SetAlarm();
+                //SetAlarm((bool)AlarmSwitch.IsChecked, (int)AlarmThresholdPicker.SelectedItem, (DateTime)AlarmTimePicker.Value);
+                //TestTask();
             }
         }
 
@@ -58,7 +59,7 @@ namespace EightGlassesOfWaterPhone
 
             //ALARM THRESHOLD
             if (_appSettings.Contains("ALARMTHRESHOLD"))
-                _appSettings["ALARMTHRESHOLD"] = ((int) AlarmThresholdPicker.SelectedIndex);
+                _appSettings["ALARMTHRESHOLD"] = ((int)AlarmThresholdPicker.SelectedIndex);
             else
                 _appSettings.Add("ALARMTHRESHOLD", ((int)AlarmThresholdPicker.SelectedIndex));
 
@@ -67,12 +68,12 @@ namespace EightGlassesOfWaterPhone
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            if(e.NavigationMode==NavigationMode.New)             
-            LoadSetting();
+            if (e.NavigationMode == NavigationMode.New)
+                LoadSetting();
         }
 
         private void LoadSetting()
-        {           
+        {
             //ALARM SWITCH
             bool tempAlarmSwitch;
 
@@ -110,26 +111,32 @@ namespace EightGlassesOfWaterPhone
                 AlarmThresholdPicker.SelectedIndex = DEFAULT_ALARM_THRESHOLD;
         }
 
-        private void SetAlarm()
+        public static void SetAlarm(bool alarmSwitch, int alarmThreshold, DateTime alarmTime)
         {
-            ScheduledActionService.Remove("DrinkingAlarm");
-            if (AlarmSwitch.IsChecked == true)
+            const string ALARMNAME = "DrinkingAlarm";
+
+            ScheduledAction _detect = ScheduledActionService.Find(ALARMNAME);
+            if (_detect != null)
             {
-                Alarm alarm = new Alarm("DrinkingAlarm");
-                alarm.Content = "今天您到目前为止喝水少于" + (int)AlarmThresholdPicker.SelectedItem + "杯，请尽快补充水份。";
+                ScheduledActionService.Remove(ALARMNAME);
+            }
+            if (alarmSwitch == true)
+            {
+                Alarm alarm = new Alarm(ALARMNAME);
+                alarm.Content = "今天您到目前为止喝水少于" + alarmThreshold + "杯，请尽快补充水份。";
                 //alarm.Sound = new Uri("/Ringtones/Ring01.wma", UriKind.Relative);
-                alarm.BeginTime = DateTime.Now.Date + ((DateTime)AlarmTimePicker.Value).TimeOfDay;
+                alarm.BeginTime = DateTime.Now.Date + alarmTime.TimeOfDay;
                 if (alarm.BeginTime.CompareTo(DateTime.Now) <= 0)
                     alarm.BeginTime = alarm.BeginTime.AddDays(1);
                 alarm.ExpirationTime = DateTime.MaxValue;
                 alarm.RecurrenceType = RecurrenceInterval.None;
                 try
-                {                    
-                ScheduledActionService.Add(alarm);
+                {
+                    ScheduledActionService.Add(alarm);
                 }
                 catch (Exception)
                 {
-                    ScheduledActionService.Replace(alarm);
+                    //ScheduledActionService.Replace(alarm);
                 }
             }
             //else

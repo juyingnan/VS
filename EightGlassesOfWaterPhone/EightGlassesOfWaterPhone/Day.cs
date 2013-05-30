@@ -81,6 +81,13 @@ namespace EightGlassesOfWaterPhone
                     temp++;
             }
             LeftGlasses = temp;
+
+            //LEFTGLASSES
+            if (_appSettings.Contains("LEFTGLASSES"))
+                _appSettings["LEFTGLASSES"] = LeftGlasses;
+            else
+                _appSettings.Add("LEFTGLASSES", LeftGlasses);
+            _appSettings.Save();
         }
 
         private void Refresh()
@@ -186,6 +193,7 @@ namespace EightGlassesOfWaterPhone
                 _appSettings["DAY"] = info;
             else
                 _appSettings.Add("DAY", info);
+
             _appSettings.Save();
             return true;
         }

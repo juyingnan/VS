@@ -20,23 +20,32 @@ namespace EightGlassesOfWaterPhone
 
         public Tip()
         {
-            Content = "正在获取小贴士";
+            Content = "正在获取小贴士\n\n将本应用Pin到主界面会有动态瓷贴提示哦！";
             //GetContent();
         }
 
         public async void GetContent()
         {
-            todoTable = App.MobileService.GetTable<Tip>();
+            try
+            {
+                Content = "正在获取小贴士\n\n将本应用Pin到主界面会有动态瓷贴提示哦！";
+                todoTable = App.MobileService.GetTable<Tip>();
 
-            Random r = new Random();
-            int x = r.Next(LEASTTIPID, BIGGESTTIPID);
+                Random r = new Random();
+                int x = r.Next(LEASTTIPID, BIGGESTTIPID);
 
-            items = await todoTable.Where(Tip => Tip.id == x).ToCollectionAsync();
+                items = await todoTable.Where(Tip => Tip.id == x).ToCollectionAsync();
 
-            if (items.Count > 0)
-                this.Content = items[0].Content;
-            else
-                this.Content = "获取小贴士失败……";
+                if (items.Count > 0)
+                    this.Content = items[0].Content;
+                else
+                    this.Content = "获取小贴士失败……\n\n将本应用Pin到主界面会有动态瓷贴提示哦！";
+            }
+            catch (Exception)
+            {
+                this.Content = "获取小贴士失败……\n\n将本应用Pin到主界面会有动态瓷贴提示哦！";
+            }
+
             //return "请连接网络以获取小贴士";
         }
 

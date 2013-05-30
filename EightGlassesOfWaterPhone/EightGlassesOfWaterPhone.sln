@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EightGlassesOfWaterPhone", "EightGlassesOfWaterPhone\EightGlassesOfWaterPhone.csproj", "{C946C590-F6FB-4BCF-B355-27D419E88A20}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyScheduledTaskAgent", "MyScheduledTaskAgent\MyScheduledTaskAgent.csproj", "{C4AFBA5D-12F6-462D-91FD-46EE79FE5B96}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{C946C590-F6FB-4BCF-B355-27D419E88A20}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C946C590-F6FB-4BCF-B355-27D419E88A20}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C946C590-F6FB-4BCF-B355-27D419E88A20}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{C4AFBA5D-12F6-462D-91FD-46EE79FE5B96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4AFBA5D-12F6-462D-91FD-46EE79FE5B96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4AFBA5D-12F6-462D-91FD-46EE79FE5B96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4AFBA5D-12F6-462D-91FD-46EE79FE5B96}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -31,8 +31,8 @@
 
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock Text="8杯水" Style="{StaticResource PhoneTextNormalStyle}"/>
-            <TextBlock Text="闹钟设置" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+            <TextBlock Text="每天8杯水" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock Text="喝水提醒设置" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
@@ -48,16 +48,15 @@
                 <RowDefinition/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <!--<TextBlock FontSize="36">闹钟时间设定</TextBlock>-->
-            <toolkit:TimePicker Name="AlarmTimePicker" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Header="闹钟时间设定"></toolkit:TimePicker>
-            <!--<TextBlock FontSize="36" Grid.Row="1">闹钟开关</TextBlock>-->
-            <toolkit:ToggleSwitch Name="AlarmSwitch" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Header="闹钟开关"></toolkit:ToggleSwitch>
-            <!--<TextBlock FontSize="36" Grid.Row="2" >闹钟响起阈值</TextBlock>-->
-            <toolkit:ListPicker Name="AlarmThresholdPicker" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"  SelectionMode="Single" Header="喝水少于以下杯数时，闹钟响起" FullModeHeader="闹钟响起阈值" CacheMode="BitmapCache" FullModeItemTemplate="{StaticResource PickerFullModeItemTemplate}"></toolkit:ListPicker>
+            <toolkit:TimePicker Name="AlarmTimePicker" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Header="提醒时间设定"></toolkit:TimePicker>
+            <toolkit:ToggleSwitch Name="AlarmSwitch" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Header="喝水提醒开关"></toolkit:ToggleSwitch>
+            <toolkit:ListPicker Name="AlarmThresholdPicker" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"  SelectionMode="Single" Header="喝水少于以下杯数时，会发出提醒" FullModeHeader="提醒杯数" CacheMode="BitmapCache" FullModeItemTemplate="{StaticResource PickerFullModeItemTemplate}"></toolkit:ListPicker>
             <TextBlock Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Name="TipTextBlock" TextWrapping="Wrap" Grid.RowSpan="2">
-                以上选项意味着，如果您在每天的某个时刻喝水少于上面设定的杯数，会有闹钟响起提醒喝水。<LineBreak/>
+                以上选项意味着，如果您在每天的某个时刻喝水少于上面设定的杯数，会弹出提示提醒喝水。<LineBreak/>
                 <LineBreak/>
-                例如，当闹钟开启并设置为12点，杯数设置为3的时候，每天12点时若喝水少于3杯则闹钟会在12点时响起提醒喝水。
+                例如，当提醒开关开启并设置为12点，杯数设置为3的时候，每天12点时若喝水少于3杯则会在12点时弹出提示提醒喝水。
+                <LineBreak/><LineBreak/>
+                P.S. 当开启节电模式时，提醒和瓷贴更新功能可能不会正确工作。
             </TextBlock>
         </Grid>
     </Grid>

@@ -1,4 +1,6 @@
-﻿using System;
+﻿//#define DEBUG
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -14,6 +16,8 @@ using System.Windows.Data;
 using System.Windows.Navigation;
 
 using Microsoft.WindowsAzure.MobileServices;
+using Microsoft.Phone.Shell;
+using Microsoft.Phone.Scheduler;
 
 namespace EightGlassesOfWaterPhone
 {
@@ -44,16 +48,8 @@ namespace EightGlassesOfWaterPhone
             this.Loaded += new RoutedEventHandler(MainPage_Loaded);
 
             BindingInitialize();
-            //TEST
-            //Day day = new Day();
-            //day.Glasses[0].IsDrunk = true;
 
-            //string set="";
-            //set= day.ReadFromSetting(set);
-            //Day testDay = day.XMLDeserialize<Day>(set);
-            //set = "";
-
-            
+            BackgroundTileRefresh();
         }
 
         //// Handle selection changed on ListBox
@@ -113,10 +109,10 @@ namespace EightGlassesOfWaterPhone
         // Load data for the ViewModel Items
         private void MainPage_Loaded(object sender, RoutedEventArgs e)
         {
-            if (!App.ViewModel.IsDataLoaded)
-            {
-                App.ViewModel.LoadData();
-            }
+            //if (!App.ViewModel.IsDataLoaded)
+            //{
+            //    App.ViewModel.LoadData();
+            //}
 
             //day.LoadStates();
         }
@@ -126,6 +122,34 @@ namespace EightGlassesOfWaterPhone
             Image image = (Image)sender;
             int No = int.Parse(image.Name.Substring(5, 1));
             day.Glasses[No].IsDrunk = true;
+
+            //update live tile
+            int left = day.LeftGlasses;
+            if (left >= 0 && left <= GLASSQUANTITY)
+            {
+                try
+                {
+                    UpdateTile(left);
+                }
+                catch (Exception)
+                {
+                }
+            }
+        }
+
+        public static void UpdateTile(int left)
+        {            
+                // 更新应用程序磁贴的 Badge   
+                string imageAddress = "/Assets/" + left.ToString() + ".png";
+
+                ShellTile applicationTile = ShellTile.ActiveTiles.First();
+                StandardTileData newTile = new StandardTileData
+                {
+                    Count = left,
+                    BackContent = DateTime.Now.ToShortTimeString() + "\n还剩" + left + "杯",
+                    BackBackgroundImage = new Uri(imageAddress, UriKind.Relative)
+                };
+                applicationTile.Update(newTile);           
         }
 
         private void AppBarHistoryButton_Click(object sender, EventArgs e)
@@ -152,9 +176,22 @@ namespace EightGlassesOfWaterPhone
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             day.LoadStates();
+
+            //update live tile
+            int left = day.LeftGlasses;
+            if (left >= 0 && left <= GLASSQUANTITY)
+            {
+                try
+                {
+                    UpdateTile(left);
+                }
+                catch (Exception)
+                {
+                }
+            }
         }
 
-        private void UploadTips()
+        public void UploadTips()
         {
             //Test
             String[] TipsLib = {"口渴表示人体水分已失去平衡，是人体细胞脱水已到一定程度，中枢神经发出要求补充水分的信号",
@@ -222,6 +259,47 @@ namespace EightGlassesOfWaterPhone
             catch (Exception e)
             {
                 TipsTextBlock.Text = e.Message;
+            }
+        }
+
+        private void BackgroundTileRefresh()
+        {
+            PeriodicTask _periodicTask;
+            string _periodicTaskName = "PeriodicTask";
+
+            // 实例化一个新的 PeriodicTask
+            _periodicTask = ScheduledActionService.Find(_periodicTaskName) as PeriodicTask;
+            if (_periodicTask != null)
+                ScheduledActionService.Remove(_periodicTaskName);
+            _periodicTask = new PeriodicTask(_periodicTaskName);
+
+            _periodicTask.Description = "后台任务";
+
+            try
+            {
+                // 每次都注册一个新的 PeriodicTask，以最大限度避免两周后无法执行的问题
+                ScheduledActionService.Add(_periodicTask);
+#if DEBUG
+                // 1 秒后执行任务
+                ScheduledActionService.LaunchForTest(_periodicTaskName, TimeSpan.FromSeconds(1));
+#endif
+            }
+            catch (InvalidOperationException exception)
+            {
+                if (exception.Message.Contains("BNS Error: The action is disabled"))
+                {
+                    // 代理已被禁用
+                    MessageBox.Show("后台代理已被禁用，瓷贴和提醒功能可能不能正常执行。如想获得完整体验，请开启后台任务或关闭节电模式");
+                }
+                if (exception.Message.Contains("BNS Error: The maximum number of ScheduledActions of this type have already been added."))
+                {
+                    // 代理的数量超过了设备的限制（设备的最大代理数是由设备进行硬性限制的，最低值是 6）
+                    MessageBox.Show("后台代理的数量超过了设备的限制，瓷贴和提醒功能可能不能正常执行。如想获得完整体验，请选择开启本应用后台任务");
+                }
+            }
+            catch (Exception)
+            {
+
             }
         }
 
