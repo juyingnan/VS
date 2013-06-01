@@ -74,6 +74,7 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\sl4-windowsphone71\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Net.Http">
       <HintPath>..\packages\Microsoft.Net.Http.2.1.6-rc\lib\sl4-windowsphone71\System.Net.Http.dll</HintPath>
     </Reference>
@@ -87,6 +88,7 @@
       <HintPath>..\packages\Microsoft.Bcl.1.0.19\lib\sl4-windowsphone71\System.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel.Web" />
     <Reference Include="System.Threading.Tasks">
       <HintPath>..\packages\Microsoft.Bcl.1.0.19\lib\sl4-windowsphone71\System.Threading.Tasks.dll</HintPath>
     </Reference>
@@ -111,8 +113,6 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tip.cs" />
-    <Compile Include="ViewModels\ItemViewModel.cs" />
-    <Compile Include="ViewModels\MainViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -127,25 +127,13 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <DesignData Include="SampleData\MainViewModelSampleData.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </DesignData>
   </ItemGroup>
   <ItemGroup>
-    <None Include="EightGlassesOfWaterPhone_2013_05_30_02_39_17.sap" />
-    <None Include="EightGlassesOfWaterPhone_2013_05_30_02_39_57.sap" />
-    <None Include="EightGlassesOfWaterPhone_2013_05_30_02_40_37.sap" />
-    <None Include="EightGlassesOfWaterPhone_2013_05_30_02_45_45.sap" />
-    <None Include="EightGlassesOfWaterPhone_2013_05_30_02_46_09.sap" />
     <None Include="packages.config" />
     <None Include="Properties\AppManifest.xml" />
     <None Include="Properties\WMAppManifest.xml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ApplicationIcon.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Include="Assets\0.png" />
     <Content Include="Assets\1.png" />
     <Content Include="Assets\2.png" />
@@ -162,11 +150,7 @@
     <Content Include="Assets\glass.png" />
     <Content Include="Assets\Logo.png" />
     <Content Include="Logo.png" />
-    <Content Include="README_FIRST.txt" />
     <Content Include="SplashScreenImage.jpg" />
-    <Content Include="Background.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Include="Toolkit.Content\ApplicationBar.Cancel.png" />
     <Content Include="Toolkit.Content\ApplicationBar.Check.png" />
     <Content Include="Toolkit.Content\ApplicationBar.Delete.png" />

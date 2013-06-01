@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Deployment xmlns="http://schemas.microsoft.com/windowsphone/2009/deployment" AppPlatformVersion="7.1">
-  <App xmlns="" ProductID="{c946c590-f6fb-4bcf-b355-27d419e88a20}" Title="每天8杯水" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="bunny" Description="每天按时定量喝水有助于身体健康。本应用提醒你每天按时喝完8杯水。&#xD;&#xA;可以查看每天喝水记录，并设置定时喝水提醒。&#xD;&#xA;主界面的瓷贴可以即时显示当天还剩多少杯水该喝。" Publisher="bunny" BitsPerPixel="32">
+  <App xmlns="" ProductID="{c946c590-f6fb-4bcf-b355-27d419e88a20}" Title="每天8杯水" RuntimeType="Silverlight" Version="1.0.1.0" Genre="apps.normal" Author="bunny" Description="每天按时定量喝水有助于身体健康。本应用提醒你每天按时喝完8杯水。&#xD;&#xA;可以查看每天喝水记录，并设置定时喝水提醒。&#xD;&#xA;主界面的瓷贴可以即时显示当天还剩多少杯水该喝。" Publisher="bunny" BitsPerPixel="32">
     <IconPath IsRelative="true" IsResource="false">Logo.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_NETWORKING" />

@@ -75,8 +75,11 @@ namespace MyScheduledTaskAgent
                 // 弹出 Toast
                 LoadSetting();
                 DateTime now = DateTime.Now;
-                if (now.CompareTo(ALARM_TIME) >= 0 && !HASALARMED && ALARM_SWITCH && (ALARM_THRESHOLD + LEFTGLASSES > 8))
-                //if (now.CompareTo(ALARM_TIME) >= 0  && ALARM_SWITCH && (ALARM_THRESHOLD + LEFTGLASSES > 8))  //for TEST
+                if (now.TimeOfDay.CompareTo(ALARM_TIME.TimeOfDay) >= 0 //alarm time is arrived  .fix on 2013-6-1, add "time of the day"
+                    && !HASALARMED //alarm is not triggered today
+                    && ALARM_SWITCH //alarm is on
+                    && (ALARM_THRESHOLD + LEFTGLASSES > 8)) //threshold is not reached
+                    //if (now.TimeOfDay.CompareTo(ALARM_TIME.TimeOfDay) >= 0  && ALARM_SWITCH && (ALARM_THRESHOLD + LEFTGLASSES > 8))  //for TEST
                 {
                     ShowToast();
                 }

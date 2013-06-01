@@ -1,4 +1,4 @@
-﻿<phone:PhoneApplicationPage
+﻿<phone:PhoneApplicationPage xmlns:WPF="clr-namespace:SmartMad.Ads.WindowsPhone7.WPF;assembly=SmartMad.Ads.WindowsPhone7" 
     x:Class="EightGlassesOfWaterPhone.AlarmPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -16,10 +16,11 @@
 
     <phone:PhoneApplicationPage.Resources>
         <DataTemplate x:Name="PickerFullModeItemTemplate">
-            <StackPanel Orientation="Horizontal" Margin="16 21 0 20" Background="{StaticResource PhoneAccentBrush}" Width="100" Height="100" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel Orientation="Horizontal" Margin="20" Background="{StaticResource PhoneAccentBrush}" Width="100" Height="100" HorizontalAlignment="Center" VerticalAlignment="Center">
                 <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5" FontSize="48" FontWeight="Bold" Text="{Binding}" Foreground="{StaticResource PhoneForegroundBrush}" />
             </StackPanel>
         </DataTemplate>
+        
     </phone:PhoneApplicationPage.Resources>
 
     <!--LayoutRoot is the root grid where all page content is placed-->
@@ -32,7 +33,7 @@
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel Grid.Row="0" Margin="12,17,0,28">
             <TextBlock Text="每天8杯水" Style="{StaticResource PhoneTextNormalStyle}"/>
-            <TextBlock Text="喝水提醒设置" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+            <TextBlock Text="喝水提醒设置" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}" FontSize="48"/>
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
@@ -43,21 +44,24 @@
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition/>
+                <RowDefinition Height="1.2*"/>
                 <RowDefinition/>
                 <RowDefinition/>
                 <RowDefinition/>
-                <RowDefinition/>
+                <RowDefinition Height="80"/>
             </Grid.RowDefinitions>
             <toolkit:TimePicker Name="AlarmTimePicker" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Header="提醒时间设定"></toolkit:TimePicker>
             <toolkit:ToggleSwitch Name="AlarmSwitch" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Header="喝水提醒开关"></toolkit:ToggleSwitch>
             <toolkit:ListPicker Name="AlarmThresholdPicker" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"  SelectionMode="Single" Header="喝水少于以下杯数时，会发出提醒" FullModeHeader="提醒杯数" CacheMode="BitmapCache" FullModeItemTemplate="{StaticResource PickerFullModeItemTemplate}"></toolkit:ListPicker>
             <TextBlock Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Name="TipTextBlock" TextWrapping="Wrap" Grid.RowSpan="2">
                 以上选项意味着，如果您在每天的某个时刻喝水少于上面设定的杯数，会弹出提示提醒喝水。<LineBreak/>
-                <LineBreak/>
                 例如，当提醒开关开启并设置为12点，杯数设置为3的时候，每天12点时若喝水少于3杯则会在12点时弹出提示提醒喝水。
                 <LineBreak/><LineBreak/>
                 P.S. 当开启节电模式时，提醒和瓷贴更新功能可能不会正确工作。
             </TextBlock>
+            <!--<AD:AdControl Grid.ColumnSpan="2" Grid.Row="5" Name="ADControl" AdUnitId="10074390" ApplicationId="bb92443c-46cd-48b3-a86d-25f244f2cb41"></AD:AdControl>-->
+            <!--<AD:AdControl Grid.ColumnSpan="2" Grid.Row="5" AdUnitId="Image480_80" ApplicationId="test_client"></AD:AdControl>-->
+            <!--<WPF:AdView Grid.ColumnSpan="2" Grid.Row="5" AdInterval="30" AdPositionID="90036531" AdAnimation="AdAnimationFlipFromLeft"></WPF:AdView>-->
         </Grid>
     </Grid>
 
