@@ -21,7 +21,3 @@ C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\NineBlockDiary\NineBloc
 C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\NineBlockDiary\NineBlockDiary\obj\Release\pri.resfiles
 C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\NineBlockDiary\NineBlockDiary\obj\Release\LanguageQualifiers.txt
 C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\NineBlockDiary\NineBlockDiary\obj\Release\ProjectArchitectures.txt
-C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\NineBlockDiary\NineBlockDiary\obj\Release\priconfig.xml.intermediate
-C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\NineBlockDiary\NineBlockDiary\obj\Release\layout.resfiles.intermediate
-C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\NineBlockDiary\NineBlockDiary\obj\Release\resources.resfiles.intermediate
-C:\Users\bunny_000\Documents\Visual Studio 2012\Projects\NineBlockDiary\NineBlockDiary\obj\Release\pri.resfiles.intermediate

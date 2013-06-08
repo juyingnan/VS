@@ -361,5 +361,11 @@ namespace NineBlockDiary
             }
             isManualChanged = true;
         }
+
+        private void CheckBox_Checked(object sender, RoutedEventArgs e)
+        {
+            CheckBox c = sender as CheckBox;
+            c.Content = DateTime.Today.ToString();
+        }
     }
 }

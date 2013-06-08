@@ -145,7 +145,7 @@
                 <TextBox Grid.Row="7" Grid.Column="1" Name="ContentTextBox6" Style="{StaticResource diaryStyle}" Text="TEST CONTENT 1" KeyUp="ENTER_KeyUp" TabIndex="6" TextChanged="ContentTextBox_TextChanged" LostFocus="TextBox_LostFocus"></TextBox>
                 <TextBox Grid.Row="7" Grid.Column="3" Name="ContentTextBox7" Style="{StaticResource diaryStyle}" Text="TEST CONTENT 1" KeyUp="ENTER_KeyUp" TabIndex="7" TextChanged="ContentTextBox_TextChanged" LostFocus="TextBox_LostFocus"></TextBox>
                 <TextBox Grid.Row="7" Grid.Column="5" Name="ContentTextBox8" Style="{StaticResource diaryStyle}" Text="TEST CONTENT 1" KeyUp="ENTER_KeyUp" TabIndex="8" TextChanged="ContentTextBox_TextChanged" LostFocus="TextBox_LostFocus"></TextBox>
-
+                
                 <!--MOOD-->
                 <Image Grid.Column="3" Grid.Row="3" Grid.RowSpan="2" Name="Mood_Image" Source="pictures/Mood_1.png" PointerReleased="Mood_Image_PointerReleased"></Image>
 

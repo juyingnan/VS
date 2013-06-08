@@ -120,18 +120,25 @@ namespace EightGlassesOfWaterPhone
         {
             Image image = (Image)sender;
             int No = int.Parse(image.Name.Substring(5, 1));
-            day.Glasses[No].IsDrunk = true;
 
-            //update live tile
-            int left = day.LeftGlasses;
-            if (left >= 0 && left <= GLASSQUANTITY)
+            if (!day.Glasses[No].IsDrunk)
             {
-                try
+                day.Glasses[No].IsDrunk = true;
+
+                //play the sound
+                //TapSound.Play();
+
+                //update live tile
+                int left = day.LeftGlasses;
+                if (left >= 0 && left <= GLASSQUANTITY)
                 {
-                    UpdateTile(left);
-                }
-                catch (Exception)
-                {
+                    try
+                    {
+                        UpdateTile(left);
+                    }
+                    catch (Exception)
+                    {
+                    }
                 }
             }
         }

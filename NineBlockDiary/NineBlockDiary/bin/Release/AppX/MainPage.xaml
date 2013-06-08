@@ -8,6 +8,7 @@
     mc:Ignorable="d">
 
     <Page.Resources>
+        <local:InverseBooleanConverter x:Name="converter"/>
         <Style x:Key="titleStyle" TargetType="TextBox">
             <Setter Property="TextBox.Background">
                 <Setter.Value>
@@ -100,7 +101,7 @@
                     <ColumnDefinition Width="*"></ColumnDefinition>
                     <ColumnDefinition Width="120"></ColumnDefinition>
                 </Grid.ColumnDefinitions>
-                <ComboBox x:ConnectionId='20' Grid.Column="1"  HorizontalAlignment="Center" VerticalAlignment="Center" Name="DateBar" Foreground="Black" FontSize="36" FontWeight="Bold"                                             BorderBrush="{x:Null}" Background="{x:Null}"/>
+                <ComboBox x:ConnectionId='21' Grid.Column="1"  HorizontalAlignment="Center" VerticalAlignment="Center" Name="DateBar" Foreground="Black" FontSize="36" FontWeight="Bold"                                             BorderBrush="{x:Null}" Background="{x:Null}"/>
                 <CheckBox Visibility="Collapsed" Name="hiddenBOSS"/>
             </Grid>
 
@@ -145,15 +146,16 @@
                 <TextBox x:ConnectionId='14' Grid.Row="7" Grid.Column="1" Name="ContentTextBox6" Style="{StaticResource diaryStyle}" Text="TEST CONTENT 1"                     TabIndex="6"                                                                       ></TextBox>
                 <TextBox x:ConnectionId='15' Grid.Row="7" Grid.Column="3" Name="ContentTextBox7" Style="{StaticResource diaryStyle}" Text="TEST CONTENT 1"                     TabIndex="7"                                                                       ></TextBox>
                 <TextBox x:ConnectionId='16' Grid.Row="7" Grid.Column="5" Name="ContentTextBox8" Style="{StaticResource diaryStyle}" Text="TEST CONTENT 1"                     TabIndex="8"                                                                       ></TextBox>
-
+                <CheckBox x:ConnectionId='17' Grid.Row="7" Grid.Column="5"                            IsEnabled="{Binding IsChecked, Mode=TwoWay, RelativeSource={RelativeSource Mode=Self},Converter={StaticResource converter}}">TEST</CheckBox>
+                
                 <!--MOOD-->
-                <Image x:ConnectionId='17' Grid.Column="3" Grid.Row="3" Grid.RowSpan="2" Name="Mood_Image" Source="pictures/Mood_1.png"                                             ></Image>
+                <Image x:ConnectionId='18' Grid.Column="3" Grid.Row="3" Grid.RowSpan="2" Name="Mood_Image" Source="pictures/Mood_1.png"                                             ></Image>
 
                 <!--BACK RECTANGLE-->
                 <Rectangle Grid.Row="0" Grid.Column="1" Grid.RowSpan="2" Style="{StaticResource rectangleStyle}"></Rectangle>
                 
                 <!--button-->
-                <Button x:ConnectionId='18' Grid.Column="0" Grid.Row="4" Name="PreviousDiaryButton"                                   HorizontalAlignment="Center">
+                <Button x:ConnectionId='19' Grid.Column="0" Grid.Row="4" Name="PreviousDiaryButton"                                   HorizontalAlignment="Center">
                     <Button.Template>
                         <ControlTemplate>
                             <Polygon FillRule="Nonzero" StrokeThickness="5" Points="0,40 80,0 80,20 100,20 100,60 80,60 80,80" Margin="15" Stroke="Black" StrokeLineJoin="Round"  Name="backArrow">
@@ -168,7 +170,7 @@
                     </Button.Template>
                 </Button>
 
-                <Button x:ConnectionId='19' Grid.Column="6" Grid.Row="4" Name="NextDiaryButton"                               HorizontalAlignment="Center">
+                <Button x:ConnectionId='20' Grid.Column="6" Grid.Row="4" Name="NextDiaryButton"                               HorizontalAlignment="Center">
                     <Button.Template>
                         <ControlTemplate>
                             <Polygon FillRule="Nonzero" StrokeThickness="5" Points="100,40 20,0 20,20 0,20 0,60 20,60 20,80" Margin="15" Stroke="Black" StrokeLineJoin="Round"  Name="backArrow">

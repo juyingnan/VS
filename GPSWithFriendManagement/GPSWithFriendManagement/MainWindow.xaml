@@ -1,0 +1,48 @@
+﻿<Window x:Class="GPSWithFriendManagement.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <ScrollViewer>
+        <StackPanel>
+            <TextBlock>Get User by email</TextBlock>
+            <TextBox Name="GetUserTextBox"></TextBox>
+            <Button Click="GetUserButton_Click">Get User</Button>
+            <Separator Height="20"></Separator>
+
+            <TextBlock>Get User by ID</TextBlock>
+            <TextBox Name="GetUserByIDTextBox"></TextBox>
+            <Button Click="GetUserByIDButton_Click">Get User</Button>
+            <Separator Height="20"></Separator>
+
+            <TextBlock>Get Groups</TextBlock>
+            <TextBox Name="GetGroupsTextBox"></TextBox>
+            <Button Click="GetGroupsButton_Click">Get Groups</Button>
+            <Separator Height="20"></Separator>
+
+            <TextBlock>Create Group</TextBlock>
+            <TextBox Name="CreateGroupTextBox"></TextBox>
+            <TextBox Name="CreateGroupNameTextBox"></TextBox>
+            <Button Click="CreateGroupButton_Click">CreateGroup</Button>
+            <Separator Height="20"></Separator>
+
+            <TextBlock>Add Member to Group</TextBlock>
+            <TextBox Name="AddMemberTextBox"></TextBox>
+            <TextBox Name="Addmember2GroupeTextBox"></TextBox>
+            <Button Click="AddmemberButton_Click">Add member</Button>
+            <Separator Height="20"></Separator>
+
+            <TextBlock>Remove Member from Group</TextBlock>
+            <TextBox Name="RemoveMemberTextBox"></TextBox>
+            <TextBox Name="RemoveMemberfromGroupeTextBox"></TextBox>
+            <Button Click="RemoveMemberButton_Click">Remove member from group</Button>
+            <Separator Height="20"></Separator>
+
+            <TextBlock>SetLocation</TextBlock>
+            <TextBox Name="SetUserIdTextBox"></TextBox>
+            <TextBox Name="SetLocationTextBox"></TextBox>
+            <Button Click="SetLocation_Click">SetLocation</Button>
+            <Separator Height="20"></Separator>
+
+        </StackPanel>
+    </ScrollViewer>
+</Window>

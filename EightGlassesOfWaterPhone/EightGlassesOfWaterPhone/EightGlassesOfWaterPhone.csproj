@@ -149,6 +149,7 @@
     <Content Include="Assets\glass-sml.png" />
     <Content Include="Assets\glass.png" />
     <Content Include="Assets\Logo.png" />
+    <Content Include="Assets\Windows Ding.wav" />
     <Content Include="Logo.png" />
     <Content Include="SplashScreenImage.jpg" />
     <Content Include="Toolkit.Content\ApplicationBar.Cancel.png" />
@@ -162,6 +163,7 @@
       <Name>MyScheduledTaskAgent</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

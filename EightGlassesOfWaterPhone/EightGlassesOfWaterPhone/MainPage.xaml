@@ -7,7 +7,6 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
     mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="768" 
-    d:DataContext="{d:DesignData SampleData/MainViewModelSampleData.xaml}"
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
@@ -40,6 +39,7 @@
                 <Image Name="Glass1" Source="/Assets/glass-sml.png" Height="120" Tap="Glass_Tap"/>
                 <Image Name="Glass2" Source="/Assets/glass-sml.png" Height="120" Tap="Glass_Tap"/>
                 <Image Name="Glass3" Source="/Assets/glass-sml.png" Height="120" Tap="Glass_Tap"/>
+                <!--<MediaElement Height="100" AutoPlay="False" Volume="1" Source="/Assets/Windows Ding.wav" Name="TapSound"/>-->
             </StackPanel>
             <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
                 <Image Name="Glass4" Source="/Assets/glass-sml.png" Height="120" Tap="Glass_Tap"/>
@@ -50,6 +50,7 @@
             <StackPanel Grid.Row="2">
                 <TextBlock FontSize="40" FontFamily="Microsoft JhengHei UI" Style="{StaticResource PhoneTextNormalStyle}">小贴士:</TextBlock>
                 <TextBlock Name="TipsTextBlock" FontFamily="Microsoft JhengHei UI" Style="{StaticResource PhoneTextNormalStyle}" TextWrapping="Wrap"></TextBlock>
+                
             </StackPanel>
         </Grid>
     </Grid>
